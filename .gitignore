@@ -1,0 +1,6 @@
+*.l#*
+*.s#*
+*.b#*
+*.pdf
+motor/housing
+motor/datasheets
