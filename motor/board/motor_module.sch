@@ -2918,6 +2918,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C11" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="U$16" library="modular_robotics" deviceset="V_3.0" device=""/>
+<part name="R39" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -3880,6 +3881,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$25" gate="G$1" x="231.14" y="160.02"/>
 <instance part="R37" gate="G$1" x="114.3" y="149.86" rot="R90"/>
 <instance part="R38" gate="G$1" x="106.68" y="149.86" rot="R90"/>
+<instance part="R39" gate="G$1" x="129.54" y="149.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3902,6 +3904,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
 <junction x="114.3" y="154.94"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="I2C_1" gate="G$1" pin="1"/>
@@ -3981,6 +3985,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="121.92" y1="127" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
 <label x="101.6" y="121.92" size="1.778" layer="95"/>
 <wire x1="121.92" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="144.78" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
+<junction x="121.92" y="124.46"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
