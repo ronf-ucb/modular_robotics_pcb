@@ -827,6 +827,73 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-4" y="2.5" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-4" y="-1.5" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="TP_LIPO_160MAH">
+<pad name="V-" x="1" y="0" drill="1.2" diameter="1.6" shape="square"/>
+<pad name="V+" x="-1" y="0" drill="1.2" diameter="1.6"/>
+<circle x="-0.625" y="0" radius="0.25" width="0" layer="51"/>
+<circle x="0.625" y="0" radius="0.25" width="0" layer="51"/>
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.3048" layer="51"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-2.5" y1="1" x2="-2.5" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-6" y1="-42" x2="6" y2="-42" width="0.3048" layer="51"/>
+<wire x1="6" y1="-42" x2="6" y2="-4" width="0.3048" layer="51"/>
+<wire x1="6" y1="-4" x2="-6" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-6" y1="-4" x2="-6" y2="-42" width="0.3048" layer="51"/>
+<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.4064" layer="21"/>
+<wire x1="-3" y1="0" x2="-5" y2="0" width="0.4064" layer="21"/>
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0" layer="39"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-4" width="0" layer="39"/>
+<wire x1="2.5" y1="-4" x2="-2.5" y2="-4" width="0" layer="39"/>
+<wire x1="-2.5" y1="-4" x2="-2.5" y2="1" width="0" layer="39"/>
+</package>
+<package name="MOTOR_HOUSING">
+<wire x1="-5.5" y1="-3" x2="5.5" y2="-3" width="0" layer="39"/>
+<wire x1="5.5" y1="-3" x2="5.5" y2="-1.4" width="0" layer="39"/>
+<wire x1="5.5" y1="-1.4" x2="-5.5" y2="-1.4" width="0" layer="39"/>
+<wire x1="-5.5" y1="-1.4" x2="-5.5" y2="-3" width="0" layer="39"/>
+<smd name="1" x="-4.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="1.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="4" x="4.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-23" y1="-6.5" x2="-13" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-13" y1="-6.5" x2="-11" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-11" y1="-6.5" x2="5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-6.5" x2="5" y2="-7.4" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.4" x2="5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-9.5" x2="5" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-10.5" x2="-23" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="-23" y1="-10.5" x2="-23" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-13" y1="-6.5" x2="-13" y2="0" width="0.127" layer="51"/>
+<wire x1="-11" y1="-6.5" x2="-11" y2="0" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.4" x2="11" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="5" y1="-9.5" x2="13" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="5.5" y1="3" x2="-5.5" y2="3" width="0" layer="39"/>
+<wire x1="-5.5" y1="3" x2="-5.5" y2="1.4" width="0" layer="39"/>
+<wire x1="-5.5" y1="1.4" x2="5.5" y2="1.4" width="0" layer="39"/>
+<wire x1="5.5" y1="1.4" x2="5.5" y2="3" width="0" layer="39"/>
+<smd name="5" x="4.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="6" x="1.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="7" x="-1.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="8" x="-4.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<wire x1="23" y1="6.5" x2="13" y2="6.5" width="0.127" layer="51"/>
+<wire x1="13" y1="6.5" x2="11" y2="6.5" width="0.127" layer="51"/>
+<wire x1="11" y1="6.5" x2="-5" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="6.5" x2="-5" y2="7.4" width="0.127" layer="51"/>
+<wire x1="-5" y1="7.4" x2="-5" y2="9.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="9.5" x2="-5" y2="10.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="10.5" x2="23" y2="10.5" width="0.127" layer="51"/>
+<wire x1="23" y1="10.5" x2="23" y2="6.5" width="0.127" layer="51"/>
+<wire x1="13" y1="6.5" x2="13" y2="0" width="0.127" layer="51"/>
+<wire x1="11" y1="6.5" x2="11" y2="0" width="0.127" layer="51"/>
+<wire x1="-5" y1="7.4" x2="-11" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="-5" y1="9.5" x2="-13" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="12" y1="-7" x2="20" y2="-7" width="0.127" layer="51"/>
+<wire x1="20" y1="-7" x2="20" y2="6.5" width="0.127" layer="51"/>
+<wire x1="12" y1="-7" x2="12" y2="-4.9" width="0.127" layer="51"/>
+<wire x1="-12" y1="7" x2="-20" y2="7" width="0.127" layer="51"/>
+<wire x1="-20" y1="7" x2="-20" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-12" y1="7" x2="-12" y2="4.9" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="U2">
@@ -1392,10 +1459,19 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="JST_2_FEMALE">
+<device name="-RA" package="JST_2_FEMALE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BATTERY" package="TP_LIPO_160MAH">
+<connects>
+<connect gate="G$1" pin="1" pad="V-"/>
+<connect gate="G$1" pin="2" pad="V+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1446,6 +1522,29 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOTOR_HOUSING">
+<gates>
+<gate name="RIGHT" symbol="M04" x="5.08" y="5.08"/>
+<gate name="LEFT" symbol="M04" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="MOTOR_HOUSING">
+<connects>
+<connect gate="LEFT" pin="1" pad="1"/>
+<connect gate="LEFT" pin="2" pad="2"/>
+<connect gate="LEFT" pin="3" pad="3"/>
+<connect gate="LEFT" pin="4" pad="4"/>
+<connect gate="RIGHT" pin="1" pad="5"/>
+<connect gate="RIGHT" pin="2" pad="6"/>
+<connect gate="RIGHT" pin="3" pad="7"/>
+<connect gate="RIGHT" pin="4" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
