@@ -3,5 +3,7 @@
 *.b#*
 *.pdf
 *.pro
+*.zip
 motor/housing
-motor/datasheets
+*/datasheets
+*/board/gerb
