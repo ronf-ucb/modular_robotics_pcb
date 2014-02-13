@@ -32,10 +32,10 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -44,11 +44,11 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -56,8 +56,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -120,6 +120,29 @@
 <wire x1="53.34" y1="0" x2="53.34" y2="76.2" width="0" layer="20"/>
 <wire x1="53.34" y1="76.2" x2="0" y2="76.2" width="0" layer="20"/>
 <wire x1="0" y1="76.2" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="9.525" y1="27.305" x2="12.065" y2="27.305" width="0.4064" layer="21"/>
+<wire x1="6.604" y1="28.0924" x2="7.0358" y2="28.5242" width="0.4064" layer="21"/>
+<wire x1="4.191" y1="32.4358" x2="4.191" y2="31.9786" width="0.4064" layer="21"/>
+<wire x1="4.191" y1="31.9786" x2="4.4704" y2="31.6992" width="0.4064" layer="21"/>
+<wire x1="4.1148" y1="31.877" x2="4.1148" y2="30.9118" width="0.4064" layer="21"/>
+<wire x1="4.1148" y1="30.9118" x2="4.445" y2="30.5816" width="0.4064" layer="21"/>
+<wire x1="4.2418" y1="27.9146" x2="4.2418" y2="28.9814" width="0.4064" layer="21"/>
+<wire x1="4.2418" y1="28.9814" x2="4.4704" y2="29.21" width="0.4064" layer="21"/>
+<wire x1="45.0596" y1="48.3108" x2="45.0596" y2="48.9204" width="0.4064" layer="21"/>
+<wire x1="45.0596" y1="48.9204" x2="44.4754" y2="49.5046" width="0.4064" layer="21"/>
+<wire x1="45.085" y1="48.2092" x2="45.085" y2="47.5996" width="0.4064" layer="21"/>
+<wire x1="45.085" y1="47.5996" x2="44.4246" y2="46.9392" width="0.4064" layer="21"/>
+<wire x1="19.304" y1="32.512" x2="19.812" y2="32.512" width="0.4064" layer="21"/>
+<wire x1="19.812" y1="32.512" x2="20.2946" y2="32.9946" width="0.4064" layer="21"/>
+<wire x1="19.05" y1="39.37" x2="19.05" y2="38.8874" width="0.4064" layer="21"/>
+<wire x1="19.05" y1="38.8874" x2="19.8374" y2="38.1" width="0.4064" layer="21"/>
+<text x="23.3172" y="42.545" size="1.016" layer="21" font="vector" ratio="20" rot="R90">A1</text>
+<wire x1="21.59" y1="42.8498" x2="21.59" y2="40.64" width="0.4064" layer="21"/>
+<text x="26.5938" y="43.2816" size="1.016" layer="21" font="vector" ratio="20" rot="R180">A2</text>
+<text x="30.9626" y="42.418" size="1.016" layer="21" font="vector" ratio="20" rot="R90">B1</text>
+<wire x1="32.1818" y1="30.9626" x2="32.1818" y2="31.9532" width="0.4064" layer="21"/>
+<wire x1="32.1818" y1="31.9532" x2="29.4132" y2="34.7218" width="0.4064" layer="21"/>
+<text x="29.083" y="41.4528" size="1.016" layer="21" font="vector" ratio="20" rot="R180">B2</text>
 </plain>
 <libraries>
 <library name="modular_robotics">
@@ -857,139 +880,400 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="modular_robotics" package="MLPQ-UT8" value="SC560C" x="9.525" y="31.115"/>
-<element name="U$2" library="modular_robotics" package="SOT23-5" value="MCP73831T" x="12.7" y="45.72" rot="R90"/>
-<element name="PWR_SWITCH" library="modular_robotics" package="JS202011SCQN" value="JS202011SCQN" x="48.895" y="56.515" rot="R270"/>
-<element name="D1" library="modular_robotics" package="POWERDI123" value="DFLS130L" x="13.97" y="52.07"/>
-<element name="PWR_BATT" library="modular_robotics" package="TP_LIPO_160MAH" value="JST-RCY-FEMALEBATTERY" x="41.275" y="41.91" rot="MR0"/>
-<element name="PWR_BUS" library="modular_robotics" package="JST_2_FEMALE" value="JST-RCY-FEMALE-RA" x="6.35" y="49.53" rot="R90"/>
-<element name="U$11" library="modular_robotics" package="SC70-6" value="INA199A1" x="39.37" y="48.26"/>
-<element name="R1" library="biomimetic" package="0603-RES" value="0R033" x="39.37" y="52.07" rot="R180"/>
-<element name="R2" library="biomimetic" package="0402-RES" value="5k" x="8.255" y="33.655" rot="R180"/>
-<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="10.795" y="33.655" rot="R180"/>
-<element name="R4" library="biomimetic" package="0402-RES" value="20k" x="8.255" y="28.575" rot="R180"/>
-<element name="R5" library="biomimetic" package="0402-RES" value="10k" x="10.795" y="28.575" rot="R180"/>
-<element name="R6" library="biomimetic" package="0402-RES" value="10k" x="37.465" y="19.685" rot="R180"/>
-<element name="R7" library="biomimetic" package="0402-RES" value="2k" x="11.43" y="41.91"/>
-<element name="C1" library="biomimetic" package="0402-CAP" value="2.2uF" x="12.065" y="31.115" rot="R270"/>
-<element name="C2" library="biomimetic" package="0402-CAP" value="100nF" x="40.64" y="45.085" rot="R180"/>
-<element name="C3" library="biomimetic" package="0402-CAP" value="100nF" x="43.18" y="48.26" rot="R180"/>
-<element name="R8" library="biomimetic" package="0402-RES" value="10k" x="43.18" y="49.53" rot="R180"/>
-<element name="R9" library="biomimetic" package="0402-RES" value="10k" x="43.18" y="46.99"/>
-<element name="R10" library="biomimetic" package="0402-RES" value="10k" x="5.715" y="30.48"/>
-<element name="R11" library="biomimetic" package="0402-RES" value="10k" x="5.715" y="31.75" rot="R180"/>
-<element name="C4" library="biomimetic" package="0402-CAP" value="100nF" x="5.715" y="29.21"/>
-<element name="C5" library="biomimetic" package="0402-CAP" value="1uF" x="8.255" y="27.305"/>
-<element name="C6" library="biomimetic" package="0402-CAP" value="1uF" x="8.255" y="34.925"/>
-<element name="C7" library="biomimetic" package="0402-CAP" value="4.7uF" x="11.43" y="49.53"/>
-<element name="C8" library="biomimetic" package="0402-CAP" value="4.7uF" x="13.97" y="49.53" rot="R180"/>
-<element name="IC6" library="biomimetic" package="DFN-16" value="LTC6088" x="26.67" y="35.56"/>
-<element name="C32" library="biomimetic" package="0402-CAP" value="2.2uF" x="24.13" y="49.53" rot="R90">
+<element name="U$1" library="modular_robotics" package="MLPQ-UT8" value="SC560C" x="9.525" y="31.115" smashed="yes">
+<attribute name="NAME" x="7.525" y="32.615" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="16.3134" y="28.3404" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="U$2" library="modular_robotics" package="SOT23-5" value="MCP73831T" x="12.7" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.478" y="43.942" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+<attribute name="VALUE" x="15.367" y="46.228" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="PWR_SWITCH" library="modular_robotics" package="JS202011SCQN" value="JS202011SCQN" x="48.895" y="56.515" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.395" y="62.115" size="1.27" layer="25" font="vector" ratio="20"/>
+</element>
+<element name="D1" library="modular_robotics" package="POWERDI123" value="DFLS130L" x="13.97" y="52.07" smashed="yes">
+<attribute name="NAME" x="11.47" y="53.57" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="10.2" y="53.515" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="PWR_BATT" library="modular_robotics" package="TP_LIPO_160MAH" value="JST-RCY-FEMALEBATTERY" x="41.275" y="41.91" smashed="yes" rot="MR0"/>
+<element name="PWR_BUS" library="modular_robotics" package="JST_2_FEMALE" value="JST-RCY-FEMALE-RA" x="6.35" y="49.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="45.72" size="1.27" layer="25" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="U$11" library="modular_robotics" package="SC70-6" value="INA199A1" x="39.37" y="48.26" smashed="yes">
+<attribute name="NAME" x="37.87" y="49.71" size="1.27" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="33.425" y="49.655" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="R1" library="biomimetic" package="0603-RES" value="0R033" x="39.37" y="52.07" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.9194" y="51.181" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="41.5798" y="54.2036" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R2" library="biomimetic" package="0402-RES" value="5k" x="8.255" y="33.655" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.144" y="32.9565" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="7.3295" y="34.363" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="10.795" y="33.655" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.684" y="32.9565" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="13.6795" y="35.633" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R4" library="biomimetic" package="0402-RES" value="20k" x="8.255" y="28.575" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.144" y="27.8765" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="5.8198" y="27.9797" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="R5" library="biomimetic" package="0402-RES" value="10k" x="10.795" y="28.575" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.684" y="27.8765" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="12.2031" y="28.1718" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="R6" library="biomimetic" package="0402-RES" value="10k" x="37.465" y="19.685" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.354" y="18.9865" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="41.1877" y="19.8342" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R7" library="biomimetic" package="0402-RES" value="2k" x="11.43" y="41.91" smashed="yes">
+<attribute name="NAME" x="10.541" y="42.6085" size="0.6096" layer="25" font="vector" ratio="24"/>
+<attribute name="VALUE" x="11.0855" y="39.932" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C1" library="biomimetic" package="0402-CAP" value="2.2uF" x="12.065" y="31.115" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="10V" x="12.065" y="31.115" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="12.7635" y="32.004" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
+<attribute name="VALUE" x="12.9667" y="31.7246" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C2" library="biomimetic" package="0402-CAP" value="100nF" x="40.64" y="45.085" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="40.64" y="45.085" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="41.529" y="44.3865" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+</element>
+<element name="C3" library="biomimetic" package="0402-CAP" value="100nF" x="43.18" y="48.26" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="43.18" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.069" y="47.5615" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="40.9448" y="51.7779" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="R8" library="biomimetic" package="0402-RES" value="10k" x="43.18" y="49.53" smashed="yes" rot="R180">
+<attribute name="NAME" x="44.069" y="48.8315" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="45.2914" y="49.5697" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="R9" library="biomimetic" package="0402-RES" value="10k" x="43.18" y="46.99" smashed="yes">
+<attribute name="NAME" x="42.291" y="47.6885" size="0.6096" layer="25" font="vector" ratio="24"/>
+</element>
+<element name="R10" library="biomimetic" package="0402-RES" value="10k" x="5.715" y="30.48" smashed="yes">
+<attribute name="NAME" x="4.826" y="31.1785" size="0.6096" layer="25" font="vector" ratio="24"/>
+</element>
+<element name="R11" library="biomimetic" package="0402-RES" value="10k" x="5.715" y="31.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.604" y="31.0515" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="4.9752" y="32.5993" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="C4" library="biomimetic" package="0402-CAP" value="100nF" x="5.715" y="29.21" smashed="yes">
+<attribute name="VOLTAGE" value="6.3V" x="5.715" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.826" y="29.9085" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="5.1054" y="23.1267" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="C5" library="biomimetic" package="0402-CAP" value="1uF" x="8.255" y="27.305" smashed="yes">
+<attribute name="VOLTAGE" value="6.3V" x="8.255" y="27.305" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.366" y="28.0035" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="12.4587" y="26.8986" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C6" library="biomimetic" package="0402-CAP" value="1uF" x="8.255" y="34.925" smashed="yes">
+<attribute name="VOLTAGE" value="6.3V" x="8.255" y="34.925" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.366" y="35.6235" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="9.1567" y="36.1696" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C7" library="biomimetic" package="0402-CAP" value="4.7uF" x="11.43" y="49.53" smashed="yes">
+<attribute name="VOLTAGE" value="10V" x="11.43" y="49.53" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.541" y="50.2285" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="10.1854" y="47.8917" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="C8" library="biomimetic" package="0402-CAP" value="4.7uF" x="13.97" y="49.53" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="10V" x="13.97" y="49.53" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="14.859" y="48.8315" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="15.8496" y="51.1683" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="IC6" library="biomimetic" package="DFN-16" value="LTC6088" x="26.67" y="35.56" smashed="yes">
+<attribute name="NAME" x="24.17" y="37.86" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="29.885" y="29.485" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C32" library="biomimetic" package="0402-CAP" value="2.2uF" x="24.13" y="49.53" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="6.3V" x="77.47" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TECHNOLOGY" value="CERAMIC" x="77.47" y="64.77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23.4315" y="48.641" size="0.6096" layer="25" font="vector" ratio="25" rot="R90"/>
+<attribute name="VALUE" x="24.1554" y="51.0667" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="C31" library="biomimetic" package="0402-CAP" value="10nF" x="29.21" y="49.53" rot="R270">
+<element name="C31" library="biomimetic" package="0402-CAP" value="10nF" x="29.21" y="49.53" smashed="yes" rot="R270">
 <attribute name="DIELECTRIC" value="X7R" x="-24.13" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="-24.13" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TECHNOLOGY" value="CERAMIC" x="-24.13" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="29.9085" y="50.419" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
+<attribute name="VALUE" x="28.5496" y="54.3433" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="C24" library="biomimetic" package="0402-CAP" value="0.1uF" x="21.59" y="39.37" rot="R270">
+<element name="C24" library="biomimetic" package="0402-CAP" value="100nF" x="21.59" y="39.37" smashed="yes" rot="R270">
 <attribute name="VOLTAGE" value="10V" x="-27.94" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TECHNOLOGY" value="CERAMIC" x="-27.94" y="-12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="22.2885" y="40.259" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
+<attribute name="VALUE" x="17.5895" y="43.1038" size="1.016" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="C25" library="biomimetic" package="0402-CAP" value="0.1uF" x="31.75" y="39.37" rot="R270">
+<element name="C25" library="biomimetic" package="0402-CAP" value="100nF" x="31.75" y="39.37" smashed="yes" rot="R270">
 <attribute name="VOLTAGE" value="10V" x="-17.78" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TECHNOLOGY" value="CERAMIC" x="-17.78" y="-16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="32.4485" y="40.259" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
 </element>
-<element name="R12" library="biomimetic" package="0402-RES" value="47k" x="20.32" y="39.37" rot="R270">
+<element name="R12" library="biomimetic" package="0402-RES" value="47k" x="20.32" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-25.4" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.0185" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+<attribute name="VALUE" x="19.9104" y="40.1685" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R13" library="biomimetic" package="0402-RES" value="47k" x="24.13" y="39.37" rot="R270">
+<element name="R13" library="biomimetic" package="0402-RES" value="47k" x="24.13" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-21.59" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="24.8285" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+<attribute name="VALUE" x="23.3648" y="38.9239" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R14" library="biomimetic" package="0402-RES" value="15k" x="21.59" y="36.83" rot="R270">
+<element name="R14" library="biomimetic" package="0402-RES" value="15k" x="21.59" y="36.83" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-24.13" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="22.2885" y="37.719" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+<attribute name="VALUE" x="22.3552" y="38.4699" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="R15" library="biomimetic" package="0402-RES" value="15k" x="25.4" y="39.37" rot="R270">
+<element name="R15" library="biomimetic" package="0402-RES" value="15k" x="25.4" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-20.32" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="26.0985" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+<attribute name="VALUE" x="26.6843" y="41.3988" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="R16" library="biomimetic" package="0402-RES" value="47k" x="33.02" y="39.37" rot="R270">
+<element name="R16" library="biomimetic" package="0402-RES" value="47k" x="33.02" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-12.7" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="33.7185" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
 </element>
-<element name="R17" library="biomimetic" package="0402-RES" value="47k" x="29.21" y="39.37" rot="R270">
+<element name="R17" library="biomimetic" package="0402-RES" value="47k" x="29.21" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-16.51" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="29.9085" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
 </element>
-<element name="R18" library="biomimetic" package="0402-RES" value="15k" x="31.75" y="36.83" rot="R270">
+<element name="R18" library="biomimetic" package="0402-RES" value="15k" x="31.75" y="36.83" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-13.97" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="32.4485" y="37.719" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
 </element>
-<element name="R19" library="biomimetic" package="0402-RES" value="15k" x="27.94" y="39.37" rot="R270">
+<element name="R19" library="biomimetic" package="0402-RES" value="15k" x="27.94" y="39.37" smashed="yes" rot="R270">
 <attribute name="TOLERANCE" value="1%" x="-17.78" y="7.62" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.6385" y="40.259" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
 </element>
-<element name="R20" library="biomimetic" package="0402-RES" value="1k" x="22.86" y="31.75" rot="R180">
+<element name="R20" library="biomimetic" package="0402-RES" value="1k" x="22.86" y="31.75" smashed="yes" rot="R180">
 <attribute name="TOLERANCE" value="1%" x="-11.43" y="77.47" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="23.749" y="31.0515" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="23.6363" y="30.934" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="R22" library="biomimetic" package="0402-RES" value="47k" x="21.59" y="34.29" rot="R90">
+<element name="R22" library="biomimetic" package="0402-RES" value="47k" x="21.59" y="34.29" smashed="yes" rot="R90">
 <attribute name="TOLERANCE" value="1%" x="67.31" y="71.12" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="20.8915" y="33.401" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="23.3394" y="32.8787" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="R24" library="biomimetic" package="0402-RES" value="1k" x="30.48" y="31.75">
+<element name="R24" library="biomimetic" package="0402-RES" value="1k" x="30.48" y="31.75" smashed="yes">
 <attribute name="TOLERANCE" value="1%" x="69.85" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.591" y="32.4485" size="0.6096" layer="25" font="vector" ratio="24"/>
 </element>
-<element name="R26" library="biomimetic" package="0402-RES" value="47k" x="31.75" y="34.29" rot="R90">
+<element name="R26" library="biomimetic" package="0402-RES" value="47k" x="31.75" y="34.29" smashed="yes" rot="R90">
 <attribute name="TOLERANCE" value="1%" x="77.47" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.0515" y="33.401" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
 </element>
-<element name="C29" library="biomimetic" package="0402-CAP" value="100nF" x="26.67" y="31.75"/>
-<element name="IC7" library="biomimetic" package="S-PWQFN-N16" value="DRV8833RTY" x="26.67" y="45.72" rot="R90"/>
-<element name="C30" library="biomimetic" package="0603-CAP" value="22uF" x="26.67" y="49.53" rot="R180"/>
-<element name="C41" library="biomimetic" package="0402-CAP" value="2.2nF" x="19.05" y="36.83" rot="R270"/>
-<element name="R30" library="biomimetic" package="0402-RES" value="1k" x="20.32" y="36.83" rot="R90"/>
-<element name="C42" library="biomimetic" package="0402-CAP" value="2.2nF" x="34.29" y="36.83" rot="R270"/>
-<element name="R31" library="biomimetic" package="0402-RES" value="1k" x="33.02" y="36.83" rot="R90"/>
-<element name="C43" library="biomimetic" package="0402-CAP" value="2.2nF" x="19.05" y="34.29" rot="R90"/>
-<element name="R32" library="biomimetic" package="0402-RES" value="1k" x="20.32" y="34.29" rot="R270"/>
-<element name="C44" library="biomimetic" package="0402-CAP" value="2.2nF" x="34.29" y="34.29" rot="R90"/>
-<element name="R33" library="biomimetic" package="0402-RES" value="1k" x="33.02" y="34.29" rot="R270"/>
-<element name="R28" library="biomimetic" package="0402-RES" value="1k" x="35.56" y="41.275" rot="R90"/>
-<element name="R29" library="biomimetic" package="0402-RES" value="10k" x="36.195" y="39.37" rot="R180"/>
-<element name="C9" library="biomimetic" package="0402-CAP" value="100nF" x="36.195" y="38.1"/>
-<element name="R21" library="biomimetic" package="0603-RES" value="0R033" x="24.13" y="45.085" rot="MR90"/>
-<element name="R23" library="biomimetic" package="0603-RES" value="0R033" x="29.21" y="45.085" rot="MR90"/>
-<element name="U$20" library="modular_robotics" package="QFN-24" value="MKL05Z32VFK4" x="33.02" y="20.32" rot="R135"/>
-<element name="C10" library="biomimetic" package="0402-CAP" value="100nF" x="37.465" y="17.78" rot="R180"/>
-<element name="STATUS_LED" library="biomimetic" package="LED-0603" value="RED" x="37.465" y="13.97" rot="R90"/>
-<element name="R25" library="biomimetic" package="0402-RES" value="470R" x="38.1" y="15.875" rot="R90"/>
-<element name="R27" library="biomimetic" package="0402-RES" value="4.7k" x="35.56" y="64.77" rot="R90"/>
-<element name="R34" library="biomimetic" package="0402-RES" value="4.7k" x="34.29" y="64.77" rot="R90"/>
-<element name="PWR_LED1" library="biomimetic" package="LED-0603" value="GREEN" x="10.795" y="26.035" rot="R270"/>
-<element name="R36" library="biomimetic" package="0402-RES" value="470R" x="8.255" y="26.035"/>
-<element name="SPI" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="38.1" rot="R270"/>
-<element name="R35" library="biomimetic" package="0402-RES" value="4.7k" x="37.465" y="20.955"/>
-<element name="R37" library="biomimetic" package="0402-RES" value="4.7k" x="6.985" y="19.685"/>
-<element name="R38" library="biomimetic" package="0402-RES" value="4.7k" x="6.985" y="20.955"/>
-<element name="C11" library="biomimetic" package="0402-CAP" value="100nF" x="38.1" y="45.085" rot="R180"/>
+<element name="C29" library="biomimetic" package="0402-CAP" value="100nF" x="26.67" y="31.75" smashed="yes">
+<attribute name="VOLTAGE" value="6.3V" x="26.67" y="31.75" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="25.781" y="32.4485" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="24.4475" y="29.8704" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="IC7" library="biomimetic" package="S-PWQFN-N16" value="DRV8833RTY" x="26.67" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.003" y="43.688" size="0.6096" layer="25" font="vector" ratio="25" rot="R90"/>
+<attribute name="VALUE" x="31.877" y="45.593" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="C30" library="biomimetic" package="0603-CAP" value="22uF" x="26.67" y="49.53" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="10V" x="26.67" y="49.53" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.1178" y="48.641" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="26.4414" y="54.2544" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="C41" library="biomimetic" package="0402-CAP" value="2.2nF" x="19.05" y="36.83" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="6.3V" x="19.05" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.7485" y="37.719" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
+</element>
+<element name="R30" library="biomimetic" package="0402-RES" value="1k" x="20.32" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.6215" y="35.941" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="18.488" y="39.6605" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="C42" library="biomimetic" package="0402-CAP" value="2.2nF" x="34.29" y="36.83" smashed="yes" rot="R270">
+<attribute name="NAME" x="34.9885" y="37.719" size="0.6096" layer="25" font="vector" ratio="25" rot="R270"/>
+</element>
+<element name="R31" library="biomimetic" package="0402-RES" value="1k" x="33.02" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="32.3215" y="35.941" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+</element>
+<element name="C43" library="biomimetic" package="0402-CAP" value="2.2nF" x="19.05" y="34.29" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="6.3V" x="19.05" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="18.3515" y="33.401" size="0.6096" layer="25" font="vector" ratio="25" rot="R90"/>
+<attribute name="VALUE" x="18.161" y="33.8455" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="R32" library="biomimetic" package="0402-RES" value="1k" x="20.32" y="34.29" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.0185" y="35.179" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+<attribute name="VALUE" x="18.4182" y="32.3739" size="1.016" layer="27" font="vector" ratio="20" rot="R270"/>
+</element>
+<element name="C44" library="biomimetic" package="0402-CAP" value="2.2nF" x="34.29" y="34.29" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="6.3V" x="34.29" y="34.29" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="33.5915" y="33.401" size="0.6096" layer="25" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R33" library="biomimetic" package="0402-RES" value="1k" x="33.02" y="34.29" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.7185" y="35.179" size="0.6096" layer="25" font="vector" ratio="24" rot="R270"/>
+</element>
+<element name="R28" library="biomimetic" package="0402-RES" value="1k" x="35.56" y="41.275" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.8615" y="40.386" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="37.3094" y="40.9051" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="R29" library="biomimetic" package="0402-RES" value="10k" x="36.195" y="39.37" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.084" y="38.6715" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="40.0955" y="39.8494" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="C9" library="biomimetic" package="0402-CAP" value="100nF" x="36.195" y="38.1" smashed="yes">
+<attribute name="VOLTAGE" value="6.3V" x="36.195" y="38.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="35.306" y="38.7985" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="37.4523" y="37.6428" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="R21" library="biomimetic" package="0603-RES" value="0R033" x="24.13" y="45.085" smashed="yes" rot="MR90">
+<attribute name="NAME" x="25.019" y="43.5356" size="0.6096" layer="26" font="vector" ratio="25" rot="MR90"/>
+<attribute name="VALUE" x="28.8544" y="47.2694" size="1.016" layer="28" font="vector" ratio="20" rot="MR0"/>
+</element>
+<element name="R23" library="biomimetic" package="0603-RES" value="0R033" x="29.21" y="45.085" smashed="yes" rot="MR90">
+<attribute name="NAME" x="30.099" y="43.5356" size="0.6096" layer="26" font="vector" ratio="25" rot="MR90"/>
+</element>
+<element name="U$20" library="modular_robotics" package="QFN-24" value="MKL05Z32VFK4" x="33.02" y="20.32" smashed="yes" rot="R135">
+<attribute name="NAME" x="32.312890625" y="16.784465625" size="1.27" layer="25" font="vector" ratio="20" rot="R135"/>
+<attribute name="VALUE" x="20.593071875" y="15.8015" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C10" library="biomimetic" package="0402-CAP" value="100nF" x="37.465" y="17.78" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="37.465" y="17.78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.354" y="17.0815" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="44.6151" y="18.2372" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="STATUS_LED" library="biomimetic" package="LED-0603" value="RED" x="37.465" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.354" y="13.2715" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="41.656" y="14.0335" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R25" library="biomimetic" package="0402-RES" value="470R" x="38.1" y="15.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.4015" y="14.986" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="42.8895" y="16.583" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R27" library="biomimetic" package="0402-RES" value="4.7k" x="35.56" y="64.77" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.8615" y="63.881" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="36.268" y="66.3305" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="R34" library="biomimetic" package="0402-RES" value="4.7k" x="34.29" y="64.77" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.5915" y="63.881" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="34.998" y="66.3305" size="1.016" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="PWR_LED1" library="biomimetic" package="LED-0603" value="GREEN" x="10.795" y="26.035" smashed="yes" rot="R270">
+<attribute name="NAME" x="9.906" y="26.7335" size="0.6096" layer="25" font="vector" ratio="25"/>
+<attribute name="VALUE" x="17.0688" y="26.5303" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R36" library="biomimetic" package="0402-RES" value="470R" x="8.255" y="26.035" smashed="yes">
+<attribute name="NAME" x="7.366" y="26.7335" size="0.6096" layer="25" font="vector" ratio="24"/>
+<attribute name="VALUE" x="8.1391" y="24.2348" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="SPI" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="38.1" smashed="yes" rot="R270">
+<attribute name="NAME" x="49.4538" y="39.4462" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="44.45" y="39.37" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R35" library="biomimetic" package="0402-RES" value="4.7k" x="37.465" y="20.955" smashed="yes">
+<attribute name="NAME" x="36.576" y="21.6535" size="0.6096" layer="25" font="vector" ratio="24"/>
+<attribute name="VALUE" x="36.6887" y="21.8726" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="R37" library="biomimetic" package="0402-RES" value="4.7k" x="6.985" y="19.685" smashed="yes">
+<attribute name="NAME" x="6.096" y="20.3835" size="0.6096" layer="25" font="vector" ratio="24"/>
+<attribute name="VALUE" x="8.5455" y="18.977" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="R38" library="biomimetic" package="0402-RES" value="4.7k" x="6.985" y="20.955" smashed="yes">
+<attribute name="NAME" x="6.096" y="21.6535" size="0.6096" layer="25" font="vector" ratio="24"/>
+<attribute name="VALUE" x="8.5455" y="20.247" size="1.016" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="C11" library="biomimetic" package="0402-CAP" value="100nF" x="38.1" y="45.085" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="38.1" y="45.085" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.989" y="44.3865" size="0.6096" layer="25" font="vector" ratio="25" rot="R180"/>
+<attribute name="VALUE" x="41.7703" y="44.2976" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
 <element name="U$27" library="SparkFun-Boards" package="UNO_R3_SHIELD_NOLABELS" value="ARDUINO_R3_SHIELDNOLABELS" x="53.34" y="59.69" smashed="yes" rot="R180"/>
-<element name="JMP_0" library="modular_robotics" package="1X04_NO_SILK" value="" x="5.715" y="43.815" rot="R270"/>
-<element name="JMP_1" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="42.545" rot="R90"/>
-<element name="JMP_2" library="modular_robotics" package="1X04_NO_SILK" value="" x="10.795" y="3.81" rot="R90"/>
-<element name="JMP_3" library="modular_robotics" package="1X04_NO_SILK" value="" x="8.255" y="11.43" rot="R270"/>
-<element name="JMP_4" library="modular_robotics" package="1X04_NO_SILK" value="" x="30.48" y="3.81" rot="R90"/>
-<element name="JMP_5" library="modular_robotics" package="1X04_NO_SILK" value="" x="27.94" y="11.43" rot="R270"/>
-<element name="JMP_6" library="modular_robotics" package="1X04_NO_SILK" value="" x="41.91" y="3.81" rot="R90"/>
-<element name="JMP_7" library="modular_robotics" package="1X04_NO_SILK" value="" x="39.37" y="11.43" rot="R270"/>
-<element name="JMP_8" library="modular_robotics" package="1X04_NO_SILK" value="" x="16.51" y="3.81" rot="R90"/>
-<element name="JMP_9" library="modular_robotics" package="1X04_NO_SILK" value="" x="13.97" y="11.43" rot="R270"/>
-<element name="JMP_10" library="modular_robotics" package="1X04_NO_SILK" value="" x="36.195" y="3.81" rot="R90"/>
-<element name="JMP_11" library="modular_robotics" package="1X04_NO_SILK" value="" x="33.655" y="11.43" rot="R270"/>
-<element name="JMP_12" library="modular_robotics" package="1X04_NO_SILK" value="" x="22.225" y="3.81" rot="R90"/>
-<element name="JMP_13" library="modular_robotics" package="1X04_NO_SILK" value="" x="19.685" y="11.43" rot="R270"/>
-<element name="JMP_14" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="3.81" rot="R90"/>
-<element name="JMP_15" library="modular_robotics" package="1X04_NO_SILK" value="" x="45.085" y="11.43" rot="R270"/>
-<element name="R39" library="biomimetic" package="0402-RES" value="4.7k" x="36.83" y="15.875" rot="R90"/>
-<element name="JMP_16" library="modular_robotics" package="1X04_NO_SILK" value="" x="5.715" y="11.43" rot="R270"/>
-<element name="JMP_17" library="modular_robotics" package="1X04_NO_SILK" value="" x="25.4" y="11.43" rot="R270"/>
-<element name="U$30" library="modular_robotics" package="MOTOR_HOUSING" value="MOTOR_HOUSING" x="26.67" y="64.77"/>
-<element name="R40" library="biomimetic" package="0402-RES" value="470R" x="45.085" y="35.56" rot="R180"/>
-<element name="R41" library="biomimetic" package="0402-RES" value="470R" x="45.085" y="33.02" rot="R180"/>
-<element name="R42" library="biomimetic" package="0402-RES" value="480R" x="45.085" y="30.48" rot="R180"/>
+<element name="JMP_0" library="modular_robotics" package="1X04_NO_SILK" value="" x="5.715" y="43.815" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.5438" y="45.1612" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="2.54" y="45.085" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_1" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="42.545" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.7962" y="41.1988" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="50.8" y="41.275" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_2" library="modular_robotics" package="1X04_NO_SILK" value="" x="10.795" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.9662" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="13.97" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_3" library="modular_robotics" package="1X04_NO_SILK" value="" x="8.255" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.0838" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="5.08" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_4" library="modular_robotics" package="1X04_NO_SILK" value="" x="30.48" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.6512" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="33.655" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_5" library="modular_robotics" package="1X04_NO_SILK" value="" x="27.94" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="29.7688" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="24.765" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_6" library="modular_robotics" package="1X04_NO_SILK" value="" x="41.91" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.0812" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="45.085" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_7" library="modular_robotics" package="1X04_NO_SILK" value="" x="39.37" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="41.1988" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="36.195" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_8" library="modular_robotics" package="1X04_NO_SILK" value="" x="16.51" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.6812" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="19.685" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_9" library="modular_robotics" package="1X04_NO_SILK" value="" x="13.97" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.7988" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="10.795" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_10" library="modular_robotics" package="1X04_NO_SILK" value="" x="36.195" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.3662" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="39.37" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_11" library="modular_robotics" package="1X04_NO_SILK" value="" x="33.655" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="35.4838" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="30.48" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_12" library="modular_robotics" package="1X04_NO_SILK" value="" x="22.225" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.3962" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="25.4" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_13" library="modular_robotics" package="1X04_NO_SILK" value="" x="19.685" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.5138" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="16.51" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_14" library="modular_robotics" package="1X04_NO_SILK" value="" x="47.625" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.7962" y="2.4638" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="50.8" y="2.54" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JMP_15" library="modular_robotics" package="1X04_NO_SILK" value="" x="45.085" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="46.9138" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="41.91" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="R39" library="biomimetic" package="0402-RES" value="4.7k" x="36.83" y="15.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.1315" y="14.986" size="0.6096" layer="25" font="vector" ratio="24" rot="R90"/>
+<attribute name="VALUE" x="35.9045" y="15.948" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="JMP_16" library="modular_robotics" package="1X04_NO_SILK" value="" x="5.715" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.5438" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="2.54" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JMP_17" library="modular_robotics" package="1X04_NO_SILK" value="" x="25.4" y="11.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.2288" y="12.7762" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="22.225" y="12.7" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="U$30" library="modular_robotics" package="MOTOR_HOUSING" value="MOTOR_HOUSING" x="26.67" y="64.77" smashed="yes"/>
+<element name="R40" library="biomimetic" package="0402-RES" value="470R" x="45.085" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.974" y="34.8615" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="43.5245" y="36.268" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R41" library="biomimetic" package="0402-RES" value="470R" x="45.085" y="33.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.974" y="32.3215" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="43.5245" y="33.728" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R42" library="biomimetic" package="0402-RES" value="480R" x="45.085" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.974" y="29.7815" size="0.6096" layer="25" font="vector" ratio="24" rot="R180"/>
+<attribute name="VALUE" x="43.5245" y="31.188" size="1.016" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2263,6 +2547,56 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
+<approved hash="18,29,56b38566772ed039"/>
+<approved hash="18,29,99a2d747b27726f3"/>
+<approved hash="18,29,5cfe065eecc4b79d"/>
+<approved hash="18,29,455d10068503d0bc"/>
+<approved hash="18,29,f106c98f114827fd"/>
+<approved hash="18,29,1cff2e68262a97dd"/>
+<approved hash="18,29,aed1d5cd9e896c80"/>
+<approved hash="18,29,4ecf1347df3124ea"/>
+<approved hash="18,29,4ecf1347df3124ea"/>
+<approved hash="18,29,8056278e90baba6c"/>
+<approved hash="18,29,f68e41598d74ebad"/>
+<approved hash="18,29,ed2292225e146c2c"/>
+<approved hash="18,29,8a77cdb96ab86434"/>
+<approved hash="18,29,c856c5a498a39e3c"/>
+<approved hash="18,29,47f85b7a8bbc1d02"/>
+<approved hash="18,29,2af0d41075994892"/>
+<approved hash="18,29,4d36fd8d75fb6c02"/>
+<approved hash="18,29,1b69678db1474de6"/>
+<approved hash="18,29,ab5bd0e14ed9b593"/>
+<approved hash="18,29,9b8dad309187f90d"/>
+<approved hash="18,29,31b8e888aba307b0"/>
+<approved hash="18,29,67a2fedf1428f282"/>
+<approved hash="18,29,fb4214ea00139060"/>
+<approved hash="18,29,0b3b85ff19a3ef0f"/>
+<approved hash="18,29,6d9ddb1bc8becf9b"/>
+<approved hash="18,29,72d79a928f146033"/>
+<approved hash="18,29,181a9a23e7999fad"/>
+<approved hash="18,29,ed669fa69f12edd2"/>
+<approved hash="18,29,e7d003652c28718e"/>
+<approved hash="18,29,efdcbac2695840ea"/>
+<approved hash="18,29,293fed4b43cf8eb3"/>
+<approved hash="18,29,029a3c535068260f"/>
+<approved hash="18,29,83927f0903a97131"/>
+<approved hash="18,29,a8524612ed369361"/>
+<approved hash="18,29,023c7cb50ec91567"/>
+<approved hash="18,29,e0b2acd418a038ed"/>
+<approved hash="18,29,a589f0ad49b26489"/>
+<approved hash="18,29,a5cf3c68012bddd3"/>
+<approved hash="18,29,63626338a3a49f7e"/>
+<approved hash="18,29,52ac19a8192a1290"/>
+<approved hash="18,29,19f3676ac6391391"/>
+<approved hash="18,29,258341c205a96646"/>
+<approved hash="18,29,1e42da0315e3c8fb"/>
+<approved hash="18,29,eeb45b1bf087a0e2"/>
+<approved hash="18,29,7479570957507420"/>
+<approved hash="18,29,0ee87dec011383aa"/>
+<approved hash="18,29,662919dd17c0cd6c"/>
+<approved hash="18,29,04aa8991dfc80279"/>
+<approved hash="18,30,1e4e267b74e346d1"/>
+<approved hash="18,30,2cb5149da218142a"/>
 <approved hash="19,1,14bc028200161628"/>
 <approved hash="19,1,00e9838a8541084c"/>
 <approved hash="19,1,41e7828a83514e52"/>

@@ -2,5 +2,6 @@
 *.s#*
 *.b#*
 *.pdf
+*.pro
 motor/housing
 motor/datasheets

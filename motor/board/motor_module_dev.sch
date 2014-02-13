@@ -3204,16 +3204,28 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R6" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R7" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="2k"/>
-<part name="C1" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
-<part name="C2" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
-<part name="C3" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C1" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2uF">
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C2" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
+<part name="C3" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R8" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R9" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R10" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R11" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
-<part name="C4" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
-<part name="C5" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="C6" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF"/>
+<part name="C4" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
+<part name="C5" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
+<part name="C6" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="U$5" library="modular_robotics" deviceset="V_BATT" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="modular_robotics" deviceset="V_BUS" device=""/>
@@ -3228,8 +3240,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$15" library="modular_robotics" deviceset="V_BUS" device=""/>
-<part name="C7" library="biomimetic" deviceset="CAP" device="0402-CAP" value="4.7uF"/>
-<part name="C8" library="biomimetic" deviceset="CAP" device="0402-CAP" value="4.7uF"/>
+<part name="C7" library="biomimetic" deviceset="CAP" device="0402-CAP" value="4.7uF">
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C8" library="biomimetic" deviceset="CAP" device="0402-CAP" value="4.7uF">
+<attribute name="VOLTAGE" value="10V"/>
+</part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME3" library="biomimetic" deviceset="FRAME-LETTER" device="">
 <attribute name="SHEET_NAME" value="Motor"/>
@@ -3244,11 +3260,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="TECHNOLOGY" value="CERAMIC"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="C24" library="biomimetic" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<part name="C24" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="TECHNOLOGY" value="CERAMIC"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="C25" library="biomimetic" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<part name="C25" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="TECHNOLOGY" value="CERAMIC"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
@@ -3290,21 +3306,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="TOLERANCE" value="1%"/>
 </part>
 <part name="GND44" library="biomimetic" deviceset="GND" device=""/>
-<part name="C29" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C29" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="IC7" library="biomimetic" deviceset="DRV8833" device="RTY"/>
 <part name="GND8" library="biomimetic" deviceset="GND" device=""/>
 <part name="U$17" library="biomimetic" deviceset="V_BATT" device=""/>
 <part name="U$18" library="biomimetic" deviceset="V_BATT" device=""/>
 <part name="GND18" library="biomimetic" deviceset="GND" device=""/>
 <part name="U$21" library="biomimetic" deviceset="V_BATT" device=""/>
-<part name="C30" library="biomimetic" deviceset="CAP" device="0603-CAP" value="22uF"/>
-<part name="C41" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF"/>
+<part name="C30" library="biomimetic" deviceset="CAP" device="0603-CAP" value="22uF">
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="C41" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R30" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="C42" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF"/>
 <part name="R31" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
-<part name="C43" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF"/>
+<part name="C43" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R32" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
-<part name="C44" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF"/>
+<part name="C44" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R33" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="GND20" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND26" library="biomimetic" deviceset="GND" device=""/>
@@ -3315,14 +3341,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R28" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="R29" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C9" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="GND10" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND11" library="biomimetic" deviceset="GND" device=""/>
 <part name="R21" library="biomimetic" deviceset="RESISTOR" device="0603-RES" value="0R033"/>
 <part name="R23" library="biomimetic" deviceset="RESISTOR" device="0603-RES" value="0R033"/>
 <part name="FRAME2" library="biomimetic" deviceset="FRAME-LETTER" device=""/>
 <part name="U$20" library="modular_robotics" deviceset="MKL05Z32VFK4" device=""/>
-<part name="C10" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C10" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="U$22" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="STATUS_LED" library="biomimetic" deviceset="LED" device="0603" value="RED"/>
@@ -3341,7 +3371,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R38" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
 <part name="U$3" library="modular_robotics" deviceset="V_BATT" device=""/>
 <part name="U$26" library="modular_robotics" deviceset="V_BATT" device=""/>
-<part name="C11" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C11" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="U$16" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="U$27" library="SparkFun-Boards" deviceset="ARDUINO_R3_SHIELD" device="NOLABELS" value="ARDUINO_R3_SHIELDNOLABELS"/>
@@ -3408,16 +3440,28 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R5" gate="G$1" x="213.36" y="88.9" rot="R90"/>
 <instance part="R6" gate="G$1" x="58.42" y="88.9" rot="R180"/>
 <instance part="R7" gate="G$1" x="48.26" y="78.74" rot="R90"/>
-<instance part="C1" gate="G$1" x="182.88" y="93.98"/>
-<instance part="C2" gate="G$1" x="104.14" y="63.5"/>
-<instance part="C3" gate="G$1" x="106.68" y="152.4"/>
+<instance part="C1" gate="G$1" x="182.88" y="93.98">
+<attribute name="VOLTAGE" x="182.88" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="104.14" y="63.5">
+<attribute name="VOLTAGE" x="104.14" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="106.68" y="152.4">
+<attribute name="VOLTAGE" x="106.68" y="152.4" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R8" gate="G$1" x="96.52" y="162.56" rot="R90"/>
 <instance part="R9" gate="G$1" x="96.52" y="152.4" rot="R90"/>
 <instance part="R10" gate="G$1" x="152.4" y="162.56" rot="R90"/>
 <instance part="R11" gate="G$1" x="152.4" y="152.4" rot="R90"/>
-<instance part="C4" gate="G$1" x="162.56" y="152.4"/>
-<instance part="C5" gate="G$1" x="220.98" y="93.98"/>
-<instance part="C6" gate="G$1" x="233.68" y="55.88"/>
+<instance part="C4" gate="G$1" x="162.56" y="152.4">
+<attribute name="VOLTAGE" x="162.56" y="152.4" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="220.98" y="93.98">
+<attribute name="VOLTAGE" x="220.98" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="233.68" y="55.88">
+<attribute name="VOLTAGE" x="233.68" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$5" gate="G$1" x="96.52" y="88.9" rot="R90"/>
 <instance part="GND2" gate="1" x="99.06" y="50.8"/>
 <instance part="U$4" gate="G$1" x="152.4" y="167.64"/>
@@ -3432,18 +3476,26 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND5" gate="1" x="213.36" y="81.28"/>
 <instance part="GND6" gate="1" x="226.06" y="43.18"/>
 <instance part="U$15" gate="G$1" x="190.5" y="58.42"/>
-<instance part="C7" gate="G$1" x="17.78" y="88.9"/>
-<instance part="C8" gate="G$1" x="53.34" y="99.06"/>
+<instance part="C7" gate="G$1" x="17.78" y="88.9">
+<attribute name="VOLTAGE" x="17.78" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="53.34" y="99.06">
+<attribute name="VOLTAGE" x="53.34" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND7" gate="1" x="53.34" y="93.98"/>
 <instance part="R28" gate="G$1" x="124.46" y="91.44" rot="R180"/>
 <instance part="R29" gate="G$1" x="132.08" y="86.36" rot="R90"/>
 <instance part="GND9" gate="1" x="132.08" y="78.74"/>
-<instance part="C9" gate="G$1" x="139.7" y="86.36"/>
+<instance part="C9" gate="G$1" x="139.7" y="86.36">
+<attribute name="VOLTAGE" x="139.7" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="PWR_LED1" gate="G$1" x="231.14" y="88.9"/>
 <instance part="R36" gate="G$1" x="231.14" y="99.06" rot="R270"/>
 <instance part="U$3" gate="G$1" x="124.46" y="167.64"/>
 <instance part="U$26" gate="G$1" x="48.26" y="101.6"/>
-<instance part="C11" gate="G$1" x="106.68" y="101.6" rot="R90"/>
+<instance part="C11" gate="G$1" x="106.68" y="101.6" rot="R90">
+<attribute name="VOLTAGE" x="106.68" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND14" gate="1" x="101.6" y="101.6" rot="R270"/>
 </instances>
 <busses>
@@ -3856,7 +3908,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="TOLERANCE" x="157.48" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND44" gate="1" x="226.06" y="152.4"/>
-<instance part="C29" gate="G$1" x="231.14" y="165.1"/>
+<instance part="C29" gate="G$1" x="231.14" y="165.1">
+<attribute name="VOLTAGE" x="231.14" y="165.1" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="IC7" gate="S" x="40.64" y="147.32"/>
 <instance part="IC7" gate="P_VM" x="25.4" y="91.44" smashed="yes">
 <attribute name="NAME" x="22.86" y="109.22" size="1.778" layer="95"/>
@@ -3874,14 +3928,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="U$21" gate="G$1" x="20.32" y="142.24" smashed="yes">
 <attribute name="VALUE" x="20.32" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="30.48" y="91.44"/>
-<instance part="C41" gate="G$1" x="180.34" y="162.56"/>
+<instance part="C30" gate="G$1" x="30.48" y="91.44">
+<attribute name="VOLTAGE" x="30.48" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C41" gate="G$1" x="180.34" y="162.56">
+<attribute name="VOLTAGE" x="180.34" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R30" gate="G$1" x="172.72" y="167.64"/>
 <instance part="C42" gate="G$1" x="180.34" y="127"/>
 <instance part="R31" gate="G$1" x="172.72" y="132.08"/>
-<instance part="C43" gate="G$1" x="180.34" y="88.9"/>
+<instance part="C43" gate="G$1" x="180.34" y="88.9">
+<attribute name="VOLTAGE" x="180.34" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R32" gate="G$1" x="172.72" y="93.98"/>
-<instance part="C44" gate="G$1" x="180.34" y="53.34"/>
+<instance part="C44" gate="G$1" x="180.34" y="53.34">
+<attribute name="VOLTAGE" x="180.34" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R33" gate="G$1" x="172.72" y="58.42"/>
 <instance part="GND20" gate="1" x="180.34" y="81.28"/>
 <instance part="GND26" gate="1" x="180.34" y="154.94"/>
@@ -4316,7 +4378,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="FRAME2" gate="G$2" x="147.32" y="0"/>
 <instance part="U$20" gate="G$1" x="55.88" y="99.06"/>
 <instance part="U$20" gate="G$2" x="12.7" y="147.32"/>
-<instance part="C10" gate="G$1" x="17.78" y="147.32"/>
+<instance part="C10" gate="G$1" x="17.78" y="147.32">
+<attribute name="VOLTAGE" x="17.78" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$22" gate="G$1" x="12.7" y="157.48"/>
 <instance part="GND12" gate="1" x="12.7" y="134.62"/>
 <instance part="STATUS_LED" gate="G$1" x="121.92" y="132.08"/>
