@@ -2162,6 +2162,25 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="-20" y1="7" x2="-20" y2="-6.5" width="0.127" layer="51"/>
 <wire x1="-12" y1="7" x2="-12" y2="4.9" width="0.127" layer="51"/>
 </package>
+<package name="INFO">
+<text x="0" y="4" size="0.8128" layer="21" font="vector" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="20">&gt;DATE</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="20">&gt;REVISION</text>
+<text x="0" y="1" size="0.8128" layer="21" font="vector" ratio="20">&gt;DESIGN</text>
+</package>
+<package name="1X4_3MM_BOARDEDGE_VERT_VIA">
+<pad name="1" x="-4.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2" x="-1.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3" x="1.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="4" x="4.5" y="0" drill="0.8" diameter="1.6"/>
+</package>
+<package name="1X4_3MM_BOARDEDGE_VERT">
+<pad name="1" x="-4.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="2" x="-1.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="3" x="1.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="4" x="4.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PWR+G">
@@ -2352,6 +2371,18 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="2" x="5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="INFO">
+<text x="0" y="12.7" size="1.778" layer="94" ratio="20">Board Info</text>
+<text x="0" y="10.16" size="1.778" layer="94" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="7.62" size="1.778" layer="94" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="5.08" size="1.778" layer="94" ratio="20">&gt;DATE</text>
+<text x="0" y="2.54" size="1.778" layer="94" ratio="20">&gt;DESIGN</text>
+<text x="0" y="0" size="1.778" layer="94" ratio="20">&gt;REVISION</text>
+<wire x1="-2.54" y1="-2.54" x2="43.18" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-2.54" x2="43.18" y2="15.24" width="0.254" layer="94"/>
+<wire x1="43.18" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2771,7 +2802,29 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="1X04_2MM_BOARDEDGE">
+<device name="BOARDEDGE" package="1X04_2MM_BOARDEDGE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOARDEDGE_VERT_VIA" package="1X4_3MM_BOARDEDGE_VERT_VIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOARDEDGE_VERT" package="1X4_3MM_BOARDEDGE_VERT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2801,6 +2854,18 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="RIGHT" pin="3" pad="7"/>
 <connect gate="RIGHT" pin="4" pad="8"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INFO">
+<gates>
+<gate name="G$1" symbol="INFO" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="INFO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3403,6 +3468,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R40" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="470R"/>
 <part name="R41" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="470R"/>
 <part name="R42" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="480R"/>
+<part name="U$31" library="modular_robotics" deviceset="INFO" device="">
+<attribute name="AUTHOR" value="Austin Buchan"/>
+<attribute name="DATE" value="Feb. 2014"/>
+<attribute name="DESIGN" value="Motor Control Dev"/>
+<attribute name="ORGANIZATION" value="UC Berkeley Biomimetic Millisystems Lab"/>
+<attribute name="REVISION" value="r0.0"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3497,6 +3569,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VOLTAGE" x="106.68" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND14" gate="1" x="101.6" y="101.6" rot="R270"/>
+<instance part="U$31" gate="G$1" x="101.6" y="5.08">
+<attribute name="AUTHOR" x="101.6" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="DATE" x="101.6" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="DESIGN" x="101.6" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="ORGANIZATION" x="101.6" y="5.08" size="1.778" layer="96" display="off"/>
+<attribute name="REVISION" x="101.6" y="5.08" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>

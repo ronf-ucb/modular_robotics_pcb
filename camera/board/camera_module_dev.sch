@@ -270,7 +270,6 @@
 <wire x1="34.29" y1="13.97" x2="34.29" y2="17.78" width="0.254" layer="21"/>
 <wire x1="34.29" y1="17.78" x2="33.02" y2="16.51" width="0.254" layer="21"/>
 <wire x1="34.29" y1="17.78" x2="35.56" y2="16.51" width="0.254" layer="21"/>
-<circle x="-2.54" y="17.78" radius="0.898025" width="0" layer="21"/>
 <wire x1="19.05" y1="12.7" x2="19.05" y2="10.16" width="0.254" layer="51"/>
 <wire x1="19.05" y1="10.16" x2="21.59" y2="10.16" width="0.254" layer="51"/>
 <wire x1="21.59" y1="10.16" x2="21.59" y2="12.7" width="0.254" layer="51"/>
@@ -770,6 +769,13 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
 </package>
+<package name="INFO">
+<text x="0" y="4" size="0.8128" layer="21" font="vector" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="20">&gt;DATE</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="20">&gt;REVISION</text>
+<text x="0" y="1" size="0.8128" layer="21" font="vector" ratio="20">&gt;DESIGN</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAMERA">
@@ -920,6 +926,18 @@ MAX3223-MAX3243.pdf</description>
 <text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="INFO">
+<text x="0" y="12.7" size="1.778" layer="94" ratio="20">Board Info</text>
+<text x="0" y="10.16" size="1.778" layer="94" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="7.62" size="1.778" layer="94" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="5.08" size="1.778" layer="94" ratio="20">&gt;DATE</text>
+<text x="0" y="2.54" size="1.778" layer="94" ratio="20">&gt;DESIGN</text>
+<text x="0" y="0" size="1.778" layer="94" ratio="20">&gt;REVISION</text>
+<wire x1="-2.54" y1="-2.54" x2="43.18" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-2.54" x2="43.18" y2="15.24" width="0.254" layer="94"/>
+<wire x1="43.18" y1="15.24" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1276,6 +1294,18 @@ MAX3223-MAX3243.pdf</description>
 <connect gate="P" pin="GND" pad="10"/>
 <connect gate="P" pin="VCC" pad="20"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INFO">
+<gates>
+<gate name="G$1" symbol="INFO" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="INFO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3575,6 +3605,13 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C16" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
+<part name="U$7" library="modular_robotics" deviceset="INFO" device="">
+<attribute name="AUTHOR" value="Austin Buchan"/>
+<attribute name="DATE" value="Feb. 2014"/>
+<attribute name="DESIGN" value="Dev Camera Module"/>
+<attribute name="ORGANIZATION" value="UC Berkeley Biomimetic Millisystems Lab"/>
+<attribute name="REVISION" value="r0.0"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3716,6 +3753,13 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </instance>
 <instance part="C16" gate="G$1" x="134.62" y="12.7">
 <attribute name="VOLTAGE" x="134.62" y="12.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$7" gate="G$1" x="243.84" y="40.64" rot="R90">
+<attribute name="DATE" x="243.84" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESIGN" x="243.84" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="ORGANIZATION" x="243.84" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="AUTHOR" x="243.84" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="REVISION" x="243.84" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>

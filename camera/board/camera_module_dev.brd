@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="6" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -30,9 +32,9 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -44,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -54,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -71,39 +73,39 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -114,7 +116,7 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -122,6 +124,18 @@
 <wire x1="48.26" y1="0" x2="48.26" y2="38.1" width="0" layer="20"/>
 <wire x1="48.26" y1="38.1" x2="0" y2="38.1" width="0" layer="20"/>
 <wire x1="0" y1="38.1" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="28.7" y1="20.3" x2="28.7" y2="18.3" width="0.254" layer="22"/>
+<wire x1="28.7" y1="18.3" x2="28.4" y2="18" width="0.254" layer="22"/>
+<wire x1="0.1" y1="0.1" x2="0.1" y2="38" width="0.2" layer="21"/>
+<wire x1="0.1" y1="38" x2="48.2" y2="38" width="0.2" layer="21"/>
+<wire x1="48.2" y1="38" x2="48.2" y2="0.1" width="0.2" layer="21"/>
+<wire x1="48.2" y1="0.1" x2="0.1" y2="0.1" width="0.2" layer="21"/>
+<wire x1="0.1" y1="0.1" x2="0.1" y2="38" width="0.2" layer="22"/>
+<wire x1="0.1" y1="38" x2="48.2" y2="38" width="0.2" layer="22"/>
+<wire x1="48.2" y1="38" x2="48.2" y2="0.1" width="0.2" layer="22"/>
+<wire x1="48.2" y1="0.1" x2="0.1" y2="0.1" width="0.2" layer="22"/>
+<circle x="14.4" y="19.2" radius="0.3" width="0.2" layer="21"/>
+<circle x="35.9" y="21.1" radius="0.282840625" width="0.2" layer="21"/>
 </plain>
 <libraries>
 <library name="modular_robotics">
@@ -256,7 +270,6 @@
 <wire x1="34.29" y1="13.97" x2="34.29" y2="17.78" width="0.254" layer="21"/>
 <wire x1="34.29" y1="17.78" x2="33.02" y2="16.51" width="0.254" layer="21"/>
 <wire x1="34.29" y1="17.78" x2="35.56" y2="16.51" width="0.254" layer="21"/>
-<circle x="-2.54" y="17.78" radius="0.898025" width="0" layer="21"/>
 <wire x1="19.05" y1="12.7" x2="19.05" y2="10.16" width="0.254" layer="51"/>
 <wire x1="19.05" y1="10.16" x2="21.59" y2="10.16" width="0.254" layer="51"/>
 <wire x1="21.59" y1="10.16" x2="21.59" y2="12.7" width="0.254" layer="51"/>
@@ -428,6 +441,13 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
 <rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
+</package>
+<package name="INFO">
+<text x="0" y="4" size="0.8128" layer="21" font="vector" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="20">&gt;DATE</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="20">&gt;REVISION</text>
+<text x="0" y="1" size="0.8128" layer="21" font="vector" ratio="20">&gt;DESIGN</text>
 </package>
 </packages>
 </library>
@@ -853,95 +873,163 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="modular_robotics" package="CSP3-20-6THROUGH" value="OVM7690-R20A-6THROUGH" x="29.5" y="29.7" rot="R180"/>
-<element name="U$2" library="modular_robotics" package="TCM-20" value="TCM8230MD" x="11.4" y="29.1"/>
-<element name="U$3" library="modular_robotics" package="OVM_DEV_MODULE" value="OVM7690-R20A-DEV_MODULE" x="2.54" y="17.78"/>
-<element name="U$4" library="modular_robotics" package="2X06" value="PMOD" x="12.7" y="3.81" rot="R180"/>
-<element name="U$5" library="modular_robotics" package="2X06" value="PMOD" x="35.56" y="3.81" rot="R180"/>
-<element name="QG1" library="modular_robotics" package="SMD-4" value="" x="13.2" y="15.6" rot="MR0"/>
-<element name="U$6" library="modular_robotics" package="MLPQ-UT8" value="SC560C" x="27.6" y="16.8" rot="MR90"/>
-<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="24.6" y="15.6" rot="R180">
+<element name="U$1" library="modular_robotics" package="CSP3-20-6THROUGH" value="OVM7690-R20A-6THROUGH" x="29.5" y="29.7" smashed="yes" rot="R180"/>
+<element name="U$2" library="modular_robotics" package="TCM-20" value="TCM8230MD" x="11.4" y="29.1" smashed="yes">
+<attribute name="VALUE" x="8.2" y="33.7" size="0.8128" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="U$3" library="modular_robotics" package="OVM_DEV_MODULE" value="OVM7690-R20A-DEV_MODULE" x="2.54" y="17.78" smashed="yes"/>
+<element name="U$4" library="modular_robotics" package="2X06" value="PMOD" x="12.7" y="3.81" smashed="yes" rot="R180"/>
+<element name="U$5" library="modular_robotics" package="2X06" value="PMOD" x="35.56" y="3.81" smashed="yes" rot="R180"/>
+<element name="QG1" library="modular_robotics" package="SMD-4" value="" x="13.2" y="15.6" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="14.2" y="13.1" size="1.016" layer="28" font="vector" ratio="20" rot="MR0"/>
+</element>
+<element name="U$6" library="modular_robotics" package="MLPQ-UT8" value="SC560C" x="27.6" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="29.8" y="20.7" size="0.8128" layer="28" font="vector" ratio="20" rot="MR0"/>
+</element>
+<element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="24.6" y="15.6" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="TRANS-08345" x="3.01" y="68.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="21" y="15.6" rot="R180">
+<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23" value="MOSFET-NCHANNELBSS123LT1G" x="21" y="15.6" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="TRANS-08345" x="-12.02" y="68.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC1" library="modular_robotics" package="TSSOP20" value="74541PW" x="32.9" y="17" rot="R180"/>
-<element name="IC2" library="modular_robotics" package="TSSOP20" value="74541PW" x="11.4" y="15" rot="R180"/>
-<element name="SJ1" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="35.7" y="16.1" rot="R90"/>
-<element name="SJ2" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="34.8" y="17.9" rot="R90"/>
-<element name="SJ3" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="33.9" y="16.1" rot="R90"/>
-<element name="SJ4" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="33" y="17.9" rot="R90"/>
-<element name="SJ5" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="32.1" y="16.1" rot="R90"/>
-<element name="SJ6" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="31.2" y="17.9" rot="R90"/>
-<element name="SJ7" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="30.3" y="16.1" rot="R90"/>
-<element name="SJ8" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="29.4" y="17.9" rot="R90"/>
-<element name="SJ9" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="13.5" y="15.9" rot="R90"/>
-<element name="SJ10" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="12.6" y="14.1" rot="R90"/>
-<element name="SJ11" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="11.7" y="15.9" rot="R90"/>
-<element name="SJ12" library="SparkFun-Passives" package="SJ_3" value="" x="16.1" y="16.9" rot="R270"/>
-<element name="SJ13" library="SparkFun-Passives" package="SJ_3" value="" x="37.7" y="19.1" rot="R270"/>
-<element name="JP3" library="pinhead" package="1X09" value="" x="12.7" y="8.89" rot="R180"/>
-<element name="JP4" library="pinhead" package="1X09" value="" x="35.56" y="8.89" rot="R180"/>
-<element name="SJ14" library="SparkFun-Passives" package="SJ_3" value="" x="13.2" y="18.1" rot="MR0"/>
-<element name="L1" library="biomimetic" package="1007" value="3.3uH" x="21" y="16.8" rot="MR180"/>
-<element name="L2" library="biomimetic" package="1007" value="3.3uH" x="34.2" y="16.8" rot="MR180"/>
-<element name="C1" library="biomimetic" package="0402-CAP" value="2.2uF" x="26.4" y="14.4" rot="MR0">
+<element name="IC1" library="modular_robotics" package="TSSOP20" value="74541PW" x="32.9" y="17" smashed="yes" rot="R180">
+<attribute name="VALUE" x="30.0172" y="12.0638" size="0.8128" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="IC2" library="modular_robotics" package="TSSOP20" value="74541PW" x="11.4" y="15" smashed="yes" rot="R180">
+<attribute name="VALUE" x="7.5362" y="12.3172" size="0.8128" layer="27" font="vector" ratio="20" rot="R90"/>
+</element>
+<element name="SJ1" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="35.7" y="16.1" smashed="yes" rot="R90"/>
+<element name="SJ2" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="34.8" y="17.9" smashed="yes" rot="R90"/>
+<element name="SJ3" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="33.9" y="16.1" smashed="yes" rot="R90"/>
+<element name="SJ4" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="33" y="17.9" smashed="yes" rot="R90"/>
+<element name="SJ5" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="32.1" y="16.1" smashed="yes" rot="R90"/>
+<element name="SJ6" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="31.2" y="17.9" smashed="yes" rot="R90"/>
+<element name="SJ7" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="30.3" y="16.1" smashed="yes" rot="R90"/>
+<element name="SJ8" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="29.4" y="17.9" smashed="yes" rot="R90"/>
+<element name="SJ9" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="13.5" y="15.9" smashed="yes" rot="R90"/>
+<element name="SJ10" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="12.6" y="14.1" smashed="yes" rot="R90"/>
+<element name="SJ11" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="11.7" y="15.9" smashed="yes" rot="R90"/>
+<element name="SJ12" library="SparkFun-Passives" package="SJ_3" value="" x="16.1" y="16.9" smashed="yes" rot="R270">
+<attribute name="VALUE" x="16.1" y="17.0001" size="0.02" layer="27" rot="R270"/>
+<attribute name="VALUE" x="14.195" y="18.17" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="SJ13" library="SparkFun-Passives" package="SJ_3" value="" x="37.7" y="19.1" smashed="yes" rot="R270">
+<attribute name="VALUE" x="37.7" y="19.2001" size="0.02" layer="27" rot="R270"/>
+<attribute name="VALUE" x="35.795" y="20.37" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="JP3" library="pinhead" package="1X09" value="" x="12.7" y="8.89" smashed="yes" rot="R180">
+<attribute name="VALUE" x="24.13" y="12.065" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="JP4" library="pinhead" package="1X09" value="" x="35.56" y="8.89" smashed="yes" rot="R180">
+<attribute name="VALUE" x="46.99" y="12.065" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="SJ14" library="SparkFun-Passives" package="SJ_3" value="" x="13.2" y="18.1" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="13.3001" y="18.1" size="0.02" layer="28" rot="MR0"/>
+<attribute name="VALUE" x="14.47" y="16.195" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="L1" library="biomimetic" package="1007" value="3.3uH" x="21" y="16.8" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="21.4" y="15" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
+</element>
+<element name="L2" library="biomimetic" package="1007" value="3.3uH" x="34.2" y="16.8" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="35.8" y="15.3" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="C1" library="biomimetic" package="0402-CAP" value="2.2uF" x="26.4" y="14.4" smashed="yes" rot="MR0">
 <attribute name="VOLTAGE" value="6.3V" x="26.4" y="14.4" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="26.4033" y="12.8046" size="0.8128" layer="28" font="vector" ratio="20" rot="MR0"/>
 </element>
-<element name="C2" library="biomimetic" package="0402-CAP" value="1uF" x="25.7" y="16.8" rot="MR90">
+<element name="C2" library="biomimetic" package="0402-CAP" value="1uF" x="25.7" y="16.8" smashed="yes" rot="MR90">
 <attribute name="VOLTAGE" value="6.3V" x="25.7" y="16.8" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="25.3046" y="18.1967" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="R2" library="biomimetic" package="0402-RES" value="18k/5k" x="32.1" y="16.8" rot="MR90"/>
-<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="30.8" y="16.8" rot="MR90"/>
-<element name="C3" library="biomimetic" package="0402-CAP" value="1uF" x="29.5" y="16.8" rot="MR90"/>
-<element name="R1" library="biomimetic" package="0402-RES" value="18k" x="23.1" y="16.8" rot="MR90"/>
-<element name="R4" library="biomimetic" package="0402-RES" value="10k" x="24.4" y="16.8" rot="MR90"/>
-<element name="R5" library="biomimetic" package="0402-RES" value="" x="28.8" y="14.4" rot="MR180"/>
-<element name="C4" library="biomimetic" package="0402-CAP" value="10nF" x="15.6" y="15.6" rot="MR90">
+<element name="R2" library="biomimetic" package="0402-RES" value="18k/5k" x="32.1" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="31.857" y="18.1205" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="R3" library="biomimetic" package="0402-RES" value="10k" x="30.8" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="30.557" y="18.0205" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="C3" library="biomimetic" package="0402-CAP" value="1uF" x="29.5" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="29.3046" y="18.0967" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="R1" library="biomimetic" package="0402-RES" value="18k" x="23.1" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="22.757" y="18.0205" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="R4" library="biomimetic" package="0402-RES" value="10k" x="24.4" y="16.8" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="24.157" y="18.0205" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
+</element>
+<element name="R5" library="biomimetic" package="0402-RES" value="" x="28.8" y="14.4" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="27.8205" y="15.743" size="0.6096" layer="28" font="vector" ratio="25" rot="MR180"/>
+</element>
+<element name="C4" library="biomimetic" package="0402-CAP" value="10nF" x="15.6" y="15.6" smashed="yes" rot="MR90">
 <attribute name="VOLTAGE" value="6.3V" x="15.6" y="15.6" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="19.1033" y="15.2046" size="0.8128" layer="28" font="vector" ratio="20" rot="MR0"/>
 </element>
-<element name="C5" library="biomimetic" package="0402-CAP" value="100nF" x="38.7" y="14.1" rot="R180">
+<element name="C5" library="biomimetic" package="0402-CAP" value="100nF" x="38.7" y="14.1" smashed="yes" rot="R180">
 <attribute name="VOLTAGE" value="6.3V" x="38.7" y="14.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="41.8033" y="13.2954" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="R6" library="biomimetic" package="0402-RES" value="1k8" x="16.2" y="17.4" rot="MR180"/>
-<element name="R7" library="biomimetic" package="0402-RES" value="10k" x="16.2" y="18.7" rot="MR0"/>
-<element name="C6" library="biomimetic" package="0402-CAP" value="100nF" x="16.1" y="12.1" rot="R180">
+<element name="R6" library="biomimetic" package="0402-RES" value="1k8" x="16.2" y="17.4" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="17.3205" y="18.143" size="0.8128" layer="28" font="vector" ratio="20" rot="MR180"/>
+</element>
+<element name="R7" library="biomimetic" package="0402-RES" value="10k" x="16.2" y="18.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="19.2795" y="18.357" size="0.8128" layer="28" font="vector" ratio="20" rot="MR0"/>
+</element>
+<element name="C6" library="biomimetic" package="0402-CAP" value="100nF" x="16.1" y="12.1" smashed="yes" rot="R180">
 <attribute name="VOLTAGE" value="6.3V" x="16.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="18.8033" y="11.3954" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="R8" library="biomimetic" package="0402-RES" value="4k7" x="21.1" y="18.6" rot="R180"/>
-<element name="R9" library="biomimetic" package="0402-RES" value="4k7" x="21.5" y="12.6" rot="R180"/>
-<element name="R10" library="biomimetic" package="0402-RES" value="4k7" x="24.6" y="18.6" rot="R180"/>
-<element name="R11" library="biomimetic" package="0402-RES" value="4k7" x="24.1" y="12.6"/>
-<element name="C7" library="biomimetic" package="0603-CAP" value="4.7uF" x="26.8" y="27.2" rot="MR270">
+<element name="R8" library="biomimetic" package="0402-RES" value="4k7" x="21.1" y="18.6" smashed="yes" rot="R180"/>
+<element name="R9" library="biomimetic" package="0402-RES" value="4k7" x="21.5" y="12.6" smashed="yes" rot="R180">
+<attribute name="VALUE" x="23.7795" y="11.643" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R10" library="biomimetic" package="0402-RES" value="4k7" x="24.6" y="18.6" smashed="yes" rot="R180">
+<attribute name="VALUE" x="23.8795" y="20.143" size="0.8128" layer="27" font="vector" ratio="20" rot="R180"/>
+</element>
+<element name="R11" library="biomimetic" package="0402-RES" value="4k7" x="24.1" y="12.6" smashed="yes"/>
+<element name="C7" library="biomimetic" package="0603-CAP" value="4.7uF" x="26.8" y="27.2" smashed="yes" rot="MR270">
 <attribute name="VOLTAGE" value="6.3V" x="26.8" y="27.2" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="25.8986" y="28.0494" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
 </element>
-<element name="C8" library="biomimetic" package="0402-CAP" value="100nF" x="27.5" y="31.9" rot="MR270">
+<element name="C8" library="biomimetic" package="0402-CAP" value="100nF" x="27.5" y="31.9" smashed="yes" rot="MR270">
 <attribute name="VOLTAGE" value="6.3V" x="27.5" y="31.9" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="25.7967" y="33.6954" size="0.8128" layer="28" font="vector" ratio="20" rot="MR180"/>
 </element>
-<element name="C9" library="biomimetic" package="0402-CAP" value="100nF" x="26.8" y="28.1" rot="R180">
-<attribute name="VOLTAGE" value="6.3V" x="26.8" y="28.1" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C9" library="biomimetic" package="0402-CAP" value="100nF" x="26.4" y="28" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="26.4" y="28" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="25.5046" y="25.7033" size="0.8128" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="C10" library="biomimetic" package="0603-CAP" value="4.7uF" x="25.8" y="31.5" rot="MR270">
+<element name="C10" library="biomimetic" package="0603-CAP" value="4.7uF" x="25.8" y="31.5" smashed="yes" rot="MR270">
 <attribute name="VOLTAGE" value="6.3V" x="25.8" y="31.5" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="24.6986" y="32.9494" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
 </element>
-<element name="C11" library="biomimetic" package="0603-CAP" value="4.7uF" x="16.2" y="31.1" rot="MR90">
+<element name="C11" library="biomimetic" package="0603-CAP" value="4.7uF" x="16.2" y="31.1" smashed="yes" rot="MR90">
 <attribute name="VOLTAGE" value="6.3V" x="16.2" y="31.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="15.8014" y="26.1506" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="C12" library="biomimetic" package="0603-CAP" value="4.7uF" x="10.5" y="31.4" rot="MR270">
-<attribute name="VOLTAGE" value="6.3V" x="10.5" y="31.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="C12" library="biomimetic" package="0603-CAP" value="4.7uF" x="10.8" y="31.4" smashed="yes" rot="MR270">
+<attribute name="VOLTAGE" value="6.3V" x="10.8" y="31.4" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="11.3986" y="36.5494" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
 </element>
-<element name="C13" library="biomimetic" package="0402-CAP" value="100nF" x="28.5" y="27" rot="R180">
-<attribute name="VOLTAGE" value="6.3V" x="28.5" y="27" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C13" library="biomimetic" package="0402-CAP" value="100nF" x="26.4" y="26.7" smashed="yes" rot="R180">
+<attribute name="VOLTAGE" value="6.3V" x="26.4" y="26.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C14" library="biomimetic" package="0402-CAP" value="100nF" x="28.4" y="26.7" rot="MR270">
+<element name="C14" library="biomimetic" package="0402-CAP" value="100nF" x="28.4" y="26.7" smashed="yes" rot="MR270">
 <attribute name="VOLTAGE" value="6.3V" x="28.4" y="26.7" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="29.9954" y="27.3033" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
 </element>
-<element name="C15" library="biomimetic" package="0402-CAP" value="100nF" x="14.7" y="30.8" rot="MR90">
+<element name="C15" library="biomimetic" package="0402-CAP" value="100nF" x="14.7" y="30.8" smashed="yes" rot="MR90">
 <attribute name="VOLTAGE" value="6.3V" x="14.7" y="30.8" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="13.0046" y="29.1967" size="0.8128" layer="28" font="vector" ratio="20" rot="MR90"/>
 </element>
-<element name="C16" library="biomimetic" package="0402-CAP" value="100nF" x="9.3" y="31.9" rot="MR270">
+<element name="C16" library="biomimetic" package="0402-CAP" value="100nF" x="9.3" y="31.9" smashed="yes" rot="MR270">
 <attribute name="VOLTAGE" value="6.3V" x="9.3" y="31.9" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="9.6954" y="36.8033" size="0.8128" layer="28" font="vector" ratio="20" rot="MR270"/>
+</element>
+<element name="U$7" library="modular_robotics" package="INFO" value="INFO" x="49.3" y="11.1" smashed="yes" rot="R90">
+<attribute name="DATE" value="Feb. 2014" x="45.3" y="21.7" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="DESIGN" value="Dev Camera Module" x="47.3" y="11.1" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="ORGANIZATION" value="UC Berkeley Biomimetic Millisystems Lab" x="46.3" y="11.1" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="AUTHOR" value="Austin Buchan" x="45.3" y="11.1" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="REVISION" value="r0.0" x="47.4" y="23.6" size="0.8128" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -1002,7 +1090,7 @@ design rules under a new name.</description>
 </polygon>
 <via x="18" y="30" extent="1-16" drill="0.381"/>
 <via x="14.4" y="25.8" extent="1-16" drill="0.381"/>
-<via x="25.2" y="28.2" extent="1-16" drill="0.381"/>
+<via x="24.6" y="27.6" extent="1-16" drill="0.381"/>
 <via x="16.2" y="19.8" extent="1-16" drill="0.381"/>
 <via x="7.2" y="31.2" extent="1-16" drill="0.381"/>
 </signal>
@@ -1861,7 +1949,8 @@ design rules under a new name.</description>
 <wire x1="29.25" y1="28.7" x2="29.25" y2="28.35" width="0.1524" layer="1"/>
 <wire x1="29.25" y1="28.35" x2="29" y2="28.1" width="0.1524" layer="1"/>
 <wire x1="29" y1="28.1" x2="28.9826" y2="28.0826" width="0.1524" layer="1"/>
-<wire x1="28.9826" y1="28.0826" x2="28.9826" y2="27" width="0.1524" layer="1"/>
+<wire x1="26.8826" y1="26.7" x2="27.6" y2="26.7" width="0.1524" layer="1"/>
+<wire x1="27.6" y1="26.7" x2="29" y2="28.1" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$1" pad="A4"/>
@@ -1869,8 +1958,8 @@ design rules under a new name.</description>
 <via x="28.1" y="28.6" extent="1-16" drill="0.381"/>
 <wire x1="28.75" y1="28.7" x2="28.2" y2="28.7" width="0.1524" layer="1"/>
 <wire x1="28.2" y1="28.7" x2="28.1" y2="28.6" width="0.1524" layer="1"/>
-<wire x1="28.1" y1="28.6" x2="27.6" y2="28.1" width="0.1524" layer="1"/>
-<wire x1="27.6" y1="28.1" x2="27.2826" y2="28.1" width="0.1524" layer="1"/>
+<wire x1="26.8826" y1="28" x2="27.5" y2="28" width="0.1524" layer="1"/>
+<wire x1="27.5" y1="28" x2="28.1" y2="28.6" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="C14" pad="2"/>
@@ -1897,15 +1986,16 @@ design rules under a new name.</description>
 <wire x1="30" y1="26.5" x2="30" y2="28.1" width="0.1524" layer="16"/>
 <via x="8.1" y="32.4" extent="1-16" drill="0.381"/>
 <wire x1="8.1" y1="32.4" x2="8.1" y2="31.3" width="0.1524" layer="1"/>
-<wire x1="11.3" y1="31.9" x2="14.4" y2="28.8" width="0.1524" layer="16"/>
 <wire x1="14.4" y1="28.8" x2="21" y2="28.8" width="0.1524" layer="16"/>
 <wire x1="21" y1="28.8" x2="23.4" y2="26.4" width="0.1524" layer="16"/>
-<wire x1="11.3" y1="31.9" x2="10.7493" y2="31.9" width="0.1524" layer="16"/>
-<wire x1="10.7493" y1="31.9" x2="10.5" y2="32.1493" width="0.1524" layer="16"/>
-<wire x1="9.3" y1="32.3826" x2="10.2667" y2="32.3826" width="0.1524" layer="16"/>
-<wire x1="10.2667" y1="32.3826" x2="10.5" y2="32.1493" width="0.1524" layer="16"/>
 <wire x1="9.3" y1="32.3826" x2="8.1174" y2="32.3826" width="0.1524" layer="16"/>
 <wire x1="8.1174" y1="32.3826" x2="8.1" y2="32.4" width="0.1524" layer="16"/>
+<wire x1="14.4" y1="28.8" x2="12" y2="31.2" width="0.1524" layer="16"/>
+<wire x1="12" y1="31.2" x2="12" y2="31.8" width="0.1524" layer="16"/>
+<wire x1="12" y1="31.8" x2="11.6507" y2="32.1493" width="0.1524" layer="16"/>
+<wire x1="11.6507" y1="32.1493" x2="10.8" y2="32.1493" width="0.1524" layer="16"/>
+<wire x1="9.3" y1="32.3826" x2="10.5667" y2="32.3826" width="0.1524" layer="16"/>
+<wire x1="10.5667" y1="32.3826" x2="10.8" y2="32.1493" width="0.1524" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U$1" pad="E4"/>
