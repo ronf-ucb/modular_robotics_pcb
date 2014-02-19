@@ -7,9 +7,9 @@ DEF_FILE = $(CUR_JOB)/layout.def
 
 CAM_SCR = panel/33each_cam.sh
 
-%/board/%.zip: %/board/%.brd
-	bash $(CAM_SCR) $*/board/$*.brd $*/board/gerber/$*
-	mv $*/board/gerber.zip $*/board/$*.zip
+%.zip: %.brd
+	bash $(CAM_SCR) $*.brd $(dir $*.brd)gerber/$(notdir $*)
+	mv $(dir $*.brd)gerber.zip $*.zip
 
 #*/board: $(DESIGNS)
 #	$(CAM_SCR) $(CFG_FILE) $(DEF_FILE)

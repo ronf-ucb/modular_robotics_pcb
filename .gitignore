@@ -4,6 +4,7 @@
 *.pdf
 *.pro
 *.zip
+*.swp
 motor/housing
 */datasheets
 */board/gerb
