@@ -20,12 +20,26 @@ if [ ! -d ${outputdir} ]; then
 fi
 set -e
 
-# create top copper (cmp), bottom copper (sol), top solder mask (stc), bottom solder mask (sts), {top} silkscreen (plc)
+# Board outline
+${EAGLE} -X -dGERBER_RS274X -o${outputfile}.bor ${board} Dimension
+
+# top copper (cmp)
 ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.cmp ${board} Top Pads Vias
+
+# bottom copper (sol)
 ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.sol ${board} Bottom Pads Vias
+
+# top solder mask (stc)
 ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.stc ${board} tStop
+
+# bottom solder mask (sts)
 ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.sts ${board} bStop
-${EAGLE} -X -dGERBER_RS274X -o${outputfile}.plc ${board} Dimension tPlace
+
+# top silkscreen (plc)
+${EAGLE} -X -dGERBER_RS274X -o${outputfile}.plc ${board} tPlace tNames tValues
+
+# bottom silkscreen (pls)
+${EAGLE} -X -dGERBER_RS274X -o${outputfile}.pls ${board} bPlace bNames bValues
 
 # create drill files
 ${EAGLE} -X -dEXCELLON -o${outputfile}.drd ${board} Drills Holes
@@ -34,4 +48,5 @@ ${EAGLE} -X -dEXCELLON -o${outputfile}.drd ${board} Drills Holes
 # (like running drillcfg.ulp: ${EAGLE} -N- -C'RUN drillcfg.ulp; QUIT;' -o${outputfile} ${board}
 #cat ${outputfile}.dri | sed -e 's/ *\(T[0-9][0-9]\) *\([0-9.]*..\).*/\1 \2/' | grep -e "^T[0-9][0-9]" > ${outputfile}.drl
 
-zip -r ${outputdir}.zip ${outputdir}
+#zip -r ${outputdir}.zip ${outputdir}
+zip -j ${outputdir}.zip ${outputdir}/*.*
