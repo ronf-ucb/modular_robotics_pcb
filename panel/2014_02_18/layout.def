@@ -1,0 +1,23 @@
+Row {
+  motor_module_dev Rotate
+  motor_module_dev Rotate
+}
+
+Row { 
+  camera_module_dev
+  camera_module_dev
+}
+
+Row {
+  encoder_module_boardedge
+  encoder_module_boardedge
+  encoder_module_boardedge
+  encoder_module_boardedge
+}
+
+Row {
+  encoder_module_boardedge_pad
+  encoder_module_boardedge_pad
+  encoder_module_boardedge_pad
+  encoder_module_boardedge_pad
+}

@@ -22,10 +22,9 @@ merge: $(CUR_JOB)/$(CUR_DATE).zip
 all-boards: $(BOARD_ZIPS)
 
 $(CUR_JOB)/$(CUR_DATE).zip: $(BOARD_ZIPS)
-	unzip $(BOARD_ZIPS) -d $(CUR_JOB)/gerber
-	gerbmerge $(CFG_FILE) $(DEF_FILE)
-	zip $(CUR_JOB)/merge
-	mv $(CUR_JOB)/merge.zip $(CUR_JOB)/$(CUR_DATE).zip
+	for b in $(BOARD_ZIPS); do unzip -o $$b -d $(CUR_JOB)/gerber; done
+	echo 'y' | gerbmerge $(CFG_FILE) $(DEF_FILE)
+	zip -j $(CUR_JOB)/$(CUR_DATE).zip $(CUR_JOB)/gerber/panel.*
 
 print:
 	@echo $(CUR_DATE)
