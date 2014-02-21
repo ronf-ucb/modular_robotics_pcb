@@ -11,7 +11,7 @@ CAM_SCR = panel/33each_cam.sh
 
 merge: $(CUR_JOB)/$(CUR_DATE).zip
 
-%.zip: %.brd
+%.zip: %.brd $(CAM_SCR)
 	$(eval BOARD_FILE := $*.brd)
 	$(eval BOARD_NAME := $(notdir $*))
 	$(eval GERBER_DIR :=  $(dir $*.brd)gerber)
@@ -21,7 +21,7 @@ merge: $(CUR_JOB)/$(CUR_DATE).zip
 
 all-boards: $(BOARD_ZIPS)
 
-$(CUR_JOB)/$(CUR_DATE).zip: $(BOARD_ZIPS)
+$(CUR_JOB)/$(CUR_DATE).zip: $(BOARD_ZIPS) $(CFG_FILE) $(DEF_FILE)
 	for b in $(BOARD_ZIPS); do unzip -o $$b -d $(CUR_JOB)/gerber; done
 	echo 'y' | gerbmerge $(CFG_FILE) $(DEF_FILE)
 	zip -j $(CUR_JOB)/$(CUR_DATE).zip $(CUR_JOB)/gerber/panel.*

@@ -42,7 +42,7 @@ ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.plc ${board} tPlace tNames tValues
 ${EAGLE} -X -dGERBER_RS274X -o${outputfile}.pls ${board} bPlace bNames bValues
 
 # create drill files
-${EAGLE} -X -dEXCELLON -o${outputfile}.drd ${board} Drills Holes
+${EAGLE} -X -dEXCELLON -o${outputfile}.txt ${board} Drills Holes
 
 # get drills used from dri file and create drl rack file 
 # (like running drillcfg.ulp: ${EAGLE} -N- -C'RUN drillcfg.ulp; QUIT;' -o${outputfile} ${board}

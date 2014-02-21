@@ -179,10 +179,10 @@
 <text x="-1.2" y="-3.1" size="1.27" layer="25" font="vector">&gt;VALUE</text>
 </package>
 <package name="CSP3-20-6THROUGH">
-<wire x1="-1.2335" y1="1.4585" x2="1.2335" y2="1.4585" width="0.127" layer="21"/>
-<wire x1="1.2335" y1="1.4585" x2="1.2335" y2="-1.4585" width="0.127" layer="21"/>
-<wire x1="1.2335" y1="-1.4585" x2="-1.2335" y2="-1.4585" width="0.127" layer="21"/>
-<wire x1="-1.2335" y1="-1.4585" x2="-1.2335" y2="1.4585" width="0.127" layer="21"/>
+<wire x1="-1.2335" y1="1.4585" x2="1.2335" y2="1.4585" width="0.1524" layer="21"/>
+<wire x1="1.2335" y1="1.4585" x2="1.2335" y2="-1.4585" width="0.1524" layer="21"/>
+<wire x1="1.2335" y1="-1.4585" x2="-1.2335" y2="-1.4585" width="0.1524" layer="21"/>
+<wire x1="-1.2335" y1="-1.4585" x2="-1.2335" y2="1.4585" width="0.1524" layer="21"/>
 <circle x="-1.7" y="1.7" radius="0.22360625" width="0" layer="21"/>
 <smd name="B4" x="0.75" y="0.5" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="C4" x="0.75" y="0" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
@@ -193,14 +193,14 @@
 <smd name="A2" x="-0.25" y="1" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="A1" x="-0.75" y="1" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="B1" x="-0.75" y="0.5" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
-<smd name="B2" x="-0.6495" y="0.5025" dx="0.5" dy="0.25" layer="16" rot="R180"/>
-<smd name="B3" x="0.6505" y="0.5025" dx="0.5" dy="0.25" layer="16" rot="R180"/>
-<smd name="C3" x="0.6505" y="0.0025" dx="0.5" dy="0.25" layer="16" rot="R180"/>
-<smd name="C2" x="-0.6495" y="0.0025" dx="0.5" dy="0.25" layer="16" rot="R180"/>
+<smd name="B2" x="-0.6495" y="0.5025" dx="0.4" dy="0.25" layer="16" rot="R180"/>
+<smd name="B3" x="0.6505" y="0.5025" dx="0.4" dy="0.25" layer="16" rot="R180"/>
+<smd name="C3" x="0.6505" y="0.0025" dx="0.4" dy="0.25" layer="16" rot="R180"/>
+<smd name="C2" x="-0.6495" y="0.0025" dx="0.4" dy="0.25" layer="16" rot="R180"/>
 <smd name="C1" x="-0.75" y="0" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="D1" x="-0.75" y="-0.5" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
-<smd name="D2" x="-0.6495" y="-0.4975" dx="0.5" dy="0.25" layer="16" rot="R180"/>
-<smd name="D3" x="0.6505" y="-0.4975" dx="0.5" dy="0.25" layer="16" rot="R180"/>
+<smd name="D2" x="-0.6495" y="-0.4975" dx="0.4" dy="0.25" layer="16" rot="R180"/>
+<smd name="D3" x="0.6505" y="-0.4975" dx="0.4" dy="0.25" layer="16" rot="R180"/>
 <smd name="E3" x="0.25" y="-1" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="E2" x="-0.25" y="-1" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
 <smd name="E1" x="-0.75" y="-1" dx="0.23" dy="0.23" layer="1" roundness="100" stop="no"/>
@@ -227,12 +227,22 @@
 <wire x1="-2" y1="-0.6" x2="-1.8" y2="-0.8" width="0.05" layer="51"/>
 <text x="-1.3" y="1.8" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.2" y="-3.1" size="1.27" layer="25" font="vector">&gt;VALUE</text>
-<hole x="-0.25" y="0.5" drill="0.381"/>
-<hole x="0.25" y="0.5" drill="0.381"/>
-<hole x="-0.25" y="0" drill="0.381"/>
-<hole x="-0.25" y="-0.5" drill="0.381"/>
-<hole x="0.25" y="0" drill="0.381"/>
-<hole x="0.25" y="-0.5" drill="0.381"/>
+<circle x="-0.25" y="0.5" radius="0.1" width="0" layer="21"/>
+<circle x="0.25" y="0.5" radius="0.1" width="0" layer="21"/>
+<circle x="0.25" y="0" radius="0.1" width="0" layer="21"/>
+<circle x="0.25" y="-0.5" radius="0.1" width="0" layer="21"/>
+<circle x="-0.25" y="-0.5" radius="0.1" width="0" layer="21"/>
+<circle x="-0.25" y="0" radius="0.1" width="0" layer="21"/>
+<circle x="0.25" y="0.5" radius="0.1" width="0" layer="22"/>
+<circle x="-0.25" y="0.5" radius="0.1" width="0" layer="22"/>
+<circle x="-0.25" y="0" radius="0.1" width="0" layer="22"/>
+<circle x="-0.25" y="-0.5" radius="0.1" width="0" layer="22"/>
+<circle x="0.25" y="-0.5" radius="0.1" width="0" layer="22"/>
+<circle x="0.25" y="0" radius="0.1" width="0" layer="22"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0" layer="42"/>
+<wire x1="0.5" y1="0.8" x2="0.5" y2="-0.8" width="0" layer="42"/>
+<wire x1="0.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0" layer="42"/>
+<wire x1="-0.5" y1="-0.8" x2="-0.5" y2="0.8" width="0" layer="42"/>
 </package>
 <package name="OVM_DEV_MODULE">
 <pad name="A1" x="0" y="17.78" drill="1.1" shape="square"/>

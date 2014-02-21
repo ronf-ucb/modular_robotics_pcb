@@ -7,4 +7,4 @@
 *.swp
 motor/housing
 */datasheets
-*/board/gerb
+*/*/gerber
