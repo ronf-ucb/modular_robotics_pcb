@@ -3263,7 +3263,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$11" library="modular_robotics" deviceset="INA199A1" device=""/>
 <part name="R1" library="biomimetic" deviceset="RESISTOR" device="0603-RES" value="0R033"/>
-<part name="R2" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="5k"/>
+<part name="R2" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="5k1"/>
 <part name="R3" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R4" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="20k"/>
 <part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
@@ -3387,7 +3387,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="R30" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
-<part name="C42" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF"/>
+<part name="C42" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R31" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="C43" library="biomimetic" deviceset="CAP" device="0402-CAP" value="2.2nF">
 <attribute name="VOLTAGE" value="6.3V"/>
@@ -3467,7 +3469,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U$30" library="modular_robotics" deviceset="MOTOR_HOUSING" device=""/>
 <part name="R40" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="470R"/>
 <part name="R41" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="470R"/>
-<part name="R42" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="480R"/>
+<part name="R42" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="470R"/>
 <part name="U$31" library="modular_robotics" deviceset="INFO" device="">
 <attribute name="AUTHOR" value="Austin Buchan"/>
 <attribute name="DATE" value="Feb. 2014"/>
@@ -4014,7 +4016,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="VOLTAGE" x="180.34" y="162.56" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R30" gate="G$1" x="172.72" y="167.64"/>
-<instance part="C42" gate="G$1" x="180.34" y="127"/>
+<instance part="C42" gate="G$1" x="180.34" y="127">
+<attribute name="VOLTAGE" x="180.34" y="127" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R31" gate="G$1" x="172.72" y="132.08"/>
 <instance part="C43" gate="G$1" x="180.34" y="88.9">
 <attribute name="VOLTAGE" x="180.34" y="88.9" size="1.778" layer="96" display="off"/>

@@ -1561,7 +1561,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$1" library="austriamicrosystems" deviceset="AS5048B" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
-<part name="C1" library="SparkFun" deviceset="CAP" device="0603-CAP" value="10uF"/>
+<part name="C1" library="SparkFun" deviceset="CAP" device="0603-CAP" value="10uF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
@@ -1580,7 +1582,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$1" gate="G$1" x="20.32" y="43.18"/>
 <instance part="GND1" gate="1" x="20.32" y="25.4"/>
 <instance part="VDD1" gate="G$1" x="55.88" y="53.34" rot="R270"/>
-<instance part="C1" gate="G$1" x="45.72" y="35.56"/>
+<instance part="C1" gate="G$1" x="45.72" y="35.56">
+<attribute name="VOLTAGE" x="45.72" y="35.56" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="40.64" y="48.26" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="-142.24" y="-99.06"/>
 <instance part="FRAME1" gate="G$2" x="144.78" y="-99.06"/>

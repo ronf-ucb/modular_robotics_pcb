@@ -3538,18 +3538,20 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C2" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
-<part name="R2" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="18k/5k"/>
+<part name="R2" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="18k/5k1"/>
 <part name="R3" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="VCC1" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
-<part name="C3" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF"/>
+<part name="C3" library="biomimetic" deviceset="CAP" device="0402-CAP" value="1uF">
+<attribute name="VOLTAGE" value="6.3V"/>
+</part>
 <part name="R1" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="18k"/>
 <part name="R4" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -3561,7 +3563,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C5" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
-<part name="R6" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k8"/>
+<part name="R6" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="2k"/>
 <part name="R7" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="C6" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="VOLTAGE" value="6.3V"/>
@@ -3583,7 +3585,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="biomimetic" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<part name="C7" library="biomimetic" deviceset="CAP" device="0603-CAP" value="10uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="C8" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
@@ -3592,15 +3594,15 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C9" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
-<part name="C10" library="biomimetic" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<part name="C10" library="biomimetic" deviceset="CAP" device="0603-CAP" value="10uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="VCC5" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
-<part name="C11" library="biomimetic" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<part name="C11" library="biomimetic" deviceset="CAP" device="0603-CAP" value="10uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
-<part name="C12" library="biomimetic" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<part name="C12" library="biomimetic" deviceset="CAP" device="0603-CAP" value="10uF">
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="C13" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF">
@@ -3693,7 +3695,9 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="+3V1" gate="G$1" x="10.16" y="177.8"/>
 <instance part="VCC1" gate="G$1" x="53.34" y="144.78"/>
 <instance part="VDD1" gate="G$1" x="20.32" y="144.78"/>
-<instance part="C3" gate="G$1" x="25.4" y="129.54"/>
+<instance part="C3" gate="G$1" x="25.4" y="129.54">
+<attribute name="VOLTAGE" x="25.4" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R1" gate="G$1" x="53.34" y="134.62" rot="R270"/>
 <instance part="R4" gate="G$1" x="53.34" y="124.46" rot="R270"/>
 <instance part="GND2" gate="1" x="53.34" y="116.84"/>
