@@ -2791,7 +2791,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$4" library="modular_robotics" deviceset="V_BUS" device=""/>
 <part name="U$6" library="modular_robotics" deviceset="V_BUS" device=""/>
 <part name="U$7" library="modular_robotics" deviceset="V_BUS" device=""/>
-<part name="U$9" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="U$10" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="U$12" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="U$13" library="modular_robotics" deviceset="V_1.5" device=""/>
@@ -2919,6 +2918,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="U$16" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="R39" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
+<part name="U$9" library="modular_robotics" deviceset="V_BUS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2971,7 +2971,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$4" gate="G$1" x="152.4" y="167.64"/>
 <instance part="U$6" gate="G$1" x="17.78" y="93.98"/>
 <instance part="U$7" gate="G$1" x="177.8" y="104.14"/>
-<instance part="U$9" gate="G$1" x="63.5" y="88.9"/>
 <instance part="U$10" gate="G$1" x="99.06" y="73.66"/>
 <instance part="U$12" gate="G$1" x="213.36" y="104.14"/>
 <instance part="U$13" gate="G$1" x="226.06" y="66.04"/>
@@ -2993,6 +2992,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$26" gate="G$1" x="48.26" y="101.6"/>
 <instance part="C11" gate="G$1" x="106.68" y="101.6" rot="R90"/>
 <instance part="GND14" gate="1" x="101.6" y="101.6" rot="R270"/>
+<instance part="U$9" gate="G$1" x="63.5" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -3214,6 +3214,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="U$15" gate="G$1" pin="V_BUS"/>
 <wire x1="190.5" y1="58.42" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="U$9" gate="G$1" pin="V_BUS"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -3233,10 +3237,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 </net>
 <net name="V_3.0" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="U$9" gate="G$1" pin="V_3.0"/>
-</segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="66.04" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
