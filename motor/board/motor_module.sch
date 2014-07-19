@@ -1567,6 +1567,25 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="3.9624" y="0.6732" size="0.6096" layer="25" font="vector" ratio="25">&gt;NAME</text>
 <text x="3.9624" y="-0.3048" size="0.6096" layer="27" font="vector" ratio="25">&gt;VALUE</text>
 </package>
+<package name="TP_LIPO_160MAH">
+<pad name="V-" x="1" y="0" drill="1.2" diameter="1.6" shape="square"/>
+<pad name="V+" x="-1" y="0" drill="1.2" diameter="1.6"/>
+<circle x="-0.625" y="0" radius="0.25" width="0" layer="51"/>
+<circle x="0.625" y="0" radius="0.25" width="0" layer="51"/>
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0.3048" layer="51"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-2.5" y1="1" x2="-2.5" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-6" y1="-42" x2="6" y2="-42" width="0.3048" layer="51"/>
+<wire x1="6" y1="-42" x2="6" y2="-4" width="0.3048" layer="51"/>
+<wire x1="6" y1="-4" x2="-6" y2="-4" width="0.3048" layer="51"/>
+<wire x1="-6" y1="-4" x2="-6" y2="-42" width="0.3048" layer="51"/>
+<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.4064" layer="21"/>
+<wire x1="-3" y1="0" x2="-5" y2="0" width="0.4064" layer="21"/>
+<wire x1="-2.5" y1="1" x2="2.5" y2="1" width="0" layer="39"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-4" width="0" layer="39"/>
+<wire x1="2.5" y1="-4" x2="-2.5" y2="-4" width="0" layer="39"/>
+<wire x1="-2.5" y1="-4" x2="-2.5" y2="1" width="0" layer="39"/>
+</package>
 <package name="JST_2_FEMALE">
 <pad name="1" x="-1" y="0" drill="0.7" shape="square"/>
 <pad name="2" x="1" y="0" drill="0.7"/>
@@ -2095,6 +2114,69 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-4" y="2.5" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-4" y="-1.5" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="1X4_3MM_BOARDEDGE_VERT_VIA">
+<pad name="1" x="-4.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2" x="-1.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3" x="1.5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="4" x="4.5" y="0" drill="0.8" diameter="1.6"/>
+</package>
+<package name="1X4_3MM_BOARDEDGE_VERT">
+<pad name="1" x="-4.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="2" x="-1.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="3" x="1.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+<pad name="4" x="4.5" y="0.75" drill="0.8" diameter="1.5" shape="square"/>
+</package>
+<package name="MOTOR_HOUSING">
+<wire x1="-5.5" y1="-3" x2="5.5" y2="-3" width="0" layer="39"/>
+<wire x1="5.5" y1="-3" x2="5.5" y2="-1.4" width="0" layer="39"/>
+<wire x1="5.5" y1="-1.4" x2="-5.5" y2="-1.4" width="0" layer="39"/>
+<wire x1="-5.5" y1="-1.4" x2="-5.5" y2="-3" width="0" layer="39"/>
+<smd name="1" x="-4.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="1.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="4" x="4.5" y="-2.25" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-23" y1="-6.5" x2="-13" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-13" y1="-6.5" x2="-11" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-11" y1="-6.5" x2="5" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-6.5" x2="5" y2="-7.4" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.4" x2="5" y2="-9.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-9.5" x2="5" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-10.5" x2="-23" y2="-10.5" width="0.127" layer="51"/>
+<wire x1="-23" y1="-10.5" x2="-23" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-13" y1="-6.5" x2="-13" y2="0" width="0.127" layer="51"/>
+<wire x1="-11" y1="-6.5" x2="-11" y2="0" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.4" x2="11" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="5" y1="-9.5" x2="13" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="5.5" y1="3" x2="-5.5" y2="3" width="0" layer="39"/>
+<wire x1="-5.5" y1="3" x2="-5.5" y2="1.4" width="0" layer="39"/>
+<wire x1="-5.5" y1="1.4" x2="5.5" y2="1.4" width="0" layer="39"/>
+<wire x1="5.5" y1="1.4" x2="5.5" y2="3" width="0" layer="39"/>
+<smd name="5" x="4.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="6" x="1.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="7" x="-1.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<smd name="8" x="-4.5" y="2.25" dx="3.2" dy="1.6" layer="1" rot="R270"/>
+<wire x1="23" y1="6.5" x2="13" y2="6.5" width="0.127" layer="51"/>
+<wire x1="13" y1="6.5" x2="11" y2="6.5" width="0.127" layer="51"/>
+<wire x1="11" y1="6.5" x2="-5" y2="6.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="6.5" x2="-5" y2="7.4" width="0.127" layer="51"/>
+<wire x1="-5" y1="7.4" x2="-5" y2="9.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="9.5" x2="-5" y2="10.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="10.5" x2="23" y2="10.5" width="0.127" layer="51"/>
+<wire x1="23" y1="10.5" x2="23" y2="6.5" width="0.127" layer="51"/>
+<wire x1="13" y1="6.5" x2="13" y2="0" width="0.127" layer="51"/>
+<wire x1="11" y1="6.5" x2="11" y2="0" width="0.127" layer="51"/>
+<wire x1="-5" y1="7.4" x2="-11" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="-5" y1="9.5" x2="-13" y2="0" width="0.127" layer="51" curve="90"/>
+<wire x1="12" y1="-7" x2="20" y2="-7" width="0.127" layer="51"/>
+<wire x1="20" y1="-7" x2="20" y2="6.5" width="0.127" layer="51"/>
+<wire x1="12" y1="-7" x2="12" y2="-4.9" width="0.127" layer="51"/>
+<wire x1="-12" y1="7" x2="-20" y2="7" width="0.127" layer="51"/>
+<wire x1="-20" y1="7" x2="-20" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-12" y1="7" x2="-12" y2="4.9" width="0.127" layer="51"/>
+</package>
+<package name="PAD_0.6_1.8">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.8" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PWR+G">
@@ -2286,6 +2368,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="3" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="PAD">
+<pin name="1" x="-5.08" y="0" length="middle"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SC560C">
@@ -2392,10 +2479,19 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="JST_2_FEMALE">
+<device name="-RA" package="JST_2_FEMALE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BATTERY" package="TP_LIPO_160MAH">
+<connects>
+<connect gate="G$1" pin="1" pad="V-"/>
+<connect gate="G$1" pin="2" pad="V+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2695,12 +2791,72 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="1X04_2MM_BOARDEDGE">
+<device name="BOARDEDGE" package="1X04_2MM_BOARDEDGE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOARDEDGE_VERT_VIA" package="1X4_3MM_BOARDEDGE_VERT_VIA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOARDEDGE_VERT" package="1X4_3MM_BOARDEDGE_VERT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOTOR_HOUSING">
+<gates>
+<gate name="RIGHT" symbol="M04" x="5.08" y="5.08"/>
+<gate name="LEFT" symbol="M04" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="MOTOR_HOUSING">
+<connects>
+<connect gate="LEFT" pin="1" pad="1"/>
+<connect gate="LEFT" pin="2" pad="2"/>
+<connect gate="LEFT" pin="3" pad="3"/>
+<connect gate="LEFT" pin="4" pad="4"/>
+<connect gate="RIGHT" pin="1" pad="5"/>
+<connect gate="RIGHT" pin="2" pad="6"/>
+<connect gate="RIGHT" pin="3" pad="7"/>
+<connect gate="RIGHT" pin="4" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAD">
+<gates>
+<gate name="G$1" symbol="PAD" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="-0.6_1.8" package="PAD_0.6_1.8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2764,8 +2920,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$2" library="modular_robotics" deviceset="MCP73831T" device=""/>
 <part name="PWR_SWITCH" library="modular_robotics" deviceset="JS202011SCQN" device=""/>
 <part name="D1" library="modular_robotics" deviceset="DFLS130L" device=""/>
-<part name="PWR_BATT" library="modular_robotics" deviceset="JST-RCY-FEMALE" device=""/>
-<part name="PWR_BUS" library="modular_robotics" deviceset="JST-RCY-FEMALE" device=""/>
+<part name="PWR_BATT" library="modular_robotics" deviceset="JST-RCY-FEMALE" device="BATTERY"/>
+<part name="PWR_BUS" library="modular_robotics" deviceset="JST-RCY-FEMALE" device="BATTERY"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$11" library="modular_robotics" deviceset="INA199A1" device=""/>
@@ -2905,8 +3061,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$23" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="U$24" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="SPI" library="modular_robotics" deviceset="M04" device="FFC"/>
-<part name="I2C_1" library="modular_robotics" deviceset="M04" device=""/>
-<part name="I2C_2" library="modular_robotics" deviceset="M04" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="R35" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
 <part name="U$25" library="modular_robotics" deviceset="V_3.0" device=""/>
@@ -2919,6 +3073,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$16" library="modular_robotics" deviceset="V_3.0" device=""/>
 <part name="R39" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="4.7k"/>
 <part name="U$9" library="modular_robotics" deviceset="V_BUS" device=""/>
+<part name="U$27" library="modular_robotics" deviceset="MOTOR_HOUSING" device=""/>
+<part name="MA1" library="modular_robotics" deviceset="PAD" device="-0.6_1.8"/>
+<part name="MA2" library="modular_robotics" deviceset="PAD" device="-0.6_1.8"/>
+<part name="MB1" library="modular_robotics" deviceset="PAD" device="-0.6_1.8"/>
+<part name="MB2" library="modular_robotics" deviceset="PAD" device="-0.6_1.8"/>
 </parts>
 <sheets>
 <sheet>
@@ -3442,6 +3601,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="R21" gate="G$1" x="66.04" y="127" rot="R270"/>
 <instance part="R23" gate="G$1" x="55.88" y="127" rot="R270"/>
 <instance part="U$16" gate="G$1" x="226.06" y="175.26"/>
+<instance part="MA1" gate="G$1" x="91.44" y="162.56"/>
+<instance part="MA2" gate="G$1" x="91.44" y="157.48"/>
+<instance part="MB1" gate="G$1" x="91.44" y="152.4"/>
+<instance part="MB2" gate="G$1" x="91.44" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -3544,8 +3707,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="55.88" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
 <label x="68.58" y="157.48" size="1.778" layer="95"/>
 <pinref part="IC7" gate="S" pin="AOUT2"/>
-<wire x1="63.5" y1="157.48" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 <junction x="63.5" y="157.48"/>
+<pinref part="MA2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -3561,8 +3725,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="58.42" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
 <label x="68.58" y="162.56" size="1.778" layer="95"/>
 <pinref part="IC7" gate="S" pin="AOUT1"/>
-<wire x1="63.5" y1="162.56" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
 <junction x="63.5" y="162.56"/>
+<pinref part="MA1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -3578,8 +3743,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="58.42" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
 <label x="68.58" y="152.4" size="1.778" layer="95"/>
 <pinref part="IC7" gate="S" pin="BOUT1"/>
-<wire x1="63.5" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <junction x="63.5" y="152.4"/>
+<pinref part="MB1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -3593,8 +3759,9 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="55.88" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
 <label x="68.58" y="147.32" size="1.778" layer="95"/>
 <pinref part="IC7" gate="S" pin="BOUT2"/>
-<wire x1="63.5" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
 <junction x="63.5" y="147.32"/>
+<pinref part="MB2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -3874,14 +4041,14 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="U$23" gate="G$1" x="121.92" y="154.94"/>
 <instance part="U$24" gate="G$1" x="177.8" y="160.02"/>
 <instance part="SPI" gate="G$1" x="238.76" y="147.32" rot="R180"/>
-<instance part="I2C_1" gate="G$1" x="185.42" y="144.78" rot="R180"/>
-<instance part="I2C_2" gate="G$1" x="185.42" y="127" rot="R180"/>
 <instance part="GND13" gate="1" x="175.26" y="116.84"/>
 <instance part="R35" gate="G$1" x="231.14" y="154.94" rot="R90"/>
 <instance part="U$25" gate="G$1" x="231.14" y="160.02"/>
 <instance part="R37" gate="G$1" x="114.3" y="149.86" rot="R90"/>
 <instance part="R38" gate="G$1" x="106.68" y="149.86" rot="R90"/>
 <instance part="R39" gate="G$1" x="129.54" y="149.86" rot="R90"/>
+<instance part="U$27" gate="RIGHT" x="185.42" y="144.78" rot="R180"/>
+<instance part="U$27" gate="LEFT" x="185.42" y="127" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3908,10 +4075,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="121.92" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="I2C_1" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="147.32" x2="177.8" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="I2C_2" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="129.54" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$24" gate="G$1" pin="V_3.0"/>
 <wire x1="177.8" y1="160.02" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
@@ -3922,6 +4087,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
 <junction x="172.72" y="160.02"/>
+<pinref part="U$27" gate="RIGHT" pin="1"/>
+<pinref part="U$27" gate="LEFT" pin="1"/>
 </segment>
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
@@ -3938,14 +4105,14 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="12.7" y="137.16"/>
 </segment>
 <segment>
-<pinref part="I2C_1" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="144.78" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<pinref part="I2C_2" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="175.26" y1="127" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
 <junction x="175.26" y="127"/>
+<pinref part="U$27" gate="RIGHT" pin="2"/>
+<pinref part="U$27" gate="LEFT" pin="2"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
@@ -3993,16 +4160,16 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
-<pinref part="I2C_2" gate="G$1" pin="3"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="124.46" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="I2C_1" gate="G$1" pin="3"/>
 <wire x1="172.72" y1="142.24" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
 <junction x="172.72" y="142.24"/>
 <wire x1="172.72" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <label x="149.86" y="142.24" size="1.778" layer="95"/>
+<pinref part="U$27" gate="RIGHT" pin="3"/>
+<pinref part="U$27" gate="LEFT" pin="3"/>
 </segment>
 <segment>
 <pinref part="U$20" gate="G$1" pin="PTB3"/>
@@ -4012,16 +4179,16 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="I2C_SDA" class="0">
 <segment>
-<pinref part="I2C_1" gate="G$1" pin="4"/>
 <wire x1="180.34" y1="139.7" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="139.7" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="I2C_2" gate="G$1" pin="4"/>
 <wire x1="165.1" y1="121.92" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="149.86" x2="165.1" y2="139.7" width="0.1524" layer="91"/>
 <junction x="165.1" y="139.7"/>
 <wire x1="165.1" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
 <label x="149.86" y="139.7" size="1.778" layer="95"/>
+<pinref part="U$27" gate="RIGHT" pin="4"/>
+<pinref part="U$27" gate="LEFT" pin="4"/>
 </segment>
 <segment>
 <pinref part="U$20" gate="G$1" pin="PTB4"/>
