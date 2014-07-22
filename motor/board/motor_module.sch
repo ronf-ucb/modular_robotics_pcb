@@ -3485,10 +3485,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="SHEET_NAME" x="0" y="0" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="FRAME3" gate="G$2" x="147.32" y="0"/>
-<instance part="IC6" gate="A" x="154.94" y="167.64" rot="MR180"/>
+<instance part="IC6" gate="C" x="154.94" y="167.64" rot="MR180"/>
 <instance part="IC6" gate="D" x="154.94" y="132.08" rot="MR180"/>
 <instance part="IC6" gate="B" x="154.94" y="93.98" rot="MR180"/>
-<instance part="IC6" gate="C" x="154.94" y="58.42" rot="MR180"/>
+<instance part="IC6" gate="A" x="154.94" y="58.42" rot="MR180"/>
 <instance part="IC6" gate="P" x="226.06" y="165.1" smashed="yes">
 <attribute name="NAME" x="218.44" y="173.99" size="1.778" layer="95"/>
 </instance>
@@ -3776,7 +3776,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="147.32" y1="170.18" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="177.8" x2="152.4" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="A" pin="-IN"/>
+<pinref part="IC6" gate="C" pin="-IN"/>
 <wire x1="149.86" y1="170.18" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="170.18"/>
 </segment>
@@ -3787,7 +3787,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="144.78" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="147.32" y1="165.1" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="A" pin="+IN"/>
+<pinref part="IC6" gate="C" pin="+IN"/>
 <wire x1="149.86" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <junction x="147.32" y="165.1"/>
 </segment>
@@ -3834,7 +3834,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="147.32" y1="60.96" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="C" pin="-IN"/>
+<pinref part="IC6" gate="A" pin="-IN"/>
 <wire x1="149.86" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 <junction x="147.32" y="60.96"/>
 </segment>
@@ -3889,7 +3889,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$34" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
-<pinref part="IC6" gate="C" pin="OUT"/>
+<pinref part="IC6" gate="A" pin="OUT"/>
 <wire x1="162.56" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
@@ -3946,7 +3946,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="IC6" gate="A" pin="OUT"/>
+<pinref part="IC6" gate="C" pin="OUT"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="167.64" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
@@ -4003,7 +4003,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="73.66" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="C" pin="+IN"/>
+<pinref part="IC6" gate="A" pin="+IN"/>
 <wire x1="149.86" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <label x="111.76" y="55.88" size="1.778" layer="95"/>
 </segment>
