@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="5" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -22,16 +22,16 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -1044,7 +1044,7 @@ design rules under a new name.</description>
 <wire x1="22.5826" y1="0.4826" x2="22.4" y2="0.4826" width="0.1524" layer="1"/>
 <wire x1="21.1" y1="0.4826" x2="22.4" y2="0.4826" width="0.1524" layer="1"/>
 <wire x1="21.1" y1="1.5174" x2="21.1" y2="0.4826" width="0.1524" layer="1"/>
-<via x="-3" y="-7" extent="1-16" drill="0.381"/>
+<via x="-3" y="-7" extent="1-16" drill="0.381" alwaysstop="yes"/>
 </signal>
 <signal name="N$1">
 <contactref element="PWR_SWITCH" pad="5"/>
@@ -1343,7 +1343,7 @@ design rules under a new name.</description>
 <wire x1="12.6" y1="-2.4" x2="13.1" y2="-2.9" width="0.1524" layer="1"/>
 <wire x1="-3" y1="0" x2="-4.5" y2="-1.5" width="0.1524" layer="1"/>
 <wire x1="-4.5" y1="-1.5" x2="-4.5" y2="-2.25" width="0.1524" layer="1"/>
-<via x="-1" y="-7" extent="1-16" drill="0.381"/>
+<via x="-1" y="-7" extent="1-16" drill="0.381" alwaysstop="yes"/>
 <wire x1="-5" y1="-4.8174" x2="-3" y2="-4.8174" width="0.1524" layer="1"/>
 <wire x1="-3" y1="-4.8174" x2="-1" y2="-4.8174" width="0.1524" layer="1"/>
 <wire x1="-5" y1="-4.8174" x2="-5" y2="-2.75" width="0.1524" layer="1"/>
@@ -1902,7 +1902,7 @@ design rules under a new name.</description>
 <signal name="SWD_CLK">
 <contactref element="U$20" pad="22"/>
 <contactref element="R37" pad="1"/>
-<via x="-1" y="-5.8" extent="1-16" drill="0.381"/>
+<via x="-1" y="-5.8" extent="1-16" drill="0.381" alwaysstop="yes"/>
 <wire x1="-0.25" y1="-2.05" x2="-0.25" y2="-3.35" width="0.1524" layer="16"/>
 <wire x1="-0.25" y1="-3.35" x2="-0.5" y2="-3.6" width="0.1524" layer="16"/>
 <wire x1="-0.5" y1="-3.6" x2="-0.5" y2="-5.3" width="0.1524" layer="16"/>
@@ -1913,7 +1913,7 @@ design rules under a new name.</description>
 <signal name="RESET">
 <contactref element="U$20" pad="23"/>
 <contactref element="R38" pad="1"/>
-<via x="-3" y="-5.8" extent="1-16" drill="0.381"/>
+<via x="-3" y="-5.8" extent="1-16" drill="0.381" alwaysstop="yes"/>
 <wire x1="-3" y1="-5.7826" x2="-3" y2="-5.8" width="0.1524" layer="1"/>
 <wire x1="-3" y1="-5.8826" x2="-3" y2="-5.8" width="0.1524" layer="1"/>
 <wire x1="-0.75" y1="-2.05" x2="-0.75" y2="-3.25" width="0.1524" layer="16"/>
@@ -1938,7 +1938,7 @@ design rules under a new name.</description>
 <wire x1="26.9" y1="3.7" x2="23.4" y2="7.2" width="0.1524" layer="15"/>
 <wire x1="23.4" y1="7.2" x2="18.7" y2="7.2" width="0.1524" layer="15"/>
 <wire x1="18.7" y1="7.2" x2="18.2" y2="6.7" width="0.1524" layer="15"/>
-<via x="-5" y="-5.8" extent="1-16" drill="0.381"/>
+<via x="-5" y="-5.8" extent="1-16" drill="0.381" alwaysstop="yes"/>
 <wire x1="-1.25" y1="-2.05" x2="-1.25" y2="-4.05" width="0.1524" layer="16"/>
 <wire x1="-1.25" y1="-4.05" x2="-2.3" y2="-5.1" width="0.1524" layer="16"/>
 <via x="18.2" y="6.7" extent="1-16" drill="0.381"/>
