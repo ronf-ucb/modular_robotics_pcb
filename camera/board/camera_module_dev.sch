@@ -3493,7 +3493,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Austin Buchan"/>
-<attribute name="REVISION" value="0.0"/>
+<attribute name="REVISION" value="0.1"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -3525,8 +3525,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="SJ9" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SJ10" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SJ11" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
-<part name="SJ12" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
-<part name="SJ13" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X9" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X9" device=""/>
 <part name="SJ14" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="S"/>
@@ -3622,7 +3620,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="DATE" value="Feb. 2014"/>
 <attribute name="DESIGN" value="Dev Camera Module"/>
 <attribute name="ORGANIZATION" value="UC Berkeley Biomimetic Millisystems Lab"/>
-<attribute name="REVISION" value="r0.0"/>
+<attribute name="REVISION" value="r0.1"/>
 </part>
 </parts>
 <sheets>
@@ -3663,25 +3661,23 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <instance part="Q2" gate="G$1" x="200.66" y="78.74" smashed="yes" rot="R270">
 <attribute name="NAME" x="203.2" y="73.66" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="IC1" gate="A" x="127" y="157.48"/>
-<instance part="IC2" gate="A" x="127" y="109.22"/>
+<instance part="IC1" gate="A" x="114.3" y="157.48"/>
+<instance part="IC2" gate="A" x="114.3" y="109.22"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="SJ1" gate="1" x="157.48" y="170.18" smashed="yes"/>
-<instance part="SJ2" gate="1" x="157.48" y="167.64" smashed="yes"/>
-<instance part="SJ3" gate="1" x="157.48" y="165.1" smashed="yes"/>
-<instance part="SJ4" gate="1" x="157.48" y="162.56" smashed="yes"/>
-<instance part="SJ5" gate="1" x="157.48" y="160.02" smashed="yes"/>
-<instance part="SJ6" gate="1" x="157.48" y="157.48" smashed="yes"/>
-<instance part="SJ7" gate="1" x="157.48" y="154.94" smashed="yes"/>
-<instance part="SJ8" gate="1" x="157.48" y="152.4" smashed="yes"/>
-<instance part="SJ9" gate="1" x="160.02" y="121.92" smashed="yes"/>
-<instance part="SJ10" gate="1" x="160.02" y="119.38" smashed="yes"/>
-<instance part="SJ11" gate="1" x="160.02" y="116.84" smashed="yes"/>
-<instance part="SJ12" gate="G$1" x="93.98" y="101.6" rot="R180"/>
-<instance part="SJ13" gate="G$1" x="93.98" y="149.86" rot="R180"/>
+<instance part="SJ1" gate="1" x="144.78" y="170.18" smashed="yes"/>
+<instance part="SJ2" gate="1" x="144.78" y="167.64" smashed="yes"/>
+<instance part="SJ3" gate="1" x="144.78" y="165.1" smashed="yes"/>
+<instance part="SJ4" gate="1" x="144.78" y="162.56" smashed="yes"/>
+<instance part="SJ5" gate="1" x="144.78" y="160.02" smashed="yes"/>
+<instance part="SJ6" gate="1" x="144.78" y="157.48" smashed="yes"/>
+<instance part="SJ7" gate="1" x="144.78" y="154.94" smashed="yes"/>
+<instance part="SJ8" gate="1" x="144.78" y="152.4" smashed="yes"/>
+<instance part="SJ9" gate="1" x="147.32" y="121.92" smashed="yes"/>
+<instance part="SJ10" gate="1" x="147.32" y="119.38" smashed="yes"/>
+<instance part="SJ11" gate="1" x="147.32" y="116.84" smashed="yes"/>
 <instance part="IC1" gate="P" x="86.36" y="152.4"/>
-<instance part="IC2" gate="P" x="86.36" y="104.14"/>
+<instance part="IC2" gate="P" x="88.9" y="104.14"/>
 <instance part="JP3" gate="A" x="243.84" y="167.64"/>
 <instance part="JP4" gate="A" x="243.84" y="121.92"/>
 <instance part="SJ14" gate="G$1" x="33.02" y="93.98" rot="R180"/>
@@ -3720,13 +3716,13 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 </instance>
 <instance part="R6" gate="G$1" x="38.1" y="86.36"/>
 <instance part="R7" gate="G$1" x="27.94" y="86.36"/>
-<instance part="C6" gate="G$1" x="81.28" y="104.14" rot="R180">
-<attribute name="VOLTAGE" x="81.28" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="C6" gate="G$1" x="83.82" y="104.14" rot="R180">
+<attribute name="VOLTAGE" x="83.82" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="+3V2" gate="G$1" x="81.28" y="162.56"/>
 <instance part="GND7" gate="1" x="81.28" y="142.24"/>
-<instance part="GND8" gate="1" x="81.28" y="93.98"/>
-<instance part="+3V4" gate="G$1" x="81.28" y="114.3"/>
+<instance part="GND8" gate="1" x="83.82" y="93.98"/>
+<instance part="+3V4" gate="G$1" x="83.82" y="114.3"/>
 <instance part="R8" gate="G$1" x="190.5" y="83.82" rot="R270"/>
 <instance part="R9" gate="G$1" x="210.82" y="83.82" rot="R270"/>
 <instance part="R10" gate="G$1" x="190.5" y="55.88" rot="R270"/>
@@ -3735,7 +3731,7 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <instance part="+3V6" gate="G$1" x="210.82" y="63.5"/>
 <instance part="VCC3" gate="G$1" x="190.5" y="91.44"/>
 <instance part="VCC4" gate="G$1" x="190.5" y="63.5"/>
-<instance part="GND9" gate="1" x="111.76" y="109.22" rot="R270"/>
+<instance part="GND9" gate="1" x="99.06" y="109.22" rot="R270"/>
 <instance part="+3V7" gate="G$1" x="20.32" y="38.1"/>
 <instance part="GND10" gate="1" x="17.78" y="7.62"/>
 <instance part="GND11" gate="1" x="86.36" y="5.08"/>
@@ -3783,9 +3779,9 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <busses>
 <bus name="D[0..7]">
 <segment>
-<wire x1="109.22" y1="152.4" x2="109.22" y2="177.8" width="0.762" layer="92"/>
-<wire x1="109.22" y1="177.8" x2="165.1" y2="177.8" width="0.762" layer="92"/>
-<wire x1="165.1" y1="177.8" x2="165.1" y2="152.4" width="0.762" layer="92"/>
+<wire x1="96.52" y1="152.4" x2="96.52" y2="177.8" width="0.762" layer="92"/>
+<wire x1="96.52" y1="177.8" x2="152.4" y2="177.8" width="0.762" layer="92"/>
+<wire x1="152.4" y1="177.8" x2="152.4" y2="152.4" width="0.762" layer="92"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="48.26" x2="142.24" y2="66.04" width="0.762" layer="92"/>
@@ -3799,9 +3795,9 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 </bus>
 <bus name="PCLK,VSYNC,HSYNC">
 <segment>
-<wire x1="104.14" y1="116.84" x2="104.14" y2="129.54" width="0.762" layer="92"/>
-<wire x1="104.14" y1="129.54" x2="167.64" y2="129.54" width="0.762" layer="92"/>
-<wire x1="167.64" y1="129.54" x2="167.64" y2="116.84" width="0.762" layer="92"/>
+<wire x1="91.44" y1="116.84" x2="91.44" y2="129.54" width="0.762" layer="92"/>
+<wire x1="91.44" y1="129.54" x2="154.94" y2="129.54" width="0.762" layer="92"/>
+<wire x1="154.94" y1="129.54" x2="154.94" y2="116.84" width="0.762" layer="92"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="71.12" x2="142.24" y2="76.2" width="0.762" layer="92"/>
@@ -3815,13 +3811,13 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 </bus>
 <bus name="PMOD_RESET,XCLK,SDA,SCL">
 <segment>
-<wire x1="5.08" y1="76.2" x2="5.08" y2="63.5" width="0.762" layer="92"/>
+<wire x1="5.08" y1="71.12" x2="5.08" y2="63.5" width="0.762" layer="92"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="76.2" x2="50.8" y2="63.5" width="0.762" layer="92"/>
+<wire x1="50.8" y1="71.12" x2="50.8" y2="63.5" width="0.762" layer="92"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="76.2" x2="101.6" y2="63.5" width="0.762" layer="92"/>
+<wire x1="101.6" y1="71.12" x2="101.6" y2="63.5" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -3843,8 +3839,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC2" gate="A" pin="Y3"/>
 <pinref part="SJ11" gate="1" pin="1"/>
-<wire x1="139.7" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
-<label x="139.7" y="116.84" size="1.778" layer="95"/>
+<wire x1="127" y1="116.84" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
+<label x="127" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PMOD_VSYNC" class="0">
@@ -3857,8 +3853,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC2" gate="A" pin="Y2"/>
 <pinref part="SJ10" gate="1" pin="1"/>
-<wire x1="139.7" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
-<label x="139.7" y="119.38" size="1.778" layer="95"/>
+<wire x1="127" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="127" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PMOD_PCLK" class="0">
@@ -3871,8 +3867,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC2" gate="A" pin="Y1"/>
 <pinref part="SJ9" gate="1" pin="1"/>
-<wire x1="139.7" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
-<label x="139.7" y="121.92" size="1.778" layer="95"/>
+<wire x1="127" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<label x="127" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PMOD_XCLK" class="0">
@@ -3930,8 +3926,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y8"/>
 <pinref part="SJ8" gate="1" pin="1"/>
-<wire x1="139.7" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
-<label x="139.7" y="152.4" size="1.778" layer="95"/>
+<wire x1="127" y1="152.4" x2="139.7" y2="152.4" width="0.1524" layer="91"/>
+<label x="127" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="8"/>
@@ -3944,8 +3940,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y7"/>
 <pinref part="SJ7" gate="1" pin="1"/>
-<wire x1="139.7" y1="154.94" x2="152.4" y2="154.94" width="0.1524" layer="91"/>
-<label x="139.7" y="154.94" size="1.778" layer="95"/>
+<wire x1="127" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
+<label x="127" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="7"/>
@@ -3958,8 +3954,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y6"/>
 <pinref part="SJ6" gate="1" pin="1"/>
-<wire x1="139.7" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
-<label x="139.7" y="157.48" size="1.778" layer="95"/>
+<wire x1="127" y1="157.48" x2="139.7" y2="157.48" width="0.1524" layer="91"/>
+<label x="127" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="6"/>
@@ -3972,8 +3968,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y5"/>
 <pinref part="SJ5" gate="1" pin="1"/>
-<wire x1="139.7" y1="160.02" x2="152.4" y2="160.02" width="0.1524" layer="91"/>
-<label x="139.7" y="160.02" size="1.778" layer="95"/>
+<wire x1="127" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
+<label x="127" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="5"/>
@@ -3986,8 +3982,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y4"/>
 <pinref part="SJ4" gate="1" pin="1"/>
-<wire x1="139.7" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
-<label x="139.7" y="162.56" size="1.778" layer="95"/>
+<wire x1="127" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
+<label x="127" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="4"/>
@@ -4002,8 +3998,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y3"/>
 <pinref part="SJ3" gate="1" pin="1"/>
-<wire x1="139.7" y1="165.1" x2="152.4" y2="165.1" width="0.1524" layer="91"/>
-<label x="139.7" y="165.1" size="1.778" layer="95"/>
+<wire x1="127" y1="165.1" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<label x="127" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="3"/>
@@ -4018,8 +4014,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y2"/>
 <pinref part="SJ2" gate="1" pin="1"/>
-<wire x1="139.7" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
-<label x="139.7" y="167.64" size="1.778" layer="95"/>
+<wire x1="127" y1="167.64" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<label x="127" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="2"/>
@@ -4034,8 +4030,8 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="IC1" gate="A" pin="Y1"/>
 <pinref part="SJ1" gate="1" pin="1"/>
-<wire x1="139.7" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
-<label x="139.7" y="170.18" size="1.778" layer="95"/>
+<wire x1="127" y1="170.18" x2="139.7" y2="170.18" width="0.1524" layer="91"/>
+<label x="127" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="1"/>
@@ -4102,36 +4098,42 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <wire x1="86.36" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="144.78" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="SJ13" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
 <junction x="86.36" y="144.78"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <junction x="81.28" y="144.78"/>
+<pinref part="IC1" gate="A" pin="G2"/>
+<wire x1="86.36" y1="144.78" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="G1"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
+<junction x="101.6" y="144.78"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="101.6" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="P" pin="GND"/>
-<wire x1="81.28" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="SJ12" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<junction x="86.36" y="96.52"/>
+<wire x1="83.82" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<junction x="88.9" y="96.52"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<junction x="81.28" y="96.52"/>
+<junction x="83.82" y="96.52"/>
+<pinref part="IC2" gate="A" pin="G2"/>
+<pinref part="IC2" gate="A" pin="G1"/>
+<wire x1="101.6" y1="96.52" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
+<junction x="101.6" y="96.52"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="A4"/>
 <pinref part="IC2" gate="A" pin="A5"/>
-<wire x1="114.3" y1="114.3" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="114.3" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="A6"/>
-<wire x1="114.3" y1="111.76" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-<junction x="114.3" y="111.76"/>
+<wire x1="101.6" y1="111.76" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
+<junction x="101.6" y="111.76"/>
 <pinref part="IC2" gate="A" pin="A7"/>
-<wire x1="114.3" y1="109.22" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<junction x="114.3" y="109.22"/>
+<wire x1="101.6" y1="109.22" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
+<junction x="101.6" y="109.22"/>
 <pinref part="IC2" gate="A" pin="A8"/>
-<wire x1="114.3" y1="106.68" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<junction x="114.3" y="106.68"/>
+<wire x1="101.6" y1="106.68" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
+<junction x="101.6" y="106.68"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4210,24 +4212,16 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <pinref part="IC1" gate="P" pin="VCC"/>
 <wire x1="81.28" y1="154.94" x2="81.28" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="160.02" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
-<junction x="86.36" y="160.02"/>
-<pinref part="SJ13" gate="G$1" pin="3"/>
-<wire x1="93.98" y1="160.02" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 <junction x="81.28" y="160.02"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="106.68" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="106.68" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="P" pin="VCC"/>
-<wire x1="81.28" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="SJ12" gate="G$1" pin="3"/>
-<wire x1="93.98" y1="106.68" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<junction x="86.36" y="111.76"/>
+<wire x1="83.82" y1="111.76" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<junction x="81.28" y="111.76"/>
+<junction x="83.82" y="111.76"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -4277,33 +4271,6 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <label x="218.44" y="177.8" size="1.778" layer="95"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="167.64" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="QG1" gate="A" pin="CON"/>
-<wire x1="33.02" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
-<label x="38.1" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="A" pin="G2"/>
-<wire x1="114.3" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-<label x="99.06" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="A" pin="G2"/>
-<wire x1="114.3" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<label x="99.06" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="PWDN"/>
-<wire x1="7.62" y1="76.2" x2="5.08" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="PWDN"/>
-<wire x1="53.34" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="PWDN"/>
-<wire x1="104.14" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
@@ -4401,12 +4368,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D0" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A1"/>
-<label x="111.76" y="170.18" size="1.778" layer="95"/>
-<wire x1="114.3" y1="170.18" x2="109.22" y2="170.18" width="0.1524" layer="91"/>
+<label x="99.06" y="170.18" size="1.778" layer="95"/>
+<wire x1="101.6" y1="170.18" x2="96.52" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="1" pin="2"/>
-<wire x1="162.56" y1="170.18" x2="165.1" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="170.18" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA0"/>
@@ -4424,12 +4391,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D1" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A2"/>
-<label x="111.76" y="167.64" size="1.778" layer="95"/>
-<wire x1="114.3" y1="167.64" x2="109.22" y2="167.64" width="0.1524" layer="91"/>
+<label x="99.06" y="167.64" size="1.778" layer="95"/>
+<wire x1="101.6" y1="167.64" x2="96.52" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="162.56" y1="167.64" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA1"/>
@@ -4447,12 +4414,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D2" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A3"/>
-<label x="111.76" y="165.1" size="1.778" layer="95"/>
-<wire x1="114.3" y1="165.1" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
+<label x="99.06" y="165.1" size="1.778" layer="95"/>
+<wire x1="101.6" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ3" gate="1" pin="2"/>
-<wire x1="162.56" y1="165.1" x2="165.1" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="165.1" x2="152.4" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA2"/>
@@ -4470,12 +4437,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D3" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A4"/>
-<label x="111.76" y="162.56" size="1.778" layer="95"/>
-<wire x1="114.3" y1="162.56" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
+<label x="99.06" y="162.56" size="1.778" layer="95"/>
+<wire x1="101.6" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ4" gate="1" pin="2"/>
-<wire x1="162.56" y1="162.56" x2="165.1" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA3"/>
@@ -4493,12 +4460,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D4" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A5"/>
-<label x="111.76" y="160.02" size="1.778" layer="95"/>
-<wire x1="114.3" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
+<label x="99.06" y="160.02" size="1.778" layer="95"/>
+<wire x1="101.6" y1="160.02" x2="96.52" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ5" gate="1" pin="2"/>
-<wire x1="162.56" y1="160.02" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="160.02" x2="152.4" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA4"/>
@@ -4516,12 +4483,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D5" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A6"/>
-<label x="111.76" y="157.48" size="1.778" layer="95"/>
-<wire x1="114.3" y1="157.48" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
+<label x="99.06" y="157.48" size="1.778" layer="95"/>
+<wire x1="101.6" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ6" gate="1" pin="2"/>
-<wire x1="162.56" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA5"/>
@@ -4539,12 +4506,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D6" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A7"/>
-<label x="111.76" y="154.94" size="1.778" layer="95"/>
-<wire x1="114.3" y1="154.94" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
+<label x="99.06" y="154.94" size="1.778" layer="95"/>
+<wire x1="101.6" y1="154.94" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ7" gate="1" pin="2"/>
-<wire x1="162.56" y1="154.94" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="154.94" x2="152.4" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA6"/>
@@ -4562,12 +4529,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="D7" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="A8"/>
-<label x="111.76" y="152.4" size="1.778" layer="95"/>
-<wire x1="114.3" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
+<label x="99.06" y="152.4" size="1.778" layer="95"/>
+<wire x1="101.6" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ8" gate="1" pin="2"/>
-<wire x1="162.56" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="152.4" x2="152.4" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DATA7"/>
@@ -4585,12 +4552,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="PCLK" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="A1"/>
-<wire x1="114.3" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
-<label x="106.68" y="121.92" size="1.778" layer="95"/>
+<wire x1="101.6" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
+<label x="93.98" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ9" gate="1" pin="2"/>
-<wire x1="165.1" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="PCLK"/>
@@ -4608,12 +4575,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="VSYNC" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="A2"/>
-<wire x1="114.3" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
-<label x="106.68" y="119.38" size="1.778" layer="95"/>
+<wire x1="101.6" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<label x="93.98" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ10" gate="1" pin="2"/>
-<wire x1="165.1" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VSYNC"/>
@@ -4631,12 +4598,12 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <net name="HSYNC" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="A3"/>
-<wire x1="114.3" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
-<label x="106.68" y="116.84" size="1.778" layer="95"/>
+<wire x1="101.6" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<label x="93.98" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ11" gate="1" pin="2"/>
-<wire x1="165.1" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="HREF"/>
@@ -4649,22 +4616,6 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="HREF"/>
 <wire x1="43.18" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="SJ13" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="149.86" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A" pin="G1"/>
-<wire x1="114.3" y1="149.86" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="IC2" gate="A" pin="G1"/>
-<pinref part="SJ12" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="99.06" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="101.6" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -4768,9 +4719,10 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <wire x1="68.58" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="38.1" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <junction x="88.9" y="30.48"/>
-<wire x1="88.9" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
 <junction x="88.9" y="38.1"/>
 <pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="17.78" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="IOVDD" pin="V"/>
 <wire x1="116.84" y1="30.48" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
@@ -4783,6 +4735,10 @@ OVM7660: AVDD(AVDD,DOVDD)-2.4,2.5,2.8 DVDD-1.8 (2.8,1.8)</text>
 <wire x1="114.3" y1="30.48" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="38.1" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
 <junction x="124.46" y="30.48"/>
+<pinref part="U$2" gate="G$1" pin="PWDN"/>
+<wire x1="104.14" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="76.2" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
+<junction x="99.06" y="38.1"/>
 </segment>
 </net>
 </nets>
