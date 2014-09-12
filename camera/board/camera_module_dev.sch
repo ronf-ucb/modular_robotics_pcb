@@ -286,31 +286,31 @@
 <wire x1="21.59" y1="12.7" x2="19.05" y2="12.7" width="0.254" layer="51"/>
 </package>
 <package name="TCM-20">
-<smd name="1" x="2.2" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
+<smd name="1" x="2" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
 <wire x1="-3" y1="3" x2="2.4" y2="3" width="0.127" layer="51"/>
 <wire x1="2.4" y1="3" x2="3" y2="2.4" width="0.127" layer="51"/>
 <wire x1="3" y1="2.4" x2="3" y2="-3" width="0.127" layer="51"/>
 <wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
 <wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="51"/>
-<smd name="2" x="1.2" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
+<smd name="2" x="1.1" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
 <smd name="3" x="0.2" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
-<smd name="4" x="-0.8" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
-<smd name="5" x="-1.8" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
-<smd name="6" x="-3.3" y="2.2" dx="0.6" dy="0.6" layer="1" rot="R270"/>
-<smd name="7" x="-3.3" y="1.2" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="4" x="-0.7" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
+<smd name="5" x="-1.6" y="3.3" dx="0.6" dy="0.6" layer="1" rot="R180"/>
+<smd name="6" x="-3.3" y="2" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="7" x="-3.3" y="1.1" dx="0.6" dy="0.6" layer="1" rot="R270"/>
 <smd name="8" x="-3.3" y="0.2" dx="0.6" dy="0.6" layer="1" rot="R270"/>
-<smd name="9" x="-3.3" y="-0.8" dx="0.6" dy="0.6" layer="1" rot="R270"/>
-<smd name="10" x="-3.3" y="-1.8" dx="0.6" dy="0.6" layer="1" rot="R270"/>
-<smd name="11" x="-2.2" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
-<smd name="12" x="-1.2" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
+<smd name="9" x="-3.3" y="-0.7" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="10" x="-3.3" y="-1.6" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="11" x="-2" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
+<smd name="12" x="-1.1" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
 <smd name="13" x="-0.2" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
-<smd name="14" x="0.8" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
-<smd name="15" x="1.8" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
-<smd name="16" x="3.3" y="-2.2" dx="0.6" dy="0.6" layer="1" rot="R90"/>
-<smd name="17" x="3.3" y="-1.2" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<smd name="14" x="0.7" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
+<smd name="15" x="1.6" y="-3.3" dx="0.6" dy="0.6" layer="1"/>
+<smd name="16" x="3.3" y="-2" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<smd name="17" x="3.3" y="-1.1" dx="0.6" dy="0.6" layer="1" rot="R90"/>
 <smd name="18" x="3.3" y="-0.2" dx="0.6" dy="0.6" layer="1" rot="R90"/>
-<smd name="19" x="3.3" y="0.8" dx="0.6" dy="0.6" layer="1" rot="R90"/>
-<smd name="20" x="3.3" y="1.8" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<smd name="19" x="3.3" y="0.7" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<smd name="20" x="3.3" y="1.6" dx="0.6" dy="0.6" layer="1" rot="R90"/>
 <wire x1="2.4" y1="3" x2="3" y2="2.4" width="0.254" layer="21"/>
 <wire x1="-3" y1="2.6" x2="-3" y2="3" width="0.254" layer="21"/>
 <wire x1="-3" y1="3" x2="-2.2" y2="3" width="0.254" layer="21"/>
@@ -3549,7 +3549,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="R4" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R5" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
