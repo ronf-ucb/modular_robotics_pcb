@@ -2316,7 +2316,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="U$7" library="modular_robotics" deviceset="INFO" device="">
-<attribute name="AUTHOR" value="Austin Buchan"/>
+<attribute name="AUTHOR" value="Austin Buchan (abuchan@berkeley.edu)"/>
 <attribute name="DATE" value="Sep. 2014"/>
 <attribute name="DESIGN" value="TCM8230 Camera Module"/>
 <attribute name="ORGANIZATION" value="UC Berkeley ASPIRE"/>
