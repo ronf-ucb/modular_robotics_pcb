@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -409,7 +409,7 @@ chip</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="advancedcircuits-66each-biomimetic">
+<designrules name="advancedcircuits-66each-biomimetic *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -481,7 +481,7 @@ design rules under a new name.</description>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="8mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="0.5mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -725,14 +725,14 @@ design rules under a new name.</description>
 <contactref element="Q2" pad="3"/>
 <contactref element="R9" pad="2"/>
 <contactref element="U$4" pad="7"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="8.89" width="0.1524" layer="1"/>
-<wire x1="7.62" y1="8.89" x2="11.43" y2="12.7" width="0.1524" layer="1"/>
-<wire x1="11.43" y1="12.7" x2="13.208" y2="12.7" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="9.144" width="0.1524" layer="1"/>
+<wire x1="11.176" y1="12.7" x2="13.208" y2="12.7" width="0.1524" layer="1"/>
 <wire x1="13.208" y1="12.7" x2="13.97" y2="13.462" width="0.1524" layer="1"/>
 <wire x1="13.97" y1="13.462" x2="13.97" y2="16.51" width="0.1524" layer="1"/>
 <wire x1="13.97" y1="16.51" x2="15.41" y2="16.51" width="0.1524" layer="1"/>
 <wire x1="12.7" y1="16.9926" x2="13.4874" y2="16.9926" width="0.1524" layer="1"/>
 <wire x1="13.4874" y1="16.9926" x2="13.97" y2="16.51" width="0.1524" layer="1"/>
+<wire x1="7.62" y1="9.144" x2="11.176" y2="12.7" width="0.1524" layer="1"/>
 </signal>
 <signal name="PMOD_SDA">
 <contactref element="Q1" pad="3"/>
@@ -1031,7 +1031,7 @@ design rules under a new name.</description>
 <contactref element="C11" pad="1"/>
 <contactref element="C12" pad="2"/>
 <contactref element="C16" pad="2"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1778" layer="1" isolate="0.2032">
 <vertex x="0" y="0"/>
 <vertex x="40.64" y="0"/>
 <vertex x="40.64" y="19.05"/>
