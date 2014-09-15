@@ -7,7 +7,7 @@ CUR_DATE = $(shell ls -l $(CUR_JOB) | awk '{print $$11}')
 CFG_FILE = $(CUR_JOB)/layout.cfg
 DEF_FILE = $(CUR_JOB)/layout.def
 
-CAM_SCR = panel/33each_cam.sh
+#CAM_SCR = panel/33each_cam.sh
 
 merge: $(CUR_JOB)/$(CUR_DATE).zip
 
@@ -15,6 +15,7 @@ merge: $(CUR_JOB)/$(CUR_DATE).zip
 	$(eval BOARD_FILE := $*.brd)
 	$(eval BOARD_NAME := $(notdir $*))
 	$(eval GERBER_DIR :=  $(dir $*.brd)gerber)
+	$(eval CAM_SCR := $(dir $*.brd)cam.sh)
 	rm -rf $(GERBER_DIR)/*.*
 	bash $(CAM_SCR) $(BOARD_FILE) $(GERBER_DIR)/$(BOARD_NAME)
 	mv $(dir $*.brd)gerber.zip $*.zip

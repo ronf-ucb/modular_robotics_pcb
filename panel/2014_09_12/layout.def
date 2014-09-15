@@ -1,35 +1,17 @@
-Row { 
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
+Row {
+  zumy_carrier_board
+  zumy_carrier_board
+  zumy_carrier_board
+  zumy_carrier_board
+  zumy_carrier_board
 }
 
 Row { 
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
+  camera_module_dev
+  camera_module_dev
+  camera_module_dev
+  camera_module_dev
+  camera_module_dev
+  camera_module_dev
 }
 
-Row { 
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-  camera_module_dev Rotate
-}
