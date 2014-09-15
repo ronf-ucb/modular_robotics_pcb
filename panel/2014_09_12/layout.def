@@ -1,9 +1,13 @@
 Row {
-  zumy_carrier_board
-  zumy_carrier_board
-  zumy_carrier_board
-  zumy_carrier_board
-  zumy_carrier_board
+  zumy_carrier_board Rotate
+  zumy_carrier_board Rotate
+  zumy_carrier_board Rotate
+}
+
+Row {
+  zumy_carrier_board Rotate
+  zumy_carrier_board Rotate
+  zumy_carrier_board Rotate
 }
 
 Row { 
