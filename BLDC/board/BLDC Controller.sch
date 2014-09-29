@@ -151,7 +151,7 @@ Footprint for DRV8301</description>
 <wire x1="-7" y1="-3.05" x2="-7" y2="3.05" width="0.1016" layer="21"/>
 <circle x="-6.1" y="-2.2" radius="0.2828" width="0.1016" layer="21"/>
 <smd name="1" x="-6.75" y="-3.75" dx="0.3" dy="1.1" layer="1" stop="no" cream="no"/>
-<smd name="EXP@1" x="-3.5" y="0" dx="7" dy="5.1" layer="1" stop="no" cream="no"/>
+<smd name="EXP@1" x="-3.5" y="0" dx="7" dy="3.61" layer="1" stop="no" cream="no"/>
 <smd name="2" x="-6.25" y="-3.75" dx="0.3" dy="1.1" layer="1" stop="no" cream="no"/>
 <smd name="3" x="-5.75" y="-3.75" dx="0.3" dy="1.1" layer="1" stop="no" cream="no"/>
 <smd name="4" x="-5.25" y="-3.75" dx="0.3" dy="1.1" layer="1" stop="no" cream="no"/>
@@ -207,7 +207,7 @@ Footprint for DRV8301</description>
 <smd name="54" x="-5.75" y="3.75" dx="0.3" dy="1.1" layer="1" rot="R180" stop="no" cream="no"/>
 <smd name="55" x="-6.25" y="3.75" dx="0.3" dy="1.1" layer="1" rot="R180" stop="no" cream="no"/>
 <smd name="56" x="-6.75" y="3.75" dx="0.3" dy="1.1" layer="1" rot="R180" stop="no" cream="no"/>
-<smd name="EXP@2" x="3.5" y="0" dx="7" dy="5.1" layer="1" stop="no" cream="no"/>
+<smd name="EXP@2" x="3.5" y="0" dx="7" dy="3.61" layer="1" stop="no" cream="no"/>
 <text x="-7.747" y="-2.832" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="8.763" y="-3.594" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-6.86" y1="-4.15" x2="-6.63" y2="-3.095" layer="51"/>
@@ -378,7 +378,7 @@ Footprint for DRV8301</description>
 <rectangle x1="-6.87" y1="3.095" x2="-6.64" y2="4.15" layer="51" rot="R180"/>
 <rectangle x1="-6.905" y1="3.195" x2="-6.595" y2="4.305" layer="29" rot="R180"/>
 <rectangle x1="-6.89" y1="3.215" x2="-6.61" y2="4.285" layer="31" rot="R180"/>
-<rectangle x1="-6.995" y1="-2.55" x2="7" y2="2.545" layer="29"/>
+<rectangle x1="-6.995" y1="-1.8" x2="7" y2="1.8" layer="29"/>
 </package>
 <package name="SLPS388A">
 <description>MOSFET VSON-FET footprint.
@@ -1975,7 +1975,7 @@ Standard 8.5x11 US Letter frame</description>
 <connect gate="G$1" pin="OCTW" pad="5"/>
 <connect gate="G$1" pin="PH1" pad="50"/>
 <connect gate="G$1" pin="PH2" pad="51"/>
-<connect gate="G$1" pin="POWERPAD" pad="EXP@2"/>
+<connect gate="G$1" pin="POWERPAD" pad="EXP@1 EXP@2"/>
 <connect gate="G$1" pin="PVDD1" pad="29"/>
 <connect gate="G$1" pin="PVDD2_1" pad="53"/>
 <connect gate="G$1" pin="PVDD2_2" pad="54"/>
@@ -1998,7 +1998,7 @@ Standard 8.5x11 US Letter frame</description>
 <connect gate="G$1" pin="SO2" pad="26"/>
 <connect gate="G$1" pin="SP1" pad="32"/>
 <connect gate="G$1" pin="SP2" pad="30"/>
-<connect gate="G$1" pin="SS_TR" pad="56 EXP@1"/>
+<connect gate="G$1" pin="SS_TR" pad="56"/>
 <connect gate="G$1" pin="VDD_SPI" pad="49"/>
 <connect gate="G$1" pin="VSENSE" pad="3"/>
 </connects>
