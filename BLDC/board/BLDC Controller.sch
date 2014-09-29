@@ -12233,8 +12233,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </deviceset>
 <deviceset name="INA199A1">
 <gates>
-<gate name="G$1" symbol="PWR+G" x="-12.7" y="0"/>
-<gate name="G$2" symbol="OPAMP" x="0" y="0"/>
+<gate name="G$1" symbol="PWR+G" x="-12.7" y="0" addlevel="must"/>
+<gate name="G$2" symbol="OPAMP" x="0" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="SC70-6">
@@ -12452,13 +12452,13 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <part name="JP7" library="biomimetic" deviceset="MOLEX_503480-0600" device=""/>
 <part name="P+4" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND30" library="biomimetic" deviceset="GND" device=""/>
-<part name="JP4" library="biomimetic" deviceset="MOLEX_503480-0600" device=""/>
+<part name="JP4" library="biomimetic" deviceset="MOLEX_503480-0600" device="" value="4x MOLEX_503480-0600"/>
 <part name="P+10" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND31" library="biomimetic" deviceset="GND" device=""/>
 <part name="P+11" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND32" library="biomimetic" deviceset="GND" device=""/>
 <part name="FRAME5" library="biomimetic" deviceset="FRAME-LETTER" device=""/>
-<part name="IC3" library="biomimetic" deviceset="AS5134" device="" value="Encoder"/>
+<part name="IC3" library="biomimetic" deviceset="AS5134" device="" value="AS 5134"/>
 <part name="C28" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="GND33" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND34" library="biomimetic" deviceset="GND" device=""/>
@@ -12485,7 +12485,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device="" value="5V_Bypass"/>
 <part name="GND45" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND46" library="biomimetic" deviceset="GND" device=""/>
-<part name="IC4" library="modular_robotics" deviceset="INA199A1" device=""/>
 <part name="U$17" library="modular_robotics" deviceset="V_BATT" device=""/>
 <part name="R38" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="R39" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
@@ -12495,7 +12494,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <part name="R29" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="C29" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="R30" library="biomimetic" deviceset="RESISTOR" device="2010" value=".01"/>
-<part name="U$4" library="modular_robotics" deviceset="INA199A1" device=""/>
 <part name="GND35" library="biomimetic" deviceset="GND" device=""/>
 <part name="U$5" library="biomimetic" deviceset="V_BATT" device=""/>
 <part name="GND36" library="biomimetic" deviceset="GND" device=""/>
@@ -12507,17 +12505,18 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <part name="GND38" library="biomimetic" deviceset="GND" device=""/>
 <part name="JP8" library="pinhead" deviceset="PINHD-1X4" device="" value="UVW_Out"/>
 <part name="GND39" library="biomimetic" deviceset="GND" device=""/>
-<part name="P+12" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND40" library="biomimetic" deviceset="GND" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ" device=""/>
 <part name="GND47" library="biomimetic" deviceset="GND" device=""/>
-<part name="U$8" library="modular_robotics" deviceset="JS202011SCQN" device=""/>
+<part name="S2" library="modular_robotics" deviceset="JS202011SCQN" device=""/>
 <part name="GND49" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND50" library="biomimetic" deviceset="GND" device=""/>
 <part name="P+14" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="LED5" library="biomimetic" deviceset="LED" device="0603" value="GREEN"/>
 <part name="R25" library="biomimetic" deviceset="RESISTOR" device="0603-RES" value="4.99k"/>
+<part name="ICN" library="modular_robotics" deviceset="INA199A1" device=""/>
+<part name="U$4" library="biomimetic" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13032,8 +13031,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <instance part="SJ4" gate="1" x="218.44" y="96.52" rot="R90"/>
 <instance part="SJ5" gate="1" x="187.96" y="96.52" rot="R90"/>
 <instance part="GND47" gate="1" x="40.64" y="17.78" rot="R270"/>
-<instance part="U$8" gate="G$1" x="48.26" y="111.76" rot="R90"/>
-<instance part="U$8" gate="G$2" x="48.26" y="121.92" rot="R90"/>
+<instance part="S2" gate="G$1" x="48.26" y="111.76" rot="R90"/>
+<instance part="S2" gate="G$2" x="48.26" y="121.92" rot="R90"/>
 <instance part="GND49" gate="1" x="17.78" y="111.76" rot="R270"/>
 <instance part="GND50" gate="1" x="7.62" y="124.46" rot="R270"/>
 <instance part="P+14" gate="G$1" x="55.88" y="121.92" rot="R270"/>
@@ -13188,7 +13187,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </segment>
 <segment>
 <pinref part="GND49" gate="1" pin="GND"/>
-<pinref part="U$8" gate="G$1" pin="O"/>
+<pinref part="S2" gate="G$1" pin="O"/>
 <wire x1="20.32" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13269,7 +13268,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </segment>
 <segment>
 <pinref part="P+14" gate="G$1" pin="3.3V"/>
-<pinref part="U$8" gate="G$2" pin="P"/>
+<pinref part="S2" gate="G$2" pin="P"/>
 <wire x1="55.88" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13346,7 +13345,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </net>
 <net name="ENABLE" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="S"/>
+<pinref part="S2" gate="G$1" pin="S"/>
 <wire x1="43.18" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <label x="17.78" y="116.84" size="1.778" layer="95"/>
 </segment>
@@ -13742,7 +13741,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <segment>
 <pinref part="LED5" gate="G$1" pin="A"/>
 <wire x1="35.56" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$2" pin="S"/>
+<pinref part="S2" gate="G$2" pin="S"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -13756,7 +13755,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <segment>
 <pinref part="IC1" gate="G$1" pin="EN_GATE"/>
 <label x="91.44" y="124.46" size="1.27" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="P"/>
+<pinref part="S2" gate="G$1" pin="P"/>
 <wire x1="53.34" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="114.3" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
@@ -13826,11 +13825,11 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <instance part="R29" gate="G$1" x="182.88" y="114.3" rot="R90"/>
 <instance part="C29" gate="G$1" x="195.58" y="114.3"/>
 <instance part="R30" gate="G$1" x="167.64" y="139.7" rot="R180"/>
-<instance part="IC4" gate="G$2" x="137.16" y="68.58"/>
-<instance part="U$4" gate="G$1" x="134.62" y="68.58"/>
 <instance part="GND35" gate="1" x="134.62" y="53.34"/>
 <instance part="U$5" gate="G$1" x="134.62" y="81.28"/>
 <instance part="GND36" gate="1" x="144.78" y="78.74" rot="R90"/>
+<instance part="ICN" gate="G$1" x="134.62" y="68.58"/>
+<instance part="ICN" gate="G$2" x="137.16" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -13929,14 +13928,14 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="GND"/>
 <wire x1="134.62" y1="55.88" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="ICN" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="IC4" gate="G$2" pin="REF"/>
 <wire x1="137.16" y1="76.2" x2="137.16" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="137.16" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="ICN" gate="G$2" pin="REF"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -13988,12 +13987,12 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <segment>
 <wire x1="129.54" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="V_BATT"/>
-<pinref part="IC4" gate="G$2" pin="-IN"/>
+<pinref part="ICN" gate="G$2" pin="-IN"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="V+"/>
 <pinref part="U$5" gate="G$1" pin="V_BATT"/>
 <wire x1="134.62" y1="78.74" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="ICN" gate="G$1" pin="V+"/>
 </segment>
 </net>
 <net name="BAT+" class="0">
@@ -14156,7 +14155,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <segment>
 <wire x1="129.54" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
 <label x="121.92" y="71.12" size="1.778" layer="95"/>
-<pinref part="IC4" gate="G$2" pin="+IN"/>
+<pinref part="ICN" gate="G$2" pin="+IN"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="D"/>
@@ -14199,7 +14198,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <net name="N$18" class="0">
 <segment>
 <pinref part="R38" gate="G$1" pin="2"/>
-<pinref part="IC4" gate="G$2" pin="OUT"/>
+<pinref part="ICN" gate="G$2" pin="OUT"/>
 </segment>
 </net>
 </nets>
@@ -14253,8 +14252,8 @@ Enable Half_Duplex PG1</text>
 <instance part="GND32" gate="1" x="226.06" y="48.26" rot="R90"/>
 <instance part="JP8" gate="A" x="231.14" y="144.78"/>
 <instance part="GND39" gate="1" x="203.2" y="152.4" rot="R180"/>
-<instance part="P+12" gate="G$1" x="162.56" y="101.6"/>
 <instance part="GND40" gate="1" x="160.02" y="78.74"/>
+<instance part="U$4" gate="G$1" x="162.56" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -14320,12 +14319,6 @@ Enable Half_Duplex PG1</text>
 <wire x1="193.04" y1="60.96" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="G$1" pin="3.3V"/>
 <wire x1="215.9" y1="60.96" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP5" gate="G$1" pin="6"/>
-<pinref part="P+12" gate="G$1" pin="3.3V"/>
-<wire x1="154.94" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="99.06" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14538,6 +14531,14 @@ Enable Half_Duplex PG1</text>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="88.9" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 <label x="220.98" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="6"/>
+<wire x1="154.94" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="5V"/>
+<wire x1="162.56" y1="99.06" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
