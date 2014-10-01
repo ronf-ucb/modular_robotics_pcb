@@ -3474,7 +3474,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="DATE" value="Feb. 2014"/>
 <attribute name="DESIGN" value="Motor Control Dev"/>
 <attribute name="ORGANIZATION" value="UC Berkeley Biomimetic Millisystems Lab"/>
-<attribute name="REVISION" value="r0.0"/>
+<attribute name="REVISION" value="r0.1"/>
 </part>
 <part name="U$9" library="modular_robotics" deviceset="V_BUS" device=""/>
 </parts>
