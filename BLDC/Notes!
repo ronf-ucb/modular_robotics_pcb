@@ -1,0 +1,19 @@
+Development Notes
+
+Day 1:
+-Attended platform meeting, where we discussed things at length.
+--Meeting notes here: https://docs.google.com/a/pioneers.berkeley.edu/document/d/1ZzEE43NnQfrCQeyto2bFGne3P7qXl4kVtjKK6KOoZHY/edit
+-Definately a window of opprotunity with the A level boards.  There's at least 2 (skin proc, dcbrushless driver, etc)
+-Decided to do DCBrushless controller, since it's entry level with people i know who trust me.  POC: Duncan and Austin
+- Recieved general directions from Duncan
+-- 10 Amps, 7.2 Volts, DC Brushless motor contorller that communicates over serial.
+-- recieved hardware: a AMS AS5134 Encoder.  THis encoder reqs a hovering 2-pole magnet to work, but it's pretty cool
+-- Recieved hardware: a BOOSTXL-DRV8301-CB.  THis is a development board for the chips that we are going to base the final controller on.
+-- Going to talk to austin about the controller. 
+
+-- Still need a motor.
+
+- INitial plan of attack: recive Hardware, make something breadboardish work.  Then test limits of that circuit & validate it.  Then go ahead and PCB it.
+
+
+
