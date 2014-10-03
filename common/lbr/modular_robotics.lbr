@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="10" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -80,6 +80,8 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -1679,6 +1681,76 @@ MAX3223-MAX3243.pdf</description>
 <package name="PAD_0.6_1.8">
 <smd name="1" x="0" y="0" dx="0.6" dy="1.8" layer="1"/>
 </package>
+<package name="QFN-48">
+<wire x1="3.05" y1="-3.5" x2="3.5" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-3.05" x2="3.5" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="-3.05" y1="-3.5" x2="-3.5" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3.05" x2="3.5" y2="3.5" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.05" y2="3.5" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3.5" x2="-3.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<smd name="1" x="-3.5" y="2.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="2" x="-3.5" y="2.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="3" x="-3.5" y="1.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="4" x="-3.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="5" x="-3.5" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="-3.5" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="-3.5" y="-0.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="8" x="-3.5" y="-0.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="9" x="-3.5" y="-1.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="10" x="-3.5" y="-1.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="11" x="-3.5" y="-2.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="12" x="-3.5" y="-2.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="13" x="-2.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="14" x="-2.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="15" x="-1.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="16" x="-1.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="17" x="-0.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="18" x="-0.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="19" x="0.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="20" x="0.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="21" x="1.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="22" x="1.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="23" x="2.25" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="24" x="2.75" y="-3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="25" x="3.5" y="-2.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="26" x="3.5" y="-2.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="27" x="3.5" y="-1.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="28" x="3.5" y="-1.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="29" x="3.5" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="30" x="3.5" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="31" x="3.5" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="32" x="3.5" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="33" x="3.5" y="1.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="34" x="3.5" y="1.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="35" x="3.5" y="2.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="36" x="3.5" y="2.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="37" x="2.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="38" x="2.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="39" x="1.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="40" x="1.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="41" x="0.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="42" x="0.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="43" x="-0.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="44" x="-0.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="EPAD" x="0" y="0" dx="5.1" dy="5.1" layer="1" cream="no"/>
+<text x="-2.45" y="4.8" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-6.15" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="29"/>
+<rectangle x1="-2" y1="0.5" x2="-0.5" y2="2" layer="31"/>
+<rectangle x1="0.5" y1="0.5" x2="2" y2="2" layer="31"/>
+<rectangle x1="0.5" y1="-2" x2="2" y2="-0.5" layer="31"/>
+<rectangle x1="-2" y1="-2" x2="-0.5" y2="-0.5" layer="31"/>
+<smd name="45" x="-1.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="46" x="-1.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="47" x="-2.25" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<smd name="48" x="-2.75" y="3.5" dx="0.8" dy="0.3" layer="1" rot="R270"/>
+<circle x="-4" y="4" radius="0.5" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="U2">
@@ -2059,6 +2131,85 @@ MAX3223-MAX3243.pdf</description>
 <pin name="1" x="-5.08" y="0" length="middle"/>
 <wire x1="-2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ADS1258-MUX">
+<pin name="AIN0" x="25.4" y="43.18" length="short" rot="R180"/>
+<pin name="AIN1" x="25.4" y="40.64" length="short" rot="R180"/>
+<pin name="AIN2" x="25.4" y="38.1" length="short" rot="R180"/>
+<pin name="AIN3" x="25.4" y="35.56" length="short" rot="R180"/>
+<pin name="AIN4" x="25.4" y="33.02" length="short" rot="R180"/>
+<pin name="AIN5" x="25.4" y="30.48" length="short" rot="R180"/>
+<pin name="AIN6" x="25.4" y="27.94" length="short" rot="R180"/>
+<pin name="AIN7" x="25.4" y="25.4" length="short" rot="R180"/>
+<pin name="AIN8" x="25.4" y="22.86" length="short" rot="R180"/>
+<pin name="AIN9" x="25.4" y="20.32" length="short" rot="R180"/>
+<pin name="AIN10" x="25.4" y="17.78" length="short" rot="R180"/>
+<pin name="AIN11" x="25.4" y="15.24" length="short" rot="R180"/>
+<pin name="AIN12" x="25.4" y="12.7" length="short" rot="R180"/>
+<pin name="AIN13" x="25.4" y="10.16" length="short" rot="R180"/>
+<pin name="AIN14" x="25.4" y="7.62" length="short" rot="R180"/>
+<pin name="AIN15" x="25.4" y="5.08" length="short" rot="R180"/>
+<pin name="AINCOM" x="25.4" y="2.54" length="short" rot="R180"/>
+<pin name="MUXOUTP" x="-2.54" y="43.18" length="short"/>
+<pin name="MUXOUTN" x="-2.54" y="38.1" length="short"/>
+<wire x1="0" y1="45.72" x2="22.86" y2="45.72" width="0.254" layer="94"/>
+<wire x1="22.86" y1="45.72" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="45.72" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ADS1258-ADC">
+<pin name="ADCINP" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="ADCINN" x="15.24" y="2.54" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ADS1258-GPIO">
+<pin name="GPIO0" x="12.7" y="20.32" length="short" rot="R180"/>
+<pin name="GPIO1" x="12.7" y="17.78" length="short" rot="R180"/>
+<pin name="GPIO2" x="12.7" y="15.24" length="short" rot="R180"/>
+<pin name="GPIO3" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="GPIO4" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="GPIO5" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="GPIO6" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="GPIO7" x="12.7" y="2.54" length="short" rot="R180"/>
+<wire x1="0" y1="22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ADS1258-CTRL">
+<pin name="CLKIO" x="17.78" y="38.1" length="short" rot="R180"/>
+<pin name="CLKSEL" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="PLLCAP" x="17.78" y="33.02" length="short" rot="R180"/>
+<pin name="XTAL1" x="17.78" y="30.48" length="short" rot="R180"/>
+<pin name="XTAL2" x="17.78" y="27.94" length="short" rot="R180"/>
+<pin name="CS_N" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="SCLK" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="DIN" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="DOUT" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="DRDY_N" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="PWDN_N" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="RESET_N" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="START" x="17.78" y="2.54" length="short" rot="R180"/>
+<wire x1="0" y1="40.64" x2="15.24" y2="40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="40.64" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="40.64" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AVDD-AVSS">
+<pin name="AVSS" x="0" y="-10.16" length="short" rot="R90"/>
+<pin name="AVDD" x="0" y="12.7" length="short" rot="R270"/>
+</symbol>
+<symbol name="VREFN-VREFP">
+<pin name="VREFN" x="0" y="-12.7" length="short" rot="R90"/>
+<pin name="VREFP" x="0" y="12.7" length="short" rot="R270"/>
+</symbol>
+<symbol name="DVDD-GND">
+<pin name="GND" x="0" y="-10.16" length="short" rot="R90"/>
+<pin name="DVDD" x="0" y="12.7" length="short" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2948,6 +3099,74 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <device name="-0.6_1.8" package="PAD_0.6_1.8">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS1258">
+<gates>
+<gate name="ADC" symbol="ADS1258-ADC" x="22.86" y="35.56"/>
+<gate name="CTRL" symbol="ADS1258-CTRL" x="0" y="0"/>
+<gate name="MUX" symbol="ADS1258-MUX" x="45.72" y="0"/>
+<gate name="GPIO" symbol="ADS1258-GPIO" x="25.4" y="0" addlevel="request"/>
+<gate name="AVDD-AVSS" symbol="AVDD-AVSS" x="76.2" y="30.48"/>
+<gate name="GND-DVDD" symbol="DVDD-GND" x="81.28" y="30.48"/>
+<gate name="VREFN-VREFP" symbol="VREFN-VREFP" x="86.36" y="30.48"/>
+</gates>
+<devices>
+<device name="" package="QFN-48">
+<connects>
+<connect gate="ADC" pin="ADCINN" pad="41"/>
+<connect gate="ADC" pin="ADCINP" pad="42"/>
+<connect gate="AVDD-AVSS" pin="AVDD" pad="6"/>
+<connect gate="AVDD-AVSS" pin="AVSS" pad="5"/>
+<connect gate="CTRL" pin="CLKIO" pad="13"/>
+<connect gate="CTRL" pin="CLKSEL" pad="12"/>
+<connect gate="CTRL" pin="CS_N" pad="27"/>
+<connect gate="CTRL" pin="DIN" pad="23"/>
+<connect gate="CTRL" pin="DOUT" pad="24"/>
+<connect gate="CTRL" pin="DRDY_N" pad="25"/>
+<connect gate="CTRL" pin="PLLCAP" pad="7"/>
+<connect gate="CTRL" pin="PWDN_N" pad="10"/>
+<connect gate="CTRL" pin="RESET_N" pad="11"/>
+<connect gate="CTRL" pin="SCLK" pad="22"/>
+<connect gate="CTRL" pin="START" pad="26"/>
+<connect gate="CTRL" pin="XTAL1" pad="8"/>
+<connect gate="CTRL" pin="XTAL2" pad="9"/>
+<connect gate="GND-DVDD" pin="DVDD" pad="28"/>
+<connect gate="GND-DVDD" pin="GND" pad="29"/>
+<connect gate="GPIO" pin="GPIO0" pad="14"/>
+<connect gate="GPIO" pin="GPIO1" pad="15"/>
+<connect gate="GPIO" pin="GPIO2" pad="16"/>
+<connect gate="GPIO" pin="GPIO3" pad="17"/>
+<connect gate="GPIO" pin="GPIO4" pad="18"/>
+<connect gate="GPIO" pin="GPIO5" pad="19"/>
+<connect gate="GPIO" pin="GPIO6" pad="20"/>
+<connect gate="GPIO" pin="GPIO7" pad="21"/>
+<connect gate="MUX" pin="AIN0" pad="4"/>
+<connect gate="MUX" pin="AIN1" pad="3"/>
+<connect gate="MUX" pin="AIN10" pad="38"/>
+<connect gate="MUX" pin="AIN11" pad="37"/>
+<connect gate="MUX" pin="AIN12" pad="36"/>
+<connect gate="MUX" pin="AIN13" pad="35"/>
+<connect gate="MUX" pin="AIN14" pad="34"/>
+<connect gate="MUX" pin="AIN15" pad="33"/>
+<connect gate="MUX" pin="AIN2" pad="2"/>
+<connect gate="MUX" pin="AIN3" pad="1"/>
+<connect gate="MUX" pin="AIN4" pad="48"/>
+<connect gate="MUX" pin="AIN5" pad="47"/>
+<connect gate="MUX" pin="AIN6" pad="46"/>
+<connect gate="MUX" pin="AIN7" pad="45"/>
+<connect gate="MUX" pin="AIN8" pad="40"/>
+<connect gate="MUX" pin="AIN9" pad="39"/>
+<connect gate="MUX" pin="AINCOM" pad="32"/>
+<connect gate="MUX" pin="MUXOUTN" pad="43"/>
+<connect gate="MUX" pin="MUXOUTP" pad="44"/>
+<connect gate="VREFN-VREFP" pin="VREFN" pad="30"/>
+<connect gate="VREFN-VREFP" pin="VREFP" pad="31"/>
 </connects>
 <technologies>
 <technology name=""/>
