@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2124,7 +2124,7 @@ design rules under a new name.</description>
 <element name="U$5" library="modular_robotics" package="INFO" value="INFO" x="13.6" y="28" smashed="yes" rot="R90">
 <attribute name="AUTHOR" value="Austin Buchan" x="7.5" y="24.6" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 <attribute name="DATE" value="Oct 5, 2014" x="11.8" y="28.7" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
-<attribute name="DESIGN" value="Zedboard Arduio Adapter" x="13.2" y="24.8" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="DESIGN" value="Zedboard Arduino Adapter" x="13.2" y="24.8" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 <attribute name="ORGANIZATION" value="UC Berkeley ASPIRE" x="10.3" y="28.7" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 <attribute name="REVISION" value="r0.0" x="14.7" y="24.9" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
 </element>
