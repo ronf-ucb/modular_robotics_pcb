@@ -1,13 +1,10 @@
 Row {
   bldc_controller
-}
-Row {
   bldc_controller
 }
 Row {
   bldc_controller
-}
-Row {
-  bldc_controller
+  adc_dev
+  adc_dev
 }
 

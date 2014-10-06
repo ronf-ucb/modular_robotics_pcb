@@ -143,6 +143,22 @@
 <wire x1="53.34" y1="0" x2="53.34" y2="53.34" width="0" layer="20"/>
 <wire x1="53.34" y1="53.34" x2="0" y2="53.34" width="0" layer="20"/>
 <wire x1="0" y1="53.34" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="48" y1="27.6" x2="44.6" y2="27.6" width="0.2" layer="27"/>
+<wire x1="44.6" y1="27.6" x2="43.9" y2="28.3" width="0.2" layer="27"/>
+<wire x1="47.4" y1="27.7" x2="47.4" y2="28.3" width="0.2" layer="27"/>
+<wire x1="48.5" y1="32.1" x2="45.9" y2="32.1" width="0.2" layer="27"/>
+<wire x1="45.9" y1="32.1" x2="45.6" y2="31.8" width="0.2" layer="27"/>
+<wire x1="25.1" y1="31.2" x2="25.1" y2="32.5" width="0.2" layer="27"/>
+<wire x1="25.1" y1="32.5" x2="24.7" y2="32.9" width="0.2" layer="27"/>
+<text x="20.7" y="39.6" size="1.016" layer="27" font="vector" ratio="25">AVDD</text>
+<text x="29.8" y="39.7" size="1.016" layer="27" font="vector" ratio="25">AGND</text>
+<text x="34.6" y="31.1" size="1.016" layer="27" font="vector" ratio="25" rot="R315">MUXP</text>
+<text x="38.1" y="25.9" size="1.016" layer="27" font="vector" ratio="25" rot="R135">MUXN</text>
+<text x="37.8" y="22.7" size="1.016" layer="27" font="vector" ratio="25" rot="R135">ADCP</text>
+<text x="37.8" y="20" size="1.016" layer="27" font="vector" ratio="25" rot="R135">ADCN</text>
+<text x="28.9" y="13.5" size="1.016" layer="27" font="vector" ratio="25">REFP</text>
+<text x="19.6" y="12.5" size="1.016" layer="27" font="vector" ratio="25">REFN</text>
+<text x="8.7" y="24.6" size="1.016" layer="27" font="vector" ratio="25" rot="R90">austin.d.buchan@gmail.com</text>
 </plain>
 <libraries>
 <library name="modular_robotics">
@@ -288,6 +304,13 @@
 <rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
 <rectangle x1="6.096" y1="1.016" x2="6.604" y2="1.524" layer="51"/>
 <rectangle x1="6.096" y1="-1.524" x2="6.604" y2="-1.016" layer="51"/>
+</package>
+<package name="INFO">
+<text x="0" y="4" size="0.8128" layer="21" font="vector" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="20">&gt;DATE</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="20">&gt;REVISION</text>
+<text x="0" y="1" size="0.8128" layer="21" font="vector" ratio="20">&gt;DESIGN</text>
 </package>
 </packages>
 </library>
@@ -1986,58 +2009,125 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="modular_robotics" package="QFN-48" value="ADS1258" x="25" y="25" rot="R270"/>
-<element name="U$2" library="SparkFun-Boards" package="UNO_R3_SHIELD" value="ARDUINO_R3_SHIELD" x="59.69" y="0" rot="R90"/>
-<element name="JP3" library="SparkFun-Connectors" package="USB-MINIB" value="USBSMD" x="47.5" y="38.5" rot="R180">
+<element name="U$1" library="modular_robotics" package="QFN-48" value="ADS1258" x="25" y="25" smashed="yes" rot="R270">
+<attribute name="VALUE" x="17.15" y="27.4" size="1.016" layer="27" font="vector" ratio="25" rot="R270"/>
+</element>
+<element name="U$2" library="SparkFun-Boards" package="UNO_R3_SHIELD" value="ARDUINO_R3_SHIELD" x="59.69" y="0" smashed="yes" rot="R90"/>
+<element name="JP3" library="SparkFun-Connectors" package="USB-MINIB" value="USBSMD" x="47.5" y="38.5" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CONN-08193" x="47.5" y="38.5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U1" library="SparkFun-DigitalIC" package="SSOP28DB" value="FT232RL-BASICSSOP" x="43" y="22.4"/>
-<element name="R1" library="rcl" package="R0603" value="FERRITE" x="42" y="30" rot="R90"/>
-<element name="R2" library="rcl" package="R0603" value="120R" x="38.4" y="33" rot="R90"/>
-<element name="R3" library="rcl" package="R0603" value="68R" x="40.2" y="33" rot="R90"/>
-<element name="TX_LED" library="led" package="CHIPLED_0603" value="" x="38.4" y="30" rot="R180"/>
-<element name="RX_LED" library="led" package="CHIPLED_0603" value="" x="40.2" y="30" rot="R180"/>
-<element name="C1" library="rcl" package="C0603" value="100nF" x="43.8" y="30" rot="R90"/>
-<element name="C2" library="rcl" package="C0603" value="10uF" x="45.6" y="30" rot="R90"/>
-<element name="C3" library="rcl" package="C0603" value="100nF" x="47.4" y="30" rot="R90"/>
-<element name="C4" library="rcl" package="C0603" value="4.7pF" x="24" y="34.5" rot="R90"/>
-<element name="C5" library="rcl" package="C0603" value="4.7pF" x="19.1" y="34.5" rot="R90"/>
-<element name="C6" library="rcl" package="C0603" value="22nF" x="26.1" y="37.1"/>
-<element name="C7" library="rcl" package="C0603" value="100nF" x="22.5" y="19"/>
-<element name="C8" library="rcl" package="C0603" value="100nF" x="27" y="33.1"/>
-<element name="C9" library="rcl" package="C0603" value="100nF" x="26" y="19" rot="R180"/>
-<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="27.3" y="11.3" rot="R270"/>
-<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="25.7" y="42.7" rot="R90"/>
-<element name="SJ3" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="24.7" y="11.3" rot="R90"/>
-<element name="SJ4" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="28.4" y="42.7" rot="R270"/>
-<element name="U$3" library="modular_robotics" package="2X06" value="PMOD" x="3.81" y="13.97" rot="R270"/>
-<element name="U$4" library="modular_robotics" package="2X06" value="PMOD" x="3.81" y="36.83" rot="R270"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="TAC_SWITCHSMD" x="48.5" y="49" rot="R90">
+<element name="U1" library="SparkFun-DigitalIC" package="SSOP28DB" value="FT232RL" x="43" y="22.4" smashed="yes">
+<attribute name="VALUE" x="49.6" y="13.99" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R1" library="rcl" package="R0603" value="FERRITE" x="42" y="30" smashed="yes" rot="R90">
+<attribute name="VALUE" x="42.5" y="31.8" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R2" library="rcl" package="R0603" value="120R" x="38.4" y="33" smashed="yes" rot="R90">
+<attribute name="VALUE" x="38.8" y="34.8" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R3" library="rcl" package="R0603" value="68R" x="40.2" y="33" smashed="yes" rot="R90">
+<attribute name="VALUE" x="40.7" y="34.8" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="TX_LED" library="led" package="CHIPLED_0603" value="" x="38.4" y="30" smashed="yes" rot="R180">
+<attribute name="VALUE" x="36.495" y="31.27" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="RX_LED" library="led" package="CHIPLED_0603" value="" x="40.2" y="30" smashed="yes" rot="R180">
+<attribute name="VALUE" x="38.295" y="31.27" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="C1" library="rcl" package="C0603" value="100nF" x="43.8" y="30" smashed="yes" rot="R90"/>
+<element name="C2" library="rcl" package="C0603" value="10uF" x="45.6" y="30" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.8" y="31.5" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C3" library="rcl" package="C0603" value="100nF" x="47.4" y="30" smashed="yes" rot="R90">
+<attribute name="VALUE" x="48.4" y="27.2" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C4" library="rcl" package="C0603" value="4.7pF" x="24" y="34.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="24.665" y="29.695" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C5" library="rcl" package="C0603" value="4.7pF" x="19" y="34.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="18.005" y="32.565" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="C6" library="rcl" package="C0603" value="22nF" x="26.1" y="37.1" smashed="yes">
+<attribute name="VALUE" x="27.965" y="36.595" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C7" library="rcl" package="C0603" value="100nF" x="22.5" y="19" smashed="yes">
+<attribute name="VALUE" x="21.265" y="19.695" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C8" library="rcl" package="C0603" value="100nF" x="27" y="33.1" smashed="yes">
+<attribute name="VALUE" x="28.865" y="32.495" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C9" library="rcl" package="C0603" value="100nF" x="26" y="19" smashed="yes" rot="R180">
+<attribute name="VALUE" x="32.435" y="18.805" size="1.016" layer="27" font="vector" ratio="25" rot="R180"/>
+</element>
+<element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="27.3" y="11.3" smashed="yes" rot="R270"/>
+<element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="25.7" y="42.7" smashed="yes" rot="R90"/>
+<element name="SJ3" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="24.7" y="11.3" smashed="yes" rot="R90"/>
+<element name="SJ4" library="SparkFun-Passives" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="JUMPER-PAD-2-NC_BY_TRACE" x="28.4" y="42.7" smashed="yes" rot="R270"/>
+<element name="U$3" library="modular_robotics" package="2X06" value="PMOD" x="3.81" y="13.97" smashed="yes" rot="R270"/>
+<element name="U$4" library="modular_robotics" package="2X06" value="PMOD" x="3.81" y="36.83" smashed="yes" rot="R270"/>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD" value="TAC_SWITCHSMD" x="48.5" y="49" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="SWCH-08247" x="48.5" y="49" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C10" library="rcl" package="C0603" value="10uF" x="22.5" y="17"/>
-<element name="C11" library="rcl" package="C0603" value="10uF" x="26" y="17" rot="R180"/>
-<element name="C12" library="rcl" package="C0603" value="10uF" x="27" y="35.1"/>
-<element name="C13" library="rcl" package="C0603" value="100nF" x="42.5" y="47.5" rot="R90"/>
-<element name="R4" library="rcl" package="R0603" value="10k" x="40.3" y="47.5" rot="R90"/>
-<element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="19.5" y="18" rot="R270"/>
-<element name="JP1" library="pinhead" package="1X02" value="" x="33.5" y="22" rot="R270"/>
-<element name="JP2" library="pinhead" package="1X02" value="" x="33.5" y="28" rot="R90"/>
-<element name="JP4" library="pinhead" package="1X02" value="" x="27" y="40.1"/>
-<element name="JP5" library="pinhead" package="1X02" value="" x="26.01" y="13.97" rot="R180"/>
-<element name="Q2" library="crystal" package="MC-306" value="MC-306 32.7680K-A0" x="21.5" y="34.5" rot="R90">
+<element name="C10" library="rcl" package="C0603" value="10uF" x="22.5" y="17" smashed="yes">
+<attribute name="VALUE" x="20.265" y="15.195" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C11" library="rcl" package="C0603" value="10uF" x="26" y="17" smashed="yes" rot="R180">
+<attribute name="VALUE" x="31.435" y="16.705" size="1.016" layer="27" font="vector" ratio="25" rot="R180"/>
+</element>
+<element name="C12" library="rcl" package="C0603" value="10uF" x="27" y="35.1" smashed="yes">
+<attribute name="VALUE" x="28.765" y="34.595" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="C13" library="rcl" package="C0603" value="100nF" x="42.5" y="47.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="43.005" y="41.265" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R4" library="rcl" package="R0603" value="10k" x="40.3" y="47.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="40.805" y="43.165" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="SJ5" library="SparkFun-Passives" package="PAD-JUMPER-3-NO_YES_SILK" value="JUMPER-PAD-3-NOYES_SILK" x="19.5" y="18" smashed="yes" rot="R270"/>
+<element name="JP1" library="pinhead" package="1X02" value="" x="33.5" y="22" smashed="yes" rot="R270">
+<attribute name="VALUE" x="30.325" y="24.54" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP2" library="pinhead" package="1X02" value="" x="33.5" y="28" smashed="yes" rot="R90">
+<attribute name="VALUE" x="36.675" y="25.46" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP4" library="pinhead" package="1X02" value="" x="27" y="40.1" smashed="yes">
+<attribute name="VALUE" x="24.46" y="36.925" size="1.27" layer="27"/>
+</element>
+<element name="JP5" library="pinhead" package="1X02" value="" x="26.01" y="13.97" smashed="yes" rot="R180">
+<attribute name="VALUE" x="28.55" y="17.145" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="Q2" library="crystal" package="MC-306" value="MC-306 32.7680K-A0" x="21.5" y="34.5" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="31M5576" x="21.5" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MC-306 60.0KHZ  100PPM ,12.5PF" x="21.5" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="21.5" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1278040" x="21.5" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R5" library="rcl" package="R0603" value="10R" x="38.4" y="15.6"/>
-<element name="R6" library="rcl" package="R0603" value="10R" x="38.4" y="12"/>
-<element name="R7" library="rcl" package="R0603" value="68R" x="38.4" y="13.8"/>
-<element name="R8" library="rcl" package="R0603" value="4k7" x="47" y="8.5" rot="R90"/>
-<element name="R9" library="rcl" package="R0603" value="4k7" x="49.5" y="8.5" rot="R90"/>
-<element name="LED1" library="SparkFun-LED" package="LED-TRICOLOR-5050" value="LED-TRICOLOR-5050NO_IC" x="43.8" y="13.8" rot="R180"/>
-<element name="C14" library="rcl" package="C0603" value="100nF" x="49.8" y="22.2" rot="R90"/>
+<element name="R5" library="rcl" package="R0603" value="10R" x="38.4" y="15.6" smashed="yes">
+<attribute name="VALUE" x="34.065" y="15.095" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="R6" library="rcl" package="R0603" value="10R" x="38.4" y="12" smashed="yes">
+<attribute name="VALUE" x="34.065" y="11.595" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="R7" library="rcl" package="R0603" value="68R" x="38.4" y="13.8" smashed="yes">
+<attribute name="VALUE" x="34.065" y="13.395" size="1.016" layer="27" font="vector" ratio="25"/>
+</element>
+<element name="R8" library="rcl" package="R0603" value="4k7" x="47" y="8.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="46.005" y="7.365" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="R9" library="rcl" package="R0603" value="4k7" x="49.5" y="8.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="51.605" y="7.365" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="LED1" library="SparkFun-LED" package="LED-TRICOLOR-5050" value="LED-TRICOLOR-5050NO_IC" x="43.8" y="13.8" smashed="yes" rot="R180"/>
+<element name="C14" library="rcl" package="C0603" value="100nF" x="49.8" y="22.2" smashed="yes" rot="R90">
+<attribute name="VALUE" x="51.905" y="20.065" size="1.016" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="U$5" library="modular_robotics" package="INFO" value="INFO" x="13.6" y="28" smashed="yes" rot="R90">
+<attribute name="AUTHOR" value="Austin Buchan" x="7.5" y="24.6" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="DATE" value="Oct 5, 2014" x="11.8" y="28.7" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="DESIGN" value="Zedboard Arduio Adapter" x="13.2" y="24.8" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="ORGANIZATION" value="UC Berkeley ASPIRE" x="10.3" y="28.7" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+<attribute name="REVISION" value="r0.0" x="14.7" y="24.9" size="1.016" layer="21" font="vector" ratio="20" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2303,7 +2393,7 @@ design rules under a new name.</description>
 <wire x1="9.6" y1="7.8" x2="5.08" y2="3.28" width="0.1524" layer="16"/>
 <wire x1="5.08" y1="3.28" x2="5.08" y2="2.54" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$11">
+<signal name="AVDD">
 <contactref element="U$1" pad="6"/>
 <contactref element="SJ2" pad="1"/>
 <contactref element="C8" pad="1"/>
@@ -2319,7 +2409,7 @@ design rules under a new name.</description>
 <wire x1="25.7" y1="42.192" x2="25.7" y2="40.13" width="0.1524" layer="1"/>
 <wire x1="25.7" y1="40.13" x2="25.73" y2="40.1" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="VREFN">
 <contactref element="U$1" pad="30"/>
 <contactref element="SJ3" pad="2"/>
 <contactref element="C9" pad="2"/>
@@ -2354,7 +2444,7 @@ design rules under a new name.</description>
 <wire x1="26.95" y1="38.78" x2="28.27" y2="40.1" width="0.1524" layer="1"/>
 <wire x1="28.4" y1="42.192" x2="28.4" y2="40.23" width="0.1524" layer="1"/>
 <wire x1="28.4" y1="40.23" x2="28.27" y2="40.1" width="0.1524" layer="1"/>
-<wire x1="19.1" y1="35.35" x2="21.35" y2="35.35" width="0.1524" layer="1"/>
+<wire x1="19" y1="35.35" x2="21.35" y2="35.35" width="0.1524" layer="1"/>
 <wire x1="21.35" y1="35.35" x2="21.5" y2="35.5" width="0.1524" layer="1"/>
 <via x="21.5" y="35.5" extent="1-16" drill="0.381"/>
 <wire x1="21.5" y1="35.5" x2="23.67" y2="35.5" width="0.1524" layer="16"/>
@@ -2393,8 +2483,8 @@ design rules under a new name.</description>
 <wire x1="23" y1="30" x2="20.5" y2="30" width="0.1524" layer="1"/>
 <wire x1="20.5" y1="30" x2="19.9" y2="30.6" width="0.1524" layer="1"/>
 <wire x1="19.9" y1="30.6" x2="19.9" y2="31.75" width="0.1524" layer="1"/>
-<wire x1="19.1" y1="33.65" x2="19.9" y2="32.85" width="0.1524" layer="1"/>
-<wire x1="19.9" y1="32.85" x2="19.9" y2="31.75" width="0.1524" layer="1"/>
+<wire x1="19.9" y1="31.75" x2="19.9" y2="32.75" width="0.2" layer="1"/>
+<wire x1="19.9" y1="32.75" x2="19" y2="33.65" width="0.2" layer="1"/>
 </signal>
 <signal name="A0">
 <contactref element="U$2" pad="A0"/>
@@ -2874,13 +2964,13 @@ design rules under a new name.</description>
 <wire x1="20.6" y1="21.4" x2="8.7" y2="21.4" width="0.1524" layer="16"/>
 <wire x1="8.7" y1="21.4" x2="8.3" y2="21" width="0.1524" layer="16"/>
 </signal>
-<signal name="N$10">
+<signal name="ADCP">
 <contactref element="JP1" pad="1"/>
 <contactref element="U$1" pad="42"/>
 <wire x1="28.5" y1="24.75" x2="32.02" y2="24.75" width="0.1524" layer="1"/>
 <wire x1="32.02" y1="24.75" x2="33.5" y2="23.27" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$16">
+<signal name="ADCN">
 <contactref element="JP1" pad="2"/>
 <contactref element="U$1" pad="41"/>
 <wire x1="28.5" y1="24.25" x2="29.45" y2="24.25" width="0.1524" layer="1"/>
@@ -2889,7 +2979,7 @@ design rules under a new name.</description>
 <wire x1="30.3" y1="24.3" x2="33.5" y2="21.1" width="0.1524" layer="1"/>
 <wire x1="33.5" y1="21.1" x2="33.5" y2="20.73" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$19">
+<signal name="MUXP">
 <contactref element="U$1" pad="44"/>
 <contactref element="JP2" pad="2"/>
 <wire x1="28.5" y1="25.75" x2="29.45" y2="25.75" width="0.1524" layer="1"/>
@@ -2898,7 +2988,7 @@ design rules under a new name.</description>
 <wire x1="30.1" y1="25.7" x2="33.5" y2="29.1" width="0.1524" layer="1"/>
 <wire x1="33.5" y1="29.1" x2="33.5" y2="29.27" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$20">
+<signal name="MUXN">
 <contactref element="U$1" pad="43"/>
 <contactref element="JP2" pad="1"/>
 <wire x1="28.5" y1="25.25" x2="32.02" y2="25.25" width="0.1524" layer="1"/>
