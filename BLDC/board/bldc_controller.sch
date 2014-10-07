@@ -12079,6 +12079,14 @@ An austria microsystems 10 pin rotary magnetic encoder, used primarily for seria
 <text x="-4.984" y="-2.683" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="6" y="-3.281" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="BLDC_MOUNT">
+<hole x="-12.5" y="0" drill="2.08"/>
+<hole x="0" y="12.5" drill="2.08"/>
+<hole x="12.5" y="0" drill="2.08"/>
+<hole x="0" y="-12.5" drill="2.08"/>
+<wire x1="-12.5" y1="0" x2="12.5" y2="0" width="4" layer="51"/>
+<wire x1="0" y1="12.5" x2="0" y2="-12.5" width="4" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PWR+G">
@@ -12179,6 +12187,13 @@ A rotary magnetic encoder by austria microsystems</description>
 <text x="-12.7" y="11.43" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="BLDC_MOUNT">
+<circle x="-7.62" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="7.62" radius="2.54" width="0.254" layer="94"/>
+<circle x="7.62" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="-7.62" radius="2.54" width="0.254" layer="94"/>
+<text x="-5.08" y="-5.08" size="1.27" layer="94">BLDC Mount</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="V_BATT">
@@ -12196,8 +12211,8 @@ A rotary magnetic encoder by austria microsystems</description>
 </deviceset>
 <deviceset name="INA199A1">
 <gates>
-<gate name="G$1" symbol="PWR+G" x="-12.7" y="0" addlevel="must"/>
-<gate name="G$2" symbol="OPAMP" x="0" y="0" addlevel="must"/>
+<gate name="G$1" symbol="PWR+G" x="-12.7" y="0"/>
+<gate name="G$2" symbol="OPAMP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SC70-6">
@@ -12267,6 +12282,18 @@ A rotary magnetic encoder primarily used for serial comms and BLDC control</desc
 <connect gate="G$1" pin="VSS" pad="2"/>
 <connect gate="G$1" pin="W" pad="13"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLDC_MOUNT">
+<gates>
+<gate name="G$1" symbol="BLDC_MOUNT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BLDC_MOUNT">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12517,6 +12544,7 @@ A rotary magnetic encoder primarily used for serial comms and BLDC control</desc
 <part name="R25" library="biomimetic" deviceset="RESISTOR" device="0603-RES" value="4.99k"/>
 <part name="ICN" library="modular_robotics" deviceset="INA199A1" device=""/>
 <part name="U$4" library="biomimetic" deviceset="5V" device=""/>
+<part name="U$8" library="modular_robotics" deviceset="BLDC_MOUNT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13830,6 +13858,7 @@ A rotary magnetic encoder primarily used for serial comms and BLDC control</desc
 <instance part="GND36" gate="1" x="144.78" y="78.74" rot="R90"/>
 <instance part="ICN" gate="G$1" x="134.62" y="68.58"/>
 <instance part="ICN" gate="G$2" x="137.16" y="68.58"/>
+<instance part="U$8" gate="G$1" x="121.92" y="20.32"/>
 </instances>
 <busses>
 </busses>

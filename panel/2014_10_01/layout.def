@@ -1,9 +1,11 @@
 Row {
-  bldc_controller
-  bldc_controller
+  bldc_controller Rotate
+  bldc_controller Rotate
+  bldc_controller Rotate
 }
 Row {
-  bldc_controller
+  adc_dev
+  adc_dev
   adc_dev
   adc_dev
 }
