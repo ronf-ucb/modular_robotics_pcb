@@ -1383,58 +1383,6 @@ For example, used in OPA2374</description>
 <wire x1="-3.1242" y1="-1.8542" x2="3.1242" y2="-1.8542" width="0" layer="39"/>
 <wire x1="3.1242" y1="-1.8542" x2="3.1242" y2="2.5146" width="0" layer="39"/>
 </package>
-<package name="AS5134">
-<description>AS5134
-
-An austria microsystems 10 pin rotary magnetic encoder, used primarily for serial communication abilities and BLDC commutation</description>
-<wire x1="-1.898" y1="2.865" x2="5.538" y2="2.865" width="0.2032" layer="51"/>
-<wire x1="5.538" y1="2.865" x2="5.538" y2="-3.165" width="0.2032" layer="21"/>
-<wire x1="5.538" y1="-3.165" x2="-1.898" y2="-3.165" width="0.2032" layer="51"/>
-<wire x1="-1.898" y1="-3.165" x2="-1.898" y2="2.865" width="0.2032" layer="21"/>
-<circle x="-0.715" y="-2.515" radius="0.39" width="0.2032" layer="21"/>
-<smd name="1" x="-1.105" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="2" x="-0.455" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="3" x="0.195" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="4" x="0.845" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="5" x="1.495" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="6" x="2.145" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="7" x="2.795" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="8" x="3.445" y="-3.945" dx="0.46" dy="1.43" layer="1"/>
-<smd name="13" x="3.445" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="14" x="2.795" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="15" x="2.145" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="16" x="1.495" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="17" x="0.845" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="18" x="0.195" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="19" x="-0.455" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="20" x="-1.105" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<text x="-3.164" y="-2.833" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<rectangle x1="-1.2675" y1="-4.335" x2="-0.9425" y2="-3.2625" layer="51"/>
-<rectangle x1="-0.6175" y1="-4.335" x2="-0.2925" y2="-3.2625" layer="51"/>
-<rectangle x1="0.0325" y1="-4.335" x2="0.3575" y2="-3.2625" layer="51"/>
-<rectangle x1="0.6825" y1="-4.335" x2="1.0075" y2="-3.2625" layer="51"/>
-<rectangle x1="1.3325" y1="-4.335" x2="1.6575" y2="-3.2625" layer="51"/>
-<rectangle x1="1.9825" y1="-4.335" x2="2.3075" y2="-3.2625" layer="51"/>
-<rectangle x1="2.6325" y1="-4.335" x2="2.9575" y2="-3.2625" layer="51"/>
-<rectangle x1="3.2825" y1="-4.335" x2="3.6075" y2="-3.2625" layer="51"/>
-<rectangle x1="3.2825" y1="2.9625" x2="3.6075" y2="4.035" layer="51"/>
-<rectangle x1="2.6325" y1="2.9625" x2="2.9575" y2="4.035" layer="51"/>
-<rectangle x1="1.9825" y1="2.9625" x2="2.3075" y2="4.035" layer="51"/>
-<rectangle x1="1.3325" y1="2.9625" x2="1.6575" y2="4.035" layer="51"/>
-<rectangle x1="0.6825" y1="2.9625" x2="1.0075" y2="4.035" layer="51"/>
-<rectangle x1="0.0325" y1="2.9625" x2="0.3575" y2="4.035" layer="51"/>
-<rectangle x1="-0.6175" y1="2.9625" x2="-0.2925" y2="4.035" layer="51"/>
-<rectangle x1="-1.2675" y1="2.9625" x2="-0.9425" y2="4.035" layer="51"/>
-<smd name="12" x="4.095" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="11" x="4.745" y="3.645" dx="0.46" dy="1.43" layer="1"/>
-<smd name="9" x="4.095" y="-3.945" dx="0.46" dy="1.43" layer="1" rot="R180"/>
-<smd name="10" x="4.745" y="-3.945" dx="0.46" dy="1.43" layer="1" rot="R180"/>
-<text x="7.82" y="-3.431" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="3.9175" y1="-4.335" x2="4.2425" y2="-3.2625" layer="51"/>
-<rectangle x1="4.5779" y1="-4.335" x2="4.9029" y2="-3.2625" layer="51"/>
-<rectangle x1="3.9429" y1="2.9548" x2="4.2679" y2="4.0273" layer="51"/>
-<rectangle x1="4.5779" y1="2.9421" x2="4.9029" y2="4.0146" layer="51"/>
-</package>
 <package name="DRC(S-PVSON-N10)">
 <wire x1="-2.745" y1="1.475" x2="0.205" y2="1.475" width="0.2032" layer="51"/>
 <wire x1="0.205" y1="1.475" x2="0.205" y2="-1.475" width="0.2032" layer="51"/>
@@ -1860,37 +1808,6 @@ An austria microsystems 10 pin rotary magnetic encoder, used primarily for seria
 <pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="5" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="6" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="AS5134">
-<description>AS5134
-
-A rotary magnetic encoder by austria microsystems</description>
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<text x="-12.7" y="11.43" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="PROG" x="-17.78" y="7.62" visible="pin" length="middle" direction="in"/>
-<pin name="VSS" x="-17.78" y="5.08" visible="pin" length="middle" direction="pwr"/>
-<pin name="DX" x="-17.78" y="2.54" visible="pin" length="middle" direction="in"/>
-<pin name="CS" x="-17.78" y="0" visible="pin" length="middle" direction="in"/>
-<pin name="C2" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
-<pin name="PWM" x="-17.78" y="-5.08" visible="pin" length="middle" direction="out"/>
-<pin name="VDD" x="-17.78" y="-7.62" visible="pin" length="middle" direction="pwr"/>
-<pin name="TESTCOIL" x="-17.78" y="-10.16" visible="pin" length="middle" direction="hiz"/>
-<pin name="U" x="17.78" y="-10.16" visible="pin" length="middle" direction="out" rot="R180"/>
-<pin name="A" x="17.78" y="-7.62" visible="pin" length="middle" direction="out" rot="R180"/>
-<pin name="B" x="17.78" y="-5.08" visible="pin" length="middle" direction="out" rot="R180"/>
-<pin name="INDEX" x="17.78" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
-<pin name="TB0" x="17.78" y="0" visible="pin" length="middle" direction="hiz" rot="R180"/>
-<pin name="TB1" x="17.78" y="2.54" visible="pin" length="middle" direction="hiz" rot="R180"/>
-<pin name="TB2" x="17.78" y="5.08" visible="pin" length="middle" direction="hiz" rot="R180"/>
-<pin name="TB3" x="17.78" y="7.62" visible="pin" length="middle" direction="hiz" rot="R180"/>
-<pin name="DCLK" x="-17.78" y="-12.7" visible="pin" length="middle" direction="in"/>
-<pin name="DIO" x="-17.78" y="-15.24" visible="pin" length="middle"/>
-<pin name="V" x="17.78" y="-12.7" visible="pin" length="middle" direction="out" rot="R180"/>
-<pin name="W" x="17.78" y="-15.24" visible="pin" length="middle" direction="out" rot="R180"/>
 </symbol>
 <symbol name="5V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -2652,43 +2569,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AS5134" uservalue="yes">
-<description>AS5134
-
-A rotary magnetic encoder primarily used for serial comms and BLDC control</description>
-<gates>
-<gate name="G$1" symbol="AS5134" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="AS5134">
-<connects>
-<connect gate="G$1" pin="A" pad="14"/>
-<connect gate="G$1" pin="B" pad="15"/>
-<connect gate="G$1" pin="C2" pad="5"/>
-<connect gate="G$1" pin="CS" pad="4"/>
-<connect gate="G$1" pin="DCLK" pad="9"/>
-<connect gate="G$1" pin="DIO" pad="10"/>
-<connect gate="G$1" pin="DX" pad="3"/>
-<connect gate="G$1" pin="INDEX" pad="16"/>
-<connect gate="G$1" pin="PROG" pad="1"/>
-<connect gate="G$1" pin="PWM" pad="6"/>
-<connect gate="G$1" pin="TB0" pad="17"/>
-<connect gate="G$1" pin="TB1" pad="18"/>
-<connect gate="G$1" pin="TB2" pad="19"/>
-<connect gate="G$1" pin="TB3" pad="20"/>
-<connect gate="G$1" pin="TESTCOIL" pad="8"/>
-<connect gate="G$1" pin="U" pad="11"/>
-<connect gate="G$1" pin="V" pad="12"/>
-<connect gate="G$1" pin="VDD" pad="7"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-<connect gate="G$1" pin="W" pad="13"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12147,6 +12027,58 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <text x="-5.6" y="-3.5" size="1.27" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
 <text x="7" y="-3.5" size="1.27" layer="27" font="vector" ratio="20" rot="R90">&gt;VALUE</text>
 </package>
+<package name="AS5134">
+<description>AS5134
+
+An austria microsystems 10 pin rotary magnetic encoder, used primarily for serial communication abilities and BLDC commutation</description>
+<circle x="-2.535" y="-2.365" radius="0.39" width="0.2032" layer="21"/>
+<wire x1="-3.718" y1="3.015" x2="3.718" y2="3.015" width="0.2032" layer="51"/>
+<wire x1="3.718" y1="3.015" x2="3.718" y2="-3.015" width="0.2032" layer="21"/>
+<wire x1="3.718" y1="-3.015" x2="-3.718" y2="-3.015" width="0.2032" layer="51"/>
+<wire x1="-3.718" y1="-3.015" x2="-3.718" y2="3.015" width="0.2032" layer="21"/>
+<rectangle x1="-3.0875" y1="-4.185" x2="-2.7625" y2="-3.1125" layer="51"/>
+<rectangle x1="-2.4375" y1="-4.185" x2="-2.1125" y2="-3.1125" layer="51"/>
+<rectangle x1="-1.7875" y1="-4.185" x2="-1.4625" y2="-3.1125" layer="51"/>
+<rectangle x1="-1.1375" y1="-4.185" x2="-0.8125" y2="-3.1125" layer="51"/>
+<rectangle x1="-0.4875" y1="-4.185" x2="-0.1625" y2="-3.1125" layer="51"/>
+<rectangle x1="0.1625" y1="-4.185" x2="0.4875" y2="-3.1125" layer="51"/>
+<rectangle x1="0.8125" y1="-4.185" x2="1.1375" y2="-3.1125" layer="51"/>
+<rectangle x1="1.4625" y1="-4.185" x2="1.7875" y2="-3.1125" layer="51"/>
+<rectangle x1="1.4625" y1="3.1125" x2="1.7875" y2="4.185" layer="51"/>
+<rectangle x1="0.8125" y1="3.1125" x2="1.1375" y2="4.185" layer="51"/>
+<rectangle x1="0.1625" y1="3.1125" x2="0.4875" y2="4.185" layer="51"/>
+<rectangle x1="-0.4875" y1="3.1125" x2="-0.1625" y2="4.185" layer="51"/>
+<rectangle x1="-1.1375" y1="3.1125" x2="-0.8125" y2="4.185" layer="51"/>
+<rectangle x1="-1.7875" y1="3.1125" x2="-1.4625" y2="4.185" layer="51"/>
+<rectangle x1="-2.4375" y1="3.1125" x2="-2.1125" y2="4.185" layer="51"/>
+<rectangle x1="-3.0875" y1="3.1125" x2="-2.7625" y2="4.185" layer="51"/>
+<rectangle x1="2.0975" y1="-4.185" x2="2.4225" y2="-3.1125" layer="51"/>
+<rectangle x1="2.7579" y1="-4.185" x2="3.0829" y2="-3.1125" layer="51"/>
+<rectangle x1="2.1229" y1="3.1048" x2="2.4479" y2="4.1773" layer="51"/>
+<rectangle x1="2.7579" y1="3.0921" x2="3.0829" y2="4.1646" layer="51"/>
+<smd name="1" x="-2.925" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="2" x="-2.275" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="3" x="-1.625" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="4" x="-0.975" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="5" x="-0.325" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="6" x="0.325" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="7" x="0.975" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="8" x="1.625" y="-3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="9" x="2.275" y="-3.795" dx="0.46" dy="1.43" layer="1" rot="R180"/>
+<smd name="10" x="2.925" y="-3.795" dx="0.46" dy="1.43" layer="1" rot="R180"/>
+<smd name="11" x="2.925" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="12" x="2.275" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="13" x="1.625" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="14" x="0.975" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="15" x="0.325" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="16" x="-0.325" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="17" x="-0.975" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="18" x="-1.625" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="19" x="-2.275" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<smd name="20" x="-2.925" y="3.795" dx="0.46" dy="1.43" layer="1"/>
+<text x="-4.984" y="-2.683" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6" y="-3.281" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PWR+G">
@@ -12216,6 +12148,37 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <pin name="S" x="2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="AS5134">
+<description>AS5134
+
+A rotary magnetic encoder by austria microsystems</description>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="A" x="17.78" y="-7.62" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="B" x="17.78" y="-5.08" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="C2" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="CS" x="-17.78" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="DCLK" x="-17.78" y="-12.7" visible="pin" length="middle" direction="in"/>
+<pin name="DIO" x="-17.78" y="-15.24" visible="pin" length="middle"/>
+<pin name="DX" x="-17.78" y="2.54" visible="pin" length="middle" direction="in"/>
+<pin name="INDEX" x="17.78" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="PROG" x="-17.78" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="PWM" x="-17.78" y="-5.08" visible="pin" length="middle" direction="out"/>
+<pin name="TB0" x="17.78" y="0" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="TB1" x="17.78" y="2.54" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="TB2" x="17.78" y="5.08" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="TB3" x="17.78" y="7.62" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="TESTCOIL" x="-17.78" y="-10.16" visible="pin" length="middle" direction="hiz"/>
+<pin name="U" x="17.78" y="-10.16" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="V" x="17.78" y="-12.7" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="-17.78" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="VSS" x="-17.78" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="W" x="17.78" y="-15.24" visible="pin" length="middle" direction="out" rot="R180"/>
+<text x="-12.7" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="V_BATT">
@@ -12266,6 +12229,43 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$2" pin="O" pad="6"/>
 <connect gate="G$2" pin="P" pad="5"/>
 <connect gate="G$2" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AS5134" uservalue="yes">
+<description>AS5134
+
+A rotary magnetic encoder primarily used for serial comms and BLDC control</description>
+<gates>
+<gate name="G$1" symbol="AS5134" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AS5134">
+<connects>
+<connect gate="G$1" pin="A" pad="14"/>
+<connect gate="G$1" pin="B" pad="15"/>
+<connect gate="G$1" pin="C2" pad="5"/>
+<connect gate="G$1" pin="CS" pad="4"/>
+<connect gate="G$1" pin="DCLK" pad="9"/>
+<connect gate="G$1" pin="DIO" pad="10"/>
+<connect gate="G$1" pin="DX" pad="3"/>
+<connect gate="G$1" pin="INDEX" pad="16"/>
+<connect gate="G$1" pin="PROG" pad="1"/>
+<connect gate="G$1" pin="PWM" pad="6"/>
+<connect gate="G$1" pin="TB0" pad="17"/>
+<connect gate="G$1" pin="TB1" pad="18"/>
+<connect gate="G$1" pin="TB2" pad="19"/>
+<connect gate="G$1" pin="TB3" pad="20"/>
+<connect gate="G$1" pin="TESTCOIL" pad="8"/>
+<connect gate="G$1" pin="U" pad="11"/>
+<connect gate="G$1" pin="V" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+<connect gate="G$1" pin="W" pad="13"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12458,7 +12458,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <part name="P+11" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND32" library="biomimetic" deviceset="GND" device=""/>
 <part name="FRAME5" library="biomimetic" deviceset="FRAME-LETTER" device=""/>
-<part name="IC3" library="biomimetic" deviceset="AS5134" device="" value="AS 5134"/>
+<part name="IC3" library="modular_robotics" deviceset="AS5134" device="" value="AS 5134"/>
 <part name="C28" library="biomimetic" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="GND33" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND34" library="biomimetic" deviceset="GND" device=""/>
