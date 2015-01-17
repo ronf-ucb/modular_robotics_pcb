@@ -9553,8 +9553,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND2" library="supply1" deviceset="AGND" device=""/>
@@ -9596,10 +9594,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C14" library="rcl" deviceset="C-US" device="C0603" value="100nF"/>
 <part name="U$5" library="modular_robotics" deviceset="INFO" device="">
 <attribute name="AUTHOR" value="Austin Buchan"/>
-<attribute name="DATE" value="Oct 5, 2014"/>
+<attribute name="DATE" value="Nov 18, 2014"/>
 <attribute name="DESIGN" value="Zedboard Arduino Adapter"/>
 <attribute name="ORGANIZATION" value="UC Berkeley ASPIRE"/>
-<attribute name="REVISION" value="r0.0"/>
+<attribute name="REVISION" value="r0.1"/>
 </part>
 </parts>
 <sheets>
@@ -9651,8 +9649,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="83.82" y="132.08" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="GND4" gate="1" x="38.1" y="127"/>
-<instance part="+3V4" gate="G$1" x="38.1" y="177.8"/>
-<instance part="+3V5" gate="G$1" x="86.36" y="175.26"/>
 <instance part="GND5" gate="1" x="86.36" y="127"/>
 <instance part="AGND1" gate="VR1" x="91.44" y="137.16"/>
 <instance part="AGND2" gate="VR1" x="73.66" y="109.22" rot="R90"/>
@@ -9857,14 +9853,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="15.24" y="175.26"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="G$1" pin="2"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="SJ2" gate="G$1" pin="2"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
@@ -9943,6 +9931,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="91.44" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91"/>
 <label x="81.28" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="175.26" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
+<label x="38.1" y="177.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="172.72" x2="86.36" y2="175.26" width="0.1524" layer="91"/>
+<label x="86.36" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
