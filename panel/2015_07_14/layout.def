@@ -1,0 +1,4 @@
+Row {
+  jit_pcb_dip Rotate
+  jit_pcb_smd Rotate
+}
