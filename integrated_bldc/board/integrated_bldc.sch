@@ -7038,7 +7038,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="U$7" library="dhaldane" deviceset="MPM3610" device="MPM3610GQV"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="0.01"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="0R01"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="1210" value="22uF"/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10uF"/>
@@ -7060,9 +7060,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D7" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="D11" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D12" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
-<part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
-<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
+<part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
+<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1nF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1nF"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="1nF"/>
