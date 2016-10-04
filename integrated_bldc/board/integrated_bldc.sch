@@ -7059,7 +7059,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="D6" library="SparkFun-LED" deviceset="LED-RG" device="LTST-C195KGJRKT"/>
 <part name="D7" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="D11" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="D12" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
+<part name="D12" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="WHITE"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
 <part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220R"/>
@@ -7110,7 +7110,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" deviceset="V+" device=""/>
 <part name="R25" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="10k"/>
-<part name="R26" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="40k"/>
+<part name="R26" library="biomimetic" deviceset="RESISTOR" device="0402-RES" value="39k"/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
