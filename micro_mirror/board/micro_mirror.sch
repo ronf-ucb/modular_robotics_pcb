@@ -14130,6 +14130,22 @@ Mating wall wart : TOL-00298 (and others)</description>
 <sheets>
 <sheet>
 <plain>
+<text x="27.94" y="165.1" size="3.81" layer="92">Logic Decouple</text>
+<text x="78.74" y="165.1" size="3.81" layer="92">High Voltage</text>
+<text x="208.28" y="165.1" size="3.81" layer="92">Analog Power</text>
+<text x="281.94" y="165.1" size="3.81" layer="92">Bootstrap Power</text>
+<text x="58.42" y="91.44" size="2.54" layer="92">Shoot-Through Protection</text>
+<text x="58.42" y="45.72" size="2.54" layer="92">Shoot-Through Protection</text>
+<text x="58.42" y="0" size="2.54" layer="92">Shoot-Through Protection</text>
+<text x="58.42" y="-45.72" size="2.54" layer="92">Shoot-Through Protection</text>
+<text x="203.2" y="73.66" size="2.54" layer="92">Voltage/Current Sense</text>
+<text x="203.2" y="119.38" size="2.54" layer="92">Voltage/Current Sense</text>
+<text x="302.26" y="127" size="3.81" layer="92" rot="R180">Channel 0</text>
+<text x="302.26" y="81.28" size="3.81" layer="92" rot="R180">Channel 1</text>
+<text x="208.28" y="35.56" size="3.81" layer="92" rot="R180">Channel 2</text>
+<text x="208.28" y="-10.16" size="3.81" layer="92" rot="R180">Channel 3</text>
+<text x="215.9" y="33.02" size="3.81" layer="92">Microcontroller</text>
+<text x="309.88" y="124.46" size="3.81" layer="92">Connectors</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="287.02" y="2.54" rot="R270"/>
@@ -14137,34 +14153,34 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="U$3" gate="G$1" x="160.02" y="96.52"/>
 <instance part="U$4" gate="G$1" x="121.92" y="99.06"/>
 <instance part="R1" gate="G$1" x="154.94" y="114.3" smashed="yes">
-<attribute name="NAME" x="149.606" y="111.9886" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.384" y="115.57" size="1.778" layer="96"/>
+<attribute name="NAME" x="149.606" y="111.9886" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.384" y="115.57" size="1.4224" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="154.94" y="99.06" smashed="yes">
-<attribute name="NAME" x="150.114" y="97.0026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="100.584" size="1.778" layer="96"/>
+<attribute name="NAME" x="150.114" y="97.0026" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.13" y="100.584" size="1.4224" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="152.4" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.48" y="121.285" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.432" y="122.555" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="121.285" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.432" y="122.555" size="1.4224" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="152.4" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.226" y="106.299" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.686" y="107.315" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.226" y="106.299" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.686" y="107.315" size="1.4224" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="147.32" y="121.92" smashed="yes">
-<attribute name="NAME" x="145.796" y="117.856" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="124.6886" size="1.778" layer="96"/>
+<attribute name="NAME" x="145.796" y="117.856" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="142.24" y="124.6886" size="1.4224" layer="96"/>
 </instance>
 <instance part="P+1" gate="1" x="139.7" y="124.46" smashed="yes">
-<attribute name="VALUE" x="137.16" y="127" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="127" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="P+2" gate="1" x="165.1" y="127"/>
 <instance part="GND1" gate="1" x="165.1" y="88.9"/>
 <instance part="R3" gate="G$1" x="175.26" y="111.76"/>
 <instance part="C3" gate="G$1" x="185.42" y="101.6" smashed="yes">
-<attribute name="NAME" x="187.579" y="96.52" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="190.373" y="93.98" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="187.579" y="96.52" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.373" y="93.98" size="1.4224" layer="96" rot="R90"/>
 </instance>
 <instance part="R4" gate="G$1" x="190.5" y="111.76"/>
 <instance part="C4" gate="G$1" x="114.3" y="96.52"/>
@@ -14179,21 +14195,21 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="C5" gate="G$1" x="48.26" y="99.06"/>
 <instance part="GND2" gate="1" x="48.26" y="91.44"/>
 <instance part="IC4" gate="A" x="248.92" y="101.6" smashed="yes">
-<attribute name="NAME" x="251.46" y="104.775" size="1.778" layer="95"/>
+<attribute name="NAME" x="251.46" y="104.775" size="1.4224" layer="95"/>
 </instance>
 <instance part="R10" gate="G$1" x="251.46" y="93.98"/>
 <instance part="R11" gate="G$1" x="251.46" y="111.76"/>
 <instance part="IC4" gate="D" x="223.52" y="99.06" smashed="yes">
-<attribute name="NAME" x="226.06" y="102.235" size="1.778" layer="95"/>
+<attribute name="NAME" x="226.06" y="102.235" size="1.4224" layer="95"/>
 </instance>
 <instance part="IC4" gate="C" x="223.52" y="111.76" smashed="yes">
-<attribute name="NAME" x="226.06" y="114.935" size="1.778" layer="95"/>
+<attribute name="NAME" x="226.06" y="114.935" size="1.4224" layer="95"/>
 </instance>
 <instance part="R12" gate="G$1" x="236.22" y="111.76"/>
 <instance part="R13" gate="G$1" x="236.22" y="99.06"/>
 <instance part="IC4" gate="B" x="274.32" y="109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="269.24" y="108.585" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="279.4" y="116.84" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="269.24" y="108.585" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="279.4" y="116.84" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="IC4" gate="P" x="302.26" y="101.6"/>
 <instance part="C6" gate="G$1" x="294.64" y="99.06"/>
@@ -14209,20 +14225,20 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="GND4" gate="1" x="30.48" y="134.62"/>
 <instance part="+3V3" gate="G$1" x="114.3" y="114.3"/>
 <instance part="VDD1" gate="G$1" x="302.26" y="116.84"/>
-<instance part="JP1" gate="A" x="335.28" y="106.68"/>
-<instance part="GND5" gate="1" x="322.58" y="101.6"/>
+<instance part="JP1" gate="A" x="330.2" y="111.76"/>
+<instance part="GND5" gate="1" x="317.5" y="106.68"/>
 <instance part="VDDA" gate="G$1" x="266.7" y="154.94" rot="R90"/>
 <instance part="R16" gate="G$1" x="261.62" y="101.6"/>
 <instance part="C10" gate="G$1" x="266.7" y="99.06"/>
 <instance part="GND6" gate="1" x="266.7" y="91.44"/>
 <instance part="U$5" gate="G$1" x="157.48" y="142.24"/>
 <instance part="R17" gate="G$1" x="147.32" y="154.94" smashed="yes">
-<attribute name="NAME" x="140.97" y="156.4386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="156.718" size="1.778" layer="96"/>
+<attribute name="NAME" x="140.97" y="156.4386" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="148.59" y="156.718" size="1.4224" layer="96"/>
 </instance>
 <instance part="L1" gate="L" x="111.76" y="154.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="114.3" y="157.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="119.38" y="157.48" size="1.778" layer="96"/>
+<attribute name="NAME" x="114.3" y="157.48" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="119.38" y="157.48" size="1.4224" layer="96"/>
 </instance>
 <instance part="U$6" gate="G$1" x="292.1" y="142.24"/>
 <instance part="U$7" gate="G$1" x="231.14" y="142.24"/>
@@ -14232,11 +14248,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="C13" gate="G$1" x="220.98" y="149.86"/>
 <instance part="R18" gate="G$1" x="215.9" y="137.16"/>
 <instance part="VDD2" gate="G$1" x="274.32" y="157.48" smashed="yes">
-<attribute name="VALUE" x="274.32" y="152.4" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="274.32" y="152.4" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="P+3" gate="VCC" x="210.82" y="157.48"/>
 <instance part="GND7" gate="1" x="274.32" y="134.62" smashed="yes">
-<attribute name="VALUE" x="269.24" y="139.7" size="1.778" layer="96"/>
+<attribute name="VALUE" x="269.24" y="139.7" size="1.4224" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="210.82" y="134.62"/>
 <instance part="GNDA" gate="G$1" x="266.7" y="137.16" rot="R90"/>
@@ -14247,46 +14263,46 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="GND9" gate="1" x="81.28" y="134.62"/>
 <instance part="P+4" gate="VCC" x="81.28" y="157.48"/>
 <instance part="R21" gate="G$1" x="144.78" y="149.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="153.4414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="146.05" y="148.082" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="148.59" y="153.4414" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="146.05" y="148.082" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="R22" gate="G$1" x="149.86" y="144.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="151.3586" y="143.51" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="146.558" y="143.51" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="151.3586" y="143.51" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="146.558" y="143.51" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="HV_IN" gate="G$1" x="134.62" y="154.94" rot="R90"/>
 <instance part="R23" gate="G$1" x="185.42" y="142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="181.8386" y="146.05" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="187.198" y="143.51" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="181.8386" y="146.05" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="187.198" y="143.51" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="R24" gate="G$1" x="185.42" y="152.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="181.8386" y="156.21" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="187.198" y="153.67" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="181.8386" y="156.21" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="187.198" y="153.67" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="C16" gate="G$1" x="177.8" y="154.94" smashed="yes">
-<attribute name="NAME" x="177.165" y="145.796" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="178.689" y="151.384" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="177.165" y="145.796" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="178.689" y="151.384" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="P+5" gate="1" x="200.66" y="160.02"/>
 <instance part="HV_OUT" gate="G$1" x="193.04" y="157.48" rot="R90"/>
 <instance part="L2" gate="G$1" x="302.26" y="157.48" rot="R90"/>
 <instance part="D2" gate="G$1" x="312.42" y="157.48"/>
 <instance part="R25" gate="G$1" x="314.96" y="152.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="311.3786" y="156.21" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="316.738" y="153.67" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="311.3786" y="156.21" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="316.738" y="153.67" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="R26" gate="G$1" x="314.96" y="142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="311.3786" y="146.05" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="316.738" y="143.51" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="311.3786" y="146.05" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="316.738" y="143.51" size="1.4224" layer="96" rot="R270"/>
 </instance>
 <instance part="C17" gate="G$1" x="322.58" y="154.94" smashed="yes">
-<attribute name="NAME" x="321.945" y="148.336" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="324.993" y="146.05" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="321.945" y="148.336" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="324.993" y="146.05" size="1.4224" layer="96" rot="R90"/>
 </instance>
 <instance part="C18" gate="G$1" x="327.66" y="142.24"/>
 <instance part="C19" gate="G$1" x="284.48" y="142.24"/>
 <instance part="P+6" gate="1" x="342.9" y="160.02" smashed="yes">
-<attribute name="VALUE" x="342.9" y="154.94" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="342.9" y="154.94" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="GND10" gate="1" x="284.48" y="134.62"/>
 <instance part="P+7" gate="VCC" x="284.48" y="160.02"/>
@@ -14302,13 +14318,13 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="I_SENSE_1" gate="G$1" x="248.92" y="-27.94" rot="R90"/>
 <instance part="HV_SENSE" gate="G$1" x="248.92" y="-30.48" rot="R90"/>
 <instance part="P+8" gate="VCC" x="233.68" y="-12.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="233.68" y="-12.7" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="233.68" y="-12.7" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="233.68" y="-2.54" smashed="yes" rot="R90">
-<attribute name="VALUE" x="233.68" y="-2.54" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="233.68" y="-2.54" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="VDD3" gate="G$1" x="327.66" y="12.7" smashed="yes" rot="R270">
-<attribute name="VALUE" x="330.2" y="12.7" size="1.778" layer="96"/>
+<attribute name="VALUE" x="330.2" y="12.7" size="1.4224" layer="96"/>
 </instance>
 <instance part="GND3" gate="1" x="251.46" y="-7.62" rot="R270"/>
 <instance part="PWM_3" gate="G$1" x="320.04" y="-20.32" rot="R90"/>
@@ -14328,34 +14344,34 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="U$10" gate="G$1" x="160.02" y="50.8"/>
 <instance part="U$11" gate="G$1" x="121.92" y="53.34"/>
 <instance part="R27" gate="G$1" x="154.94" y="68.58" smashed="yes">
-<attribute name="NAME" x="149.606" y="66.2686" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.384" y="69.85" size="1.778" layer="96"/>
+<attribute name="NAME" x="149.606" y="66.2686" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.384" y="69.85" size="1.4224" layer="96"/>
 </instance>
 <instance part="R28" gate="G$1" x="154.94" y="53.34" smashed="yes">
-<attribute name="NAME" x="150.114" y="51.2826" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="54.864" size="1.778" layer="96"/>
+<attribute name="NAME" x="150.114" y="51.2826" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.13" y="54.864" size="1.4224" layer="96"/>
 </instance>
 <instance part="C20" gate="G$1" x="152.4" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.48" y="75.565" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.432" y="76.835" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="75.565" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.432" y="76.835" size="1.4224" layer="96"/>
 </instance>
 <instance part="C21" gate="G$1" x="152.4" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.226" y="60.579" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.686" y="61.595" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.226" y="60.579" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.686" y="61.595" size="1.4224" layer="96"/>
 </instance>
 <instance part="D3" gate="G$1" x="147.32" y="76.2" smashed="yes">
-<attribute name="NAME" x="145.796" y="72.136" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="78.9686" size="1.778" layer="96"/>
+<attribute name="NAME" x="145.796" y="72.136" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="142.24" y="78.9686" size="1.4224" layer="96"/>
 </instance>
 <instance part="P+10" gate="1" x="139.7" y="78.74" smashed="yes">
-<attribute name="VALUE" x="137.16" y="81.28" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="81.28" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="P+11" gate="1" x="165.1" y="81.28"/>
 <instance part="GND12" gate="1" x="165.1" y="43.18"/>
 <instance part="R29" gate="G$1" x="175.26" y="66.04"/>
 <instance part="C22" gate="G$1" x="185.42" y="55.88" smashed="yes">
-<attribute name="NAME" x="187.579" y="50.8" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="190.373" y="48.26" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="187.579" y="50.8" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.373" y="48.26" size="1.4224" layer="96" rot="R90"/>
 </instance>
 <instance part="R30" gate="G$1" x="190.5" y="66.04"/>
 <instance part="C23" gate="G$1" x="114.3" y="50.8"/>
@@ -14364,21 +14380,21 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="R33" gate="G$1" x="195.58" y="60.96" rot="R90"/>
 <instance part="R34" gate="G$1" x="195.58" y="50.8" rot="R90"/>
 <instance part="IC5" gate="A" x="248.92" y="55.88" smashed="yes">
-<attribute name="NAME" x="251.46" y="59.055" size="1.778" layer="95"/>
+<attribute name="NAME" x="251.46" y="59.055" size="1.4224" layer="95"/>
 </instance>
 <instance part="R35" gate="G$1" x="251.46" y="48.26"/>
 <instance part="R36" gate="G$1" x="251.46" y="66.04"/>
 <instance part="IC5" gate="D" x="223.52" y="53.34" smashed="yes">
-<attribute name="NAME" x="226.06" y="56.515" size="1.778" layer="95"/>
+<attribute name="NAME" x="226.06" y="56.515" size="1.4224" layer="95"/>
 </instance>
 <instance part="IC5" gate="C" x="223.52" y="66.04" smashed="yes">
-<attribute name="NAME" x="226.06" y="69.215" size="1.778" layer="95"/>
+<attribute name="NAME" x="226.06" y="69.215" size="1.4224" layer="95"/>
 </instance>
 <instance part="R37" gate="G$1" x="236.22" y="66.04"/>
 <instance part="R38" gate="G$1" x="236.22" y="53.34"/>
 <instance part="IC5" gate="B" x="274.32" y="63.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="269.24" y="62.865" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="279.4" y="71.12" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="269.24" y="62.865" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="279.4" y="71.12" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="IC5" gate="P" x="302.26" y="55.88"/>
 <instance part="C24" gate="G$1" x="294.64" y="53.34"/>
@@ -14406,34 +14422,34 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="U$13" gate="G$1" x="160.02" y="5.08"/>
 <instance part="U$14" gate="G$1" x="121.92" y="7.62"/>
 <instance part="R44" gate="G$1" x="154.94" y="22.86" smashed="yes">
-<attribute name="NAME" x="149.606" y="20.5486" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.384" y="24.13" size="1.778" layer="96"/>
+<attribute name="NAME" x="149.606" y="20.5486" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.384" y="24.13" size="1.4224" layer="96"/>
 </instance>
 <instance part="R45" gate="G$1" x="154.94" y="7.62" smashed="yes">
-<attribute name="NAME" x="150.114" y="5.5626" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="9.144" size="1.778" layer="96"/>
+<attribute name="NAME" x="150.114" y="5.5626" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.13" y="9.144" size="1.4224" layer="96"/>
 </instance>
 <instance part="C27" gate="G$1" x="152.4" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.48" y="29.845" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.432" y="31.115" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="29.845" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.432" y="31.115" size="1.4224" layer="96"/>
 </instance>
 <instance part="C28" gate="G$1" x="152.4" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.226" y="14.859" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.686" y="15.875" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.226" y="14.859" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.686" y="15.875" size="1.4224" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="147.32" y="30.48" smashed="yes">
-<attribute name="NAME" x="145.796" y="26.416" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="33.2486" size="1.778" layer="96"/>
+<attribute name="NAME" x="145.796" y="26.416" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="142.24" y="33.2486" size="1.4224" layer="96"/>
 </instance>
 <instance part="P+12" gate="1" x="139.7" y="33.02" smashed="yes">
-<attribute name="VALUE" x="137.16" y="35.56" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="35.56" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="P+13" gate="1" x="165.1" y="35.56"/>
 <instance part="GND16" gate="1" x="165.1" y="-2.54"/>
 <instance part="R46" gate="G$1" x="175.26" y="20.32"/>
 <instance part="C29" gate="G$1" x="185.42" y="10.16" smashed="yes">
-<attribute name="NAME" x="187.579" y="5.08" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="190.373" y="2.54" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="187.579" y="5.08" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.373" y="2.54" size="1.4224" layer="96" rot="R90"/>
 </instance>
 <instance part="R47" gate="G$1" x="190.5" y="20.32"/>
 <instance part="C30" gate="G$1" x="114.3" y="5.08"/>
@@ -14450,40 +14466,40 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="C31" gate="G$1" x="48.26" y="7.62"/>
 <instance part="GND17" gate="1" x="48.26" y="0"/>
 <instance part="R52" gate="G$1" x="43.18" y="10.16"/>
-<instance part="JP2" gate="A" x="335.28" y="91.44"/>
-<instance part="GND18" gate="1" x="322.58" y="86.36"/>
+<instance part="JP2" gate="A" x="330.2" y="88.9"/>
+<instance part="GND18" gate="1" x="317.5" y="83.82"/>
 <instance part="U$15" gate="G$1" x="160.02" y="-25.4"/>
 <instance part="U$16" gate="G$1" x="160.02" y="-40.64"/>
 <instance part="U$17" gate="G$1" x="121.92" y="-38.1"/>
 <instance part="R53" gate="G$1" x="154.94" y="-22.86" smashed="yes">
-<attribute name="NAME" x="149.606" y="-25.1714" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.384" y="-21.59" size="1.778" layer="96"/>
+<attribute name="NAME" x="149.606" y="-25.1714" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.384" y="-21.59" size="1.4224" layer="96"/>
 </instance>
 <instance part="R54" gate="G$1" x="154.94" y="-38.1" smashed="yes">
-<attribute name="NAME" x="150.114" y="-40.1574" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="-36.576" size="1.778" layer="96"/>
+<attribute name="NAME" x="150.114" y="-40.1574" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="151.13" y="-36.576" size="1.4224" layer="96"/>
 </instance>
 <instance part="C32" gate="G$1" x="152.4" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.48" y="-15.875" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.432" y="-14.605" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.48" y="-15.875" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.432" y="-14.605" size="1.4224" layer="96"/>
 </instance>
 <instance part="C33" gate="G$1" x="152.4" y="-30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="157.226" y="-30.861" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="154.686" y="-29.845" size="1.778" layer="96"/>
+<attribute name="NAME" x="157.226" y="-30.861" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.686" y="-29.845" size="1.4224" layer="96"/>
 </instance>
 <instance part="D5" gate="G$1" x="147.32" y="-15.24" smashed="yes">
-<attribute name="NAME" x="145.796" y="-19.304" size="1.778" layer="95"/>
-<attribute name="VALUE" x="142.24" y="-12.4714" size="1.778" layer="96"/>
+<attribute name="NAME" x="145.796" y="-19.304" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="142.24" y="-12.4714" size="1.4224" layer="96"/>
 </instance>
 <instance part="P+14" gate="1" x="139.7" y="-12.7" smashed="yes">
-<attribute name="VALUE" x="137.16" y="-10.16" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="137.16" y="-10.16" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="P+15" gate="1" x="165.1" y="-10.16"/>
 <instance part="GND19" gate="1" x="165.1" y="-48.26"/>
 <instance part="R55" gate="G$1" x="175.26" y="-25.4"/>
 <instance part="C34" gate="G$1" x="185.42" y="-35.56" smashed="yes">
-<attribute name="NAME" x="187.579" y="-40.64" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="190.373" y="-43.18" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="187.579" y="-40.64" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="190.373" y="-43.18" size="1.4224" layer="96" rot="R90"/>
 </instance>
 <instance part="R56" gate="G$1" x="190.5" y="-25.4"/>
 <instance part="C35" gate="G$1" x="114.3" y="-40.64"/>
@@ -14506,79 +14522,119 @@ Mating wall wart : TOL-00298 (and others)</description>
 <busses>
 <bus name="B$1">
 <segment>
-<wire x1="78.74" y1="162.56" x2="203.2" y2="162.56" width="0.762" layer="92"/>
-<wire x1="203.2" y1="162.56" x2="203.2" y2="132.08" width="0.762" layer="92"/>
+<wire x1="76.2" y1="170.18" x2="111.76" y2="170.18" width="0.762" layer="92"/>
+<wire x1="111.76" y1="170.18" x2="203.2" y2="170.18" width="0.762" layer="92"/>
+<wire x1="203.2" y1="170.18" x2="203.2" y2="132.08" width="0.762" layer="92"/>
 <wire x1="203.2" y1="132.08" x2="76.2" y2="132.08" width="0.762" layer="92"/>
 <wire x1="76.2" y1="132.08" x2="76.2" y2="162.56" width="0.762" layer="92"/>
-<wire x1="76.2" y1="162.56" x2="78.74" y2="162.56" width="0.762" layer="92"/>
+<wire x1="76.2" y1="162.56" x2="76.2" y2="170.18" width="0.762" layer="92"/>
+<wire x1="76.2" y1="162.56" x2="111.76" y2="162.56" width="0.762" layer="92"/>
+<wire x1="111.76" y1="162.56" x2="111.76" y2="170.18" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$2">
 <segment>
 <wire x1="205.74" y1="132.08" x2="205.74" y2="162.56" width="0.762" layer="92"/>
-<wire x1="205.74" y1="162.56" x2="276.86" y2="162.56" width="0.762" layer="92"/>
-<wire x1="276.86" y1="162.56" x2="276.86" y2="132.08" width="0.762" layer="92"/>
+<wire x1="205.74" y1="162.56" x2="205.74" y2="170.18" width="0.762" layer="92"/>
+<wire x1="205.74" y1="170.18" x2="243.84" y2="170.18" width="0.762" layer="92"/>
+<wire x1="246.38" y1="170.18" x2="276.86" y2="170.18" width="0.762" layer="92"/>
+<wire x1="276.86" y1="170.18" x2="276.86" y2="132.08" width="0.762" layer="92"/>
 <wire x1="276.86" y1="132.08" x2="205.74" y2="132.08" width="0.762" layer="92"/>
+<wire x1="205.74" y1="162.56" x2="243.84" y2="162.56" width="0.762" layer="92"/>
+<wire x1="243.84" y1="162.56" x2="243.84" y2="170.18" width="0.762" layer="92"/>
+<wire x1="243.84" y1="170.18" x2="246.38" y2="170.18" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$3">
 <segment>
 <wire x1="279.4" y1="132.08" x2="279.4" y2="162.56" width="0.762" layer="92"/>
-<wire x1="279.4" y1="162.56" x2="345.44" y2="162.56" width="0.762" layer="92"/>
-<wire x1="345.44" y1="162.56" x2="345.44" y2="132.08" width="0.762" layer="92"/>
+<wire x1="279.4" y1="162.56" x2="279.4" y2="170.18" width="0.762" layer="92"/>
+<wire x1="279.4" y1="170.18" x2="322.58" y2="170.18" width="0.762" layer="92"/>
+<wire x1="322.58" y1="170.18" x2="345.44" y2="170.18" width="0.762" layer="92"/>
+<wire x1="345.44" y1="170.18" x2="345.44" y2="132.08" width="0.762" layer="92"/>
 <wire x1="345.44" y1="132.08" x2="279.4" y2="132.08" width="0.762" layer="92"/>
+<wire x1="279.4" y1="162.56" x2="322.58" y2="162.56" width="0.762" layer="92"/>
+<wire x1="322.58" y1="162.56" x2="322.58" y2="170.18" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$4">
 <segment>
 <wire x1="25.4" y1="132.08" x2="25.4" y2="162.56" width="0.762" layer="92"/>
-<wire x1="25.4" y1="162.56" x2="73.66" y2="162.56" width="0.762" layer="92"/>
-<wire x1="73.66" y1="162.56" x2="73.66" y2="132.08" width="0.762" layer="92"/>
+<wire x1="25.4" y1="162.56" x2="25.4" y2="170.18" width="0.762" layer="92"/>
+<wire x1="25.4" y1="170.18" x2="66.04" y2="170.18" width="0.762" layer="92"/>
+<wire x1="66.04" y1="170.18" x2="73.66" y2="170.18" width="0.762" layer="92"/>
+<wire x1="73.66" y1="170.18" x2="73.66" y2="132.08" width="0.762" layer="92"/>
 <wire x1="73.66" y1="132.08" x2="25.4" y2="132.08" width="0.762" layer="92"/>
+<wire x1="25.4" y1="162.56" x2="66.04" y2="162.56" width="0.762" layer="92"/>
+<wire x1="66.04" y1="162.56" x2="66.04" y2="170.18" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$5">
 <segment>
 <wire x1="25.4" y1="86.36" x2="25.4" y2="129.54" width="0.762" layer="92"/>
-<wire x1="25.4" y1="129.54" x2="304.8" y2="129.54" width="0.762" layer="92"/>
-<wire x1="304.8" y1="129.54" x2="304.8" y2="86.36" width="0.762" layer="92"/>
+<wire x1="25.4" y1="129.54" x2="276.86" y2="129.54" width="0.762" layer="92"/>
+<wire x1="276.86" y1="129.54" x2="304.8" y2="129.54" width="0.762" layer="92"/>
+<wire x1="304.8" y1="129.54" x2="304.8" y2="121.92" width="0.762" layer="92"/>
+<wire x1="304.8" y1="121.92" x2="304.8" y2="86.36" width="0.762" layer="92"/>
 <wire x1="304.8" y1="86.36" x2="25.4" y2="86.36" width="0.762" layer="92"/>
+<wire x1="276.86" y1="129.54" x2="276.86" y2="121.92" width="0.762" layer="92"/>
+<wire x1="276.86" y1="121.92" x2="304.8" y2="121.92" width="0.762" layer="92"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="83.82" x2="304.8" y2="83.82" width="0.762" layer="92"/>
-<wire x1="304.8" y1="83.82" x2="304.8" y2="40.64" width="0.762" layer="92"/>
+<wire x1="25.4" y1="83.82" x2="276.86" y2="83.82" width="0.762" layer="92"/>
+<wire x1="276.86" y1="83.82" x2="304.8" y2="83.82" width="0.762" layer="92"/>
+<wire x1="304.8" y1="83.82" x2="304.8" y2="76.2" width="0.762" layer="92"/>
+<wire x1="304.8" y1="76.2" x2="304.8" y2="40.64" width="0.762" layer="92"/>
 <wire x1="304.8" y1="40.64" x2="25.4" y2="40.64" width="0.762" layer="92"/>
 <wire x1="25.4" y1="83.82" x2="25.4" y2="40.64" width="0.762" layer="92"/>
+<wire x1="276.86" y1="83.82" x2="276.86" y2="76.2" width="0.762" layer="92"/>
+<wire x1="276.86" y1="76.2" x2="304.8" y2="76.2" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$6">
 <segment>
-<wire x1="213.36" y1="-50.8" x2="213.36" y2="38.1" width="0.762" layer="92"/>
-<wire x1="213.36" y1="38.1" x2="345.44" y2="38.1" width="0.762" layer="92"/>
+<wire x1="213.36" y1="-50.8" x2="213.36" y2="30.48" width="0.762" layer="92"/>
+<wire x1="213.36" y1="30.48" x2="213.36" y2="38.1" width="0.762" layer="92"/>
+<wire x1="213.36" y1="38.1" x2="251.46" y2="38.1" width="0.762" layer="92"/>
+<wire x1="251.46" y1="38.1" x2="345.44" y2="38.1" width="0.762" layer="92"/>
 <wire x1="345.44" y1="38.1" x2="345.44" y2="-50.8" width="0.762" layer="92"/>
 <wire x1="345.44" y1="-50.8" x2="213.36" y2="-50.8" width="0.762" layer="92"/>
+<wire x1="213.36" y1="30.48" x2="251.46" y2="30.48" width="0.762" layer="92"/>
+<wire x1="251.46" y1="30.48" x2="251.46" y2="38.1" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$7">
 <segment>
 <wire x1="25.4" y1="38.1" x2="25.4" y2="-5.08" width="0.762" layer="92"/>
 <wire x1="25.4" y1="-5.08" x2="210.82" y2="-5.08" width="0.762" layer="92"/>
-<wire x1="210.82" y1="-5.08" x2="210.82" y2="38.1" width="0.762" layer="92"/>
-<wire x1="210.82" y1="38.1" x2="25.4" y2="38.1" width="0.762" layer="92"/>
+<wire x1="210.82" y1="-5.08" x2="210.82" y2="30.48" width="0.762" layer="92"/>
+<wire x1="210.82" y1="30.48" x2="210.82" y2="38.1" width="0.762" layer="92"/>
+<wire x1="210.82" y1="38.1" x2="182.88" y2="38.1" width="0.762" layer="92"/>
+<wire x1="182.88" y1="38.1" x2="25.4" y2="38.1" width="0.762" layer="92"/>
+<wire x1="182.88" y1="38.1" x2="182.88" y2="30.48" width="0.762" layer="92"/>
+<wire x1="182.88" y1="30.48" x2="210.82" y2="30.48" width="0.762" layer="92"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="-7.62" x2="25.4" y2="-50.8" width="0.762" layer="92"/>
 <wire x1="25.4" y1="-50.8" x2="210.82" y2="-50.8" width="0.762" layer="92"/>
-<wire x1="210.82" y1="-50.8" x2="210.82" y2="-7.62" width="0.762" layer="92"/>
-<wire x1="210.82" y1="-7.62" x2="25.4" y2="-7.62" width="0.762" layer="92"/>
+<wire x1="210.82" y1="-50.8" x2="210.82" y2="-15.24" width="0.762" layer="92"/>
+<wire x1="210.82" y1="-15.24" x2="210.82" y2="-7.62" width="0.762" layer="92"/>
+<wire x1="210.82" y1="-7.62" x2="182.88" y2="-7.62" width="0.762" layer="92"/>
+<wire x1="182.88" y1="-7.62" x2="25.4" y2="-7.62" width="0.762" layer="92"/>
+<wire x1="182.88" y1="-7.62" x2="182.88" y2="-15.24" width="0.762" layer="92"/>
+<wire x1="182.88" y1="-15.24" x2="210.82" y2="-15.24" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="B$8">
 <segment>
-<wire x1="307.34" y1="40.64" x2="307.34" y2="129.54" width="0.762" layer="92"/>
-<wire x1="307.34" y1="129.54" x2="345.44" y2="129.54" width="0.762" layer="92"/>
+<wire x1="307.34" y1="40.64" x2="307.34" y2="121.92" width="0.762" layer="92"/>
+<wire x1="307.34" y1="121.92" x2="307.34" y2="129.54" width="0.762" layer="92"/>
+<wire x1="307.34" y1="129.54" x2="337.82" y2="129.54" width="0.762" layer="92"/>
+<wire x1="337.82" y1="129.54" x2="345.44" y2="129.54" width="0.762" layer="92"/>
 <wire x1="345.44" y1="129.54" x2="345.44" y2="40.64" width="0.762" layer="92"/>
 <wire x1="345.44" y1="40.64" x2="307.34" y2="40.64" width="0.762" layer="92"/>
+<wire x1="307.34" y1="121.92" x2="337.82" y2="121.92" width="0.762" layer="92"/>
+<wire x1="337.82" y1="121.92" x2="337.82" y2="129.54" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -14813,7 +14869,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="3"/>
-<wire x1="332.74" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="109.22" x2="317.5" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14971,7 +15027,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="322.58" y1="88.9" x2="332.74" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="86.36" x2="327.66" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -15029,12 +15085,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="101.6" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 <junction x="180.34" y="101.6"/>
-<label x="172.72" y="101.6" size="1.778" layer="95"/>
+<label x="172.72" y="101.6" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="C" pin="+IN"/>
 <wire x1="215.9" y1="114.3" x2="213.36" y2="114.3" width="0.1524" layer="91"/>
-<label x="200.66" y="114.3" size="1.778" layer="95"/>
+<label x="200.66" y="114.3" size="1.4224" layer="95"/>
 <pinref part="ID0" gate="G$1" pin="1"/>
 <junction x="215.9" y="114.3"/>
 <pinref part="ID0" gate="G$1" pin="2"/>
@@ -15054,12 +15110,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="111.76" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
 <junction x="195.58" y="111.76"/>
-<label x="193.04" y="119.38" size="1.778" layer="95"/>
+<label x="193.04" y="119.38" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
-<wire x1="332.74" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
-<label x="322.58" y="109.22" size="1.778" layer="95"/>
+<wire x1="327.66" y1="114.3" x2="317.5" y2="114.3" width="0.1524" layer="91"/>
+<label x="317.5" y="114.3" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="VD0" class="0">
@@ -15079,7 +15135,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <junction x="195.58" y="101.6"/>
-<label x="200.66" y="101.6" size="1.778" layer="95"/>
+<label x="200.66" y="101.6" size="1.4224" layer="95"/>
 <junction x="208.28" y="101.6"/>
 </segment>
 </net>
@@ -15099,7 +15155,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="106.68" y="106.68"/>
 <pinref part="IC2" gate="A" pin="O"/>
 <wire x1="96.52" y1="104.14" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-<label x="96.52" y="106.68" size="1.778" layer="95"/>
+<label x="96.52" y="106.68" size="1.4224" layer="95"/>
 <wire x1="104.14" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
 <junction x="104.14" y="106.68"/>
 </segment>
@@ -15120,7 +15176,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="106.68" y="109.22"/>
 <pinref part="IC3" gate="A" pin="O"/>
 <wire x1="96.52" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
-<label x="96.52" y="119.38" size="1.778" layer="95"/>
+<label x="96.52" y="119.38" size="1.4224" layer="95"/>
 <wire x1="104.14" y1="109.22" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <junction x="104.14" y="109.22"/>
 </segment>
@@ -15165,7 +15221,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="215.9" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="93.98" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
 <junction x="231.14" y="99.06"/>
-<label x="215.9" y="91.44" size="1.778" layer="95"/>
+<label x="215.9" y="91.44" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <wire x1="251.46" y1="-20.32" x2="248.92" y2="-20.32" width="0.1524" layer="91"/>
@@ -15179,7 +15235,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="V_SENSE_0" gate="G$1" pin="4"/>
 <wire x1="243.84" y1="-20.32" x2="226.06" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="243.84" y="-20.32"/>
-<label x="226.06" y="-20.32" size="1.778" layer="95"/>
+<label x="226.06" y="-20.32" size="1.4224" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="A1"/>
 <wire x1="254" y1="-20.32" x2="251.46" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="251.46" y="-20.32"/>
@@ -15396,15 +15452,15 @@ Mating wall wart : TOL-00298 (and others)</description>
 <net name="VO1" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
-<wire x1="332.74" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
-<label x="322.58" y="106.68" size="1.778" layer="95"/>
+<wire x1="327.66" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
+<label x="317.5" y="111.76" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="66.04" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
 <junction x="195.58" y="66.04"/>
-<label x="193.04" y="73.66" size="1.778" layer="95"/>
+<label x="193.04" y="73.66" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -15422,11 +15478,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="101.6" x2="279.4" y2="101.6" width="0.1524" layer="91"/>
 <junction x="266.7" y="101.6"/>
-<label x="269.24" y="101.6" size="1.778" layer="95"/>
+<label x="269.24" y="101.6" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <wire x1="251.46" y1="-22.86" x2="248.92" y2="-22.86" width="0.1524" layer="91"/>
-<label x="226.06" y="-22.86" size="1.778" layer="95"/>
+<label x="226.06" y="-22.86" size="1.4224" layer="95"/>
 <pinref part="I_SENSE_0" gate="G$1" pin="1"/>
 <pinref part="I_SENSE_0" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="-22.86" x2="246.38" y2="-22.86" width="0.1524" layer="91"/>
@@ -15568,7 +15624,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="149.86" x2="129.54" y2="149.86" width="0.1524" layer="91"/>
-<label x="129.54" y="149.86" size="1.778" layer="95"/>
+<label x="129.54" y="149.86" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D1"/>
@@ -15584,7 +15640,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-25.4"/>
 <pinref part="HV_ADJ" gate="G$1" pin="4"/>
 <junction x="314.96" y="-25.4"/>
-<label x="325.12" y="-25.4" size="1.778" layer="95"/>
+<label x="325.12" y="-25.4" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="HV_SENSE" class="0">
@@ -15593,11 +15649,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
 <junction x="185.42" y="147.32"/>
-<label x="187.96" y="147.32" size="1.778" layer="95"/>
+<label x="187.96" y="147.32" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <wire x1="251.46" y1="-30.48" x2="248.92" y2="-30.48" width="0.1524" layer="91"/>
-<label x="226.06" y="-30.48" size="1.778" layer="95"/>
+<label x="226.06" y="-30.48" size="1.4224" layer="95"/>
 <pinref part="HV_SENSE" gate="G$1" pin="1"/>
 <pinref part="HV_SENSE" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="-30.48" x2="246.38" y2="-30.48" width="0.1524" layer="91"/>
@@ -15648,7 +15704,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <net name="V_SENSE_1" class="0">
 <segment>
 <wire x1="251.46" y1="-25.4" x2="248.92" y2="-25.4" width="0.1524" layer="91"/>
-<label x="226.06" y="-25.4" size="1.778" layer="95"/>
+<label x="226.06" y="-25.4" size="1.4224" layer="95"/>
 <pinref part="V_SENSE_1" gate="G$1" pin="1"/>
 <pinref part="V_SENSE_1" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="-25.4" x2="246.38" y2="-25.4" width="0.1524" layer="91"/>
@@ -15671,13 +15727,13 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="215.9" y1="48.26" x2="231.14" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="48.26" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
 <junction x="231.14" y="53.34"/>
-<label x="215.9" y="45.72" size="1.778" layer="95"/>
+<label x="215.9" y="45.72" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="I_SENSE_1" class="0">
 <segment>
 <wire x1="251.46" y1="-27.94" x2="248.92" y2="-27.94" width="0.1524" layer="91"/>
-<label x="226.06" y="-27.94" size="1.778" layer="95"/>
+<label x="226.06" y="-27.94" size="1.4224" layer="95"/>
 <pinref part="I_SENSE_1" gate="G$1" pin="1"/>
 <pinref part="I_SENSE_1" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="-27.94" x2="246.38" y2="-27.94" width="0.1524" layer="91"/>
@@ -15697,7 +15753,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="55.88" x2="279.4" y2="55.88" width="0.1524" layer="91"/>
 <junction x="266.7" y="55.88"/>
-<label x="269.24" y="55.88" size="1.778" layer="95"/>
+<label x="269.24" y="55.88" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="PWM_0" class="0">
@@ -15715,7 +15771,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-10.16"/>
 <pinref part="PWM_0" gate="G$1" pin="4"/>
 <junction x="314.96" y="-10.16"/>
-<label x="325.12" y="-10.16" size="1.778" layer="95"/>
+<label x="325.12" y="-10.16" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="I0"/>
@@ -15728,7 +15784,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="38.1" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
 <junction x="66.04" y="121.92"/>
 <junction x="38.1" y="101.6"/>
-<label x="27.94" y="101.6" size="1.778" layer="95"/>
+<label x="27.94" y="101.6" size="1.4224" layer="95"/>
 <wire x1="38.1" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15747,7 +15803,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-12.7"/>
 <pinref part="PWM_1" gate="G$1" pin="4"/>
 <junction x="314.96" y="-12.7"/>
-<label x="325.12" y="-12.7" size="1.778" layer="95"/>
+<label x="325.12" y="-12.7" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="B" pin="I0"/>
@@ -15761,7 +15817,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="66.04" y="76.2"/>
 <wire x1="38.1" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <junction x="38.1" y="55.88"/>
-<label x="27.94" y="55.88" size="1.778" layer="95"/>
+<label x="27.94" y="55.88" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="PWM_2" class="0">
@@ -15779,7 +15835,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-15.24"/>
 <pinref part="PWM_2" gate="G$1" pin="4"/>
 <junction x="314.96" y="-15.24"/>
-<label x="325.12" y="-15.24" size="1.778" layer="95"/>
+<label x="325.12" y="-15.24" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="C" pin="I0"/>
@@ -15793,7 +15849,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="66.04" y="30.48"/>
 <wire x1="38.1" y1="10.16" x2="27.94" y2="10.16" width="0.1524" layer="91"/>
 <junction x="38.1" y="10.16"/>
-<label x="27.94" y="10.16" size="1.778" layer="95"/>
+<label x="27.94" y="10.16" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="PWM_3" class="0">
@@ -15811,7 +15867,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-20.32"/>
 <pinref part="PWM_3" gate="G$1" pin="4"/>
 <junction x="314.96" y="-20.32"/>
-<label x="325.12" y="-20.32" size="1.778" layer="95"/>
+<label x="325.12" y="-20.32" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91"/>
@@ -15823,7 +15879,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="66.04" y="-15.24"/>
 <wire x1="38.1" y1="-35.56" x2="27.94" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="38.1" y="-35.56"/>
-<label x="27.94" y="-35.56" size="1.778" layer="95"/>
+<label x="27.94" y="-35.56" size="1.4224" layer="95"/>
 <pinref part="IC3" gate="D" pin="I0"/>
 <pinref part="IC2" gate="D" pin="I0"/>
 </segment>
@@ -15843,12 +15899,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-17.78"/>
 <pinref part="SD_1" gate="G$1" pin="4"/>
 <junction x="314.96" y="-17.78"/>
-<label x="325.12" y="-17.78" size="1.778" layer="95"/>
+<label x="325.12" y="-17.78" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="SD"/>
 <wire x1="119.38" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
-<label x="101.6" y="55.88" size="1.778" layer="95"/>
+<label x="101.6" y="55.88" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="SD_2" class="0">
@@ -15866,12 +15922,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-22.86"/>
 <pinref part="SD_2" gate="G$1" pin="4"/>
 <junction x="314.96" y="-22.86"/>
-<label x="325.12" y="-22.86" size="1.778" layer="95"/>
+<label x="325.12" y="-22.86" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$14" gate="G$1" pin="SD"/>
 <wire x1="119.38" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
-<label x="101.6" y="10.16" size="1.778" layer="95"/>
+<label x="101.6" y="10.16" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="SD_3" class="0">
@@ -15889,12 +15945,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-27.94"/>
 <pinref part="SD_3" gate="G$1" pin="4"/>
 <junction x="314.96" y="-27.94"/>
-<label x="325.12" y="-27.94" size="1.778" layer="95"/>
+<label x="325.12" y="-27.94" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="SD"/>
 <wire x1="119.38" y1="-33.02" x2="101.6" y2="-33.02" width="0.1524" layer="91"/>
-<label x="101.6" y="-35.56" size="1.778" layer="95"/>
+<label x="101.6" y="-35.56" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="SD_0" class="0">
@@ -15912,12 +15968,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="317.5" y="-2.54"/>
 <pinref part="SD_0" gate="G$1" pin="4"/>
 <junction x="314.96" y="-2.54"/>
-<label x="325.12" y="-2.54" size="1.778" layer="95"/>
+<label x="325.12" y="-2.54" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="SD"/>
 <wire x1="119.38" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
-<label x="101.6" y="101.6" size="1.778" layer="95"/>
+<label x="101.6" y="101.6" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -16063,7 +16119,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="106.68" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
 <junction x="106.68" y="63.5"/>
 <wire x1="96.52" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
-<label x="96.52" y="73.66" size="1.778" layer="95"/>
+<label x="96.52" y="73.66" size="1.4224" layer="95"/>
 <wire x1="104.14" y1="63.5" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <junction x="104.14" y="63.5"/>
 <pinref part="IC3" gate="B" pin="O"/>
@@ -16084,7 +16140,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="106.68" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <junction x="106.68" y="60.96"/>
 <wire x1="96.52" y1="58.42" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="96.52" y="60.96" size="1.778" layer="95"/>
+<label x="96.52" y="60.96" size="1.4224" layer="95"/>
 <wire x1="104.14" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <junction x="104.14" y="60.96"/>
 <pinref part="IC2" gate="B" pin="O"/>
@@ -16096,12 +16152,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R32" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <junction x="180.34" y="55.88"/>
-<label x="172.72" y="55.88" size="1.778" layer="95"/>
+<label x="172.72" y="55.88" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="C" pin="+IN"/>
 <wire x1="215.9" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
-<label x="200.66" y="68.58" size="1.778" layer="95"/>
+<label x="200.66" y="68.58" size="1.4224" layer="95"/>
 <pinref part="ID1" gate="G$1" pin="1"/>
 <junction x="215.9" y="68.58"/>
 <pinref part="ID1" gate="G$1" pin="2"/>
@@ -16132,7 +16188,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R34" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="55.88" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
 <junction x="195.58" y="55.88"/>
-<label x="200.66" y="55.88" size="1.778" layer="95"/>
+<label x="200.66" y="55.88" size="1.4224" layer="95"/>
 <junction x="208.28" y="55.88"/>
 </segment>
 </net>
@@ -16251,7 +16307,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="96.52" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="17.78" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
 <junction x="104.14" y="17.78"/>
-<label x="96.52" y="27.94" size="1.778" layer="95"/>
+<label x="96.52" y="27.94" size="1.4224" layer="95"/>
 <pinref part="IC3" gate="C" pin="O"/>
 </segment>
 </net>
@@ -16271,7 +16327,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="106.68" y="15.24"/>
 <wire x1="104.14" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
 <junction x="104.14" y="15.24"/>
-<label x="96.52" y="15.24" size="1.778" layer="95"/>
+<label x="96.52" y="15.24" size="1.4224" layer="95"/>
 <pinref part="IC2" gate="C" pin="O"/>
 <wire x1="96.52" y1="15.24" x2="96.52" y2="12.7" width="0.1524" layer="91"/>
 </segment>
@@ -16282,12 +16338,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R50" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="20.32" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
 <junction x="195.58" y="20.32"/>
-<label x="193.04" y="27.94" size="1.778" layer="95"/>
+<label x="193.04" y="27.94" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="332.74" y1="93.98" x2="322.58" y2="93.98" width="0.1524" layer="91"/>
-<label x="322.58" y="93.98" size="1.778" layer="95"/>
+<wire x1="327.66" y1="91.44" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
+<label x="317.5" y="91.44" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="ID2" class="0">
@@ -16296,7 +16352,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
 <junction x="180.34" y="10.16"/>
-<label x="172.72" y="10.16" size="1.778" layer="95"/>
+<label x="172.72" y="10.16" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="VD2" class="0">
@@ -16305,7 +16361,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="10.16" x2="208.28" y2="10.16" width="0.1524" layer="91"/>
 <junction x="195.58" y="10.16"/>
-<label x="200.66" y="10.16" size="1.778" layer="95"/>
+<label x="200.66" y="10.16" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -16331,15 +16387,15 @@ Mating wall wart : TOL-00298 (and others)</description>
 <net name="VO3" class="0">
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="332.74" y1="91.44" x2="322.58" y2="91.44" width="0.1524" layer="91"/>
-<label x="322.58" y="91.44" size="1.778" layer="95"/>
+<wire x1="327.66" y1="88.9" x2="317.5" y2="88.9" width="0.1524" layer="91"/>
+<label x="317.5" y="88.9" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <pinref part="R56" gate="G$1" pin="2"/>
 <pinref part="R59" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="-25.4" x2="195.58" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="195.58" y="-25.4"/>
-<label x="193.04" y="-17.78" size="1.778" layer="95"/>
+<label x="193.04" y="-17.78" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -16444,7 +16500,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="96.52" y1="-17.78" x2="104.14" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="-27.94" x2="104.14" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="104.14" y="-27.94"/>
-<label x="96.52" y="-17.78" size="1.778" layer="95"/>
+<label x="96.52" y="-17.78" size="1.4224" layer="95"/>
 <pinref part="IC3" gate="D" pin="O"/>
 </segment>
 </net>
@@ -16464,7 +16520,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="106.68" y="-30.48"/>
 <wire x1="104.14" y1="-30.48" x2="96.52" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="104.14" y="-30.48"/>
-<label x="96.52" y="-30.48" size="1.778" layer="95"/>
+<label x="96.52" y="-30.48" size="1.4224" layer="95"/>
 <wire x1="96.52" y1="-30.48" x2="96.52" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="D" pin="O"/>
 </segment>
@@ -16475,7 +16531,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R58" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="-35.56" x2="172.72" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="180.34" y="-35.56"/>
-<label x="172.72" y="-35.56" size="1.778" layer="95"/>
+<label x="172.72" y="-35.56" size="1.4224" layer="95"/>
 </segment>
 </net>
 <net name="VD3" class="0">
@@ -16484,7 +16540,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="R60" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="-35.56" x2="208.28" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="195.58" y="-35.56"/>
-<label x="200.66" y="-35.56" size="1.778" layer="95"/>
+<label x="200.66" y="-35.56" size="1.4224" layer="95"/>
 </segment>
 </net>
 </nets>
