@@ -13924,23 +13924,23 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="U$4" library="modular_robotics" deviceset="IR2213" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
-<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
+<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="10nF-L"/>
+<part name="C2" library="rcl" deviceset="C-US" device="C1206" value="10nF-L"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO214AC" value="BYG23T-M3"/>
 <part name="P+1" library="supply1" deviceset="+15V" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1M"/>
-<part name="C3" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V"/>
+<part name="C3" library="rcl" deviceset="C-US" device="C1206" value="1nF-1k5V"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C1206" value="100nF"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R1206" value="100M"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R1206" value="270k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="100M"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="270k"/>
-<part name="IC1" library="74xx-us" deviceset="74*07" device="D"/>
-<part name="IC2" library="74xx-us" deviceset="74*02" device="D"/>
-<part name="IC3" library="74xx-us" deviceset="74*08" device="D" technology="S"/>
+<part name="IC1" library="74xx-us" deviceset="74*07" device="D" value="74LV7014"/>
+<part name="IC2" library="74xx-us" deviceset="74*02" device="D" value="74LV02"/>
+<part name="IC3" library="74xx-us" deviceset="74*08" device="D" technology="S" value="74LV08"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="C5" library="rcl" deviceset="C-US" device="C1206" value="470pF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -13991,11 +13991,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="HV_IN" library="modular_robotics" deviceset="M04" device="LOCK"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="R1206" value="27k"/>
 <part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
-<part name="C16" library="rcl" deviceset="C-US" device="C2225K" value="100nF 1k5V"/>
+<part name="C16" library="rcl" deviceset="C-US" device="C2225K" value="100nF-1k5V"/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="HV_OUT" library="modular_robotics" deviceset="M04" device="LOCK"/>
 <part name="L2" library="rcl" deviceset="L-US" device="L1812" value="12uH"/>
-<part name="D2" library="diode" deviceset="DIODE-" device="SOD123"/>
+<part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="MBR0520"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="150k"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="R1206" value="13k3"/>
 <part name="C17" library="rcl" deviceset="C-US" device="C1206" value="180pF"/>
@@ -14038,7 +14038,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="R27" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="C20" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
-<part name="C21" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
+<part name="C21" library="rcl" deviceset="C-US" device="C1206" value="10nF-Lo"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="DO214AC" value="BYG23T-M3"/>
 <part name="P+10" library="supply1" deviceset="+15V" device=""/>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
@@ -14079,7 +14079,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="R44" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="R45" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="C27" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
-<part name="C28" library="rcl" deviceset="C-US" device="C1206" value="10nF LoESL"/>
+<part name="C28" library="rcl" deviceset="C-US" device="C1206" value="10nF-Lo"/>
 <part name="D4" library="diode" deviceset="DIODE-" device="DO214AC" value="BYG23T-M3"/>
 <part name="P+12" library="supply1" deviceset="+15V" device=""/>
 <part name="P+13" library="supply1" deviceset="V+" device=""/>
