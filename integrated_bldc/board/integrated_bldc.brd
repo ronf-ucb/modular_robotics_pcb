@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="5" display="yes" altdistance="0.005" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29,15 +29,15 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -55,11 +55,11 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -786,6 +786,13 @@ chip</description>
 <smd name="3" x="0" y="-0.4" dx="0.25" dy="0.5" layer="1" rot="R90"/>
 <text x="0.85" y="-0.8" size="0.3048" layer="21" rot="R90">&gt;NAME</text>
 <rectangle x1="-0.381" y1="-0.635" x2="0.381" y2="0.635" layer="29"/>
+</package>
+<package name="INFO">
+<text x="0" y="4" size="0.8128" layer="21" font="vector" ratio="20">&gt;AUTHOR</text>
+<text x="0" y="3" size="0.8128" layer="21" font="vector" ratio="20">&gt;ORGANIZATION</text>
+<text x="0" y="2" size="0.8128" layer="21" font="vector" ratio="20">&gt;DATE</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="20">&gt;REVISION</text>
+<text x="0" y="1" size="0.8128" layer="21" font="vector" ratio="20">&gt;DESIGN</text>
 </package>
 </packages>
 </library>
@@ -1926,7 +1933,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="5mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -2046,7 +2053,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="14.4025" y="3.658" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
 </element>
 <element name="C4" library="SparkFun-Passives" package="0402-CAP" value="0.1uF" x="14.826" y="9.626" smashed="yes" rot="MR135">
-<attribute name="VALUE" x="12.75445625" y="9.1709" size="0.4064" layer="28" font="vector" ratio="25" rot="MR135"/>
+<attribute name="VALUE" x="13.15445625" y="9.3709" size="0.4064" layer="28" font="vector" ratio="25" rot="MR135"/>
 </element>
 <element name="C5" library="SparkFun-Passives" package="0402-CAP" value="0.1uF" x="16.374" y="11.172" smashed="yes" rot="MR315">
 <attribute name="VALUE" x="18.545546875" y="13.027096875" size="0.4064" layer="28" font="vector" ratio="25" rot="MR315"/>
@@ -2098,24 +2105,24 @@ design rules under a new name.</description>
 </element>
 <element name="D7" library="SparkFun-LED" package="LED-0603" value="BLUE" x="12.2" y="1.2" smashed="yes" rot="MR270">
 <attribute name="PROD_ID" value="DIO-08575" x="12.2" y="1.2" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="12.816" y="0.1205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="12.916" y="0.2205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
 </element>
 <element name="D11" library="SparkFun-LED" package="LED-0603" value="GREEN" x="7" y="1.2" smashed="yes" rot="MR270">
 <attribute name="PROD_ID" value="DIO-00821" x="7" y="1.2" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="7.816" y="0.1205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="5.416" y="1.4205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
 </element>
-<element name="D12" library="SparkFun-LED" package="LED-0603" value="GREEN" x="17.4" y="1.2" smashed="yes" rot="MR270">
+<element name="D12" library="SparkFun-LED" package="LED-0603" value="WHITE" x="17.4" y="1.2" smashed="yes" rot="MR270">
 <attribute name="PROD_ID" value="DIO-00821" x="17.4" y="1.2" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="VALUE" x="18.216" y="0.1205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="18.316" y="2.0205" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
 </element>
 <element name="R8" library="SparkFun-Passives" package="0402-RES" value="220R" x="9.6" y="1.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="10.1795" y="0.157" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="9.5795" y="1.957" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
 </element>
 <element name="R14" library="SparkFun-Passives" package="0402-RES" value="220R" x="6.8" y="2.9" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="4.1205" y="3.143" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
 </element>
 <element name="R15" library="SparkFun-Passives" package="0402-RES" value="220R" x="14.8" y="1.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="15.4795" y="0.157" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
+<attribute name="VALUE" x="15.4795" y="0.257" size="0.4064" layer="28" font="vector" ratio="25" rot="MR0"/>
 </element>
 <element name="C7" library="SparkFun-Passives" package="0603-CAP" value="1nF" x="16.606" y="20.612" smashed="yes" rot="R90">
 <attribute name="VALUE" x="17.749" y="19.596" size="0.4064" layer="27" font="vector" ratio="25" rot="R90"/>
@@ -2147,7 +2154,7 @@ design rules under a new name.</description>
 <element name="VOUT-" library="dhaldane" package="SMD_MOT_PAD" value="A" x="2.6" y="22.1" smashed="yes" rot="MR0"/>
 <element name="VOUT+" library="dhaldane" package="SMD_MOT_PAD" value="A" x="2.6" y="20.6" smashed="yes" rot="MR0"/>
 <element name="C11" library="SparkFun-Passives" package="0402-CAP" value="0.1uF" x="11.1" y="10" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="10.1205" y="11.143" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
+<attribute name="VALUE" x="8.1205" y="10.343" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
 </element>
 <element name="SJ1" library="modular_robotics" package="SJ_TINY" value="SCL" x="5.5" y="11.7" smashed="yes" rot="MR90"/>
 <element name="SJ2" library="modular_robotics" package="SJ_TINY" value="URX" x="5.4" y="10.1" smashed="yes" rot="MR90"/>
@@ -2155,7 +2162,7 @@ design rules under a new name.</description>
 <element name="SJ4" library="modular_robotics" package="SJ_TINY" value="UTX" x="5.5" y="13.3" smashed="yes" rot="MR270"/>
 <element name="U$1" library="modular_robotics" package="MLPQ-UT8" value="SC560C" x="4" y="5.1" smashed="yes" rot="MR90"/>
 <element name="R13" library="biomimetic" package="0402-RES" value="20k" x="0.8" y="4.3" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="1.4205" y="3.843" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
+<attribute name="VALUE" x="1.7205" y="3.443" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
 </element>
 <element name="R16" library="biomimetic" package="0402-RES" value="10k" x="0.8" y="6.3" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="0.2205" y="7.743" size="0.4064" layer="28" font="vector" ratio="25" rot="MR180"/>
@@ -2183,7 +2190,7 @@ design rules under a new name.</description>
 <element name="R25" library="biomimetic" package="0402-RES" value="10k" x="8.7" y="10.1" smashed="yes" rot="R180">
 <attribute name="VALUE" x="7.5795" y="11.843" size="0.4064" layer="27" font="vector" ratio="25" rot="R180"/>
 </element>
-<element name="R26" library="biomimetic" package="0402-RES" value="40k" x="8.7" y="11.5" smashed="yes">
+<element name="R26" library="biomimetic" package="0402-RES" value="39k" x="8.7" y="11.5" smashed="yes">
 <attribute name="VALUE" x="8.8795" y="9.343" size="0.4064" layer="27" font="vector" ratio="25" rot="R180"/>
 </element>
 <element name="C17" library="SparkFun-Passives" package="0402-CAP" value="1nF" x="2.1" y="12.6" smashed="yes">
@@ -2197,6 +2204,13 @@ design rules under a new name.</description>
 </element>
 <element name="R21" library="SparkFun-Passives" package="0402-RES" value="10k" x="15.7" y="10.1" smashed="yes" rot="R270">
 <attribute name="VALUE" x="15.643" y="7.9205" size="0.4064" layer="27" font="vector" ratio="25" rot="R90"/>
+</element>
+<element name="U$16" library="modular_robotics" package="INFO" value="" x="14.3" y="14.1" smashed="yes" rot="MR0">
+<attribute name="AUTHOR" value="D. Haldane, A. Buchan" x="16.3" y="18.2" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="DATE" value="Oct. 4, 2016" x="13.8" y="15.3" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="DESIGN" value="Integrated BLDC Dev" x="13.9" y="16.3" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="ORGANIZATION" value="Biomimetic Millisystems Lab" x="18.9" y="17.2" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0"/>
+<attribute name="REVISION" value="r0.1" x="12.3" y="14.5" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -2365,7 +2379,7 @@ design rules under a new name.</description>
 <contactref element="C17" pad="1"/>
 <via x="12.5" y="19" extent="1-16" drill="0.254"/>
 <via x="13.1" y="19" extent="1-16" drill="0.254"/>
-<polygon width="0.22" layer="16" isolate="0.14" orphans="yes" rank="2">
+<polygon width="0.22" layer="16" isolate="0.15" orphans="yes" rank="2">
 <vertex x="0" y="0"/>
 <vertex x="26" y="0"/>
 <vertex x="26.1" y="11.9"/>
@@ -2395,7 +2409,7 @@ design rules under a new name.</description>
 <wire x1="12.2" y1="17.9" x2="12.2" y2="16.2" width="0.254" layer="16"/>
 <wire x1="12.2" y1="16.2" x2="9.7" y2="13.4" width="0.254" layer="16"/>
 <via x="9.7" y="13.4" extent="1-16" drill="0.3"/>
-<polygon width="0.254" layer="1">
+<polygon width="0.254" layer="1" isolate="0.15">
 <vertex x="0" y="23"/>
 <vertex x="10" y="23"/>
 <vertex x="10" y="14"/>
@@ -2426,17 +2440,17 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="26"/>
 <contactref element="U$3" pad="12"/>
 <wire x1="20.405503125" y1="5.8213875" x2="21.026890625" y2="5.2" width="0.254" layer="16"/>
-<wire x1="21.026890625" y1="5.2" x2="21.8" y2="5.2" width="0.254" layer="16"/>
 <via x="14.2" y="6.1" extent="1-16" drill="0.254"/>
 <wire x1="13.3" y1="6.05" x2="14.15" y2="6.05" width="0.254" layer="16"/>
 <wire x1="14.15" y1="6.05" x2="14.2" y2="6.1" width="0.254" layer="16"/>
-<via x="21.8" y="5.2" extent="1-16" drill="0.254"/>
+<via x="21.5" y="4.8" extent="1-16" drill="0.254"/>
 <wire x1="14.2" y1="6.1" x2="15.1" y2="6.1" width="0.254" layer="1"/>
 <wire x1="15.1" y1="6.1" x2="15.8" y2="6.8" width="0.254" layer="1"/>
 <wire x1="15.8" y1="6.8" x2="16.6" y2="6.8" width="0.254" layer="1"/>
-<wire x1="16.6" y1="6.8" x2="18.3" y2="5.1" width="0.254" layer="1"/>
-<wire x1="18.3" y1="5.1" x2="21.7" y2="5.1" width="0.254" layer="1"/>
-<wire x1="21.7" y1="5.1" x2="21.8" y2="5.2" width="0.254" layer="1"/>
+<wire x1="16.6" y1="6.8" x2="18.6" y2="4.8" width="0.254" layer="1"/>
+<wire x1="21.026890625" y1="5.2" x2="21.1" y2="5.2" width="0.254" layer="16"/>
+<wire x1="21.1" y1="5.2" x2="21.5" y2="4.8" width="0.254" layer="16"/>
+<wire x1="18.6" y1="4.8" x2="21.5" y2="4.8" width="0.254" layer="1"/>
 </signal>
 <signal name="EN">
 <contactref element="U$2" pad="27"/>
@@ -2791,7 +2805,7 @@ design rules under a new name.</description>
 <contactref element="SJ1" pad="3"/>
 <wire x1="10.05" y1="3.3" x2="10.05" y2="2.35" width="0.254" layer="16"/>
 <wire x1="10.05" y1="2.35" x2="10" y2="2.3" width="0.254" layer="16"/>
-<via x="10" y="2.3" extent="1-16" drill="0.254"/>
+<via x="10" y="2.3" extent="1-16" drill="0.254" alwaysstop="yes"/>
 <via x="6.8" y="10" extent="1-16" drill="0.254"/>
 <wire x1="10" y1="6.7" x2="10" y2="2.3" width="0.254" layer="1"/>
 <wire x1="10" y1="6.7" x2="6.8" y2="9.9" width="0.254" layer="1"/>
@@ -3180,7 +3194,7 @@ design rules under a new name.</description>
 <wire x1="12.55" y1="8.3" x2="12.8" y2="8.55" width="0.254" layer="16"/>
 <wire x1="12.8" y1="8.55" x2="12.8" y2="9.1" width="0.254" layer="16"/>
 <wire x1="12.4" y1="10" x2="12.8" y2="9.6" width="0.254" layer="1"/>
-<polygon width="0.254" layer="1" rank="2">
+<polygon width="0.254" layer="1" isolate="0.15" orphans="yes" rank="2">
 <vertex x="0" y="0"/>
 <vertex x="0" y="13.7"/>
 <vertex x="5.5" y="13.7"/>
@@ -3194,7 +3208,7 @@ design rules under a new name.</description>
 <wire x1="12" y1="1.8" x2="10.9" y2="0.7" width="0.254" layer="1"/>
 <wire x1="10.9" y1="0.7" x2="5.1" y2="0.7" width="0.254" layer="1"/>
 <wire x1="12.8" y1="9.6" x2="12.8" y2="9.1" width="0.254" layer="1"/>
-<polygon width="0.254" layer="16">
+<polygon width="0.254" layer="16" isolate="0.15">
 <vertex x="0" y="0"/>
 <vertex x="0" y="9.5"/>
 <vertex x="5.8" y="9.5"/>
@@ -3345,7 +3359,7 @@ design rules under a new name.</description>
 <wire x1="13.9" y1="15.7" x2="13.9" y2="15.8" width="1.016" layer="1"/>
 <wire x1="13.9" y1="15.8" x2="14.6" y2="16.5" width="1.016" layer="1"/>
 <wire x1="14.6" y1="16.5" x2="15.576" y2="16.5" width="1.016" layer="1"/>
-<polygon width="0.254" layer="16" orphans="yes" rank="2">
+<polygon width="0.254" layer="16" isolate="0.15" orphans="yes" rank="2">
 <vertex x="10.3" y="12.3"/>
 <vertex x="26" y="12.3"/>
 <vertex x="26" y="23"/>

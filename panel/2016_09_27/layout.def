@@ -1,9 +1,12 @@
 Row {
-  integrated_bldc
-  integrated_bldc
-  integrated_bldc
+  integrated_bldc_dev Rotate
+  integrated_bldc_dev Rotate
+  integrated_bldc_dev Rotate
 }
 Row {
+  integrated_bldc
+  integrated_bldc
+  integrated_bldc
   integrated_bldc
   integrated_bldc
   integrated_bldc
