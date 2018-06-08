@@ -54,6 +54,7 @@ BOARD_InitPins:
     pull_enable: enable}
   - {pin_num: '76', peripheral: FTM0, signal: 'CH, 3', pin_signal: PTC4/LLWU_P8/SPI0_PCS0/UART1_TX/FTM0_CH3/FB_AD11/CMP1_OUT, direction: OUTPUT, slew_rate: slow,
     drive_strength: high, pull_select: up, pull_enable: enable}
+  - {pin_num: '27', peripheral: DAC0, signal: OUT, pin_signal: DAC0_OUT/CMP1_IN3/ADC0_SE23}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
