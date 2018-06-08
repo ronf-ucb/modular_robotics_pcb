@@ -49,7 +49,7 @@
 #include "fsl_gpio.h"
 #include "fsl_common.h"
 #include "board.h"
-//#include "fsl_pit.h"  /* periodic interrupt timer */
+#include "fsl_pit.h"  /* periodic interrupt timer */
 #include "fsl_ftm.h"
 
 #include "pin_mux.h"
@@ -91,6 +91,16 @@
 /* bus clock is 60 MHz */
 #define FTM_SOURCE_CLOCK CLOCK_GetFreq(kCLOCK_BusClk)
 
+/*******************************************************************************
+ * Periodic Interrupt Timer (PIT) Definitions
+ ******************************************************************************/
+#define PIT_IRQ_ID PIT0_IRQn
+/* Get source clock for PIT driver */
+#define PIT_SOURCE_CLOCK CLOCK_GetFreq(kCLOCK_BusClk)
+volatile bool pitIsrFlag = false;
+volatile uint32_t systime = 0; //systime updated very 100 us = 4 days ==> NEED OVERFLOW protection
+
+
 /****************
  *
   * change tick timing in FreeRTOSConfig.h to 100 us
@@ -115,6 +125,7 @@ volatile bool timer_triggered = false;
 volatile bool timer_lockout_period = false;
 
 
+
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
@@ -122,6 +133,7 @@ void start_timer(void);
 /* Application API */
 extern void write_task_1(void *pvParameters);
 extern void write_task_2(void *pvParameters);
+extern void volt_control(void);
 /* configUSE_IDLE_HOOK must be set to 1 in FreeRTOSConfig.h for the idle hook function to get called. */
 extern void vApplicationIdleHook( void );
 
@@ -185,6 +197,59 @@ void PORTD_IRQHandler(void)
 #endif
 }
 
+static void DAC_ADC_Init(void)
+{
+    adc16_config_t adc16ConfigStruct;
+    dac_config_t dacConfigStruct;
+
+    /* Configure the DAC. */
+    /*
+     * dacConfigStruct.referenceVoltageSource = kDAC_ReferenceVoltageSourceVref2;
+     * dacConfigStruct.enableLowPowerMode = false;
+     */
+    DAC_GetDefaultConfig(&dacConfigStruct);
+    DAC_Init(DEMO_DAC_BASEADDR, &dacConfigStruct);
+    DAC_Enable(DEMO_DAC_BASEADDR, true); /* Enable output. */
+
+    /* Configure the ADC16. */
+    /*
+     * adc16ConfigStruct.referenceVoltageSource = kADC16_ReferenceVoltageSourceVref;
+     * adc16ConfigStruct.clockSource = kADC16_ClockSourceAsynchronousClock;
+     * adc16ConfigStruct.enableAsynchronousClock = true;
+     * adc16ConfigStruct.clockDivider = kADC16_ClockDivider8;
+     * adc16ConfigStruct.resolution = kADC16_ResolutionSE12Bit;
+     * adc16ConfigStruct.longSampleMode = kADC16_LongSampleDisabled;
+     * adc16ConfigStruct.enableHighSpeed = false;
+     * adc16ConfigStruct.enableLowPower = false;
+     * adc16ConfigStruct.enableContinuousConversion = false;
+     */
+    ADC16_GetDefaultConfig(&adc16ConfigStruct);
+#if defined(BOARD_ADC_USE_ALT_VREF)
+    adc16ConfigStruct.referenceVoltageSource = kADC16_ReferenceVoltageSourceValt;
+#endif
+    ADC16_Init(DEMO_ADC16_BASEADDR, &adc16ConfigStruct);
+
+    /* Make sure the software trigger is used. */
+    ADC16_EnableHardwareTrigger(DEMO_ADC16_BASEADDR, false);
+#if defined(FSL_FEATURE_ADC16_HAS_CALIBRATION) && FSL_FEATURE_ADC16_HAS_CALIBRATION
+    if (kStatus_Success == ADC16_DoAutoCalibration(DEMO_ADC16_BASEADDR))
+    {
+        PRINTF("\r\nADC16_DoAutoCalibration() Done.");
+    }
+    else
+    {
+        PRINTF("ADC16_DoAutoCalibration() Failed.\r\n");
+    }
+#endif /* FSL_FEATURE_ADC16_HAS_CALIBRATION */
+
+    /* Prepare ADC channel setting */
+    g_adc16ChannelConfigStruct.channelNumber = DEMO_ADC16_USER_CHANNEL;
+    g_adc16ChannelConfigStruct.enableInterruptOnConversionCompleted = true;
+
+#if defined(FSL_FEATURE_ADC16_HAS_DIFF_MODE) && FSL_FEATURE_ADC16_HAS_DIFF_MODE
+    g_adc16ChannelConfigStruct.enableDifferentialConversion = false;
+#endif /* FSL_FEATURE_ADC16_HAS_DIFF_MODE */
+}
 
 
 
@@ -222,7 +287,8 @@ int main(void)
        gpio_pin_config_t ptd1_config = {
                          kGPIO_DigitalInput, 0,
                      };
-
+       /* Structure of initialize PIT */
+           pit_config_t pitConfig;
     BOARD_InitPins();
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
@@ -240,6 +306,21 @@ int main(void)
     PRINTF("\n\r using slow slew on FTM0 Ch3 to avoid glitches on trigger");
     PRINTF("\n\r MicroMirror Driver June 2018 v0.0\n\r");
     PRINTF("Using SW3 PTA4 or PTD1 (J2-12)for trigger, and FTM0 Ch3 (J2-4) for LED drive\n\r");
+
+    /* start periodic interrupt timer- should be in its own file */
+      PIT_GetDefaultConfig(&pitConfig);
+     	    /* Init pit module */
+      PIT_Init(PIT, &pitConfig);
+     	    /* Set timer period for channel 0 */
+      PIT_SetTimerPeriod(PIT, kPIT_Chnl_0, USEC_TO_COUNT(100U, PIT_SOURCE_CLOCK)); // 100 us timing
+      /* Enable timer interrupts for channel 0 */
+      PIT_EnableInterrupts(PIT, kPIT_Chnl_0, kPIT_TimerInterruptEnable);
+      /* Enable at the NVIC */
+      EnableIRQ(PIT_IRQ_ID);
+      /* Start channel 0 */
+      PRINTF("\r\nStarting channel No.0 ...");
+      PIT_StartTimer(PIT, kPIT_Chnl_0);
+
 	// LED_GREEN_ON();
 //	PRINTF("Floating point PRINTF %8.4f  %8.4f\n\r", pif, pid);
 //	printf("Floating point printf %8.4f  %8.4lf\n\r", pif, pid); // only for semihost console, not release!
@@ -302,7 +383,15 @@ int main(void)
 /*******************************************************************************
  * Interrupt functions
  ******************************************************************************/
-
+void PIT0_IRQHandler(void)
+{
+    /* Clear interrupt flag.*/
+	systime++; /* hopefully atomic operation */
+    PIT_ClearStatusFlags(PIT, kPIT_Chnl_0, kPIT_TimerFlag);
+    pitIsrFlag = true;
+    //LED_GREEN_TOGGLE();
+    volt_control();
+}
 
 
 /*******************************************************************************
