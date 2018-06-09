@@ -36,7 +36,7 @@
 // volatile bool g_Adc16ConversionDoneFlag = false;
 // volatile uint32_t g_Adc16ConversionValue = 0;
 adc16_channel_config_t g_adc16ChannelConfigStruct;
-
+adc16_config_t g_adc16ConfigStruct;
 
 
 /* prototypes */
@@ -47,14 +47,12 @@ void init_peripherals(void);
 
 void init_peripherals()
 {
-	EnableIRQ(DEMO_ADC16_IRQn); // does order matter?
 	DAC_ADC_Init();
 }
 
 
 static void DAC_ADC_Init(void)
 {
-    adc16_config_t adc16ConfigStruct;
     dac_config_t dacConfigStruct;
 
     /* Configure the DAC. */
@@ -78,11 +76,11 @@ static void DAC_ADC_Init(void)
      * adc16ConfigStruct.enableLowPower = false;
      * adc16ConfigStruct.enableContinuousConversion = false;
      */
-    ADC16_GetDefaultConfig(&adc16ConfigStruct);
+    ADC16_GetDefaultConfig(&g_adc16ConfigStruct);
 #if defined(BOARD_ADC_USE_ALT_VREF)
-    adc16ConfigStruct.referenceVoltageSource = kADC16_ReferenceVoltageSourceValt;
+    g_adc16ConfigStruct.referenceVoltageSource = kADC16_ReferenceVoltageSourceValt;
 #endif
-    ADC16_Init(DEMO_ADC16_BASEADDR, &adc16ConfigStruct);
+    ADC16_Init(DEMO_ADC16_BASEADDR, &g_adc16ConfigStruct);
 
     /* Make sure the software trigger is used. */
     ADC16_EnableHardwareTrigger(DEMO_ADC16_BASEADDR, false);
@@ -99,7 +97,7 @@ static void DAC_ADC_Init(void)
 
     /* Prepare ADC channel setting */
     g_adc16ChannelConfigStruct.channelNumber = DEMO_ADC16_USER_CHANNEL;
-    g_adc16ChannelConfigStruct.enableInterruptOnConversionCompleted = true;
+    g_adc16ChannelConfigStruct.enableInterruptOnConversionCompleted = false;
 
 #if defined(FSL_FEATURE_ADC16_HAS_DIFF_MODE) && FSL_FEATURE_ADC16_HAS_DIFF_MODE
     g_adc16ChannelConfigStruct.enableDifferentialConversion = false;

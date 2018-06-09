@@ -62,8 +62,8 @@
 #define BOARD_LED_GPIO BOARD_LED_RED_GPIO
 #define BOARD_LED_GPIO_PIN BOARD_LED_RED_GPIO_PIN
 
-// PTB2
-#define BOARD_PTB2_GPIO_PIN BOARD_INITPINS_ADC0_SE12_GPIO_PIN
+// PTB2 - not used, A/D input instead
+//#define BOARD_PTB2_GPIO_PIN BOARD_INITPINS_ADC0_SE12_GPIO_PIN
 
 // PTD1 J2-12 on freescale K64 board
 #define BOARD_PTD1_GPIO_PIN BOARD_INITPINS_PTD1_PIN
@@ -173,18 +173,18 @@ void BOARD_SW_IRQ_HANDLER(void)
 #endif
 }
 
-void PORTB_IRQHandler(void)
-{   /* Clear external interrupt flag. */
+/*void PORTB_IRQHandler(void)
+{    Clear external interrupt flag.
     GPIO_PortClearInterruptFlags(GPIOB, 1U << BOARD_PTB2_GPIO_PIN);
     NVIC_ClearPendingIRQ(PORTB_IRQn);
     DisableIRQ(PORTB_IRQn); // only one interrupt per car start, wait for back wheels, etc
     start_timer();
-    /* Add for ARM errata 838869, affects Cortex-M4, Cortex-M4F Store immediate overlapping
-      exception return operation might vector to incorrect interrupt */
+     Add for ARM errata 838869, affects Cortex-M4, Cortex-M4F Store immediate overlapping
+      exception return operation might vector to incorrect interrupt
 #if defined __CORTEX_M && (__CORTEX_M == 4U)
     __DSB();
 #endif
-}
+}*/
 
 void PORTD_IRQHandler(void)
 {   /* Clear external interrupt flag. */
