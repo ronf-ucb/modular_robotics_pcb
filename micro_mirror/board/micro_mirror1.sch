@@ -13955,13 +13955,13 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="U$4" library="modular_robotics" deviceset="IR2213" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="100R"/>
-<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="10nF-L"/>
+<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="10nF-H"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C1206" value="10nF-L"/>
 <part name="D1" library="diode" deviceset="DIODE-" device="DO214AC" value="BYG23T-M3"/>
 <part name="P+1" library="supply1" deviceset="+15V" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1M"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 <part name="C3" library="rcl" deviceset="C-US" device="C1206" value="1nF-1k5V"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C4" library="rcl" deviceset="C-US" device="C1206" value="100nF"/>
