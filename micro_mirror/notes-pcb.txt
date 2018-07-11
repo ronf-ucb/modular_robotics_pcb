@@ -1,0 +1,10 @@
+Notes on PCB design for micromiror drive
+
+July 8, 2018
+need to add modular_pcb.lbr to Eagle directories.
+Tried File-open-> libary, but can't edit symbol or contents
+
+
+Eagle: header for connector, 3M
+con-samtec
+pinhd-2x4
