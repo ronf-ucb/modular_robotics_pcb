@@ -4,7 +4,16 @@ July 8, 2018
 need to add modular_pcb.lbr to Eagle directories.
 Tried File-open-> libary, but can't edit symbol or contents
 
+https://github.com/sparkfun/SparkFun-Eagle-Libraries
+https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle#using-the-sparkfun-libraries
 
-Eagle: header for connector, 3M
-con-samtec
+
+Eagle: header for connector, 3M has walled header
+pinhead directory has double row headers
 pinhd-2x4
+
+move objects:
+1) select group
+2) select move
+3) ctrl-right to move
+4) left to place
