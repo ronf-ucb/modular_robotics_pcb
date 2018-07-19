@@ -14764,7 +14764,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
 <part name="C5" library="rcl" deviceset="C-US" device="C1206" value="470pF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="IC4" library="micro_mirror3" deviceset="LINEAR_LM324" device="D"/>
+<part name="IC4" library="micro_mirror3" deviceset="LINEAR_LM324" device="D">
+<attribute name="VERSION" value="LMV324"/>
+</part>
 <part name="R10" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R1206" value="1k"/>
@@ -14799,22 +14801,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="supply1" deviceset="GNDA" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GNDA" library="modular_robotics" deviceset="M04" device="LOCK"/>
-<part name="R19" library="rcl" deviceset="R-US_" device="R1206" value="750k"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="R1206" value="150k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="R1206" value="510k"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C14" library="rcl" deviceset="C-US" device="C1206" value="22uF"/>
 <part name="C15" library="rcl" deviceset="C-US" device="C1206" value="22uF"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="HV_IN" library="modular_robotics" deviceset="M04" device="LOCK"/>
-<part name="R23" library="rcl" deviceset="R-US_" device="R1206" value="27k"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
+<part name="R23" library="rcl" deviceset="R-US_" device="R1206" value="270k"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="R1206" value="100M"/>
 <part name="C16" library="rcl" deviceset="C-US" device="C2225K" value="100nF-1k5V"/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="HV_OUT" library="modular_robotics" deviceset="M04" device="LOCK"/>
 <part name="L2" library="rcl" deviceset="L-US" device="L1812" value="12uH"/>
 <part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="MBR0520"/>
-<part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="150k"/>
-<part name="R26" library="rcl" deviceset="R-US_" device="R1206" value="13k3"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
+<part name="R26" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
 <part name="C17" library="rcl" deviceset="C-US" device="C1206" value="180pF"/>
 <part name="C18" library="rcl" deviceset="C-US" device="C1206" value="4.7uF"/>
 <part name="C19" library="rcl" deviceset="C-US" device="C1206" value="2.2uF"/>
@@ -14838,7 +14840,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+10" library="supply1" deviceset="+15V" device=""/>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="R29" library="rcl" deviceset="R-US_" device="R1206" value="1M"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 <part name="C22" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C23" library="rcl" deviceset="C-US" device="C1206" value="100nF"/>
@@ -14874,7 +14876,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+12" library="supply1" deviceset="+15V" device=""/>
 <part name="P+13" library="supply1" deviceset="V+" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="R46" library="rcl" deviceset="R-US_" device="R1206" value="1M"/>
+<part name="R46" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 <part name="C29" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V"/>
 <part name="R47" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C30" library="rcl" deviceset="C-US" device="C1206" value="100nF"/>
@@ -14897,7 +14899,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+14" library="supply1" deviceset="+15V" device=""/>
 <part name="P+15" library="supply1" deviceset="V+" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="R55" library="rcl" deviceset="R-US_" device="R1206" value="1M"/>
+<part name="R55" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 <part name="C34" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V"/>
 <part name="R56" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C35" library="rcl" deviceset="C-US" device="C1206" value="100nF"/>
@@ -15015,6 +15017,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="IC4" gate="B" x="274.32" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="269.24" y="108.585" size="1.4224" layer="95" rot="R180"/>
 <attribute name="VALUE" x="279.4" y="116.84" size="1.4224" layer="96" rot="R180"/>
+<attribute name="VERSION" x="274.32" y="109.22" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="IC4" gate="P" x="302.26" y="101.6"/>
 <instance part="C6" gate="G$1" x="294.64" y="99.06"/>
