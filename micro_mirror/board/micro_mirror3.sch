@@ -14814,11 +14814,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="HV_OUT" library="modular_robotics" deviceset="M04" device="LOCK"/>
 <part name="L2" library="rcl" deviceset="L-US" device="L1812" value="12uH"/>
-<part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="MBR0520"/>
+<part name="D2" library="diode" deviceset="DIODE-" device="SOD123" value="MBR0530"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
-<part name="C17" library="rcl" deviceset="C-US" device="C1206" value="180pF"/>
-<part name="C18" library="rcl" deviceset="C-US" device="C1206" value="4.7uF"/>
+<part name="C17" library="rcl" deviceset="C-US" device="C1206" value="470pF"/>
+<part name="C18" library="rcl" deviceset="C-US" device="C1206" value="2.2uF"/>
 <part name="C19" library="rcl" deviceset="C-US" device="C1206" value="2.2uF"/>
 <part name="P+6" library="supply1" deviceset="+15V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
