@@ -14786,7 +14786,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R16" library="rcl" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="C10" library="rcl" deviceset="C-US" device="C1206" value="10nF"/>
 <part name="GND6" library="supply1" deviceset="GNDA" device=""/>
-<part name="U$5" library="modular_robotics" deviceset="Q50-5C" device=""/>
+<part name="U$5" library="modular_robotics" deviceset="Q50-5C" device="">
+<attribute name="EMCO" value="Q10-5"/>
+</part>
 <part name="R17" library="rcl" deviceset="R-US_" device="R1206" value="FUSE"/>
 <part name="L1" library="modular_robotics" deviceset="INDUCTOR" device="" value="2.2uH"/>
 <part name="U$6" library="modular_robotics" deviceset="LMR64010" device=""/>
@@ -14824,7 +14826,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="15V_OUT" library="modular_robotics" deviceset="M04" device="LOCK"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK">
+<attribute name="DIMENSIONS" value="5.5mm-diam"/>
+</part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="VCC" library="modular_robotics" deviceset="M04" device="LOCK"/>
@@ -14954,6 +14958,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="309.88" y="124.46" size="3.81" layer="92">Connectors</text>
 <text x="254" y="17.78" size="1.778" layer="91">PWM IN FRDMK64 J1</text>
 <text x="283.21" y="-22.86" size="1.778" layer="91">FRDM-K64F-J4</text>
+<text x="299.72" y="10.16" size="1.778" layer="91">FRDMK64F J3 pins 10-16</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="162.56" y="111.76"/>
@@ -15038,7 +15043,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R16" gate="G$1" x="261.62" y="101.6"/>
 <instance part="C10" gate="G$1" x="266.7" y="99.06"/>
 <instance part="GND6" gate="1" x="266.7" y="91.44"/>
-<instance part="U$5" gate="G$1" x="157.48" y="142.24"/>
+<instance part="U$5" gate="G$1" x="157.48" y="142.24">
+<attribute name="EMCO" x="157.48" y="142.24" size="1.778" layer="96"/>
+</instance>
 <instance part="R17" gate="G$1" x="147.32" y="154.94" smashed="yes">
 <attribute name="NAME" x="140.97" y="156.4386" size="1.4224" layer="95"/>
 <attribute name="VALUE" x="148.59" y="156.718" size="1.4224" layer="96"/>
@@ -15106,7 +15113,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND10" gate="1" x="284.48" y="134.62"/>
 <instance part="P+7" gate="VCC" x="284.48" y="160.02"/>
 <instance part="15V_OUT" gate="G$1" x="335.28" y="157.48" rot="R90"/>
-<instance part="J1" gate="G$1" x="322.58" y="58.42"/>
+<instance part="J1" gate="G$1" x="322.58" y="58.42">
+<attribute name="DIMENSIONS" x="322.58" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND11" gate="1" x="340.36" y="58.42"/>
 <instance part="P+9" gate="VCC" x="345.44" y="66.04" rot="R270"/>
 <instance part="VCC" gate="G$1" x="332.74" y="66.04" rot="R90"/>
