@@ -17,3 +17,10 @@ move objects:
 2) select move
 3) ctrl-right to move
 4) left to place
+
+libraries: control panel: options: directories :browse
+
+Errata and changes from July 2018 PCB
+1) BOM: X5 should be vertical, not horizontal to avoid mounting hole H5.
+2) DRC: supply pin overwritten 3v3. Was previously output from Arduino board, but now is local.
+3) DRC: 15V on D1, D3, D4, D5 too close to collector and arcs. (Was only 30 mils)
