@@ -16045,7 +16045,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="266.7" y="111.76"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="VDDA" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="144.78" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
@@ -16123,7 +16123,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$7" gate="G$1" pin="VOUT"/>
 <wire x1="248.92" y1="154.94" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
 <junction x="248.92" y="154.94"/>
-<wire x1="271.78" y1="154.94" x2="271.78" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="154.94" x2="271.78" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
