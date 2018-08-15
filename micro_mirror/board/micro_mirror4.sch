@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -13315,7 +13314,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 Radiall  and M/A COM.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="J502-ND" urn="urn:adsk.eagle:footprint:6185/1" library_version="1">
+<package name="J502-ND" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; End Launch Jack Receptacle - Round Contact&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13341,7 +13340,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="-2.54" y="4.445" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="J502-ND-142-0701-801/806" urn="urn:adsk.eagle:footprint:6186/1" library_version="1">
+<package name="J502-ND-142-0701-801/806" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13377,7 +13376,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0701-851/861" urn="urn:adsk.eagle:footprint:6187/1" library_version="1">
+<package name="J502-ND-142-0701-851/861" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13413,7 +13412,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0701-871/876" urn="urn:adsk.eagle:footprint:6188/1" library_version="1">
+<package name="J502-ND-142-0701-871/876" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13449,7 +13448,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0701-881/886" urn="urn:adsk.eagle:footprint:6189/1" library_version="1">
+<package name="J502-ND-142-0701-881/886" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.031&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13485,7 +13484,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0711-821/826" urn="urn:adsk.eagle:footprint:6190/1" library_version="1">
+<package name="J502-ND-142-0711-821/826" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.062&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13521,7 +13520,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0711-871/876" urn="urn:adsk.eagle:footprint:6191/1" library_version="1">
+<package name="J502-ND-142-0711-871/876" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.047&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13557,7 +13556,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="J502-ND-142-0711-881/886" urn="urn:adsk.eagle:footprint:6192/1" library_version="1">
+<package name="J502-ND-142-0711-881/886" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; Board Thickness &lt;b&gt;0.047&lt;/b&gt; Inch, End Launch Jack Receptacle&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13593,7 +13592,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <text x="1.27" y="-8.89" size="1.778" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.025" y1="-0.5" x2="4.05" y2="0.5" layer="51"/>
 </package>
-<package name="SMA-142-0701-871" urn="urn:adsk.eagle:footprint:6193/1" library_version="1">
+<package name="SMA-142-0701-871" library_version="1">
 <description>&lt;b&gt;SMA Connector&lt;/b&gt; HF-Steckverbinder PC END BLKHD JCK GLD .062" BOARDS&lt;p&gt;
 Hersteller: Emerson / Johnson&lt;br&gt;
 Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-1420701871.pdf"&gt; Data sheet&lt;a&gt;</description>
@@ -13621,55 +13620,8 @@ Source: &lt;a href="http://emersonconnectivity.com/OA_MEDIA/drawings/dr-14207018
 <rectangle x1="3.75" y1="-4.0814" x2="4.775" y2="-3.0814" layer="51" rot="R180"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="J502-ND" urn="urn:adsk.eagle:package:6213/1" type="box" library_version="1">
-<description>SMA 50 Ohm End Launch Jack Receptacle - Round Contact
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0701-801/806" urn="urn:adsk.eagle:package:6214/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.062 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0701-851/861" urn="urn:adsk.eagle:package:6215/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.062 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0701-871/876" urn="urn:adsk.eagle:package:6222/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.062 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0701-881/886" urn="urn:adsk.eagle:package:6216/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.031 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0711-821/826" urn="urn:adsk.eagle:package:6224/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.062 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0711-871/876" urn="urn:adsk.eagle:package:6217/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.047 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="J502-ND-142-0711-881/886" urn="urn:adsk.eagle:package:6219/1" type="box" library_version="1">
-<description>SMA 50 Ohm Board Thickness 0.047 Inch, End Launch Jack Receptacle
-Johnson Components
-Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
-</package3d>
-<package3d name="SMA-142-0701-871" urn="urn:adsk.eagle:package:6229/1" type="box" library_version="1">
-<description>SMA Connector HF-Steckverbinder PC END BLKHD JCK GLD .062" BOARDS
-Hersteller: Emerson / Johnson
-Source:  Data sheet</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="BNC-FGND" urn="urn:adsk.eagle:symbol:6174/1" library_version="1">
+<symbol name="BNC-FGND" library_version="1">
 <wire x1="0" y1="-2.54" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0.508" x2="-0.762" y2="0.508" width="0.254" layer="94"/>
@@ -13685,7 +13637,7 @@ Source:  Data sheet</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SMA-" urn="urn:adsk.eagle:component:6246/1" prefix="X" library_version="1">
+<deviceset name="SMA-" prefix="X" library_version="1">
 <description>&lt;b&gt;SMA 50 Ohm&lt;/b&gt; End Launch Jack Receptacle - Round Contact&lt;p&gt;
 Johnson Components&lt;br&gt;
 Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
@@ -13698,9 +13650,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="2 3 4 5"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6213/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -13715,9 +13664,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6214/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13732,9 +13678,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6215/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13749,9 +13692,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6222/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13766,9 +13706,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6216/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13783,9 +13720,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6224/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13800,9 +13734,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6217/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13817,9 +13748,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="G@1 G@2 G@3 G@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6219/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13834,9 +13762,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="G1" pin="1" pad="1"/>
 <connect gate="G1" pin="2" pad="2@1 2@2 2@3 2@4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6229/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="JOHNSON COMPONENTS" constant="no"/>
@@ -13861,14 +13786,14 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<symbol name="GND" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<deviceset name="GND" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -13887,7 +13812,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="2X06" urn="urn:adsk.eagle:footprint:22364/1" library_version="3">
+<package name="2X06" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-7.62" y1="-1.905" x2="-6.985" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-5.715" y1="-2.54" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
@@ -13959,7 +13884,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <rectangle x1="6.096" y1="1.016" x2="6.604" y2="1.524" layer="51"/>
 <rectangle x1="6.096" y1="-1.524" x2="6.604" y2="-1.016" layer="51"/>
 </package>
-<package name="2X06/90" urn="urn:adsk.eagle:footprint:22365/1" library_version="3">
+<package name="2X06/90" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-7.62" y1="-1.905" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
@@ -14025,7 +13950,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <rectangle x1="5.969" y1="-4.699" x2="6.731" y2="-2.921" layer="51"/>
 <rectangle x1="5.969" y1="-5.461" x2="6.731" y2="-4.699" layer="21"/>
 </package>
-<package name="2X04" urn="urn:adsk.eagle:footprint:22351/1" library_version="3">
+<package name="2X04" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-1.905" x2="-4.445" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
@@ -14075,7 +14000,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <rectangle x1="3.556" y1="1.016" x2="4.064" y2="1.524" layer="51"/>
 <rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
 </package>
-<package name="2X04/90" urn="urn:adsk.eagle:footprint:22352/1" library_version="3">
+<package name="2X04/90" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-2.54" y1="-1.905" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
@@ -14122,22 +14047,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <rectangle x1="3.429" y1="-5.461" x2="4.191" y2="-4.699" layer="21"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="2X06" urn="urn:adsk.eagle:package:22474/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
-<package3d name="2X06/90" urn="urn:adsk.eagle:package:22480/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
-<package3d name="2X04" urn="urn:adsk.eagle:package:22461/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
-<package3d name="2X04/90" urn="urn:adsk.eagle:package:22465/2" type="model" library_version="3">
-<description>PIN HEADER</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="PINH2X6" urn="urn:adsk.eagle:symbol:22363/1" library_version="3">
+<symbol name="PINH2X6" library_version="3">
 <wire x1="-6.35" y1="-10.16" x2="8.89" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="-10.16" x2="8.89" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
@@ -14157,7 +14068,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pin name="11" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="12" x="5.08" y="-7.62" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
-<symbol name="PINH2X4" urn="urn:adsk.eagle:symbol:22350/1" library_version="3">
+<symbol name="PINH2X4" library_version="3">
 <wire x1="-6.35" y1="-5.08" x2="8.89" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="-5.08" x2="8.89" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
@@ -14175,7 +14086,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-2X6" urn="urn:adsk.eagle:component:22542/3" prefix="JP" uservalue="yes" library_version="3">
+<deviceset name="PINHD-2X6" prefix="JP" uservalue="yes" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINH2X6" x="0" y="0"/>
@@ -14196,9 +14107,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="A" pin="8" pad="8"/>
 <connect gate="A" pin="9" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22474/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14218,16 +14126,13 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="A" pin="8" pad="8"/>
 <connect gate="A" pin="9" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22480/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-2X4" urn="urn:adsk.eagle:component:22527/3" prefix="JP" uservalue="yes" library_version="3">
+<deviceset name="PINHD-2X4" prefix="JP" uservalue="yes" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINH2X4" x="0" y="0"/>
@@ -14244,9 +14149,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="A" pin="7" pad="7"/>
 <connect gate="A" pin="8" pad="8"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22461/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14262,9 +14164,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <connect gate="A" pin="7" pad="7"/>
 <connect gate="A" pin="8" pad="8"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:22465/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14279,7 +14178,7 @@ PCMCIA-CompactFlash Connectors&lt;p&gt;
 Zero Insertion Force Socked&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="PAK100/2500-16" urn="urn:adsk.eagle:footprint:5515/1" library_version="1">
+<package name="PAK100/2500-16" library_version="1">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Straight&lt;p&gt;
 Source: 3M</description>
 <wire x1="-13.81" y1="4.2" x2="-8.233" y2="4.2" width="0.2032" layer="21"/>
@@ -14335,7 +14234,7 @@ Source: 3M</description>
 <text x="-13.97" y="4.572" size="1.27" layer="25">&gt;NAME</text>
 <text x="-6.35" y="4.572" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="PAK100/2500-5-16" urn="urn:adsk.eagle:footprint:5514/1" library_version="1">
+<package name="PAK100/2500-5-16" library_version="1">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt; Right Angle&lt;p&gt;
 Source: 3M</description>
 <wire x1="13.81" y1="1.875" x2="13.81" y2="11.075" width="0.2032" layer="21"/>
@@ -14384,31 +14283,21 @@ Source: 3M</description>
 </polygon>
 </package>
 </packages>
-<packages3d>
-<package3d name="PAK100/2500-16" urn="urn:adsk.eagle:package:5574/1" type="box" library_version="1">
-<description>3M (TM) Pak 100 4-Wall Header Straight
-Source: 3M</description>
-</package3d>
-<package3d name="PAK100/2500-5-16" urn="urn:adsk.eagle:package:5582/1" type="box" library_version="1">
-<description>3M (TM) Pak 100 4-Wall Header Right Angle
-Source: 3M</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="PINV" urn="urn:adsk.eagle:symbol:5508/1" library_version="1">
+<symbol name="PINV" library_version="1">
 <text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <text x="-3.81" y="2.667" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="0" y1="-0.254" x2="2.794" y2="0.254" layer="94"/>
 <pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="PIN" urn="urn:adsk.eagle:symbol:5509/1" library_version="1">
+<symbol name="PIN" library_version="1">
 <text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <rectangle x1="0" y1="-0.254" x2="2.794" y2="0.254" layer="94"/>
 <pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2516-" urn="urn:adsk.eagle:component:5617/1" prefix="X" library_version="1">
+<deviceset name="2516-" prefix="X" library_version="1">
 <description>&lt;b&gt;3M (TM) Pak 100 4-Wall Header&lt;/b&gt;&lt;p&gt;
 Source: 3M</description>
 <gates>
@@ -14449,9 +14338,6 @@ Source: 3M</description>
 <connect gate="-8" pin="KL" pad="8"/>
 <connect gate="-9" pin="KL" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5574/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -14480,9 +14366,6 @@ Source: 3M</description>
 <connect gate="-8" pin="KL" pad="8"/>
 <connect gate="-9" pin="KL" pad="9"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5582/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MF" value="" constant="no"/>
@@ -14923,19 +14806,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="REVISION" value="r1.1"/>
 </part>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806" package3d_urn="urn:adsk.eagle:package:6214/1"/>
-<part name="X2" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806" package3d_urn="urn:adsk.eagle:package:6214/1"/>
-<part name="X3" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806" package3d_urn="urn:adsk.eagle:package:6214/1"/>
-<part name="X4" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806" package3d_urn="urn:adsk.eagle:package:6214/1"/>
+<part name="X1" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="X2" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="X3" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="X4" library="con-coax" library_urn="urn:adsk.eagle:library:133" deviceset="SMA-" device="142-0701-801/806"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device="" package3d_urn="urn:adsk.eagle:package:22474/2"/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X6" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X5" library="con-3m" library_urn="urn:adsk.eagle:library:119" deviceset="2516-" device="" package3d_urn="urn:adsk.eagle:package:5574/1"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="X5" library="con-3m" library_urn="urn:adsk.eagle:library:119" deviceset="2516-" device=""/>
+<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device=""/>
 <part name="H5" library="SparkFun-Hardware" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="H6" library="SparkFun-Hardware" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="H7" library="SparkFun-Hardware" deviceset="STAND-OFF" device="TIGHT"/>
 <part name="H8" library="SparkFun-Hardware" deviceset="STAND-OFF" device="TIGHT"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="R1206" value="510k"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="R1206" value="510k"/>
+<part name="R62" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
+<part name="R63" library="rcl" deviceset="R-US_" device="R1206" value="10M"/>
 </parts>
 <sheets>
 <sheet>
@@ -15043,20 +14930,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R16" gate="G$1" x="261.62" y="101.6"/>
 <instance part="C10" gate="G$1" x="266.7" y="99.06"/>
 <instance part="GND6" gate="1" x="266.7" y="91.44"/>
-<instance part="U$5" gate="G$1" x="157.48" y="142.24">
-<attribute name="EMCO" x="157.48" y="142.24" size="1.778" layer="96"/>
+<instance part="U$5" gate="G$1" x="149.86" y="142.24">
+<attribute name="EMCO" x="149.86" y="139.7" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="147.32" y="154.94" smashed="yes">
-<attribute name="NAME" x="140.97" y="156.4386" size="1.4224" layer="95"/>
-<attribute name="VALUE" x="148.59" y="156.718" size="1.4224" layer="96"/>
+<instance part="R17" gate="G$1" x="142.24" y="154.94" smashed="yes">
+<attribute name="NAME" x="140.97" y="151.3586" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="140.97" y="156.718" size="1.4224" layer="96"/>
 </instance>
-<instance part="L1" gate="L" x="111.76" y="154.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="114.3" y="157.48" size="1.4224" layer="95"/>
-<attribute name="VALUE" x="119.38" y="157.48" size="1.4224" layer="96"/>
+<instance part="L1" gate="L" x="109.22" y="154.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="111.76" y="157.48" size="1.4224" layer="95"/>
+<attribute name="VALUE" x="116.84" y="157.48" size="1.4224" layer="96"/>
 </instance>
 <instance part="U$6" gate="G$1" x="292.1" y="142.24"/>
 <instance part="U$7" gate="G$1" x="231.14" y="142.24"/>
-<instance part="U8" gate="G$1" x="91.44" y="144.78"/>
+<instance part="U8" gate="G$1" x="88.9" y="144.78"/>
 <instance part="C11" gate="G$1" x="251.46" y="144.78"/>
 <instance part="C12" gate="G$1" x="259.08" y="149.86"/>
 <instance part="C13" gate="G$1" x="220.98" y="149.86"/>
@@ -15072,25 +14959,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GNDA" gate="G$1" x="266.7" y="137.16" rot="R90"/>
 <instance part="R19" gate="G$1" x="116.84" y="147.32" rot="R180"/>
 <instance part="R20" gate="G$1" x="111.76" y="142.24" rot="R90"/>
-<instance part="C14" gate="G$1" x="127" y="144.78"/>
+<instance part="C14" gate="G$1" x="124.46" y="144.78"/>
 <instance part="C15" gate="G$1" x="81.28" y="142.24"/>
 <instance part="GND9" gate="1" x="81.28" y="134.62"/>
 <instance part="P+4" gate="VCC" x="81.28" y="157.48"/>
-<instance part="HV_IN" gate="G$1" x="134.62" y="154.94" rot="R90"/>
-<instance part="R23" gate="G$1" x="185.42" y="142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="181.8386" y="146.05" size="1.4224" layer="95" rot="R270"/>
-<attribute name="VALUE" x="187.198" y="143.51" size="1.4224" layer="96" rot="R270"/>
+<instance part="HV_IN" gate="G$1" x="132.08" y="154.94" rot="R90"/>
+<instance part="R23" gate="G$1" x="190.5" y="142.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="194.5386" y="143.51" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="192.278" y="143.51" size="1.4224" layer="96" rot="R270"/>
 </instance>
-<instance part="R24" gate="G$1" x="185.42" y="152.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="181.8386" y="156.21" size="1.4224" layer="95" rot="R270"/>
-<attribute name="VALUE" x="187.198" y="153.67" size="1.4224" layer="96" rot="R270"/>
+<instance part="R24" gate="G$1" x="190.5" y="152.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="194.5386" y="153.67" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="192.278" y="153.67" size="1.4224" layer="96" rot="R270"/>
 </instance>
-<instance part="C16" gate="G$1" x="177.8" y="154.94" smashed="yes">
-<attribute name="NAME" x="177.165" y="145.796" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="178.689" y="151.384" size="1.4224" layer="96" rot="R270"/>
+<instance part="C16" gate="G$1" x="185.42" y="154.94" smashed="yes">
+<attribute name="NAME" x="184.785" y="145.796" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="186.309" y="151.384" size="1.4224" layer="96" rot="R270"/>
 </instance>
-<instance part="P+5" gate="1" x="200.66" y="160.02"/>
-<instance part="HV_OUT" gate="G$1" x="193.04" y="157.48" rot="R90"/>
+<instance part="P+5" gate="1" x="195.58" y="160.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="198.12" y="160.02" size="1.778" layer="96"/>
+</instance>
+<instance part="HV_OUT" gate="G$1" x="193.04" y="165.1" rot="R90"/>
 <instance part="L2" gate="G$1" x="302.26" y="157.48" rot="R90"/>
 <instance part="D2" gate="G$1" x="312.42" y="157.48"/>
 <instance part="R25" gate="G$1" x="314.96" y="152.4" smashed="yes" rot="R270">
@@ -15322,6 +15211,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="H6" gate="G$1" x="266.7" y="-35.56"/>
 <instance part="H7" gate="G$1" x="271.78" y="-35.56"/>
 <instance part="H8" gate="G$1" x="279.4" y="-35.56"/>
+<instance part="R21" gate="G$1" x="170.18" y="162.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="166.5986" y="162.814" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="166.624" y="169.164" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R22" gate="G$1" x="175.26" y="162.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="176.7586" y="162.814" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="176.784" y="169.418" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R62" gate="G$1" x="175.26" y="152.4" rot="R270"/>
+<instance part="R63" gate="G$1" x="175.26" y="142.24" rot="R270"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -15582,28 +15481,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="167.64" y1="119.38" x2="167.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="OUT+"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="154.94" x2="175.26" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="157.48" x2="177.8" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
-<junction x="185.42" y="157.48"/>
-<pinref part="P+5" gate="1" pin="V+"/>
-<wire x1="187.96" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="157.48" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="157.48" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="HV_OUT" gate="G$1" pin="1"/>
-<junction x="195.58" y="157.48"/>
-<pinref part="HV_OUT" gate="G$1" pin="2"/>
-<junction x="193.04" y="157.48"/>
-<pinref part="HV_OUT" gate="G$1" pin="3"/>
+<wire x1="185.42" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="157.48" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
 <junction x="190.5" y="157.48"/>
+<pinref part="P+5" gate="1" pin="V+"/>
+<wire x1="187.96" y1="165.1" x2="190.5" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="165.1" x2="193.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="165.1" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="165.1" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="HV_OUT" gate="G$1" pin="1"/>
+<junction x="195.58" y="165.1"/>
+<pinref part="HV_OUT" gate="G$1" pin="2"/>
+<junction x="193.04" y="165.1"/>
+<pinref part="HV_OUT" gate="G$1" pin="3"/>
+<junction x="190.5" y="165.1"/>
 <pinref part="HV_OUT" gate="G$1" pin="4"/>
-<junction x="187.96" y="157.48"/>
+<junction x="187.96" y="165.1"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<junction x="177.8" y="157.48"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="175.26" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
+<junction x="185.42" y="157.48"/>
+<pinref part="R62" gate="G$1" pin="1"/>
+<junction x="175.26" y="157.48"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="C"/>
@@ -15692,35 +15592,38 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U8" gate="G$1" pin="AGND"/>
 <pinref part="U8" gate="G$1" pin="PGND"/>
-<wire x1="88.9" y1="149.86" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="149.86" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="137.16" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="137.16" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="137.16" x2="127" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="137.16" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
 <junction x="111.76" y="137.16"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="127" y1="137.16" x2="127" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="147.32" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
-<junction x="88.9" y="147.32"/>
+<wire x1="124.46" y1="137.16" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="147.32" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<junction x="86.36" y="147.32"/>
 <junction x="88.9" y="137.16"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <junction x="81.28" y="137.16"/>
-<wire x1="127" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<junction x="127" y="137.16"/>
+<wire x1="124.46" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
+<junction x="124.46" y="137.16"/>
 <pinref part="U$5" gate="G$1" pin="OUT-"/>
-<wire x1="154.94" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="137.16" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="137.16" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="IN-"/>
-<wire x1="154.94" y1="137.16" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
-<junction x="154.94" y="137.16"/>
+<wire x1="147.32" y1="137.16" x2="147.32" y2="144.78" width="0.1524" layer="91"/>
+<junction x="147.32" y="137.16"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="137.16" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
-<junction x="175.26" y="137.16"/>
+<wire x1="167.64" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
+<junction x="167.64" y="137.16"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="137.16" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="149.86" x2="177.8" y2="137.16" width="0.1524" layer="91"/>
-<junction x="177.8" y="137.16"/>
+<wire x1="175.26" y1="137.16" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="137.16" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="149.86" x2="185.42" y2="137.16" width="0.1524" layer="91"/>
+<junction x="185.42" y="137.16"/>
+<pinref part="R63" gate="G$1" pin="2"/>
+<junction x="175.26" y="137.16"/>
 </segment>
 <segment>
 <pinref part="C19" gate="G$1" pin="2"/>
@@ -16253,7 +16156,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$5" gate="G$1" pin="IN+"/>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -16269,10 +16171,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="144.78" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U8" gate="G$1" pin="VIN"/>
-<wire x1="88.9" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="U8" gate="G$1" pin="EN"/>
-<wire x1="88.9" y1="152.4" x2="88.9" y2="154.94" width="0.1524" layer="91"/>
-<junction x="88.9" y="154.94"/>
+<wire x1="86.36" y1="152.4" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
+<junction x="86.36" y="154.94"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <junction x="81.28" y="154.94"/>
 </segment>
@@ -16328,30 +16230,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$18" class="0">
 <segment>
 <pinref part="U8" gate="G$1" pin="VOS"/>
-<wire x1="111.76" y1="152.4" x2="127" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="L1" gate="L" pin="2"/>
-<wire x1="127" y1="152.4" x2="127" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="152.4" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="147.32" x2="127" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="127" y1="147.32" x2="127" y2="152.4" width="0.1524" layer="91"/>
-<junction x="127" y="152.4"/>
+<wire x1="121.92" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="147.32" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
+<junction x="124.46" y="152.4"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<junction x="127" y="147.32"/>
+<junction x="124.46" y="147.32"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="154.94" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
-<junction x="127" y="154.94"/>
-<pinref part="HV_IN" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="154.94" x2="134.62" y2="154.94" width="0.1524" layer="91"/>
-<junction x="137.16" y="154.94"/>
-<pinref part="HV_IN" gate="G$1" pin="2"/>
+<junction x="124.46" y="154.94"/>
+<pinref part="HV_IN" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <junction x="134.62" y="154.94"/>
-<pinref part="HV_IN" gate="G$1" pin="3"/>
+<pinref part="HV_IN" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
 <junction x="132.08" y="154.94"/>
-<pinref part="HV_IN" gate="G$1" pin="4"/>
+<pinref part="HV_IN" gate="G$1" pin="3"/>
 <wire x1="129.54" y1="154.94" x2="127" y2="154.94" width="0.1524" layer="91"/>
 <junction x="129.54" y="154.94"/>
+<pinref part="HV_IN" gate="G$1" pin="4"/>
+<wire x1="127" y1="154.94" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
+<junction x="127" y="154.94"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -16359,6 +16261,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U8" gate="G$1" pin="FB"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="147.32" x2="111.76" y2="147.32" width="0.1524" layer="91"/>
 <junction x="111.76" y="147.32"/>
 </segment>
 </net>
@@ -16366,9 +16269,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
 <pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
-<junction x="185.42" y="147.32"/>
-<label x="187.96" y="147.32" size="1.4224" layer="95"/>
+<wire x1="190.5" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
+<junction x="190.5" y="147.32"/>
+<label x="193.04" y="147.32" size="1.4224" layer="95"/>
 </segment>
 <segment>
 <label x="299.72" y="-12.7" size="1.6764" layer="95"/>
@@ -17071,6 +16974,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="50.8" y="114.3"/>
 </segment>
 </net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="167.64" x2="175.26" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="OUT+"/>
+<wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="154.94" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="R62" gate="G$1" pin="2"/>
+<pinref part="R63" gate="G$1" pin="1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -17078,19 +17002,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
+Since Version 8.2, Eagle supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
