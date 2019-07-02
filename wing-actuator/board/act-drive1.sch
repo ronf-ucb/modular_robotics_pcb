@@ -22219,7 +22219,7 @@ Source: Samtec SSW.pdf</description>
 </instance>
 <instance part="C47" gate="G$1" x="302.26" y="124.46" smashed="yes">
 <attribute name="NAME" x="303.276" y="125.095" size="1.778" layer="95"/>
-<attribute name="VALUE" x="303.276" y="120.269" size="1.778" layer="96"/>
+<attribute name="VALUE" x="303.276" y="127.889" size="1.778" layer="96"/>
 <attribute name="DIGIKEY" x="302.26" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C41" gate="G$1" x="302.26" y="137.16" smashed="yes">
@@ -22779,26 +22779,14 @@ Source: Samtec SSW.pdf</description>
 </net>
 <net name="SD_2" class="0">
 <segment>
-<label x="281.94" y="5.08" size="1.778" layer="95"/>
-<pinref part="X5" gate="-6" pin="KL"/>
-<wire x1="289.56" y1="5.08" x2="281.94" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<wire x1="287.02" y1="121.92" x2="281.94" y2="121.92" width="0.1524" layer="91"/>
-<label x="279.4" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SD_3" class="0">
-<segment>
 <label x="281.94" y="-5.08" size="1.778" layer="95"/>
 <pinref part="X5" gate="-10" pin="KL"/>
 <wire x1="289.56" y1="-5.08" x2="281.94" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q6" gate="G$1" pin="G"/>
-<wire x1="320.04" y1="119.38" x2="317.5" y2="119.38" width="0.1524" layer="91"/>
-<label x="312.42" y="119.38" size="1.778" layer="95"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<wire x1="287.02" y1="121.92" x2="281.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="279.4" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="V_SENSE1" class="0">
@@ -23548,6 +23536,18 @@ Source: Samtec SSW.pdf</description>
 <pinref part="X7" gate="-1" pin="1"/>
 <wire x1="220.98" y1="165.1" x2="215.9" y2="165.1" width="0.1524" layer="91"/>
 <label x="213.36" y="165.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SD_3" class="0">
+<segment>
+<label x="281.94" y="5.08" size="1.778" layer="95"/>
+<pinref part="X5" gate="-6" pin="KL"/>
+<wire x1="289.56" y1="5.08" x2="281.94" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="G"/>
+<wire x1="320.04" y1="119.38" x2="317.5" y2="119.38" width="0.1524" layer="91"/>
+<label x="312.42" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
