@@ -21489,9 +21489,8 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R14" library="rcl" deviceset="R-US_" device="R1206" value="1.0M">
 <attribute name="DIGIKEY" value="P1.0MECT-ND"/>
 </part>
-<part name="C32" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V">
-<attribute name="DIGIKEY" value="399-7078-1-ND
-"/>
+<part name="C32" library="rcl" deviceset="C-US" device="C1206" value="1nF">
+<attribute name="DIGIKEY" value="399-7078-1-ND "/>
 </part>
 <part name="R13" library="rcl" deviceset="R-US_" device="R1206" value="22k">
 <attribute name="DIGIKEY" value="P22KECT-ND "/>
@@ -21507,14 +21506,12 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="DIGIKEY" value="P270KECT-ND"/>
 </part>
 <part name="R19" library="rcl" deviceset="R-US_" device="R1206" value="10M">
-<attribute name="DIGIKEY" value="P10MECT-ND
-"/>
+<attribute name="DIGIKEY" value="P10MECT-ND "/>
 </part>
 <part name="P+7" library="supply1" deviceset="V+" device=""/>
 <part name="JP4" library="modular_robotics" deviceset="M04" device="LOCK"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK">
-<attribute name="DIGIKEY" value="CP-202A-ND
-"/>
+<attribute name="DIGIKEY" value="CP-202A-ND "/>
 <attribute name="DIMENSIONS" value="5.5mm-diam"/>
 </part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -21525,7 +21522,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R11" library="rcl" deviceset="R-US_" device="R1206" value="1.0M">
 <attribute name="DIGIKEY" value="P1.0MECT-ND"/>
 </part>
-<part name="C19" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V">
+<part name="C19" library="rcl" deviceset="C-US" device="C1206" value="1nF">
 <attribute name="DIGIKEY" value="399-7078-1-ND"/>
 </part>
 <part name="R9" library="rcl" deviceset="R-US_" device="R1206" value="22k"/>
@@ -21533,7 +21530,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="1.0M">
 <attribute name="DIGIKEY" value="P1.0MECT-ND"/>
 </part>
-<part name="C10" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V">
+<part name="C10" library="rcl" deviceset="C-US" device="C1206" value="1nF">
 <attribute name="DIGIKEY" value="399-7078-1-ND"/>
 </part>
 <part name="R6" library="rcl" deviceset="R-US_" device="R2010" value="10M">
@@ -21546,7 +21543,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="R3" library="rcl" deviceset="R-US_" device="R1206" value="1.0M">
 <attribute name="DIGIKEY" value="P1.0MECT-ND"/>
 </part>
-<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1nF 1k5V">
+<part name="C1" library="rcl" deviceset="C-US" device="C1206" value="1nF">
 <attribute name="DIGIKEY" value="399-7078-1-ND"/>
 </part>
 <part name="R2" library="rcl" deviceset="R-US_" device="R2010" value="10M">
@@ -21699,7 +21696,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="D40" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-W">
 <attribute name="PANASONIC" value="DA2JF8100L"/>
 </part>
-<part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF 450V">
+<part name="C45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21709,7 +21706,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="DIGIKEY" value="445-7758-1-ND "/>
 </part>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF 450V">
+<part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21718,7 +21715,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="445-7758-1-ND "/>
 </part>
-<part name="C42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF 450V">
+<part name="C42" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21815,7 +21812,7 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="DIGIKEY" value="P1.0MECT-ND"/>
 </part>
 <part name="U1" library="ActuatorDrive" deviceset="LT3468-1" device="">
-<attribute name="DIGIKEY" value=" 	LT3468ES5#TRMPBFCT-ND "/>
+<attribute name="DIGIKEY" value="  LT3468ES5#TRMPBFCT-ND "/>
 </part>
 <part name="Q6" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS123" device="">
 <attribute name="DIGIKEY" value="DMN60H080DS-7DICT-ND "/>
@@ -21830,7 +21827,7 @@ Low profile connectors, straight&lt;p&gt;
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="X7" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="SSW-102-02-S-D" device=""/>
-<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21839,7 +21836,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="311-4469-1-ND "/>
 </part>
-<part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21848,7 +21845,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="311-4469-1-ND "/>
 </part>
-<part name="C43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C43" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21857,7 +21854,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="311-4469-1-ND "/>
 </part>
-<part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21866,7 +21863,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="311-4469-1-ND "/>
 </part>
-<part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21875,7 +21872,7 @@ Low profile connectors, straight&lt;p&gt;
 </spice>
 <attribute name="DIGIKEY" value="311-4469-1-ND "/>
 </part>
-<part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF, 1000V">
+<part name="C44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="220 pF">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -21913,6 +21910,11 @@ Low profile connectors, straight&lt;p&gt;
 <text x="284.48" y="162.56" size="3.81" layer="92">low side switch</text>
 <text x="284.48" y="96.52" size="1.778" layer="91">Capacitive voltage divider so only 1/3 peak VDS.</text>
 <text x="220.98" y="157.48" size="1.778" layer="91">voltage choose</text>
+<text x="208.28" y="142.24" size="1.778" layer="91">these caps 450 Vmin</text>
+<text x="170.18" y="101.6" size="1.778" layer="91">1.5kv cap</text>
+<text x="170.18" y="53.34" size="1.778" layer="91">1.5kv cap</text>
+<text x="170.18" y="10.16" size="1.778" layer="91">1.5kv cap</text>
+<text x="170.18" y="-38.1" size="1.778" layer="91">1.5kv cap</text>
 </plain>
 <instances>
 <instance part="P+5" gate="1" x="30.48" y="124.46" smashed="yes">
@@ -22061,20 +22063,16 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="VALUE" x="45.72" y="-2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="X6" gate="G1" x="264.16" y="111.76" smashed="yes" rot="R180">
-<attribute name="VALUE" x="266.7" y="116.84" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="266.7" y="108.458" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X5" gate="G1" x="248.92" y="109.22" smashed="yes" rot="R180">
-<attribute name="VALUE" x="251.46" y="114.3" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="251.46" y="105.918" size="1.778" layer="95" rot="R180"/>
 <attribute name="DIGIKEY" x="248.92" y="109.22" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="X3" gate="G1" x="246.38" y="93.98" smashed="yes" rot="R180">
-<attribute name="VALUE" x="248.92" y="99.06" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="248.92" y="90.678" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="X4" gate="G1" x="264.16" y="93.98" smashed="yes" rot="R180">
-<attribute name="VALUE" x="266.7" y="99.06" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="266.7" y="90.678" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="JP1" gate="A" x="325.12" y="0" smashed="yes">
