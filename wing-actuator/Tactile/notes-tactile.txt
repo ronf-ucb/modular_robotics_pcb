@@ -1,0 +1,9 @@
+Bringing up tactile sensor on K64F
+July 10, 2019
+
+1. How to get pins screen to see package?
+right click on project name -> MCUXpresso config tools -> pins
+(can not click directly on pins tab- gives blank)
+
+2. What is maximum baud rate?
+64 x 4 char (3 digits + space) = 256 char * 200 Hz = 50kByte/sec = 400 kbaud
