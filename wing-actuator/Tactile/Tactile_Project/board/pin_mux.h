@@ -149,6 +149,48 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_ADC0_SE12_DIRECTION kPIN_MUX_DirectionInput /*!<@brief Direction */
                                                                    /* @} */
 
+/*! @name PORTD5 (number 98), J6[5]/SENSOR_OUT
+  @{ */
+#define BOARD_INITPINS_SENSOR_OUT_PERIPHERAL ADC0          /*!<@brief Device name: ADC0 */
+#define BOARD_INITPINS_SENSOR_OUT_SIGNAL SE                /*!<@brief ADC0 signal: SE */
+#define BOARD_INITPINS_SENSOR_OUT_PORT PORTD               /*!<@brief PORT device name: PORTD */
+#define BOARD_INITPINS_SENSOR_OUT_PIN 5U                   /*!<@brief PORTD pin index: 5 */
+#define BOARD_INITPINS_SENSOR_OUT_CHANNEL 6b               /*!<@brief ADC0 SE channel: 6b */
+#define BOARD_INITPINS_SENSOR_OUT_PIN_NAME ADC0_SE6b       /*!<@brief Pin name */
+#define BOARD_INITPINS_SENSOR_OUT_LABEL "J6[5]/SENSOR_OUT" /*!<@brief Label */
+#define BOARD_INITPINS_SENSOR_OUT_NAME "SENSOR_OUT"        /*!<@brief Identifier name */
+                                                           /* @} */
+
+/*! @name PORTD6 (number 99), J6[6]/SCAN_CLK
+  @{ */
+#define BOARD_INITPINS_SCAN_CLK_PERIPHERAL GPIOD                  /*!<@brief Device name: GPIOD */
+#define BOARD_INITPINS_SCAN_CLK_SIGNAL GPIO                       /*!<@brief GPIOD signal: GPIO */
+#define BOARD_INITPINS_SCAN_CLK_GPIO GPIOD                        /*!<@brief GPIO device name: GPIOD */
+#define BOARD_INITPINS_SCAN_CLK_GPIO_PIN 6U                       /*!<@brief PORTD pin index: 6 */
+#define BOARD_INITPINS_SCAN_CLK_PORT PORTD                        /*!<@brief PORT device name: PORTD */
+#define BOARD_INITPINS_SCAN_CLK_PIN 6U                            /*!<@brief PORTD pin index: 6 */
+#define BOARD_INITPINS_SCAN_CLK_CHANNEL 6                         /*!<@brief GPIOD GPIO channel: 6 */
+#define BOARD_INITPINS_SCAN_CLK_PIN_NAME PTD6                     /*!<@brief Pin name */
+#define BOARD_INITPINS_SCAN_CLK_LABEL "J6[6]/SCAN_CLK"            /*!<@brief Label */
+#define BOARD_INITPINS_SCAN_CLK_NAME "SCAN_CLK"                   /*!<@brief Identifier name */
+#define BOARD_INITPINS_SCAN_CLK_DIRECTION kPIN_MUX_DirectionInput /*!<@brief Direction */
+                                                                  /* @} */
+
+/*! @name PORTD7 (number 100), J6[7]/SYNC_OUT
+  @{ */
+#define BOARD_INITPINS_SYNC_OUT_PERIPHERAL GPIOD                  /*!<@brief Device name: GPIOD */
+#define BOARD_INITPINS_SYNC_OUT_SIGNAL GPIO                       /*!<@brief GPIOD signal: GPIO */
+#define BOARD_INITPINS_SYNC_OUT_GPIO GPIOD                        /*!<@brief GPIO device name: GPIOD */
+#define BOARD_INITPINS_SYNC_OUT_GPIO_PIN 7U                       /*!<@brief PORTD pin index: 7 */
+#define BOARD_INITPINS_SYNC_OUT_PORT PORTD                        /*!<@brief PORT device name: PORTD */
+#define BOARD_INITPINS_SYNC_OUT_PIN 7U                            /*!<@brief PORTD pin index: 7 */
+#define BOARD_INITPINS_SYNC_OUT_CHANNEL 7                         /*!<@brief GPIOD GPIO channel: 7 */
+#define BOARD_INITPINS_SYNC_OUT_PIN_NAME PTD7                     /*!<@brief Pin name */
+#define BOARD_INITPINS_SYNC_OUT_LABEL "J6[7]/SYNC_OUT"            /*!<@brief Label */
+#define BOARD_INITPINS_SYNC_OUT_NAME "SYNC_OUT"                   /*!<@brief Identifier name */
+#define BOARD_INITPINS_SYNC_OUT_DIRECTION kPIN_MUX_DirectionInput /*!<@brief Direction */
+                                                                  /* @} */
+
 /*!
  * @brief Configures pin routing and optionally pin electrical features.
  *

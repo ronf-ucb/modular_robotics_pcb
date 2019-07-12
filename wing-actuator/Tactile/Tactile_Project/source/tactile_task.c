@@ -40,8 +40,8 @@ extern float sqrt_array[1000]; // to hold results
  * Prototypes
  ******************************************************************************/
 /* Application API */
-void write_task_2(void *pvParameters);
-
+void tactile_task(void *pvParameters);
+void show_help(void);
 
 /* Logger API */
 extern void log_add(char *log);
@@ -51,21 +51,37 @@ extern void log_task(void *pvParameters);
 /*!
  * @brief write_task_2 function
  */
-void write_task_2(void *pvParameters)
+void tactile_task(void *pvParameters)
 {   TickType_t tick_start, tick_now;
 	const TickType_t xDelay700ms = pdMS_TO_TICKS( 700 );
     char log[MAX_LOG_LENGTH + 1];
     uint32_t i = 0, j=0;
     // double z;
+    char c;
+    printf("Capacitive Array Processing Program\n");
+    show_help();
 
+    c = ' ';
+    while(c != 'q')
+    {	printf("\n*");
+    	while ((c = getchar())==' ' || c == '\n');
+       	switch (c)
+    	{
+        	case '?': show_help();
+       	    break;
+
+       	    default: putchar('?');
+       	    break;
+       	}
+     }
+           printf("QUIT\n");
     tick_start = xTaskGetTickCount();
     for (i = 0; i < 10; i++)
     {   tick_now = xTaskGetTickCount();
     /* deliberately conflict writing to array between 2 tasks */
-    	for (j=0; j < 1000; j++)
-        		sqrt_array[j]= sqrt((float)j);
-   		sprintf(log, "Task2 Mess %d, tick_now %d, 100*z=%d\n\r",
-    		(int)i, (int)(tick_now), (long)(100.0*sqrt_array[i]));
+
+   		sprintf(log, "Task2 Mess %d, tick_now %d \n\r",
+    		(int)i, (int)(tick_now));
 
         log_add(log);
         //vTaskDelay(xDelay700ms); // relative delay in ticks
@@ -79,4 +95,22 @@ void write_task_2(void *pvParameters)
     log_add(log); // add message to print queue
     vTaskSuspend(NULL);
 }
+
+void show_help()
+{
+    printf("\n?     show this message\n");
+    printf("a  read a/d channel 1               s  scan sensor\n");
+    printf("c  continuous frame grab            t  save touch pattern\n");
+    printf("d  save multiple elements response  v  average responses\n");
+    printf("f  store mult. frames               w  set wait interval\n");
+    printf("g  get gain matrix                  x  find max pressure\n");
+    printf("m  find mean and variance           y  dump to memory \n");
+    printf("o  get static offset of array       1  get multiple centers \n");
+    printf("p  toggle print flag                l  locate platform\n");
+    printf("q quit \n");
+    printf("r  read and store offset\n");
+
+}
+
+
 

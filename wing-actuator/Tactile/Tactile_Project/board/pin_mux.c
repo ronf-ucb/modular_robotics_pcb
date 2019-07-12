@@ -15,6 +15,9 @@ processor_version: 3.0.1
 board: FRDM-K64F
 pin_labels:
 - {pin_num: '71', pin_signal: ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0, label: 'J1[5]', identifier: FTM0CH0}
+- {pin_num: '98', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK, label: 'J6[5]/SENSOR_OUT', identifier: SENSOR_OUT}
+- {pin_num: '100', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN, label: 'J6[7]/SYNC_OUT', identifier: SYNC_OUT}
+- {pin_num: '99', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT, label: 'J6[6]/SCAN_CLK', identifier: SCAN_CLK}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -50,6 +53,9 @@ BOARD_InitPins:
     pull_select: up}
   - {pin_num: '55', peripheral: GPIOB, signal: 'GPIO, 2', pin_signal: ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3, direction: INPUT, pull_select: up,
     pull_enable: enable, passive_filter: disable}
+  - {pin_num: '98', peripheral: ADC0, signal: 'SE, 6b', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK}
+  - {pin_num: '99', peripheral: GPIOD, signal: 'GPIO, 6', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT, direction: INPUT}
+  - {pin_num: '100', peripheral: GPIOD, signal: 'GPIO, 7', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN, direction: INPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -68,6 +74,8 @@ void BOARD_InitPins(void)
     CLOCK_EnableClock(kCLOCK_PortB);
     /* Port C Clock Gate Control: Clock enabled */
     CLOCK_EnableClock(kCLOCK_PortC);
+    /* Port D Clock Gate Control: Clock enabled */
+    CLOCK_EnableClock(kCLOCK_PortD);
     /* Port E Clock Gate Control: Clock enabled */
     CLOCK_EnableClock(kCLOCK_PortE);
 
@@ -122,6 +130,15 @@ void BOARD_InitPins(void)
                      /* Pull Select: Internal pullup resistor is enabled on the corresponding pin, if the
                       * corresponding PE field is set. */
                      | PORT_PCR_PS(kPORT_PullUp));
+
+    /* PORTD5 (pin 98) is configured as ADC0_SE6b */
+    PORT_SetPinMux(BOARD_INITPINS_SENSOR_OUT_PORT, BOARD_INITPINS_SENSOR_OUT_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTD6 (pin 99) is configured as PTD6 */
+    PORT_SetPinMux(BOARD_INITPINS_SCAN_CLK_PORT, BOARD_INITPINS_SCAN_CLK_PIN, kPORT_MuxAsGpio);
+
+    /* PORTD7 (pin 100) is configured as PTD7 */
+    PORT_SetPinMux(BOARD_INITPINS_SYNC_OUT_PORT, BOARD_INITPINS_SYNC_OUT_PIN, kPORT_MuxAsGpio);
 
     /* PORTE26 (pin 33) is configured as PTE26 */
     PORT_SetPinMux(BOARD_INITPINS_LED_GREEN_PORT, BOARD_INITPINS_LED_GREEN_PIN, kPORT_MuxAsGpio);
