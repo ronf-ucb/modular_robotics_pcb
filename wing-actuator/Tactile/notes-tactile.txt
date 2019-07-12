@@ -45,6 +45,12 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  then these can be enabled by going to:
  •Project→Properties→C/C++ Build→Settings→MCU Linker→Managed  Linker  Script 
  and  selecting  the  ”Enable  printf/scanf float” tick box.
+ maybe also PRINTF_FLOAT_ENABLE=1?
+ CR_INTEGER_PRINTF - Undefine/Remove this directive
  
  6. Timing is off, are clocks set same as race-timer?
- Maybe UART baudrate changed timing?
+ Maybe UART baudrate changed timing? Needed to change FreeRTOSConfig.h
+ 
+ 7. Using A/D in software triggered mode.
+ Ref manual p. 847, chap 35
+ 
