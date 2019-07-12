@@ -57,6 +57,9 @@
 #include "pin_mux.h"
 #include "clock_config.h"
 
+#include "fsl_uart.h"
+#define DEMO_UART_CLK_FREQ CLOCK_GetFreq(UART0_CLK_SRC)
+#define BOARD_DEBUG_UART_BAUDRATE 115200  // 230400 works, 1,000,000 works, 115200 is default
 
 /*******************************************************************************
  * Board Definitions
@@ -111,6 +114,10 @@ double lockout_time;
 volatile bool timer_triggered = false;
 volatile bool timer_lockout_period = false;
 
+#define PI 3.141592653589793
+float pi_float = PI;
+double pi_double = PI;
+
 
 /*******************************************************************************
  * Prototypes
@@ -118,7 +125,7 @@ volatile bool timer_lockout_period = false;
 void start_timer(void);
 /* Application API */
 extern void write_task_1(void *pvParameters);
-extern void write_task_2(void *pvParameters);
+extern void tactile_task(void *pvParameters);
 /* configUSE_IDLE_HOOK must be set to 1 in FreeRTOSConfig.h for the idle hook function to get called. */
 extern void vApplicationIdleHook( void );
 
@@ -193,6 +200,7 @@ void start_timer(void)
  */
 int main(void)
 {   ftm_config_t ftmInfo;
+	uart_config_t config;
 	uint32_t compareValue = 0x1000;
    /* Define the init structure for the input switch pin */
        gpio_pin_config_t sw_config = {
@@ -207,6 +215,16 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
+
+    /*  * config.baudRate_Bps = 115200U;
+         * config.enableTx = false;
+         * config.enableRx = false;   */
+        UART_GetDefaultConfig(&config);
+        config.baudRate_Bps = BOARD_DEBUG_UART_BAUDRATE;
+        config.enableTx = true;
+        config.enableRx = true;
+        UART_Init(UART0, &config, DEMO_UART_CLK_FREQ);
+
     asm (".global _printf_float"); // cause linker to include floating point
 
     /* initialize LEDs */
@@ -214,14 +232,18 @@ int main(void)
  	LED_GREEN_INIT(LOGIC_LED_OFF);
  	LED_RED_INIT(LOGIC_LED_OFF);
 
-    /* Initialize logger for 32 entries with maximum lenght of one log 20 B */
-    log_init(32, MAX_LOG_LENGTH); // buffer up to 32 lines of text
+    /* Initialize logger for 32 entries with maximum length of one log 20 B */
+    /* printing is done from queue- try to preserve real time? */
+ 	log_init(32, MAX_LOG_LENGTH); // buffer up to 32 lines of text
+
+
     /* welcome message */
     PRINTF("\n\r Capacitive Tactile Reader July 10, 2019 v0.0\n\r");
     PRINTF("Using SW3 PTA4 or PTB2 (J4-2)for trigger, and FTM0 Ch0 (J1-5) for LED drive\n\r");
+    PRINTF("Using FRDM-K64F J6 for DensorOut, SyncOut, ScanClk\n\r");
 	// LED_GREEN_ON();
-//	PRINTF("Floating point PRINTF %8.4f  %8.4f\n\r", pif, pid);
-//	printf("Floating point printf %8.4f  %8.4lf\n\r", pif, pid); // only for semihost console, not release!
+    PRINTF("Floating point PRINTF int:%4d float:%8.4f  double:%8.4lf\n\r", (int) PI, pi_float, pi_double);
+    printf("Floating point printf %8.4f  %8.4lf\n\r", pi_float, pi_double); // only for semihost console, not release!
 
 	 /* Init input switch GPIO. */
 	    PORT_SetPinInterruptConfig(BOARD_SW_PORT, BOARD_SW_GPIO_PIN, kPORT_InterruptFallingEdge);
@@ -237,9 +259,16 @@ int main(void)
 
     if (xTaskCreate(write_task_1, "WRITE_TASK_1", configMINIMAL_STACK_SIZE + 300, NULL, tskIDLE_PRIORITY + 2, NULL) !=
         pdPASS)
-    {   PRINTF("Task creation failed!.\r\n");
+    {   PRINTF("Task 1 creation failed!.\r\n");
         while (1); // hang indefinitely
     }
+
+    if (xTaskCreate(tactile_task, "Tactile_TASK", configMINIMAL_STACK_SIZE + 300, NULL, tskIDLE_PRIORITY + 2, NULL) !=
+         pdPASS)
+     {   PRINTF("tactile_task creation failed!.\r\n");
+         while (1); // hang indefinitely
+     }
+
 
 
     FTM_GetDefaultConfig(&ftmInfo);

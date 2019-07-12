@@ -7,3 +7,44 @@ right click on project name -> MCUXpresso config tools -> pins
 
 2. What is maximum baud rate?
 64 x 4 char (3 digits + space) = 256 char * 200 Hz = 50kByte/sec = 400 kbaud
+K64F tech ref manual:52.4.2.9 Baud rate tolerance 
+MAx baud rate = UART clock /16
+https://mcuoneclipse.com/2014/06/14/frdm-k64f-atmaximum-speed-of-120-mhz/
+drivers/fsl_uart.h initializes to 115200
+
+https://mcuxpresso.nxp.com/apidoc/group__uart__driver.html
+
+Quick Settings -> SDK Debug Console
+PRINTF?
+Advanced settings: C/C++ Library Settings -> Redirect SDK PRINTF
+(not sure how this can be done once project is already installed)
+#define BOARD_DEBUG_UART_BAUDRATE 9600 
+and then use 
+UART_Init(UART0, &config, DEMO_UART_CLK_FREQ);
+(DEMO_UART_CLK_FREQ is defined in CLOCK_GetFreq(UART0_CLK_SRC)
+pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
+921600, 1000000, 1152000, 1500000, 2000000, 2500000, 3000000, 3500000, 4000000
+ also work on many platforms and devices.
+ 
+ Changed BOARD_DEBUG_UART_BAUDRATE to 230400: ok.
+ 1152000 is garbled
+ 1000000 works ok on putty
+ 
+ 3. Analog input range:
+ VAIO Analog1, RESET, EXTAL, and XTAL input voltage –0.3 VDD + 0.3 V
+ 
+ 4. IO connections:
+ use J6 on K64F, 8 pin connections
+ 
+ 5. how to enable floating point and printing?
+ Quickstart -> Quick Settings -> Set Floating Point type
+ Hard ABI (pass floating point in registers)
+ 
+ 5.1  Quick Settings→Set Library Header type→NewlibNano (semihost)
+ 5.2  NewlibNano:   If  your  codebase  does  require  floating  point  variants  of printf/scanf, 
+ then these can be enabled by going to:
+ •Project→Properties→C/C++ Build→Settings→MCU Linker→Managed  Linker  Script 
+ and  selecting  the  ”Enable  printf/scanf float” tick box.
+ 
+ 6. Timing is off, are clocks set same as race-timer?
+ Maybe UART baudrate changed timing?
