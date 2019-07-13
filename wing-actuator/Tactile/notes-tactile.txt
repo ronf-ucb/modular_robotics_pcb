@@ -53,4 +53,10 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  
  7. Using A/D in software triggered mode.
  Ref manual p. 847, chap 35
+ Copy example from k64_adc
+ missing BOARD_INITPINS_ADC0_SE12_GPIO_PIN- need to set _Identifier_ in pin config tool!
+ (can not leave blank- then will not generate code.)
+ 
+ 8. How does getchar work? semiconsole or UART? 
+ use GETCHAR? Seems to hang in GETCHAR. need to debug reading a character.
  

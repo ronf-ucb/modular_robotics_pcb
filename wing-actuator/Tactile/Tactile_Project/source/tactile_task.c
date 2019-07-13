@@ -43,6 +43,8 @@ extern float sqrt_array[1000]; // to hold results
 void tactile_task(void *pvParameters);
 void show_help(void);
 
+extern void analog_test();
+
 /* Logger API */
 extern void log_add(char *log);
 extern void log_task(void *pvParameters);
@@ -58,17 +60,20 @@ void tactile_task(void *pvParameters)
     uint32_t i = 0, j=0;
     // double z;
     char c;
-    printf("Capacitive Array Processing Program\n");
+    PRINTF("Capacitive Array Processing Program\n");
     show_help();
 
     c = ' ';
     while(c != 'q')
     {	printf("\n*");
-    	while ((c = getchar())==' ' || c == '\n');
+    	while ((c = GETCHAR())==' ' || c == '\n');
        	switch (c)
     	{
         	case '?': show_help();
        	    break;
+
+        	case 'a': analog_test();
+        	break;
 
        	    default: putchar('?');
        	    break;
@@ -98,8 +103,8 @@ void tactile_task(void *pvParameters)
 
 void show_help()
 {
-    printf("\n?     show this message\n");
-    printf("a  read a/d channel 1               s  scan sensor\n");
+    PRINTF("\n?     show this message\n");
+    PRINTF("a  read a/d channel 1               s  scan sensor\n");
     printf("c  continuous frame grab            t  save touch pattern\n");
     printf("d  save multiple elements response  v  average responses\n");
     printf("f  store mult. frames               w  set wait interval\n");

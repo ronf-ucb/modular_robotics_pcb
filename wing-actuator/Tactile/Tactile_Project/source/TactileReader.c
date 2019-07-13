@@ -242,7 +242,7 @@ int main(void)
     PRINTF("Using SW3 PTA4 or PTB2 (J4-2)for trigger, and FTM0 Ch0 (J1-5) for LED drive\n\r");
     PRINTF("Using FRDM-K64F J6 for DensorOut, SyncOut, ScanClk\n\r");
 	// LED_GREEN_ON();
-    PRINTF("Floating point PRINTF int:%4d float:%8.4f  double:%8.4lf\n\r", (int) PI, pi_float, pi_double);
+    PRINTF("Floating point PRINTF int:%4d float:%8.4f  double:%8.4f\n\r", (int) PI, pi_float, pi_double);
     printf("Floating point printf %8.4f  %8.4lf\n\r", pi_float, pi_double); // only for semihost console, not release!
 
 	 /* Init input switch GPIO. */

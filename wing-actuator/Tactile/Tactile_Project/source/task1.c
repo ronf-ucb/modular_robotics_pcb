@@ -108,7 +108,7 @@ void write_task_1(void *pvParameters)
     tick_end = xTaskGetTickCount();
     sprintf(log, "Task1 done. tick_start %d tick_end %d\n\r", (int) tick_start, (int) tick_end);
     log_add(log);
-    sprintf(log, "Task1. ulIdleCycleCount=%d\n\r",
+    sprintf(log, "Task1. ulIdleCycleCount=%ld\n\r",
     		(long)ulIdleCycleCount);
         log_add(log);
     //vTaskDelay(3*xDelay1000ms); // give time for all tasks to finish printing before suspending

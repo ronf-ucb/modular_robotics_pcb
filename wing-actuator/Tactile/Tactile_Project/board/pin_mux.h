@@ -134,21 +134,6 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_FTM0CH0_DIRECTION kPIN_MUX_DirectionOutput /*!<@brief Direction */
                                                                   /* @} */
 
-/*! @name PORTB2 (number 55), J4[2]
-  @{ */
-#define BOARD_INITPINS_ADC0_SE12_PERIPHERAL GPIOB                  /*!<@brief Device name: GPIOB */
-#define BOARD_INITPINS_ADC0_SE12_SIGNAL GPIO                       /*!<@brief GPIOB signal: GPIO */
-#define BOARD_INITPINS_ADC0_SE12_GPIO GPIOB                        /*!<@brief GPIO device name: GPIOB */
-#define BOARD_INITPINS_ADC0_SE12_GPIO_PIN 2U                       /*!<@brief PORTB pin index: 2 */
-#define BOARD_INITPINS_ADC0_SE12_PORT PORTB                        /*!<@brief PORT device name: PORTB */
-#define BOARD_INITPINS_ADC0_SE12_PIN 2U                            /*!<@brief PORTB pin index: 2 */
-#define BOARD_INITPINS_ADC0_SE12_CHANNEL 2                         /*!<@brief GPIOB GPIO channel: 2 */
-#define BOARD_INITPINS_ADC0_SE12_PIN_NAME PTB2                     /*!<@brief Pin name */
-#define BOARD_INITPINS_ADC0_SE12_LABEL "J4[2]"                     /*!<@brief Label */
-#define BOARD_INITPINS_ADC0_SE12_NAME "ADC0_SE12"                  /*!<@brief Identifier name */
-#define BOARD_INITPINS_ADC0_SE12_DIRECTION kPIN_MUX_DirectionInput /*!<@brief Direction */
-                                                                   /* @} */
-
 /*! @name PORTD5 (number 98), J6[5]/SENSOR_OUT
   @{ */
 #define BOARD_INITPINS_SENSOR_OUT_PERIPHERAL ADC0          /*!<@brief Device name: ADC0 */
@@ -190,6 +175,18 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_SYNC_OUT_NAME "SYNC_OUT"                   /*!<@brief Identifier name */
 #define BOARD_INITPINS_SYNC_OUT_DIRECTION kPIN_MUX_DirectionInput /*!<@brief Direction */
                                                                   /* @} */
+
+/*! @name PORTB2 (number 55), J4[2]
+  @{ */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_PERIPHERAL ADC0       /*!<@brief Device name: ADC0 */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_SIGNAL SE             /*!<@brief ADC0 signal: SE */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_PORT PORTB            /*!<@brief PORT device name: PORTB */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_PIN 2U                /*!<@brief PORTB pin index: 2 */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_CHANNEL 12            /*!<@brief ADC0 SE channel: 12 */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_PIN_NAME ADC0_SE12    /*!<@brief Pin name */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_LABEL "J4[2]"         /*!<@brief Label */
+#define BOARD_INITPINS_ADC0_SE12_GPIO_NAME "ADC0_SE12_GPIO" /*!<@brief Identifier name */
+                                                            /* @} */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.

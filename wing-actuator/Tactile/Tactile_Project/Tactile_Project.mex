@@ -19,6 +19,7 @@
             <processor_version>3.0.1</processor_version>
             <pin_labels>
                <pin_label pin_num="71" pin_signal="ADC0_SE15/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0" label="J1[5]" identifier="FTM0CH0"/>
+               <pin_label pin_num="55" pin_signal="ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3" label="J4[2]" identifier="ADC0_SE12_GPIO"/>
                <pin_label pin_num="98" pin_signal="ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK" label="J6[5]/SENSOR_OUT" identifier="SENSOR_OUT"/>
                <pin_label pin_num="100" pin_signal="PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1/SPI1_SIN" label="J6[7]/SYNC_OUT" identifier="SYNC_OUT"/>
                <pin_label pin_num="99" pin_signal="ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT" label="J6[6]/SCAN_CLK" identifier="SCAN_CLK"/>
@@ -110,14 +111,6 @@
                         <pin_feature name="pull_select" value="up"/>
                      </pin_features>
                   </pin>
-                  <pin peripheral="GPIOB" signal="GPIO, 2" pin_num="55" pin_signal="ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3">
-                     <pin_features>
-                        <pin_feature name="direction" value="INPUT"/>
-                        <pin_feature name="pull_select" value="up"/>
-                        <pin_feature name="pull_enable" value="enable"/>
-                        <pin_feature name="passive_filter" value="disable"/>
-                     </pin_features>
-                  </pin>
                   <pin peripheral="ADC0" signal="SE, 6b" pin_num="98" pin_signal="ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b/SPI1_SCK"/>
                   <pin peripheral="GPIOD" signal="GPIO, 6" pin_num="99" pin_signal="ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0/SPI1_SOUT">
                      <pin_features>
@@ -129,6 +122,7 @@
                         <pin_feature name="direction" value="INPUT"/>
                      </pin_features>
                   </pin>
+                  <pin peripheral="ADC0" signal="SE, 12" pin_num="55" pin_signal="ADC0_SE12/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3"/>
                </pins>
             </function>
          </functions_list>
