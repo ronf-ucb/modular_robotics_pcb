@@ -55,7 +55,7 @@
  * Prototypes
  ******************************************************************************/
 /* Initialize ADC16 */
-static void ADC_Init(void);
+void ADC_Init(void);
 // static void init_board(void);
 void read_ADC(void);
 
@@ -77,7 +77,7 @@ adc16_channel_config_t g_adc16ChannelConfigStruct;
 	BOARD_InitDebugConsole();
 }*/
 
-static void ADC_Init(void)
+void ADC_Init(void)
 {
 	EnableIRQ(DEMO_ADC16_IRQn);
     adc16_config_t adc16ConfigStruct;
@@ -150,14 +150,11 @@ void analog_test(void)
 {	int chan_num = DEMO_ADC16_USER_CHANNEL;
     float analog_voltage;
   //  init_board(); // should not be needed, as already done at main() level
-    ADC_Init();
-    PRINTF("\r\nADC Demo!\r\n");
-    PRINTF("Using channel %d \n\r", chan_num );
-    while (1)
-    {
-        read_ADC();
-        analog_voltage = (float)(g_Adc16ConversionValue * (VREF_BRD / SE_12BIT));
-        PRINTF("\rADC Value: %6d, ADC Voltage: %8.3f\r\n", g_Adc16ConversionValue, analog_voltage);
+  //  ADC_Init(); // done at calling level
 
-    }
+    PRINTF("Using channel %d \n\r", chan_num );
+    read_ADC();
+    analog_voltage = (float)(g_Adc16ConversionValue * (VREF_BRD / SE_12BIT));
+    PRINTF("\rADC Value: %6d, ADC Voltage: %8.3f\r\n",
+    		g_Adc16ConversionValue, analog_voltage);
 }

@@ -66,9 +66,8 @@
 								<option id="gnu.c.compiler.option.preprocessor.nostdinc.574174991" name="Do not search system directories (-nostdinc)" superClass="gnu.c.compiler.option.preprocessor.nostdinc" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.preprocessor.preprocess.28476876" name="Preprocess only (-E)" superClass="gnu.c.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.608545587" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=0"/>
+									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=1"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS"/>
-									<listOptionValue builtIn="false" value="CR_INTEGER_PRINTF"/>
 									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
@@ -76,7 +75,7 @@
 									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12"/>
 									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12_cm4"/>
 									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
-									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.1291931636" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.include.paths.914265652" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
@@ -114,8 +113,8 @@
 								<option id="com.crt.advproject.gcc.lto.fat.109760688" name="Fat lto objects (-ffat-lto-objects)" superClass="com.crt.advproject.gcc.lto.fat" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.fpu.1978497972" name="Floating point" superClass="com.crt.advproject.gcc.fpu" useByScannerDiscovery="false" value="com.crt.advproject.gcc.fpu.fpv4.hard" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.thumbinterwork.1829077431" name="Enable Thumb interworking" superClass="com.crt.advproject.gcc.thumbinterwork" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.gcc.hdrlib.735662035" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
-								<option id="com.crt.advproject.gcc.specs.1177108561" name="Specs" superClass="com.crt.advproject.gcc.specs" useByScannerDiscovery="false" value="com.crt.advproject.gcc.specs.newlibnano" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.735662035" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gcc.hdrlib.codered" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.specs.1177108561" name="Specs" superClass="com.crt.advproject.gcc.specs" useByScannerDiscovery="false" value="com.crt.advproject.gcc.specs.codered" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.config.529616914" name="Obsolete (Config)" superClass="com.crt.advproject.gcc.config" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gcc.store.1506834277" name="Obsolete (Store)" superClass="com.crt.advproject.gcc.store" useByScannerDiscovery="false"/>
 								<inputType id="com.crt.advproject.compiler.input.630294186" superClass="com.crt.advproject.compiler.input"/>
@@ -123,7 +122,7 @@
 							<tool id="com.crt.advproject.gas.exe.debug.1273294201" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
 								<option id="com.crt.advproject.gas.thumb.1670779873" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gas.arch.68142425" name="Architecture" superClass="com.crt.advproject.gas.arch" useByScannerDiscovery="false" value="com.crt.advproject.gas.target.cm4" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.652220383" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" useByScannerDiscovery="false" value="-c -x assembler-with-cpp -D__NEWLIB__" valueType="string"/>
+								<option id="gnu.both.asm.option.flags.crt.652220383" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" useByScannerDiscovery="false" value="-c -x assembler-with-cpp -D__REDLIB__" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.2066023849" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
@@ -140,8 +139,8 @@
 								<option id="com.crt.advproject.gas.exe.debug.option.debugging.level.537067608" name="Debug level" superClass="com.crt.advproject.gas.exe.debug.option.debugging.level" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gas.fpu.1976467372" name="Floating point" superClass="com.crt.advproject.gas.fpu" useByScannerDiscovery="false" value="com.crt.advproject.gas.fpu.fpv4.hard" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.thumbinterwork.266963504" name="Enable Thumb interworking" superClass="com.crt.advproject.gas.thumbinterwork" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.gas.hdrlib.2036080967" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
-								<option id="com.crt.advproject.gas.specs.887477968" name="Specs" superClass="com.crt.advproject.gas.specs" useByScannerDiscovery="false" value="com.crt.advproject.gas.specs.newlibnano" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.hdrlib.2036080967" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gas.hdrlib.codered" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.specs.887477968" name="Specs" superClass="com.crt.advproject.gas.specs" useByScannerDiscovery="false" value="com.crt.advproject.gas.specs.codered" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.config.1478964698" name="Obsolete (Config)" superClass="com.crt.advproject.gas.config" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.gas.store.1712986962" name="Obsolete (Store)" superClass="com.crt.advproject.gas.store" useByScannerDiscovery="false"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.686554683" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
@@ -228,7 +227,7 @@
 								<option id="com.crt.advproject.link.ecrp.1184139857" name="Enhanced CRP" superClass="com.crt.advproject.link.ecrp" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.link.toram.194324724" name="Link application to RAM" superClass="com.crt.advproject.link.toram" useByScannerDiscovery="false"/>
 								<option id="com.crt.advproject.link.stackOffset.153392340" name="Stack offset" superClass="com.crt.advproject.link.stackOffset" useByScannerDiscovery="false"/>
-								<option id="com.crt.advproject.link.gcc.hdrlib.1299915821" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gcc.link.hdrlib.newlibnano.semihost" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.gcc.hdrlib.1299915821" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib" useByScannerDiscovery="false" value="com.crt.advproject.gcc.link.hdrlib.codered.nohost_nf" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.1923910844" name="Enable printf float " superClass="com.crt.advproject.link.gcc.nanofloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.scanf.796470841" name="Enable scanf float " superClass="com.crt.advproject.link.gcc.nanofloat.scanf" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.script.482991047" name="Linker script" superClass="com.crt.advproject.link.script" useByScannerDiscovery="false" value="Tactile_Project_Debug.ld" valueType="string"/>
@@ -244,6 +243,33 @@
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.crt.advproject.config.exe.debug.870576291.216026917" name="/" resourcePath="source">
+						<toolChain id="com.crt.advproject.toolchain.exe.debug.1045385599" name="NXP MCU Tools" superClass="com.crt.advproject.toolchain.exe.debug" unusedChildren="">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.GNU_ELF" id="com.crt.advproject.platform.exe.debug" name="ARM-based MCU (Debug)" superClass="com.crt.advproject.platform.exe.debug"/>
+							<tool id="com.crt.advproject.cpp.exe.debug.909319192" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.exe.debug.963494698"/>
+							<tool id="com.crt.advproject.gcc.exe.debug.711815611" name="MCU C Compiler" superClass="com.crt.advproject.gcc.exe.debug.1020792745">
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1382779372" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="PRINTF_FLOAT_ENABLE=1"/>
+									<listOptionValue builtIn="false" value="__USE_CMSIS"/>
+									<listOptionValue builtIn="false" value="__MCUXPRESSO"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="SDK_OS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="FSL_RTOS_FREE_RTOS"/>
+									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12"/>
+									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12_cm4"/>
+									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+								</option>
+								<inputType id="com.crt.advproject.compiler.input.553175981" superClass="com.crt.advproject.compiler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.gas.exe.debug.1423793371" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug.1273294201">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.503285181" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.crt.advproject.assembler.input.285629327" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
+							</tool>
+							<tool id="com.crt.advproject.link.cpp.exe.debug.2000813054" name="MCU C++ Linker" superClass="com.crt.advproject.link.cpp.exe.debug.1166424221"/>
+							<tool id="com.crt.advproject.link.exe.debug.2106197823" name="MCU Linker" superClass="com.crt.advproject.link.exe.debug.578923841"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
@@ -332,7 +358,7 @@
 									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12"/>
 									<listOptionValue builtIn="false" value="CPU_MK64FN1M0VLL12_cm4"/>
 									<listOptionValue builtIn="false" value="SDK_DEBUGCONSOLE=1"/>
-									<listOptionValue builtIn="false" value="__NEWLIB__"/>
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.undef.symbol.711998287" name="Undefined symbols (-U)" superClass="gnu.c.compiler.option.preprocessor.undef.symbol"/>
 								<option id="gnu.c.compiler.option.include.paths.1021021587" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
@@ -368,8 +394,8 @@
 								<option id="com.crt.advproject.gcc.lto.fat.335382421" name="Fat lto objects (-ffat-lto-objects)" superClass="com.crt.advproject.gcc.lto.fat"/>
 								<option id="com.crt.advproject.gcc.fpu.1366489271" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4.hard" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.thumbinterwork.444259758" name="Enable Thumb interworking" superClass="com.crt.advproject.gcc.thumbinterwork"/>
-								<option id="com.crt.advproject.gcc.hdrlib.1571640532" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlibnano" valueType="enumerated"/>
-								<option id="com.crt.advproject.gcc.specs.1649590586" name="Specs" superClass="com.crt.advproject.gcc.specs" value="com.crt.advproject.gcc.specs.newlibnano" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.1571640532" name="Library headers" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.codered" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.specs.1649590586" name="Specs" superClass="com.crt.advproject.gcc.specs" value="com.crt.advproject.gcc.specs.codered" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.config.1446442716" name="Obsolete (Config)" superClass="com.crt.advproject.gcc.config"/>
 								<option id="com.crt.advproject.gcc.store.389623405" name="Obsolete (Store)" superClass="com.crt.advproject.gcc.store"/>
 								<inputType id="com.crt.advproject.compiler.input.1258674038" superClass="com.crt.advproject.compiler.input"/>
@@ -377,7 +403,7 @@
 							<tool id="com.crt.advproject.gas.exe.release.753198060" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.release">
 								<option id="com.crt.advproject.gas.thumb.1101859707" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.gas.arch.2073141124" name="Architecture" superClass="com.crt.advproject.gas.arch" value="com.crt.advproject.gas.target.cm4" valueType="enumerated"/>
-								<option id="gnu.both.asm.option.flags.crt.480032586" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__" valueType="string"/>
+								<option id="gnu.both.asm.option.flags.crt.480032586" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__REDLIB__" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.578717612" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/board}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/source}&quot;"/>
@@ -393,8 +419,8 @@
 								<option id="gnu.both.asm.option.version.47083936" name="Announce version (-v)" superClass="gnu.both.asm.option.version"/>
 								<option id="com.crt.advproject.gas.fpu.1828594232" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4.hard" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.thumbinterwork.1121751982" name="Enable Thumb interworking" superClass="com.crt.advproject.gas.thumbinterwork"/>
-								<option id="com.crt.advproject.gas.hdrlib.1126905995" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlibnano" valueType="enumerated"/>
-								<option id="com.crt.advproject.gas.specs.608410390" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.newlibnano" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.hdrlib.1126905995" name="Library headers" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.codered" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.specs.608410390" name="Specs" superClass="com.crt.advproject.gas.specs" value="com.crt.advproject.gas.specs.codered" valueType="enumerated"/>
 								<option id="com.crt.advproject.gas.config.1060982211" name="Obsolete (Config)" superClass="com.crt.advproject.gas.config"/>
 								<option id="com.crt.advproject.gas.store.727191362" name="Obsolete (Store)" superClass="com.crt.advproject.gas.store"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1327171482" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
@@ -481,7 +507,7 @@
 								<option id="com.crt.advproject.link.ecrp.745285446" name="Enhanced CRP" superClass="com.crt.advproject.link.ecrp"/>
 								<option id="com.crt.advproject.link.toram.178119170" name="Link application to RAM" superClass="com.crt.advproject.link.toram"/>
 								<option id="com.crt.advproject.link.stackOffset.1923905272" name="Stack offset" superClass="com.crt.advproject.link.stackOffset"/>
-								<option id="com.crt.advproject.link.gcc.hdrlib.47578895" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib" value="com.crt.advproject.gcc.link.hdrlib.newlibnano.semihost" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.gcc.hdrlib.47578895" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib" value="com.crt.advproject.gcc.link.hdrlib.codered.nohost_nf" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.1971195968" name="Enable printf float " superClass="com.crt.advproject.link.gcc.nanofloat"/>
 								<option id="com.crt.advproject.link.gcc.nanofloat.scanf.608586885" name="Enable scanf float " superClass="com.crt.advproject.link.gcc.nanofloat.scanf"/>
 								<option id="com.crt.advproject.link.script.1466959669" name="Linker script" superClass="com.crt.advproject.link.script" value="Tactile_Project_Release.ld" valueType="string"/>
@@ -534,182 +560,98 @@
 	</storageModule>
 	<storageModule moduleId="com.crt.config">
 		<projectStorage>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
-			&lt;TargetConfig&gt;&#13;
-			&lt;Properties property_3="NXP" property_4="MK64FN1M0xxx12" property_count="5"
-			version="70200"/&gt;&#13;
-			&lt;infoList vendor="NXP"&gt;&#13;
-			&lt;info chip="MK64FN1M0xxx12" name="MK64FN1M0xxx12"&gt;&#13;
-			&lt;chip&gt;&#13;
-			&lt;name&gt;MK64FN1M0xxx12&lt;/name&gt;&#13;
-			&lt;family&gt;K6x&lt;/family&gt;&#13;
-			&lt;vendor&gt;NXP&lt;/vendor&gt;&#13;
-			&lt;memory can_program="true" id="Flash" is_ro="true" size="1024"
-			type="Flash"/&gt;&#13;
-			&lt;memory id="RAM" size="256" type="RAM"/&gt;&#13;
-			&lt;memoryInstance derived_from="Flash" driver="FTFE_4K.cfx" id="PROGRAM_FLASH"
-			location="0x00000000" size="0x00100000"/&gt;&#13;
-			&lt;memoryInstance derived_from="RAM" id="SRAM_UPPER" location="0x20000000"
-			size="0x00030000"/&gt;&#13;
-			&lt;memoryInstance derived_from="RAM" id="SRAM_LOWER" location="0x1fff0000"
-			size="0x00010000"/&gt;&#13;
-			&lt;memoryInstance derived_from="RAM" id="FLEX_RAM" location="0x14000000"
-			size="0x00001000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTFE_FlashConfig" determined="infoFile"
-			id="FTFE_FlashConfig" location="0x400"/&gt;&#13;
-			&lt;peripheralInstance derived_from="AIPS0" determined="infoFile"
-			id="AIPS0" location="0x40000000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="AIPS1" determined="infoFile" id="AIPS1"
-			location="0x40080000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="AXBS" determined="infoFile" id="AXBS"
-			location="0x40004000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="DMA" determined="infoFile" id="DMA"
-			location="0x40008000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FB" determined="infoFile" id="FB"
-			location="0x4000C000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SYSMPU" determined="infoFile" id="SYSMPU"
-			location="0x4000D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FMC" determined="infoFile" id="FMC"
-			location="0x4001F000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTFE" determined="infoFile" id="FTFE"
-			location="0x40020000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="DMAMUX" determined="infoFile" id="DMAMUX"
-			location="0x40021000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CAN0" determined="infoFile" id="CAN0"
-			location="0x40024000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="RNG" determined="infoFile" id="RNG"
-			location="0x40029000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SPI0" determined="infoFile" id="SPI0"
-			location="0x4002C000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SPI1" determined="infoFile" id="SPI1"
-			location="0x4002D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SPI2" determined="infoFile" id="SPI2"
-			location="0x400AC000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="I2S0" determined="infoFile" id="I2S0"
-			location="0x4002F000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CRC" determined="infoFile" id="CRC"
-			location="0x40032000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="USBDCD" determined="infoFile" id="USBDCD"
-			location="0x40035000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PDB0" determined="infoFile" id="PDB0"
-			location="0x40036000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PIT" determined="infoFile" id="PIT"
-			location="0x40037000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTM0" determined="infoFile" id="FTM0"
-			location="0x40038000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTM1" determined="infoFile" id="FTM1"
-			location="0x40039000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTM2" determined="infoFile" id="FTM2"
-			location="0x4003A000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="FTM3" determined="infoFile" id="FTM3"
-			location="0x400B9000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="ADC0" determined="infoFile" id="ADC0"
-			location="0x4003B000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="ADC1" determined="infoFile" id="ADC1"
-			location="0x400BB000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="RTC" determined="infoFile" id="RTC"
-			location="0x4003D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="RFVBAT" determined="infoFile" id="RFVBAT"
-			location="0x4003E000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="LPTMR0" determined="infoFile" id="LPTMR0"
-			location="0x40040000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="RFSYS" determined="infoFile" id="RFSYS"
-			location="0x40041000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SIM" determined="infoFile" id="SIM"
-			location="0x40047000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PORTA" determined="infoFile" id="PORTA"
-			location="0x40049000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PORTB" determined="infoFile" id="PORTB"
-			location="0x4004A000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PORTC" determined="infoFile" id="PORTC"
-			location="0x4004B000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PORTD" determined="infoFile" id="PORTD"
-			location="0x4004C000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PORTE" determined="infoFile" id="PORTE"
-			location="0x4004D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="WDOG" determined="infoFile" id="WDOG"
-			location="0x40052000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="EWM" determined="infoFile" id="EWM"
-			location="0x40061000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CMT" determined="infoFile" id="CMT"
-			location="0x40062000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="MCG" determined="infoFile" id="MCG"
-			location="0x40064000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="OSC" determined="infoFile" id="OSC"
-			location="0x40065000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="I2C0" determined="infoFile" id="I2C0"
-			location="0x40066000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="I2C1" determined="infoFile" id="I2C1"
-			location="0x40067000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="I2C2" determined="infoFile" id="I2C2"
-			location="0x400E6000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART0" determined="infoFile" id="UART0"
-			location="0x4006A000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART1" determined="infoFile" id="UART1"
-			location="0x4006B000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART2" determined="infoFile" id="UART2"
-			location="0x4006C000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART3" determined="infoFile" id="UART3"
-			location="0x4006D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART4" determined="infoFile" id="UART4"
-			location="0x400EA000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="UART5" determined="infoFile" id="UART5"
-			location="0x400EB000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="USB0" determined="infoFile" id="USB0"
-			location="0x40072000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CMP0" determined="infoFile" id="CMP0"
-			location="0x40073000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CMP1" determined="infoFile" id="CMP1"
-			location="0x40073008"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CMP2" determined="infoFile" id="CMP2"
-			location="0x40073010"/&gt;&#13;
-			&lt;peripheralInstance derived_from="VREF" determined="infoFile" id="VREF"
-			location="0x40074000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="LLWU" determined="infoFile" id="LLWU"
-			location="0x4007C000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="PMC" determined="infoFile" id="PMC"
-			location="0x4007D000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SMC" determined="infoFile" id="SMC"
-			location="0x4007E000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="RCM" determined="infoFile" id="RCM"
-			location="0x4007F000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SDHC" determined="infoFile" id="SDHC"
-			location="0x400B1000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="ENET" determined="infoFile" id="ENET"
-			location="0x400C0000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="DAC0" determined="infoFile" id="DAC0"
-			location="0x400CC000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="DAC1" determined="infoFile" id="DAC1"
-			location="0x400CD000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="GPIOA" determined="infoFile" id="GPIOA"
-			location="0x400FF000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="GPIOB" determined="infoFile" id="GPIOB"
-			location="0x400FF040"/&gt;&#13;
-			&lt;peripheralInstance derived_from="GPIOC" determined="infoFile" id="GPIOC"
-			location="0x400FF080"/&gt;&#13;
-			&lt;peripheralInstance derived_from="GPIOD" determined="infoFile" id="GPIOD"
-			location="0x400FF0C0"/&gt;&#13;
-			&lt;peripheralInstance derived_from="GPIOE" determined="infoFile" id="GPIOE"
-			location="0x400FF100"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SystemControl" determined="infoFile"
-			id="SystemControl" location="0xE000E000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="SysTick" determined="infoFile"
-			id="SysTick" location="0xE000E010"/&gt;&#13;
-			&lt;peripheralInstance derived_from="NVIC" determined="infoFile" id="NVIC"
-			location="0xE000E100"/&gt;&#13;
-			&lt;peripheralInstance derived_from="MCM" determined="infoFile" id="MCM"
-			location="0xE0080000"/&gt;&#13;
-			&lt;peripheralInstance derived_from="CAU" determined="infoFile" id="CAU"
-			location="0xE0081000"/&gt;&#13;
-			&lt;/chip&gt;&#13;
-			&lt;processor&gt;&#13;
-			&lt;name gcc_name="cortex-m4"&gt;Cortex-M4&lt;/name&gt;&#13;
-			&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
-			&lt;/processor&gt;&#13;
-			&lt;link href="MK64F12_internal_peripheral.xml" show="embed"
-			type="simple"/&gt;&#13;
-			&lt;/info&gt;&#13;
-			&lt;/infoList&gt;&#13;
-			&lt;/TargetConfig&gt;</projectStorage>
+&lt;TargetConfig&gt;&#13;
+&lt;Properties property_3="NXP" property_4="MK64FN1M0xxx12" property_count="5" version="70200"/&gt;&#13;
+&lt;infoList vendor="NXP"&gt;&lt;info chip="MK64FN1M0xxx12" name="MK64FN1M0xxx12"&gt;&lt;chip&gt;&lt;name&gt;MK64FN1M0xxx12&lt;/name&gt;&#13;
+&lt;family&gt;K6x&lt;/family&gt;&#13;
+&lt;vendor&gt;NXP&lt;/vendor&gt;&#13;
+&lt;memory can_program="true" id="Flash" is_ro="true" size="1024" type="Flash"/&gt;&#13;
+&lt;memory id="RAM" size="256" type="RAM"/&gt;&#13;
+&lt;memoryInstance derived_from="Flash" driver="FTFE_4K.cfx" id="PROGRAM_FLASH" location="0x00000000" size="0x00100000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="SRAM_UPPER" location="0x20000000" size="0x00030000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="SRAM_LOWER" location="0x1fff0000" size="0x00010000"/&gt;&#13;
+&lt;memoryInstance derived_from="RAM" id="FLEX_RAM" location="0x14000000" size="0x00001000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTFE_FlashConfig" determined="infoFile" id="FTFE_FlashConfig" location="0x400"/&gt;&#13;
+&lt;peripheralInstance derived_from="AIPS0" determined="infoFile" id="AIPS0" location="0x40000000"/&gt;&#13;
+&lt;peripheralInstance derived_from="AIPS1" determined="infoFile" id="AIPS1" location="0x40080000"/&gt;&#13;
+&lt;peripheralInstance derived_from="AXBS" determined="infoFile" id="AXBS" location="0x40004000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DMA" determined="infoFile" id="DMA" location="0x40008000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FB" determined="infoFile" id="FB" location="0x4000C000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SYSMPU" determined="infoFile" id="SYSMPU" location="0x4000D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FMC" determined="infoFile" id="FMC" location="0x4001F000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTFE" determined="infoFile" id="FTFE" location="0x40020000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DMAMUX" determined="infoFile" id="DMAMUX" location="0x40021000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CAN0" determined="infoFile" id="CAN0" location="0x40024000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RNG" determined="infoFile" id="RNG" location="0x40029000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SPI0" determined="infoFile" id="SPI0" location="0x4002C000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SPI1" determined="infoFile" id="SPI1" location="0x4002D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SPI2" determined="infoFile" id="SPI2" location="0x400AC000"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2S0" determined="infoFile" id="I2S0" location="0x4002F000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CRC" determined="infoFile" id="CRC" location="0x40032000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USBDCD" determined="infoFile" id="USBDCD" location="0x40035000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PDB0" determined="infoFile" id="PDB0" location="0x40036000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PIT" determined="infoFile" id="PIT" location="0x40037000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTM0" determined="infoFile" id="FTM0" location="0x40038000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTM1" determined="infoFile" id="FTM1" location="0x40039000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTM2" determined="infoFile" id="FTM2" location="0x4003A000"/&gt;&#13;
+&lt;peripheralInstance derived_from="FTM3" determined="infoFile" id="FTM3" location="0x400B9000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ADC0" determined="infoFile" id="ADC0" location="0x4003B000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ADC1" determined="infoFile" id="ADC1" location="0x400BB000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RTC" determined="infoFile" id="RTC" location="0x4003D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RFVBAT" determined="infoFile" id="RFVBAT" location="0x4003E000"/&gt;&#13;
+&lt;peripheralInstance derived_from="LPTMR0" determined="infoFile" id="LPTMR0" location="0x40040000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RFSYS" determined="infoFile" id="RFSYS" location="0x40041000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SIM" determined="infoFile" id="SIM" location="0x40047000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PORTA" determined="infoFile" id="PORTA" location="0x40049000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PORTB" determined="infoFile" id="PORTB" location="0x4004A000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PORTC" determined="infoFile" id="PORTC" location="0x4004B000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PORTD" determined="infoFile" id="PORTD" location="0x4004C000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PORTE" determined="infoFile" id="PORTE" location="0x4004D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="WDOG" determined="infoFile" id="WDOG" location="0x40052000"/&gt;&#13;
+&lt;peripheralInstance derived_from="EWM" determined="infoFile" id="EWM" location="0x40061000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CMT" determined="infoFile" id="CMT" location="0x40062000"/&gt;&#13;
+&lt;peripheralInstance derived_from="MCG" determined="infoFile" id="MCG" location="0x40064000"/&gt;&#13;
+&lt;peripheralInstance derived_from="OSC" determined="infoFile" id="OSC" location="0x40065000"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2C0" determined="infoFile" id="I2C0" location="0x40066000"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2C1" determined="infoFile" id="I2C1" location="0x40067000"/&gt;&#13;
+&lt;peripheralInstance derived_from="I2C2" determined="infoFile" id="I2C2" location="0x400E6000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART0" determined="infoFile" id="UART0" location="0x4006A000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART1" determined="infoFile" id="UART1" location="0x4006B000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART2" determined="infoFile" id="UART2" location="0x4006C000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART3" determined="infoFile" id="UART3" location="0x4006D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART4" determined="infoFile" id="UART4" location="0x400EA000"/&gt;&#13;
+&lt;peripheralInstance derived_from="UART5" determined="infoFile" id="UART5" location="0x400EB000"/&gt;&#13;
+&lt;peripheralInstance derived_from="USB0" determined="infoFile" id="USB0" location="0x40072000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CMP0" determined="infoFile" id="CMP0" location="0x40073000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CMP1" determined="infoFile" id="CMP1" location="0x40073008"/&gt;&#13;
+&lt;peripheralInstance derived_from="CMP2" determined="infoFile" id="CMP2" location="0x40073010"/&gt;&#13;
+&lt;peripheralInstance derived_from="VREF" determined="infoFile" id="VREF" location="0x40074000"/&gt;&#13;
+&lt;peripheralInstance derived_from="LLWU" determined="infoFile" id="LLWU" location="0x4007C000"/&gt;&#13;
+&lt;peripheralInstance derived_from="PMC" determined="infoFile" id="PMC" location="0x4007D000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SMC" determined="infoFile" id="SMC" location="0x4007E000"/&gt;&#13;
+&lt;peripheralInstance derived_from="RCM" determined="infoFile" id="RCM" location="0x4007F000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SDHC" determined="infoFile" id="SDHC" location="0x400B1000"/&gt;&#13;
+&lt;peripheralInstance derived_from="ENET" determined="infoFile" id="ENET" location="0x400C0000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DAC0" determined="infoFile" id="DAC0" location="0x400CC000"/&gt;&#13;
+&lt;peripheralInstance derived_from="DAC1" determined="infoFile" id="DAC1" location="0x400CD000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIOA" determined="infoFile" id="GPIOA" location="0x400FF000"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIOB" determined="infoFile" id="GPIOB" location="0x400FF040"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIOC" determined="infoFile" id="GPIOC" location="0x400FF080"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIOD" determined="infoFile" id="GPIOD" location="0x400FF0C0"/&gt;&#13;
+&lt;peripheralInstance derived_from="GPIOE" determined="infoFile" id="GPIOE" location="0x400FF100"/&gt;&#13;
+&lt;peripheralInstance derived_from="SystemControl" determined="infoFile" id="SystemControl" location="0xE000E000"/&gt;&#13;
+&lt;peripheralInstance derived_from="SysTick" determined="infoFile" id="SysTick" location="0xE000E010"/&gt;&#13;
+&lt;peripheralInstance derived_from="NVIC" determined="infoFile" id="NVIC" location="0xE000E100"/&gt;&#13;
+&lt;peripheralInstance derived_from="MCM" determined="infoFile" id="MCM" location="0xE0080000"/&gt;&#13;
+&lt;peripheralInstance derived_from="CAU" determined="infoFile" id="CAU" location="0xE0081000"/&gt;&#13;
+&lt;/chip&gt;&#13;
+&lt;processor&gt;&lt;name gcc_name="cortex-m4"&gt;Cortex-M4&lt;/name&gt;&#13;
+&lt;family&gt;Cortex-M&lt;/family&gt;&#13;
+&lt;/processor&gt;&#13;
+&lt;link href="MK64F12_internal_peripheral.xml" show="embed" type="simple"/&gt;&#13;
+&lt;/info&gt;&#13;
+&lt;/infoList&gt;&#13;
+&lt;/TargetConfig&gt;</projectStorage>
 	</storageModule>
 	<storageModule moduleId="com.nxp.mcuxpresso.core.datamodels">
 		<sdkName>SDK_2.x_FRDM-K64F</sdkName>

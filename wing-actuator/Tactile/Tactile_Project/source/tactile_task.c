@@ -45,6 +45,7 @@ void show_help(void);
 
 extern void analog_test();
 
+
 /* Logger API */
 extern void log_add(char *log);
 extern void log_task(void *pvParameters);
@@ -57,16 +58,18 @@ void tactile_task(void *pvParameters)
 {   TickType_t tick_start, tick_now;
 	const TickType_t xDelay700ms = pdMS_TO_TICKS( 700 );
     char log[MAX_LOG_LENGTH + 1];
-    uint32_t i = 0, j=0;
+    uint32_t i = 0;
     // double z;
     char c;
-    PRINTF("Capacitive Array Processing Program\n");
+    PRINTF("Capacitive Array Processing Program\n\r");
+
     show_help();
 
     c = ' ';
     while(c != 'q')
-    {	printf("\n*");
+    {	PRINTF("\n*");
     	while ((c = GETCHAR())==' ' || c == '\n');
+    	PUTCHAR(c); // for checking what was input
        	switch (c)
     	{
         	case '?': show_help();
@@ -75,11 +78,11 @@ void tactile_task(void *pvParameters)
         	case 'a': analog_test();
         	break;
 
-       	    default: putchar('?');
+       	    default: PUTCHAR('?');
        	    break;
        	}
      }
-           printf("QUIT\n");
+           PRINTF("QUIT\n");
     tick_start = xTaskGetTickCount();
     for (i = 0; i < 10; i++)
     {   tick_now = xTaskGetTickCount();
@@ -103,17 +106,17 @@ void tactile_task(void *pvParameters)
 
 void show_help()
 {
-    PRINTF("\n?     show this message\n");
-    PRINTF("a  read a/d channel 1               s  scan sensor\n");
-    printf("c  continuous frame grab            t  save touch pattern\n");
-    printf("d  save multiple elements response  v  average responses\n");
-    printf("f  store mult. frames               w  set wait interval\n");
-    printf("g  get gain matrix                  x  find max pressure\n");
-    printf("m  find mean and variance           y  dump to memory \n");
-    printf("o  get static offset of array       1  get multiple centers \n");
-    printf("p  toggle print flag                l  locate platform\n");
-    printf("q quit \n");
-    printf("r  read and store offset\n");
+    PRINTF("\n?     show this message\r\n");
+    PRINTF("a  read a/d channel 1               s  scan sensor\n\r");
+    PRINTF("c  continuous frame grab            t  save touch pattern\n\r");
+    PRINTF("d  save multiple elements response  v  average responses\n\r");
+    PRINTF("f  store mult. frames               w  set wait interval\n\r");
+    PRINTF("g  get gain matrix                  x  find max pressure\n\r");
+    PRINTF("m  find mean and variance           y  dump to memory \n\r");
+    PRINTF("o  get static offset of array       1  get multiple centers \n\r");
+    PRINTF("p  toggle print flag                l  locate platform\n\r");
+    PRINTF("q quit \r\n");
+    PRINTF("r  read and store offset\r\n");
 
 }
 

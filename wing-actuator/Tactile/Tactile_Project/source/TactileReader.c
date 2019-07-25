@@ -129,6 +129,8 @@ extern void tactile_task(void *pvParameters);
 /* configUSE_IDLE_HOOK must be set to 1 in FreeRTOSConfig.h for the idle hook function to get called. */
 extern void vApplicationIdleHook( void );
 
+extern void ADC_Init();
+
 /* Logger API */
 extern void log_add(char *log);
 extern void log_init(uint32_t queue_length, uint32_t max_log_length);
@@ -199,7 +201,10 @@ void start_timer(void)
  * @brief Main function
  */
 int main(void)
-{   ftm_config_t ftmInfo;
+{   // char c;
+	// int i;
+	// char test_string[80];
+	ftm_config_t ftmInfo;
 	uart_config_t config;
 	uint32_t compareValue = 0x1000;
    /* Define the init structure for the input switch pin */
@@ -245,6 +250,19 @@ int main(void)
     PRINTF("Floating point PRINTF int:%4d float:%8.4f  double:%8.4f\n\r", (int) PI, pi_float, pi_double);
     printf("Floating point printf %8.4f  %8.4lf\n\r", pi_float, pi_double); // only for semihost console, not release!
 
+    /*PRINTF(" checking GETCHAR and PUTCHAR\n");
+    while(1)
+    { c= GETCHAR();
+    	PUTCHAR(c);
+    }*/
+    /*PRINTF(" checking SCANF, 5 loops\n\r");
+    for(i = 0; i< 5; i++)
+        { SCANF("%s", test_string);
+        	PRINTF("string: %s \r\n", test_string);
+        }*/
+
+    PRINTF("Initializing A/D\n\r");
+	ADC_Init();
 	 /* Init input switch GPIO. */
 	    PORT_SetPinInterruptConfig(BOARD_SW_PORT, BOARD_SW_GPIO_PIN, kPORT_InterruptFallingEdge);
 	    NVIC_SetPriority(BOARD_SW_IRQ,24); // make sure priority is lower than FreeRTOS queue

@@ -59,4 +59,6 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  
  8. How does getchar work? semiconsole or UART? 
  use GETCHAR? Seems to hang in GETCHAR. need to debug reading a character.
+ PUTCHAR and GETCHAR work, but SCANF does not echo, and terminates on space, not <cr>
+ scanf went right to hardfault on single-step, maybe not linked in?
  
