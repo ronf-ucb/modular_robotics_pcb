@@ -74,8 +74,8 @@
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
@@ -22180,9 +22180,9 @@ Low profile connectors, straight&lt;p&gt;
 <attribute name="TP_SIGNAL_NAME" x="214.63" y="57.15" size="1.778" layer="97"/>
 </instance>
 <instance part="R15" gate="G$1" x="195.326" y="112.014" smashed="yes" rot="R90">
-<attribute name="HI-VOLT" x="200.914" y="110.998" size="1.778" layer="96" display="name"/>
-<attribute name="NAME" x="199.898" y="114.8334" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="200.152" y="112.776" size="1.778" layer="96" rot="R180"/>
+<attribute name="HI-VOLT" x="198.374" y="110.998" size="1.778" layer="96" display="name"/>
+<attribute name="NAME" x="202.438" y="117.3734" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="202.692" y="120.396" size="1.778" layer="96" rot="R180"/>
 <attribute name="DIGIKEY" x="195.326" y="112.014" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="P+4" gate="1" x="30.48" y="78.74" smashed="yes">
