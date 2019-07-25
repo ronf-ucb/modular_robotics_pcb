@@ -78,6 +78,9 @@ void tactile_task(void *pvParameters)
         	case 'a': analog_test();
         	break;
 
+        	case 's': read_tactile();
+        	break;
+
        	    default: PUTCHAR('?');
        	    break;
        	}
