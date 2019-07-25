@@ -165,11 +165,11 @@ void BOARD_SW_IRQ_HANDLER(void)
 #endif
 }
 
-void PORTB_IRQHandler(void)
+void PORTD_IRQHandler(void)
 {   /* Clear external interrupt flag. */
-    GPIO_PortClearInterruptFlags(GPIOB, 1U << BOARD_PTB2_GPIO_PIN);
-    NVIC_ClearPendingIRQ(PORTB_IRQn);
-    DisableIRQ(PORTB_IRQn); // only one interrupt per car start, wait for back wheels, etc
+    GPIO_PortClearInterruptFlags(GPIOD, 1U << BOARD_INITPINS_SYNC_OUT_GPIO_PIN);
+    NVIC_ClearPendingIRQ(PORTD_IRQn);
+    DisableIRQ(PORTD_IRQn); // only one interrupt per car start, wait for back wheels, etc
     start_timer();
     /* Add for ARM errata 838869, affects Cortex-M4, Cortex-M4F Store immediate overlapping
       exception return operation might vector to incorrect interrupt */
@@ -211,8 +211,8 @@ int main(void)
        gpio_pin_config_t sw_config = {
            kGPIO_DigitalInput, 0,
        };
-   /* define init structure for input line from IR sensor for timer */
-       gpio_pin_config_t ptb2_config = {
+   /* define init structure for input line from SyncOut */
+       gpio_pin_config_t ptd7_config = {
                   kGPIO_DigitalInput, 0,
               };
 
@@ -245,7 +245,8 @@ int main(void)
     /* welcome message */
     PRINTF("\n\r Capacitive Tactile Reader July 10, 2019 v0.0\n\r");
     PRINTF("Using SW3 PTA4 or PTB2 (J4-2)for trigger, and FTM0 Ch0 (J1-5) for LED drive\n\r");
-    PRINTF("Using FRDM-K64F J6 for DensorOut, SyncOut, ScanClk\n\r");
+    PRINTF("Using FRDM-K64F J6 for SensorOut, SyncOut, ScanClk\n\r");
+    PRINTF("J6-5 for SensorOut ADC0_SE6b, J6-7 SyncOut PTD7, J6-6 ScanClk PTD6 \n\r");
 	// LED_GREEN_ON();
     PRINTF("Floating point PRINTF int:%4d float:%8.4f  double:%8.4f\n\r", (int) PI, pi_float, pi_double);
     printf("Floating point printf %8.4f  %8.4lf\n\r", pi_float, pi_double); // only for semihost console, not release!
@@ -269,11 +270,13 @@ int main(void)
 	    EnableIRQ(BOARD_SW_IRQ);
 	    GPIO_PinInit(BOARD_SW_GPIO, BOARD_SW_GPIO_PIN, &sw_config);
 
-	  /* Init PTB2 GPIO */
-	   PORT_SetPinInterruptConfig(PORTB, BOARD_PTB2_GPIO_PIN, kPORT_InterruptRisingEdge);
-	   NVIC_SetPriority(PORTB_IRQn,24); // make sure priority is lower than FreeRTOS queue
-	   EnableIRQ(PORTB_IRQn);
-	   GPIO_PinInit(GPIOB, BOARD_PTB2_GPIO_PIN, &ptb2_config);
+	  /* Init PTD7 GPIO */
+
+	   PORT_SetPinInterruptConfig(PORTD, BOARD_INITPINS_SYNC_OUT_GPIO_PIN, kPORT_InterruptRisingEdge);
+	   NVIC_SetPriority(PORTD_IRQn,24); // make sure priority is lower than FreeRTOS queue
+	   EnableIRQ(PORTD_IRQn);
+	   GPIO_PinInit(GPIOD, BOARD_INITPINS_SYNC_OUT_GPIO_PIN, &ptd7_config);
+
 
     if (xTaskCreate(write_task_1, "WRITE_TASK_1", configMINIMAL_STACK_SIZE + 300, NULL, tskIDLE_PRIORITY + 2, NULL) !=
         pdPASS)
