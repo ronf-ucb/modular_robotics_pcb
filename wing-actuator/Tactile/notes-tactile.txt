@@ -62,6 +62,22 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  PUTCHAR and GETCHAR work, but SCANF does not echo, and terminates on space, not <cr>
  scanf went right to hardfault on single-step, maybe not linked in?
  
+ 9. can't see tactile_project when loading into mcuxpresso on haydn? Something with .cproject or .project?
+ These look identical. May need to just recreate project?
+ Or export as archive and reimport? But want to use github for compatability...
+ maybe .settings?
+ 
+ can't open project Tactile, but can open Tactile1?
+ 
+ try just copying an existing directory into its own location, w/o workspace?
+ worked ok for RaceTimer3. 
+ Tried copying tactile_project: Source Path Too Long: org.eclipse.egit.core.
+ Now opens ok, since this file was not copied. Is .metadata/.plugins/org.eclipse.core.resources/.projects needed?
+ Try deleting ./metadata directory.
+ 
+ 
+ 
+ 
  9. if project won't open, try deleting .metadata directory
  
  10. log task not running, since tactile_task is higher priority and did not yield.
