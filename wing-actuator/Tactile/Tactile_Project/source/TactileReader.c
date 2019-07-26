@@ -122,7 +122,8 @@ double pi_double = PI;
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
-void start_timer(void);
+
+extern void read_frame(void);
 /* Application API */
 extern void write_task_1(void *pvParameters);
 extern void tactile_task(void *pvParameters);
@@ -156,13 +157,17 @@ void BOARD_SW_IRQ_HANDLER(void)
 {   /* Clear external interrupt flag. */
     GPIO_PortClearInterruptFlags(BOARD_SW_GPIO, 1U << BOARD_SW_GPIO_PIN);
     NVIC_ClearPendingIRQ(BOARD_SW_IRQ);
-    DisableIRQ(BOARD_SW_IRQ); // only one interrupt per car start, wait for back wheels, etc
-    start_timer();
+    DisableIRQ(BOARD_SW_IRQ); // only one interrupt per frame
+    read_frame();
     /* Add for ARM errata 838869, affects Cortex-M4, Cortex-M4F Store immediate overlapping
       exception return operation might vector to incorrect interrupt */
 #if defined __CORTEX_M && (__CORTEX_M == 4U)
     __DSB();
 #endif
+    GPIO_PortClearInterruptFlags(BOARD_SW_GPIO, 1U << BOARD_SW_GPIO_PIN); // disable pending interrupts
+    NVIC_ClearPendingIRQ(BOARD_SW_IRQ);
+    EnableIRQ(BOARD_SW_IRQ); // re-enable trigger interrupt
+
 }
 
 void PORTD_IRQHandler(void)
@@ -170,31 +175,15 @@ void PORTD_IRQHandler(void)
     GPIO_PortClearInterruptFlags(GPIOD, 1U << BOARD_INITPINS_SYNC_OUT_GPIO_PIN);
     NVIC_ClearPendingIRQ(PORTD_IRQn);
     DisableIRQ(PORTD_IRQn); // only one interrupt per car start, wait for back wheels, etc
-    start_timer();
+    read_frame();
     /* Add for ARM errata 838869, affects Cortex-M4, Cortex-M4F Store immediate overlapping
       exception return operation might vector to incorrect interrupt */
 #if defined __CORTEX_M && (__CORTEX_M == 4U)
     __DSB();
 #endif
-}
-
-
-
-void start_timer(void)
-{ char log[MAX_LOG_LENGTH + 1];
-    timer_triggered = true;
-    timer_lockout_period = true;
-
-/// *** don't use any FreeRTOS inside ISR...
-       // get precise current time
-       lap_time = (double)(xTaskGetTickCountFromISR()/10000.0); // with ticks at 100 us, convert to sec
-       sprintf(log, "\n\rTimer Triggered! Previous lap = %10.3f\n\r", lap_time - lap_start);
-       log_add(log);
-       lap_start = lap_time; // next lap start time
-       lockout_time = lap_start + 5.0; // to avoid false double triggers
-       //sprintf(log, "\n\rTimer Triggered! \n\r");
-       //log_add(log);
-       LED_RED_ON(); // triggered, in lockout period
+	GPIO_PortClearInterruptFlags(GPIOD, 1U << BOARD_INITPINS_SYNC_OUT_GPIO_PIN);
+	NVIC_ClearPendingIRQ(PORTD_IRQn);
+	EnableIRQ(PORTD_IRQn); // only one interrupt per car start, wait for back wheels, etc
 }
 
 /*!

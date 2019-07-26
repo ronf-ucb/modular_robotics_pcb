@@ -58,7 +58,7 @@
 void ADC_Init(void);
 // static void init_board(void);
 void read_ADC(void);
-int read_chan(void;)
+int read_chan(void);
 /*******************************************************************************
  * Variables
  ******************************************************************************/
