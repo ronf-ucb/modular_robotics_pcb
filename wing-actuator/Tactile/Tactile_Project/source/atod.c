@@ -58,7 +58,7 @@
 void ADC_Init(void);
 // static void init_board(void);
 void read_ADC(void);
-
+int read_chan(void);
 /*******************************************************************************
  * Variables
  ******************************************************************************/
@@ -143,9 +143,7 @@ void DEMO_ADC16_IRQ_HANDLER_FUNC(void)
 #endif
 }
 
-/*!
- * @brief Main function
- */
+
 void analog_test(void)
 {	int chan_num = DEMO_ADC16_USER_CHANNEL;
     float analog_voltage;
@@ -157,4 +155,11 @@ void analog_test(void)
     analog_voltage = (float)(g_Adc16ConversionValue * (VREF_BRD / SE_12BIT));
     PRINTF("\rADC Value: %6d, ADC Voltage: %8.3f\r\n",
     		g_Adc16ConversionValue, analog_voltage);
+}
+
+int read_chan(void)
+{ int value;
+  read_ADC();
+  value = g_Adc16ConversionValue;
+  return(value);
 }

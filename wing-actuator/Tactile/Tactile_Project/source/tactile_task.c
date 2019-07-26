@@ -44,7 +44,7 @@ void tactile_task(void *pvParameters);
 void show_help(void);
 
 extern void analog_test();
-
+extern void read_frame(void);
 
 /* Logger API */
 extern void log_add(char *log);
@@ -56,6 +56,7 @@ extern void log_task(void *pvParameters);
  */
 void tactile_task(void *pvParameters)
 {   TickType_t tick_start, tick_now;
+	const TickType_t xDelay10ms = pdMS_TO_TICKS( 10 );
 	const TickType_t xDelay700ms = pdMS_TO_TICKS( 700 );
     char log[MAX_LOG_LENGTH + 1];
     uint32_t i = 0;
@@ -68,7 +69,10 @@ void tactile_task(void *pvParameters)
     c = ' ';
     while(c != 'q')
     {	PRINTF("\n*");
-    	while ((c = GETCHAR())==' ' || c == '\n');
+    	while ((c = GETCHAR())==' ' || c == '\n')
+    	{ vTaskDelayUntil( &tick_start, xDelay10ms );
+    		taskYIELD();  // make sure other tasks can run
+    	}
     	PUTCHAR(c); // for checking what was input
        	switch (c)
     	{
@@ -78,7 +82,7 @@ void tactile_task(void *pvParameters)
         	case 'a': analog_test();
         	break;
 
-        	case 's': read_tactile();
+        	case 's': read_frame();
         	break;
 
        	    default: PUTCHAR('?');
@@ -111,16 +115,6 @@ void show_help()
 {
     PRINTF("\n?     show this message\r\n");
     PRINTF("a  read a/d channel 1               s  scan sensor\n\r");
-    PRINTF("c  continuous frame grab            t  save touch pattern\n\r");
-    PRINTF("d  save multiple elements response  v  average responses\n\r");
-    PRINTF("f  store mult. frames               w  set wait interval\n\r");
-    PRINTF("g  get gain matrix                  x  find max pressure\n\r");
-    PRINTF("m  find mean and variance           y  dump to memory \n\r");
-    PRINTF("o  get static offset of array       1  get multiple centers \n\r");
-    PRINTF("p  toggle print flag                l  locate platform\n\r");
-    PRINTF("q quit \r\n");
-    PRINTF("r  read and store offset\r\n");
-
 }
 
 

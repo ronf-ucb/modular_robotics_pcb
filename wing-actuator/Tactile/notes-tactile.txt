@@ -62,3 +62,8 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  PUTCHAR and GETCHAR work, but SCANF does not echo, and terminates on space, not <cr>
  scanf went right to hardfault on single-step, maybe not linked in?
  
+ 9. if project won't open, try deleting .metadata directory
+ 
+ 10. log task not running, since tactile_task is higher priority and did not yield.
+ /* configUSE_IDLE_HOOK must be set to 1 in FreeRTOSConfig.h for the idle hook function to get called. */
+ Log works after terminating getchar loop
