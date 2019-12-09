@@ -83,3 +83,10 @@ pyserial: Standard values above 115200, such as: 230400, 460800, 500000, 576000,
  10. log task not running, since tactile_task is higher priority and did not yield.
  /* configUSE_IDLE_HOOK must be set to 1 in FreeRTOSConfig.h for the idle hook function to get called. */
  Log works after terminating getchar loop
+ 
+ 11. smartgit would not stage/add file even after deleting lock file. Copy files to new repo and make new MCUXpresso project.
+ Project name: Tactile_Project
+ OS-> freertos
+ 
+ 
+ 
