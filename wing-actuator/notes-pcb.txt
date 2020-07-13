@@ -55,3 +55,10 @@ How do I change the properties of several objects at once?
 https://electronics.stackexchange.com/questions/55710/how-do-i-change-the-properties-of-several-objects-at-once
 command: change width 8 mil, then left click mouse on line
 
+-------------
+July 12, 2020
+Adding part to KiCAD
+https://app.ultralibrarian.com/content/help/
+
+parts look for R, C to find caps and resistors
+Added digikey kicad parts library

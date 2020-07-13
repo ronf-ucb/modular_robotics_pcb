@@ -1,0 +1,2 @@
+Circuit for high voltage generation from camera flash coil
+driven by PWM through a motor driver.
