@@ -1,0 +1,53 @@
+Notes on using MicroMirror_k64f to 
+1) generate high voltage usinga photoflash transformer
+2) control high voltage through closed loop PWM
+3) drive an array of actuators
+
+July 12, 2020
+
+stooped being able to compile/debug 
+1. debug mcuxpresso project is currently disabled
+try restart
+did not work on existing projects, but debug configuration was ok on
+newly imported function.
+https://community.nxp.com/thread/530249
+MCUXpresso IDE v11.1.1 [Build 3241] [2020-03-02]
+GDB Debugging with Kinetis Design Studio
+https://community.nxp.com/docs/DOC-101845
+
+missing debug.launch file?
+Got erased? Need to create new one.
+Open with MCUXpresso Launch Configuration
+1) Main
+	C/C++ Application
+		Debug\frdmk64f_hello_worldDebug\frdmk64f_hello_world.axf
+2) GDB Debugger
+	GDB debugger: arm-none-eabi-gdb
+	non-stop mode
+3) LinkServer Debugger
+	Debug connection SWD
+6) Startup
+		Load image: use project binary
+		set breakpoint at main
+		request hardware breakpoint
+7) Source
+	Source Lookup Path: Default
+8) Common
+	Standard input: Allocate console
+
+right clock on project -> Launch configurations -> create and edit new -> 
+CMSIS-DAP
+
+double click on launch file to open editor ``file does not exist''' even though opened ==> missing .axf
+
+July 13, 2020
+What to use as starting point? TactileReader.c or RaceTimer? (RaceTimer has PWM?)
+Start with RaceTimer- has PWM.
+In Properties -> C/C++ -> Paths and Symbols, add freeRTOS
+{drivers, board, source, utilities, startup, freertos/include, freertos/portable}
+Also need to add source directory under properties
+Also add under C/C++ Build -> Settings -> Includes
+(needed to add freeRTOS 3 places to get included)
+-DSDK_DEBUGCONSOLE_UART
+Library Redlib
+
